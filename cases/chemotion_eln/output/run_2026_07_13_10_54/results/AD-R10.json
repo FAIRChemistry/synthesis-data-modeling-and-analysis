@@ -1,0 +1,305 @@
+{
+  "journal_number": "AD-R10",
+  "date": "2026-01-12",
+  "reaction_name": "Synthesis of Co(ttpp) (CHCl3/hexane reprecipitation)",
+  "batch_volume_mL": 20,
+  "starting_materials": [
+    {
+      "name": "TAPP",
+      "note": "INV-14-6",
+      "molar_mass_g_mol": 674.79436,
+      "mass_g": 0.25042,
+      "amount_mmol": 0.37122,
+      "equivalents": 1,
+      "density_g_mL": 1.35
+    },
+    {
+      "name": "TrBr",
+      "note": "INV-20-5",
+      "molar_mass_g_mol": 323.2264,
+      "mass_g": 0.5987,
+      "amount_mmol": 1.85292,
+      "equivalents": 4.991198772172797,
+      "density_g_mL": null
+    },
+    {
+      "name": "CoCl2",
+      "note": "INV-21-8",
+      "molar_mass_g_mol": 129.8392,
+      "mass_g": 0.2886,
+      "amount_mmol": 2.22301,
+      "equivalents": 5.989532539584605,
+      "density_g_mL": null
+    },
+    {
+      "name": "Et3N",
+      "note": "INV-22-6",
+      "molar_mass_g_mol": 101.19,
+      "mass_g": 0.3749,
+      "amount_mmol": 3.70495,
+      "equivalents": 9.983441498054,
+      "density_g_mL": 0.726
+    },
+    {
+      "name": "THF",
+      "note": "INV-23-6",
+      "molar_mass_g_mol": 72.10572,
+      "mass_g": 17.81821177343568,
+      "amount_mmol": 247.1069,
+      "equivalents": 664.4533137881007,
+      "density_g_mL": 0.889,
+      "volume_mL": 20
+    }
+  ],
+  "products": [
+    {
+      "name": "Co(ttpp)",
+      "note": "AD-31",
+      "molar_mass_g_mol": 1700.9695200000008,
+      "yield_g": 0.47948,
+      "amount_mmol": 0.28194,
+      "yield_percent": 75.95850317607412,
+      "is_main_product": true,
+      "appearance": null,
+      "eluent_system": null,
+      "nmr_data": null,
+      "rf_value": null
+    }
+  ],
+  "procedure": {
+    "Prep": {
+      "Step": [
+        {
+          "$xml_type": "HeatChill",
+          "_vessel": "50 mL two-neck RBF",
+          "_temp": {
+            "Unit": "celsius",
+            "Value": 120
+          },
+          "_time": {
+            "Unit": "hour",
+            "Value": 1.5
+          },
+          "_comment": "Heat a 50 mL two-neck RBF in an oven (120°C) for >1.5 h."
+        },
+        {
+          "$xml_type": "EvacuateAndRefill",
+          "_gas": "N2",
+          "_comment": "Evacuate (0.089 mbar) and heat the bottom part of the reflux condenser and flask with a heat gun (250°C). Backfill with N₂."
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "50 mL two-neck RBF",
+          "_reagent": "TAPP",
+          "_comment": "Add TAPP and TrBr (plastic spatula) quickly"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "50 mL two-neck RBF",
+          "_reagent": "TrBr",
+          "_comment": "Add TAPP and TrBr (plastic spatula) quickly"
+        },
+        {
+          "$xml_type": "EvacuateAndRefill",
+          "_gas": "N2",
+          "_comment": "Cycle with N₂ slowly x3"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "50 mL two-neck RBF",
+          "_reagent": "Et3N",
+          "_comment": "Add Et3N"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "50 mL two-neck RBF",
+          "_reagent": "THF",
+          "_comment": "Add the THF syringe. [10:57] ( Dark Green )"
+        },
+        {
+          "$xml_type": "Sonicate",
+          "_vessel": "50 mL two-neck RBF",
+          "_comment": "→ 0.1 mL + CDCl₃ 500 µL, sonicate → ¹H NMR M1 [11:08]"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "50 mL two-neck RBF",
+          "_reagent": "CoCl2",
+          "_comment": "Add CoCl₂ quickly.  Purge with N₂ for 10 s. Close. Resume stirring."
+        },
+        {
+          "$xml_type": "EvacuateAndRefill",
+          "_gas": "N2",
+          "_time": {
+            "Unit": "second",
+            "Value": 10
+          },
+          "_comment": "Purge with N₂ for 10 s"
+        }
+      ]
+    },
+    "Reaction": {
+      "Step": [
+        {
+          "$xml_type": "EvacuateAndRefill",
+          "_gas": "N2",
+          "_time": {
+            "Unit": "minute",
+            "Value": 30
+          },
+          "_comment": "Bubble with N₂, 30 min."
+        },
+        {
+          "$xml_type": "HeatChill",
+          "_temp": {
+            "Unit": "celsius",
+            "Value": 85
+          },
+          "_reflux": true,
+          "_time": {
+            "Unit": "minute",
+            "Value": 15
+          },
+          "_comment": "Heat to reflux (85 °C, 1.25 atm) for ca. 15 min (Dark green brown colour)"
+        },
+        {
+          "$xml_type": "HeatChill",
+          "_reflux": true,
+          "_time": {
+            "Unit": "hour",
+            "Value": 2
+          },
+          "_comment": "Heat for 2 h (16:37)"
+        },
+        {
+          "$xml_type": "Sonicate",
+          "_comment": "→ 0.1 mL + CDCl₃ 500 µL → syringe filter → sonicate → ¹H NMR M2-CDCl3 [16:30]"
+        }
+      ]
+    },
+    "Workup": {
+      "Step": [
+        {
+          "$xml_type": "Add",
+          "_reagent": "neutral alumina",
+          "_amount": {
+            "Unit": "millilitre",
+            "Value": 12.5
+          },
+          "_comment": "Add 12.5 mL of neutral alumina in a 15 mL membrane filter holder (frit) with a membrane filter."
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "THF",
+          "_comment": "Wet the alumina with THF"
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "reaction mixture",
+          "_comment": "Load the reaction mixture"
+        },
+        {
+          "$xml_type": "Purify",
+          "_eluent": "THF",
+          "_comment": "Elute with THF and full power suction with occasional digging of the top layer."
+        },
+        {
+          "$xml_type": "Wait",
+          "_time": {
+            "Unit": "day",
+            "Value": 0.5
+          },
+          "_comment": "Eluent was kept in the fridge o/n."
+        },
+        {
+          "$xml_type": "Evaporate",
+          "_method": "rotary_evaporator",
+          "_comment": "Rotovap"
+        },
+        {
+          "$xml_type": "Dry",
+          "_time": {
+            "Unit": "hour",
+            "Value": 1
+          },
+          "_comment": "Dry under vacuum, 1 h"
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "Basic Al2O3",
+          "_amount": {
+            "Unit": "millilitre",
+            "Value": 50
+          },
+          "_comment": "Basic Al2O3 --> 50 mL"
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "CHCl3",
+          "_amount": {
+            "Unit": "millilitre",
+            "Value": 50
+          },
+          "_comment": "CHCl3 50 mL (mix in flask ---> then filter)"
+        },
+        {
+          "$xml_type": "Filter",
+          "_product_portion": "filtrate",
+          "_comment": "Filtered"
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "purified CHCl3",
+          "_amount": {
+            "Unit": "millilitre",
+            "Value": 25
+          },
+          "_comment": "Purified CHCl3 25 mL, sonicate (dark red solution)"
+        },
+        {
+          "$xml_type": "Sonicate",
+          "_comment": "Purified CHCl3 25 mL, sonicate (dark red solution)"
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "n-hexane",
+          "_amount": {
+            "Unit": "millilitre",
+            "Value": 140
+          },
+          "_comment": "n-hexane 140 mL, manually stir, sonicate"
+        },
+        {
+          "$xml_type": "Wait",
+          "_time": {
+            "Unit": "minute",
+            "Value": 30
+          },
+          "_comment": "Fridge, 30 min"
+        },
+        {
+          "$xml_type": "Filter",
+          "_product_portion": "residue",
+          "_rinse": [
+            {
+              "name": "purified CHCl3 + n-hexane"
+            },
+            {
+              "name": "n-hexane"
+            }
+          ],
+          "_comment": "Filter w/ suction; Transfer & rinse w/ 2 x (purified CHCl3 3 mL + 10 mL hex); Rinse w/ hex x2 (2x 15 mL)"
+        },
+        {
+          "$xml_type": "Dry",
+          "_time": {
+            "Unit": "day",
+            "Value": 0.5
+          },
+          "_comment": "Dry under vacuum o/n"
+        }
+      ]
+    }
+  },
+  "tlc_conditions": null
+}

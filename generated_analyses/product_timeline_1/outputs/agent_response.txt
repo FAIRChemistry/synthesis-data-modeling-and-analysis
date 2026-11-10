@@ -1,0 +1,29 @@
+⏺ I wrote and ran the script, and the figure and numbers are saved. All 11 synthesis entries fall into three product rows, linked by five reuse arrows. Labels, circles, arrows and leader lines don't overlap: the script checks this itself
+  and stops with an error if any label can't be placed cleanly. I also inspected the rendered figure.
+
+  Files (in generated_analyses/product_timeline_1/)
+  - Script: product_timeline.py (rerun with python3 product_timeline.py; needs matplotlib)
+  - outputs/product_timeline.png (300 dpi) and outputs/product_timeline.pdf, 7 in wide (full journal page)
+  - outputs/product_timeline.csv: one row per entry with date, grouped substance, original product name, sample label, formula, amount (mmol), yield (g and %), molar mass, and an amount recomputed from yield and molar mass
+  - outputs/product_links.csv: the five reuse links, with the sample number and amount used
+
+  Result
+  - Co(ttpp) (6 entries): AD-R6, AD-R8, AD-R9, AD-R10, AD-R18, ZAR-438
+  - Co(ttpp)(py)₂ (4 entries): AD-R13, AD-R17, AD-R27, ZAR-439
+  - Co(ttpp)(pba)₂ (1 entry): AD-R11
+  - Arrows:
+    - AD-31 → AD-R11, AD-R13 and AD-R17 (used as AD-31-1, -2, -3)
+    - AD-47 → AD-R27
+    - ZAR-1096 → ZAR-439
+  - Circle sizes: areas run from 0.038 mmol (AD-R13) to 0.574 mmol (AD-R18). The size legend shows 0.05, 0.2 and 0.5 mmol, plus "n.r." for the empty circles.
+
+  Missing data and ambiguities
+  - No amount: AD-R6 (no yield recorded) and AD-R9 (reaction discontinued after a leak) are drawn as fixed-size empty circles. Their size means nothing.
+  - Names given as formulas: AD-R6, AD-R8 and AD-R9 name the product only as "C120H88CoN8". I grouped them under Co(ttpp) using the reaction name and the formula from the InChI. AD-R8 has no InChI or InChIKey, so its grouping rests on the
+    reaction name alone.
+  - Conflicting identifiers for the reused samples: the Co(ttpp) starting material in AD-R11 and AD-R13 has a different InChIKey from the AD-31 product it came from. AD-R13 also lists a molar mass of 1702.99 g/mol instead of 1700.97. The
+    arrows follow the sample labels, as you asked, so these differences don't change the plot, but they look like extraction errors.
+  - Minor value differences: stored amounts match yield ÷ molar mass to within about 0.05%. ZAR-439 uses a rounded molar mass (2008) and yield (71%).
+  - Close dates: AD-R9 and AD-R10 are only five days apart, so their circles partly overlap. Their labels are moved aside with leader lines.
+  - Validation warnings: the conversion run finished with no failures. AD-R10 and AD-R11 have schema warnings, but only in fields this plot doesn't use (a procedure step and one starting material's SMILES).
+  - Row order: Co(ttpp) is placed in the middle row so that arrows going up and down don't cross another row. The other rows are in order of first appearance.

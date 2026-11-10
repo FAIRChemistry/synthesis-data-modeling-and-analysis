@@ -1,0 +1,127 @@
+{
+  "run_id": "run_2026_07_16_10_24",
+  "case": "chemotion_eln",
+  "output_dir": "cases/chemotion_eln/output/run_2026_07_16_10_24",
+  "results_dir": "cases/chemotion_eln/output/run_2026_07_16_10_24/results",
+  "previous_run": "cases/chemotion_eln/output/run_2026_07_15_16_49",
+  "total": 11,
+  "successes": [
+    {
+      "record_id": "AD-R10",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_16_10_24/results/AD-R10.json",
+      "usage": {
+        "prompt_tokens": 13371,
+        "completion_tokens": 17050,
+        "total_tokens": 30421
+      }
+    },
+    {
+      "record_id": "AD-R11",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_16_10_24/results/AD-R11.json",
+      "usage": {
+        "prompt_tokens": 14084,
+        "completion_tokens": 17134,
+        "total_tokens": 31218
+      }
+    },
+    {
+      "record_id": "AD-R17",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_16_10_24/results/AD-R17.json",
+      "usage": {
+        "prompt_tokens": 13838,
+        "completion_tokens": 12704,
+        "total_tokens": 26542
+      }
+    },
+    {
+      "record_id": "AD-R18",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_16_10_24/results/AD-R18.json",
+      "usage": {
+        "prompt_tokens": 14216,
+        "completion_tokens": 13983,
+        "total_tokens": 28199
+      }
+    },
+    {
+      "record_id": "AD-R27",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_16_10_24/results/AD-R27.json",
+      "usage": {
+        "prompt_tokens": 13982,
+        "completion_tokens": 11890,
+        "total_tokens": 25872
+      }
+    },
+    {
+      "record_id": "AD-R6",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_16_10_24/results/AD-R6.json",
+      "usage": {
+        "prompt_tokens": 13788,
+        "completion_tokens": 17437,
+        "total_tokens": 31225
+      }
+    },
+    {
+      "record_id": "AD-R8",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_16_10_24/results/AD-R8.json",
+      "usage": {
+        "prompt_tokens": 13626,
+        "completion_tokens": 14276,
+        "total_tokens": 27902
+      }
+    },
+    {
+      "record_id": "AD-R9",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_16_10_24/results/AD-R9.json",
+      "usage": {
+        "prompt_tokens": 14021,
+        "completion_tokens": 13305,
+        "total_tokens": 27326
+      }
+    },
+    {
+      "record_id": "ZAR-438",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_16_10_24/results/ZAR-438.json",
+      "usage": {
+        "prompt_tokens": 13291,
+        "completion_tokens": 16545,
+        "total_tokens": 29836
+      }
+    },
+    {
+      "record_id": "ZAR-439",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_16_10_24/results/ZAR-439.json",
+      "usage": {
+        "prompt_tokens": 13506,
+        "completion_tokens": 3975,
+        "total_tokens": 17481
+      }
+    }
+  ],
+  "validation_warnings": [
+    {
+      "record_id": "AD-R13",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_16_10_24/results/AD-R13.json",
+      "usage": {
+        "prompt_tokens": 13777,
+        "completion_tokens": 14006,
+        "total_tokens": 27783
+      },
+      "errors": [
+        "$.starting_materials.0: Additional properties are not allowed ('position' was unexpected)",
+        "$.starting_materials.1: Additional properties are not allowed ('position' was unexpected)",
+        "$.starting_materials.2: Additional properties are not allowed ('position' was unexpected)",
+        "$.starting_materials.3: Additional properties are not allowed ('position' was unexpected)",
+        "$.starting_materials.4: Additional properties are not allowed ('position' was unexpected)"
+      ]
+    }
+  ],
+  "failures": [],
+  "tokens": {
+    "prompt_tokens": 151500,
+    "completion_tokens": 152305,
+    "total_tokens": 303805,
+    "prompt_chars": 0,
+    "completion_chars": 0
+  },
+  "assembled_dir": "cases/chemotion_eln/output/run_2026_07_16_10_24/assembled"
+}

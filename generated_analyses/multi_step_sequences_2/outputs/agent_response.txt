@@ -1,0 +1,72 @@
+⏺ I've written and run generated_analyses/multi_step_sequences_2/multi_step_sequences.py. The
+  numbers match attempt 1 exactly, and all 39 selected product structures were resolved, none
+  by guessing. The script's self-checks pass. Earlier attempts and the paper are untouched.
+
+  Outputs (in generated_analyses/multi_step_sequences_2/outputs/):
+  - multi_step_routes.png (600 dpi) and multi_step_routes.pdf, 7 in wide. In the PDF the
+    structures are embedded 600 dpi images.
+  - chain_yields.csv, step_yields.csv, stage_statistics.csv, dependency_graph.json.
+  - structures.csv (new): one row per product drawn in each scheme, with its role (selected,
+    side product, or drawn without a table row), SMILES, InChI, InChIKey, RDKit vs. table
+    molar mass, and how it was resolved.
+
+  Agreement with attempt 1: the three CSVs are byte-identical. dependency_graph.json is
+  identical apart from the two new structure fields on each node. The overall yields are
+  unchanged: C083 8.1 %, C068 4.5 %, C091 9.8 %, and the fluorides 4.1 ± 1.2 %.
+
+  To rerun: RDKit isn't installed in this repo's Python, so I ran the script from a temporary
+  venv (pip install rdkit matplotlib olefile openpyxl, plus obabel on PATH). It imports
+  src/preprocess.py for the extraction. I didn't add rdkit to requirements.txt.
+
+  Structures and ambiguities
+  - 27 complete from the drawings: C045, C063, C068, C083, C087, C091 and the 21 fluorides.
+    The 8 fluoride records that already had an InChIKey in the JSON agree with the drawings.
+  - 12 resolved from labels. Open Babel turns these labels into a *. I replaced it only when
+    the drawing has exactly one known label, ChemDraw's stored atoms inside that label are the
+    expected ones, and the result matches the tabulated molar mass.
+    - NH3Cl in C044, C061 and C085 becomes the amine hydrochloride (181.66 g/mol).
+    - O2N in C065–C067, C080–C082 and C088–C090 becomes the 2-nitrophenyl group, i.e. the oNs
+      group.
+  - Unresolved: none. Anything that failed these checks would be drawn as "structure
+    unresolved" and listed as such in structures.csv.
+  - C083: the scheme draws the olefin and the tertiary alcohol. The selected olefin ("Olefin
+    rein", 382.48 g/mol) is shown. The alcohol (400.50) matches the side-product row "Alkohol
+    rein" and isn't shown. "Olefin verunreinigt" has the same structure as the selected
+    product but is an impure, non-selected fraction.
+  - C091: the alcohol is also drawn, but the record has no table row for it, so it's flagged
+    "drawn, no matching table row" and not shown.
+  - Fluoride group: all 21 products have the same InChIKey, so one drawing stands for the
+    group. The script stops with an error if they ever differ.
+  - Caveats:
+    - The structures show the drawn target compound, not what the fraction actually contained.
+      C087's selected "Misch Schutzgruppe" is a mixed fraction, and C088 combines sub-batches
+      a+b.
+    - Stereochemistry is as drawn in ChemDraw; I couldn't confirm it analytically.
+    - The SmI₂ (C068) and FeCl₃ (C083/C091) products are drawn with identical stereochemistry.
+
+  - 12 resolved from labels. Open Babel turns these labels into a *. I replaced it only when the drawing has exactly one known label, ChemDraw's stored atoms inside that label are the expected ones, and the result matches the tabulated
+    molar mass.
+    - NH3Cl in C044, C061 and C085 becomes the amine hydrochloride (181.66 g/mol).
+    - O2N in C065–C067, C080–C082 and C088–C090 becomes the 2-nitrophenyl group, i.e. the oNs group.
+  - Unresolved: none. Anything that failed these checks would be drawn as "structure unresolved" and listed as such in structures.csv.
+  - C083: the scheme draws the olefin and the tertiary alcohol. The selected olefin ("Olefin rein", 382.48 g/mol) is shown. The alcohol (400.50) matches the side-product row "Alkohol rein" and isn't shown. "Olefin verunreinigt" has the same
+    structure as the selected product but is an impure, non-selected fraction.
+  - C091: the alcohol is also drawn, but the record has no table row for it, so it's flagged "drawn, no matching table row" and not shown.
+  - Fluoride group: all 21 products have the same InChIKey, so one drawing stands for the group. The script stops with an error if they ever differ.
+  - Caveats:
+    - The structures show the drawn target compound, not what the fraction actually contained. C087's selected "Misch Schutzgruppe" is a mixed fraction, and C088 combines sub-batches a+b.
+    - Stereochemistry is as drawn in ChemDraw; I couldn't confirm it analytically.
+    - The SmI₂ (C068) and FeCl₃ (C083/C091) products are drawn with identical stereochemistry.
+
+  Figure changes: no boxes. Experiment IDs sit above each structure, and below it a disc in the yield colour plus the yield text. Hatched disc with † means carry-forward. The uncertainty labels (045c?, 088b?) and the reagents FeCl₃/SmI₂
+  moved onto the arrows. The six open-chain intermediate columns share one orientation so the ester → alcohol → aldehyde change is easy to follow. A bond is about 2 mm at 7 in width and atom labels are about 4.5 pt. If that's too small for
+  the journal, abbreviating the nosyl group as "Ns" would shrink the structures considerably.
+
+  Proposed caption
+
+  ▎ Multi-step synthesis routes reconstructed from journal references in the reagent names (e.g. 'Aminoester 065' → C065). Columns are shared reaction stages; each structure is the selected product of the experiment labelled above it,
+  ▎ extracted from the native ChemDraw scheme in the workbook. The disc and number below give the isolated step yield, coloured by yield. Overall yields are the product of the documented step yields only; precursors without a record
+  ▎ (bromoolefins C021, C064, C086; marked *) are not included. Dashed arrows mark uncertain links where the sub-batch label (045c, 088b) is not defined in the source record. Hatched discs (†) mark yields set to 100 % (product mass equals
+  ▎ the theoretical mass) where the record says the material was carried forward ("quant", "ohne Aufarbeitung", or used crude in the next step). The 21 hydrofluorinations of olefin C091 (C113–C132, C134), which all give the same fluoride,
+  ▎ are summarised as mean ± SD (range) of the step yields, with overall yields to the fluoride. Yield choices: C045 'sauber', C063 'Säule 2 (sauber)', C088 'tert. Amin a+b'. For C083, the tertiary alcohol side product is not shown.
+  ▎ Experiments without a resolved link (C133, C233–C242) are omitted.

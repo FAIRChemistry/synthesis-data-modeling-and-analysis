@@ -1,0 +1,31 @@
+Some experiments and results have not yet been published. The corresponding files and content will be added to this dataset once published.
+
+- WAT-Ch-113 Fluorierung Olefin geschützt FeOx_Selectfluor mehr waschen.json
+- WAT-Ch-114 Fluorierung Olefin geschützt FeNO3_Selectfluor.json
+- WAT-Ch-115 Fluorierung Olefin geschützt FeOx_Selectfluor mehr NH4OH quenchen.json
+- WAT-Ch-116 Fluorierung Olefin geschützt FeOx_Selectfluor weniger NH4OH quenchen.json
+- WAT-Ch-117 Fluorierung Olefin geschützt FeOx_Selectfluor 4 eq. SelF.json
+- WAT-Ch-118 Fluorierung Olefin geschützt FeOx_Selectfluor 1 eq. SelF.json
+- WAT-Ch-119 Fluorierung Olefin geschützt FeOx_Selectfluor 12 eq. NaBH4.json
+- WAT-Ch-120 Fluorierung Olefin geschützt FeOx_Selectfluor 3 eq. NaBH4.json
+- WAT-Ch-121 Fluorierung Olefin geschützt FeOx_Selectfluor 1 potion NaBH4.json
+- WAT-Ch-122 Fluorierung Olefin geschützt FeOx_Selectfluor 3 potion NaBH4.json
+- WAT-Ch-123 Fluorierung Olefin geschützt FeOx_Selectfluor 4 eq. FeOx.json
+- WAT-Ch-124 Fluorierung Olefin geschützt FeOx_Selectfluor 1 eq. FeOx.json
+- WAT-Ch-125 Fluorierung Olefin geschützt FeOx_Selectfluor full degas.json
+- WAT-Ch-126 Fluorierung Olefin geschützt FeOx_Selectfluor O2 atmosphere.json
+- WAT-Ch-127 Fluorierung Olefin geschützt FeOx_Selectfluor 75% Wasser.json
+- WAT-Ch-128 Fluorierung Olefin geschützt FeOx_Selectfluor 25% Wasser.json
+- WAT-Ch-129 Fluorierung Olefin geschützt FeOx_Selectfluor conc höher.json
+- WAT-Ch-130 Fluorierung Olefin geschützt FeOx_Selectfluor conc niedriger.json
+- WAT-Ch-131 Fluorierung Olefin geschützt FeOx_Selectfluor -20 °C.json
+- WAT-Ch-132 Fluorierung Olefin geschützt FeOx_Selectfluor RT.json
+- WAT-Ch-133 Fluorierung Olefin geschützt FeOx_Selectfluor standard.json
+- WAT-Ch-134 Fluorierung Olefin geschützt FeOx_Selectfluor DCM extr.json
+- WAT-Ch-233 Fluorierung HOL180 geschützt FeNO3_Selectfluor.json
+- WAT-Ch-234 Fluorierung HOL309 geschützt FeNO3_Selectfluor.json
+- WAT-Ch-238 Fluorierung HAU-12 FeNO3_Selectfluor.json
+- WAT-Ch-239 Fluorierung HAU-25A FeNO3_Selectfluor.json
+- WAT-Ch-240 Fluorierung JEN-15.2 OD1 FeNO3_Selectfluor.json
+- WAT-Ch-241 Fluorierung JEN48.1 FeNO3_Selectfluor.json
+- WAT-Ch-242 Fluorierung HOL-412 FeNO3_Selectfluor.json

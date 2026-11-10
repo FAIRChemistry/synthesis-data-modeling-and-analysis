@@ -1,0 +1,317 @@
+{
+  "journal_number": "AD-R11",
+  "date": "2026-01-19",
+  "reaction_name": "Synthesis of [Co(ttpp)(pba)2](OTf)",
+  "starting_materials": [
+    {
+      "name": "Co(ttpp)",
+      "note": "AD-31-1",
+      "molar_mass_g_mol": 1700.9695200000008,
+      "mass_g": 0.10129,
+      "amount_mmol": 0.05957,
+      "equivalents": 1,
+      "density_g_mL": null,
+      "smiles": "c1ccc(cc1)C(c1ccccc1)(c1ccccc1)Nc1ccc(cc1)/C/1=C/2\\C=CC(=N2)/C(=C\\2/C=CC(=N2)/C(=C/2\\N=C(/C(=C/3\\N=C1C=C3)/c1ccc(cc1)NC(c1ccccc1)(c1ccccc1)c1ccccc1)C=C2)/c1ccc(cc1)NC(c1ccccc1)(c1ccccc1)c1ccccc1)/c1ccc(cc1)NC(c1ccccc1)(c1ccccc1)c1ccccc1.[Co]",
+      "inchi": "InChI=1S/C120H88N8.Co/c1-13-37-89(38-14-1)117(90-39-15-2-16-40-90,91-41-17-3-18-42-91)125-101-69-61-85(62-70-101)113-105-77-79-107(121-105)114(86-63-71-102(72-64-86)126-118(92-43-19-4-20-44-92,93-45-21-5-22-46-93)94-47-23-6-24-48-94)109-81-83-111(123-109)116(88-67-75-104(76-68-88)128-120(98-55-31-10-32-56-98,99-57-33-11-34-58-99)100-59-35-12-36-60-100)112-84-82-110(124-112)115(108-80-78-106(113)122-108)87-65-73-103(74-66-87)127-119(95-49-25-7-26-50-95,96-51-27-8-28-52-96)97-53-29-9-30-54-97;/h1-84,125-128H;/b113-105-,113-106-,114-107-,114-109-,115-108-,115-110-,116-111-,116-112-;",
+      "inchikey": "CQKHAKPNMIKGJO-FIVSXPDESA-N"
+    },
+    {
+      "name": "AgOTf",
+      "note": "INV-29-1",
+      "molar_mass_g_mol": 256.93730959999994,
+      "mass_g": 0.0133,
+      "amount_mmol": 0.05177,
+      "equivalents": 0.8692694743437407,
+      "density_g_mL": null,
+      "smiles": "[Ag]OS(=O)(=O)C(F)(F)F",
+      "inchi": "InChI=1S/CHF3O3S.Ag/c2-1(3,4)8(5,6)7;/h(H,5,6,7);/q;+1/p-1",
+      "inchikey": "QRUBYZBWAOOHSV-UHFFFAOYSA-M"
+    },
+    {
+      "name": "p-bromoaniline",
+      "note": "INV-28-1",
+      "molar_mass_g_mol": 172.02254,
+      "mass_g": 0.05183,
+      "amount_mmol": 0.30127,
+      "equivalents": 5.059712184397385,
+      "density_g_mL": null,
+      "smiles": "Nc1ccc(cc1)Br",
+      "inchi": "InChI=1S/C6H6BrN/c7-5-1-3-6(8)4-2-5/h1-4H,8H2",
+      "inchikey": "WDFQBORIUYODSI-UHFFFAOYSA-N"
+    },
+    {
+      "name": "3-Mercaptopropyl Silica Gel",
+      "note": "INV-90-1",
+      "molar_mass_g_mol": null,
+      "mass_g": null,
+      "amount_mmol": null,
+      "equivalents": null,
+      "density_g_mL": null,
+      "inchikey": "DUMMY"
+    },
+    {
+      "name": "toluene",
+      "note": "solvent",
+      "molar_mass_g_mol": 92.13842000000001,
+      "volume_mL": 5.5,
+      "density_g_mL": 0.87,
+      "mass_g": 4.785,
+      "amount_mmol": 51.94,
+      "equivalents": 872.109749938254,
+      "smiles": "Cc1ccccc1",
+      "inchi": "InChI=1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3",
+      "inchikey": "YXFVVABEGXRONW-UHFFFAOYSA-N"
+    }
+  ],
+  "batch_volume_mL": 5.5,
+  "products": [
+    {
+      "name": "[Co(ttpp)(pba)2](OTf)",
+      "note": "AD-32",
+      "molar_mass_g_mol": 2194.0837096,
+      "yield_g": 0.08665,
+      "amount_mmol": 0.03951,
+      "yield_percent": 66.32012474846768,
+      "is_main_product": true,
+      "smiles": "c1ccc(cc1)C(c1ccccc1)(c1ccccc1)Nc1ccc(cc1)/C/1=C/2\\C=CC(=N2)/C(=c\\2/cc/c(=C(/C3=N/C(=C(\\c4[n-]c1cc4)/c1ccc(cc1)NC(c1ccccc1)(c1ccccc1)c1ccccc1)/C=C3)\\c1ccc(cc1)NC(c1ccccc1)(c1ccccc1)c1ccccc1)/[n-]2)/c1ccc(cc1)NC(c1ccccc1)(c1ccccc1)c1ccccc1.FC(S(=O)(=O)[O-])(F)F.Nc1ccc(cc1)Br.Nc1ccc(cc1)Br.[Co+3]",
+      "inchi": "InChI=1S/C120H88N8.2C6H6BrN.CHF3O3S.Co/c1-13-37-89(38-14-1)117(90-39-15-2-16-40-90,91-41-17-3-18-42-91)125-101-69-61-85(62-70-101)113-105-77-79-107(121-105)114(86-63-71-102(72-64-86)126-118(92-43-19-4-20-44-92,93-45-21-5-22-46-93)94-47-23-6-24-48-94)109-81-83-111(123-109)116(88-67-75-104(76-68-88)128-120(98-55-31-10-32-56-98,99-57-33-11-34-58-99)100-59-35-12-36-60-100)112-84-82-110(124-112)115(108-80-78-106(113)122-108)87-65-73-103(74-66-87)127-119(95-49-25-7-26-50-95,96-51-27-8-28-52-96)97-53-29-9-30-54-97;2*7-5-1-3-6(8)4-2-5;2-1(3,4)8(5,6)7;/h1-84,125-128H;2*1-4H,8H2;(H,5,6,7);/q-2;;;;+3/p-1/b113-105-,113-106-,114-107-,114-109-,115-108-,115-110-,116-111-,116-112-;;;;",
+      "inchikey": "RGBMOYUOAVQVEQ-BXFYCLSASA-M",
+      "appearance": null
+    }
+  ],
+  "procedure": {
+    "Prep": {
+      "Step": [
+        {
+          "$xml_type": "Add",
+          "_vessel": "5 mL vial",
+          "_reagent": "AgOTf",
+          "_amount": {
+            "Unit": "gram",
+            "Value": 0.0133
+          },
+          "_dropwise": false,
+          "_comment": "AgOTf/toluene solution preparation: 5 mL vial into GB --> AgOTf (0.0133 g) --> Out of GB"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "5 mL vial",
+          "_reagent": "toluene",
+          "_amount": {
+            "Unit": "microlitre",
+            "Value": 500
+          },
+          "_dropwise": false,
+          "_comment": "5 mL vial --> AgOTf from the vial: 0.0133 g --> Toluene 500 μL [should have been prepared as a stock solution with a certain concentration and in >10% excess volume]"
+        }
+      ]
+    },
+    "Reaction": {
+      "Step": [
+        {
+          "$xml_type": "Add",
+          "_vessel": "10 mL flask",
+          "_reagent": "Co(ttpp)",
+          "_dropwise": false,
+          "_comment": "Reaction: Co(ttpp)"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "10 mL flask",
+          "_reagent": "p-bromoaniline",
+          "_dropwise": false,
+          "_comment": "PBA"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "10 mL flask",
+          "_reagent": "toluene",
+          "_amount": {
+            "Unit": "millilitre",
+            "Value": 5
+          },
+          "_dropwise": false,
+          "_comment": "Add 5 mL toluene"
+        },
+        {
+          "$xml_type": "Sonicate",
+          "_vessel": "10 mL flask",
+          "_time": {
+            "Unit": "minute",
+            "Value": 3
+          },
+          "_comment": "sonicate 3 min. (dissolved) --> add stir bar (14:07) [stir bar should have been added in step 1]"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "10 mL flask",
+          "_reagent": "AgOTf",
+          "_dropwise": true,
+          "_comment": "AgOTf/toluene (whole) dropwise w/ micropipette while stirring [volume of used stock solution should be calculated according to the required amount]"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "10 mL flask",
+          "_reagent": "toluene",
+          "_amount": {
+            "Unit": "microlitre",
+            "Value": 500
+          },
+          "_dropwise": true,
+          "_comment": "AgOTf/toluene (whole) dropwise w/ micropipette while stirring [volume of used stock solution should be calculated according to the required amount]"
+        },
+        {
+          "$xml_type": "Wait",
+          "_vessel": "10 mL flask",
+          "_time": {
+            "Unit": "hour",
+            "Value": 1
+          },
+          "_comment": "1 hour of stirring"
+        },
+        {
+          "$xml_type": "Wait",
+          "_vessel": "10 mL flask",
+          "_time": {
+            "Unit": "day",
+            "Value": 0.5
+          },
+          "_comment": "o/n"
+        }
+      ]
+    },
+    "Workup": {
+      "Step": [
+        {
+          "$xml_type": "Evaporate",
+          "_vessel": "10 mL flask",
+          "_method": "rotary_evaporator",
+          "_temp": {
+            "Unit": "celsius",
+            "Value": 40
+          },
+          "_comment": "Workup: Rotovap (40 °C) (1:30 h)"
+        },
+        {
+          "$xml_type": "Dry",
+          "_vessel": "10 mL flask",
+          "_time": {
+            "Unit": "minute",
+            "Value": 30
+          },
+          "_comment": "vacuum for 30 min"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "10 mL flask",
+          "_reagent": "DCM",
+          "_amount": {
+            "Unit": "millilitre",
+            "Value": 5
+          },
+          "_dropwise": false,
+          "_comment": "Add 5 mL DCM"
+        },
+        {
+          "$xml_type": "Sonicate",
+          "_vessel": "10 mL flask",
+          "_time": {
+            "Unit": "minute",
+            "Value": 5
+          },
+          "_comment": "manually stirred and sonicated for 5 min (dissolved)"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "10 mL flask",
+          "_reagent": "3-Mercaptopropyl Silica Gel",
+          "_amount": {
+            "Unit": "gram",
+            "Value": 0.196
+          },
+          "_dropwise": false,
+          "_comment": "Si-SH (0.196 g)"
+        },
+        {
+          "$xml_type": "Wait",
+          "_vessel": "10 mL flask",
+          "_time": {
+            "Unit": "hour",
+            "Value": 2
+          },
+          "_comment": "stir (1000 rpm, 2 h) 12:45 --> 14:45 [stirring does not need to be this fast]"
+        },
+        {
+          "$xml_type": "Filter",
+          "_vessel": "100 mL RBF",
+          "_rinse": [
+            {
+              "name": "DCM",
+              "amount": {
+                "Unit": "millilitre",
+                "Value": 15
+              }
+            }
+          ],
+          "_comment": "12 mL plastic syringe, cotton plug (compressed), syringe filter (⌀ 25 mm, 0.45 μm, PTFE), 100 mL RBF; filtered, transferred, and rinsed w/ 15 mL DCM (until pale green)"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "100 mL RBF",
+          "_reagent": "n-hexane",
+          "_amount": {
+            "Unit": "millilitre",
+            "Value": 90
+          },
+          "_dropwise": false,
+          "_comment": "Hexane 90 mL; manually stirred and sonicated"
+        },
+        {
+          "$xml_type": "HeatChill",
+          "_vessel": "100 mL RBF",
+          "_temp": {
+            "Unit": "celsius",
+            "Value": 4
+          },
+          "_time": {
+            "Unit": "day",
+            "Value": 4
+          },
+          "_comment": "Fridge: 4 days (15:30)"
+        },
+        {
+          "$xml_type": "Filter",
+          "_vessel": "Filter",
+          "_product_portion": "residue",
+          "_rinse": [
+            {
+              "name": "DCM + n-hexane"
+            },
+            {
+              "name": "n-hexane"
+            }
+          ],
+          "_comment": "Filter paper (90 mm, 15A), glass funnel, suction adapter --> 100 mL RBF; Filtered and transferred w/ 2 x (3 mL DCM + 20 mL hexane) (orange filtrate, green residue); Rinsed w/ hexane 4 x 4 mL"
+        },
+        {
+          "$xml_type": "Dry",
+          "_vessel": "Filter",
+          "_time": {
+            "Unit": "minute",
+            "Value": 1
+          },
+          "_comment": "Dried w/ suction for 1 min"
+        },
+        {
+          "$xml_type": "Dry",
+          "_vessel": "20 mL screw vial",
+          "_time": {
+            "Unit": "day",
+            "Value": 0.5
+          },
+          "_comment": "20 mL screw vial (tare wt of vial (7.85387 g)); Vacuum o/n"
+        }
+      ]
+    }
+  }
+}

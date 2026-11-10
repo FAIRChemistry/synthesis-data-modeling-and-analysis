@@ -1,0 +1,256 @@
+{
+  "journal_number": "WAT-Ch-063",
+  "date": "2023-11-22",
+  "researcher": "Timo Watzenborn",
+  "research_group": "AK Laschat",
+  "project_type": "Promotion",
+  "reaction_name": "L-Ile oNs-Schützung",
+  "starting_materials": [
+    {
+      "name": "L-Ile-Me HCl 061",
+      "molar_mass_g_mol": 215.68,
+      "equivalents": 1,
+      "density_g_mL": null,
+      "concentration_mol_L": 0.289,
+      "volume_mL": null,
+      "mass_fraction_percent": null,
+      "amount_mmol": 19.24146884272997,
+      "mass_g": 4.15,
+      "batch_concentration_mol_L": 0.288622532,
+      "role": "limiting_reagent",
+      "note": null
+    },
+    {
+      "name": "2-NsCl",
+      "molar_mass_g_mol": 221.62,
+      "equivalents": 1.3,
+      "density_g_mL": null,
+      "concentration_mol_L": 0.375,
+      "volume_mL": null,
+      "mass_fraction_percent": null,
+      "amount_mmol": 25.013909495548962,
+      "mass_g": 5.5435826224035605,
+      "batch_concentration_mol_L": 0.37520865,
+      "role": "reagent",
+      "note": null
+    },
+    {
+      "name": "Triethylamin",
+      "molar_mass_g_mol": 101.19,
+      "equivalents": 2.5,
+      "density_g_mL": 0.73,
+      "concentration_mol_L": 0.722,
+      "volume_mL": 6.667959699300842,
+      "mass_fraction_percent": null,
+      "amount_mmol": 48.103672106824924,
+      "mass_g": 4.867610580489614,
+      "batch_concentration_mol_L": 0.721555081,
+      "role": "base",
+      "note": null
+    },
+    {
+      "name": "DCM (2-NsCl)",
+      "molar_mass_g_mol": null,
+      "equivalents": null,
+      "density_g_mL": null,
+      "concentration_mol_L": null,
+      "volume_mL": 10,
+      "mass_fraction_percent": null,
+      "amount_mmol": null,
+      "mass_g": null,
+      "batch_concentration_mol_L": null,
+      "role": "solvent",
+      "note": "für 2-NsCl"
+    },
+    {
+      "name": "DCM",
+      "molar_mass_g_mol": null,
+      "equivalents": null,
+      "density_g_mL": null,
+      "concentration_mol_L": null,
+      "volume_mL": 50,
+      "mass_fraction_percent": null,
+      "amount_mmol": null,
+      "mass_g": null,
+      "batch_concentration_mol_L": null,
+      "role": "solvent",
+      "note": null
+    }
+  ],
+  "batch_volume_mL": 66.66795969930084,
+  "products": [
+    {
+      "name": "Fr 15-27 (Misch)",
+      "molar_mass_g_mol": 330.36,
+      "yield_g": 0.5839999999999996,
+      "amount_mmol": 1.7677684949751775,
+      "yield_percent": 9.187284554126416,
+      "appearance": null,
+      "rf_value": null,
+      "eluent_system": null,
+      "nmr_data": "063a",
+      "is_main_product": null
+    },
+    {
+      "name": "Fr 28-NL (fast sauber)",
+      "molar_mass_g_mol": 330.36,
+      "yield_g": 2.259999999999998,
+      "amount_mmol": 6.84102191548613,
+      "yield_percent": 35.55353269233852,
+      "appearance": null,
+      "rf_value": null,
+      "eluent_system": null,
+      "nmr_data": "063b",
+      "is_main_product": null
+    },
+    {
+      "name": "Säule 2 (sauber)",
+      "molar_mass_g_mol": 330.36,
+      "yield_g": 1.8709999999999987,
+      "amount_mmol": 5.6635185857852,
+      "yield_percent": 29.43392020679884,
+      "appearance": null,
+      "rf_value": null,
+      "eluent_system": null,
+      "nmr_data": "063'",
+      "is_main_product": null
+    }
+  ],
+  "procedure": {
+    "Prep": {
+      "Step": [
+        {
+          "$xml_type": "EvacuateAndRefill",
+          "_gas": "N2"
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "DCM",
+          "_amount": {
+            "Value": 50,
+            "Unit": "millilitre"
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "L-Ile-Me HCl 061",
+          "_amount": {
+            "Value": 4.15,
+            "Unit": "gram"
+          },
+          "_comment": "Aminosäureester in DCM lösen"
+        },
+        {
+          "$xml_type": "HeatChill",
+          "_temp": {
+            "Value": 0,
+            "Unit": "celsius"
+          },
+          "_comment": "auf 0 °C kühlen; Dauer nicht angegeben"
+        }
+      ]
+    },
+    "Reaction": {
+      "Step": [
+        {
+          "$xml_type": "Add",
+          "_reagent": "DCM (2-NsCl)",
+          "_amount": {
+            "Value": 10,
+            "Unit": "millilitre"
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "2-NsCl",
+          "_amount": {
+            "Value": 5.5435826224035605,
+            "Unit": "gram"
+          },
+          "_dropwise": true
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "Triethylamin",
+          "_amount": {
+            "Value": 6.667959699300842,
+            "Unit": "millilitre"
+          }
+        },
+        {
+          "$xml_type": "HeatChill",
+          "_temp": {
+            "Value": 25,
+            "Unit": "celsius"
+          }
+        },
+        {
+          "$xml_type": "Wait",
+          "_time": {
+            "Value": 18,
+            "Unit": "hour"
+          },
+          "_comment": "rühren für 18 h bei RT"
+        }
+      ]
+    },
+    "Workup": {
+      "Step": [
+        {
+          "$xml_type": "Add",
+          "_reagent": "1M HCl",
+          "_comment": "für Phasentrennung"
+        },
+        {
+          "$xml_type": "Extract",
+          "_solvent": "DCM",
+          "_phase_kept": "organic",
+          "_repeat": 1,
+          "_comment": "wässrige Phase extrahieren"
+        },
+        {
+          "$xml_type": "WashPhase",
+          "_solution": "Wasser",
+          "_phase": "organic",
+          "_repeat": 3
+        },
+        {
+          "$xml_type": "Dry",
+          "_comment": "Trocknen"
+        },
+        {
+          "$xml_type": "Evaporate",
+          "_comment": "LM entfernen"
+        },
+        {
+          "$xml_type": "Purify",
+          "_eluent": "Pe/EtOAc 5:1 -> 3:1"
+        }
+      ]
+    }
+  },
+  "tlc_conditions": null,
+  "observations": "Note: Rkt unter Pseudo-Schutzgas",
+  "reagent_sources": [
+    {
+      "reagent_name": "L-Ile-Me HCl 061",
+      "source": "Abzug"
+    },
+    {
+      "reagent_name": "2-NsCl",
+      "source": "169 K-A3"
+    },
+    {
+      "reagent_name": "Triethylamin",
+      "source": "Destille Manni"
+    },
+    {
+      "reagent_name": "DCM (2-NsCl)",
+      "source": null
+    },
+    {
+      "reagent_name": "DCM",
+      "source": null
+    }
+  ]
+}

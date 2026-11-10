@@ -1,0 +1,922 @@
+{
+  "source_file": "cases/excel_workbooks/input/workbooks/WAT-Ch-083 Cyclisierung Ile FeCl3 crude Aldehyd.xlsx",
+  "source_filename": "WAT-Ch-083 Cyclisierung Ile FeCl3 crude Aldehyd.xlsx",
+  "preprocessor": {
+    "library": "openpyxl",
+    "mode": "profile",
+    "options": {
+      "data_only": true,
+      "read_only": true,
+      "formatting_images_and_charts": "not extracted",
+      "profile_name": "chem_lab_journal",
+      "embedded_chemdraw": "extracted as CDX via Open Babel"
+    }
+  },
+  "sheets": [
+    {
+      "sheet_name": "WAT-Ch-XXX",
+      "max_row": 47,
+      "max_column": 13,
+      "merged_ranges": [],
+      "non_empty_rows": [
+        [
+          "Laborjournal",
+          "Nr.:",
+          "WAT-Ch-083"
+        ],
+        [
+          "Timo Watzenborn"
+        ],
+        [
+          "Promotion",
+          "Angesetzt am:",
+          "2024-07-03"
+        ],
+        [
+          "AK Laschat"
+        ],
+        [
+          "Edukte",
+          "eingesetzte\nMenge",
+          "Ansatz"
+        ],
+        [
+          "M",
+          "eq",
+          "Dichte",
+          "c",
+          "V",
+          "w",
+          "n",
+          120
+        ],
+        [
+          "g/mol",
+          "g/mL",
+          "mol/L",
+          "mL",
+          "%",
+          "mmol",
+          "g",
+          "mL",
+          "enthalten"
+        ],
+        [
+          "Aminoaldehyd 082",
+          382.48,
+          1,
+          10.550617025726835,
+          4.0354,
+          "0,088 mol/L"
+        ],
+        [
+          "FeCl3 (Schlenk)",
+          162.21,
+          2,
+          21.10123405145367,
+          3.4228311754863,
+          "0,176 mol/L"
+        ],
+        [
+          "DCM (Aldehyd)",
+          100,
+          100
+        ],
+        [
+          "DEE (FeCl3)",
+          20,
+          20
+        ],
+        [
+          "Produkte"
+        ],
+        [
+          "M",
+          "Ausw.",
+          "n",
+          "Ausb."
+        ],
+        [
+          "g/mol",
+          "g",
+          "mmol",
+          "%",
+          "Habitus",
+          "Rf",
+          "Laufmittel",
+          "NMR"
+        ],
+        [
+          "Olefin verunreinigt",
+          382.48,
+          0.4949999999999992,
+          1.2941853168793118,
+          12.266441988402617
+        ],
+        [
+          "Olefin rein",
+          382.48,
+          1.2920000000000016,
+          3.3779544028445976,
+          32.01665262427521
+        ],
+        [
+          "Alkohol rein",
+          400.49,
+          0.3149999999999977,
+          0.7865364927963189,
+          7.45488620123745
+        ],
+        [
+          "Vorschrift:",
+          "DC:",
+          "Beobachtungen:"
+        ],
+        [
+          "Aminoaldehyd wird unter N2 in DCM gelöst und auf 0 °C gekühlt. Dann langsame Zugabe von FeCl3-Lsg (1 M in DEE). Die Reaktion wird ü.N. bei RT gerührt, dann mit 2M NaOH neutralisiert, mit DCM extrahiert und über MgSO4 getrocknet. Das Lösungsmittel wird am Roti entfernt und das Produkt wird durch Säulen (Pe/EtOAc 2:1 -> 1:1 -> 1:2) gereinigt. ",
+          "Achtung: großen Kolben mit möglichst breiter Oberfläche nehmen, langsam Lösung zutropfen und auf T achten!"
+        ],
+        [
+          "Herkunft der Edukte:"
+        ],
+        [
+          "Aminoaldehyd 082",
+          "Bench"
+        ],
+        [
+          "FeCl3 (Schlenk)",
+          "Kühlschrank"
+        ],
+        [
+          "DCM (Aldehyd)"
+        ],
+        [
+          "DEE (FeCl3)"
+        ],
+        [
+          "Literatur:"
+        ]
+      ],
+      "non_empty_cells": [
+        {
+          "address": "B1",
+          "row": 1,
+          "col": 2,
+          "value": "Laborjournal",
+          "python_type": "str"
+        },
+        {
+          "address": "I1",
+          "row": 1,
+          "col": 9,
+          "value": "Nr.:",
+          "python_type": "str"
+        },
+        {
+          "address": "J1",
+          "row": 1,
+          "col": 10,
+          "value": "WAT-Ch-083",
+          "python_type": "str"
+        },
+        {
+          "address": "A2",
+          "row": 2,
+          "col": 1,
+          "value": "Timo Watzenborn",
+          "python_type": "str"
+        },
+        {
+          "address": "A3",
+          "row": 3,
+          "col": 1,
+          "value": "Promotion",
+          "python_type": "str"
+        },
+        {
+          "address": "H3",
+          "row": 3,
+          "col": 8,
+          "value": "Angesetzt am:",
+          "python_type": "str"
+        },
+        {
+          "address": "J3",
+          "row": 3,
+          "col": 10,
+          "value": "2024-07-03",
+          "python_type": "datetime"
+        },
+        {
+          "address": "A4",
+          "row": 4,
+          "col": 1,
+          "value": "AK Laschat",
+          "python_type": "str"
+        },
+        {
+          "address": "A7",
+          "row": 7,
+          "col": 1,
+          "value": "Edukte",
+          "python_type": "str"
+        },
+        {
+          "address": "I7",
+          "row": 7,
+          "col": 9,
+          "value": "eingesetzte\nMenge",
+          "python_type": "str"
+        },
+        {
+          "address": "K7",
+          "row": 7,
+          "col": 11,
+          "value": "Ansatz",
+          "python_type": "str"
+        },
+        {
+          "address": "B8",
+          "row": 8,
+          "col": 2,
+          "value": "M",
+          "python_type": "str"
+        },
+        {
+          "address": "C8",
+          "row": 8,
+          "col": 3,
+          "value": "eq",
+          "python_type": "str"
+        },
+        {
+          "address": "D8",
+          "row": 8,
+          "col": 4,
+          "value": "Dichte",
+          "python_type": "str"
+        },
+        {
+          "address": "E8",
+          "row": 8,
+          "col": 5,
+          "value": "c",
+          "python_type": "str"
+        },
+        {
+          "address": "F8",
+          "row": 8,
+          "col": 6,
+          "value": "V",
+          "python_type": "str"
+        },
+        {
+          "address": "G8",
+          "row": 8,
+          "col": 7,
+          "value": "w",
+          "python_type": "str"
+        },
+        {
+          "address": "H8",
+          "row": 8,
+          "col": 8,
+          "value": "n",
+          "python_type": "str"
+        },
+        {
+          "address": "K8",
+          "row": 8,
+          "col": 11,
+          "value": 120,
+          "python_type": "int"
+        },
+        {
+          "address": "B9",
+          "row": 9,
+          "col": 2,
+          "value": "g/mol",
+          "python_type": "str"
+        },
+        {
+          "address": "D9",
+          "row": 9,
+          "col": 4,
+          "value": "g/mL",
+          "python_type": "str"
+        },
+        {
+          "address": "E9",
+          "row": 9,
+          "col": 5,
+          "value": "mol/L",
+          "python_type": "str"
+        },
+        {
+          "address": "F9",
+          "row": 9,
+          "col": 6,
+          "value": "mL",
+          "python_type": "str"
+        },
+        {
+          "address": "G9",
+          "row": 9,
+          "col": 7,
+          "value": "%",
+          "python_type": "str"
+        },
+        {
+          "address": "H9",
+          "row": 9,
+          "col": 8,
+          "value": "mmol",
+          "python_type": "str"
+        },
+        {
+          "address": "I9",
+          "row": 9,
+          "col": 9,
+          "value": "g",
+          "python_type": "str"
+        },
+        {
+          "address": "J9",
+          "row": 9,
+          "col": 10,
+          "value": "mL",
+          "python_type": "str"
+        },
+        {
+          "address": "K9",
+          "row": 9,
+          "col": 11,
+          "value": "enthalten",
+          "python_type": "str"
+        },
+        {
+          "address": "A10",
+          "row": 10,
+          "col": 1,
+          "value": "Aminoaldehyd 082",
+          "python_type": "str"
+        },
+        {
+          "address": "B10",
+          "row": 10,
+          "col": 2,
+          "value": 382.48,
+          "python_type": "float"
+        },
+        {
+          "address": "C10",
+          "row": 10,
+          "col": 3,
+          "value": 1,
+          "python_type": "int"
+        },
+        {
+          "address": "H10",
+          "row": 10,
+          "col": 8,
+          "value": 10.550617025726835,
+          "python_type": "float"
+        },
+        {
+          "address": "I10",
+          "row": 10,
+          "col": 9,
+          "value": 4.0354,
+          "python_type": "float"
+        },
+        {
+          "address": "K10",
+          "row": 10,
+          "col": 11,
+          "value": "0,088 mol/L",
+          "python_type": "str"
+        },
+        {
+          "address": "A11",
+          "row": 11,
+          "col": 1,
+          "value": "FeCl3 (Schlenk)",
+          "python_type": "str"
+        },
+        {
+          "address": "B11",
+          "row": 11,
+          "col": 2,
+          "value": 162.21,
+          "python_type": "float"
+        },
+        {
+          "address": "C11",
+          "row": 11,
+          "col": 3,
+          "value": 2,
+          "python_type": "int"
+        },
+        {
+          "address": "H11",
+          "row": 11,
+          "col": 8,
+          "value": 21.10123405145367,
+          "python_type": "float"
+        },
+        {
+          "address": "I11",
+          "row": 11,
+          "col": 9,
+          "value": 3.4228311754863,
+          "python_type": "float"
+        },
+        {
+          "address": "K11",
+          "row": 11,
+          "col": 11,
+          "value": "0,176 mol/L",
+          "python_type": "str"
+        },
+        {
+          "address": "A13",
+          "row": 13,
+          "col": 1,
+          "value": "DCM (Aldehyd)",
+          "python_type": "str"
+        },
+        {
+          "address": "F13",
+          "row": 13,
+          "col": 6,
+          "value": 100,
+          "python_type": "int"
+        },
+        {
+          "address": "J13",
+          "row": 13,
+          "col": 10,
+          "value": 100,
+          "python_type": "int"
+        },
+        {
+          "address": "A14",
+          "row": 14,
+          "col": 1,
+          "value": "DEE (FeCl3)",
+          "python_type": "str"
+        },
+        {
+          "address": "F14",
+          "row": 14,
+          "col": 6,
+          "value": 20,
+          "python_type": "int"
+        },
+        {
+          "address": "J14",
+          "row": 14,
+          "col": 10,
+          "value": 20,
+          "python_type": "int"
+        },
+        {
+          "address": "A19",
+          "row": 19,
+          "col": 1,
+          "value": "Produkte",
+          "python_type": "str"
+        },
+        {
+          "address": "B20",
+          "row": 20,
+          "col": 2,
+          "value": "M",
+          "python_type": "str"
+        },
+        {
+          "address": "C20",
+          "row": 20,
+          "col": 3,
+          "value": "Ausw.",
+          "python_type": "str"
+        },
+        {
+          "address": "D20",
+          "row": 20,
+          "col": 4,
+          "value": "n",
+          "python_type": "str"
+        },
+        {
+          "address": "E20",
+          "row": 20,
+          "col": 5,
+          "value": "Ausb.",
+          "python_type": "str"
+        },
+        {
+          "address": "B21",
+          "row": 21,
+          "col": 2,
+          "value": "g/mol",
+          "python_type": "str"
+        },
+        {
+          "address": "C21",
+          "row": 21,
+          "col": 3,
+          "value": "g",
+          "python_type": "str"
+        },
+        {
+          "address": "D21",
+          "row": 21,
+          "col": 4,
+          "value": "mmol",
+          "python_type": "str"
+        },
+        {
+          "address": "E21",
+          "row": 21,
+          "col": 5,
+          "value": "%",
+          "python_type": "str"
+        },
+        {
+          "address": "F21",
+          "row": 21,
+          "col": 6,
+          "value": "Habitus",
+          "python_type": "str"
+        },
+        {
+          "address": "G21",
+          "row": 21,
+          "col": 7,
+          "value": "Rf",
+          "python_type": "str"
+        },
+        {
+          "address": "H21",
+          "row": 21,
+          "col": 8,
+          "value": "Laufmittel",
+          "python_type": "str"
+        },
+        {
+          "address": "J21",
+          "row": 21,
+          "col": 10,
+          "value": "NMR",
+          "python_type": "str"
+        },
+        {
+          "address": "A22",
+          "row": 22,
+          "col": 1,
+          "value": "Olefin verunreinigt",
+          "python_type": "str"
+        },
+        {
+          "address": "B22",
+          "row": 22,
+          "col": 2,
+          "value": 382.48,
+          "python_type": "float"
+        },
+        {
+          "address": "C22",
+          "row": 22,
+          "col": 3,
+          "value": 0.4949999999999992,
+          "python_type": "float"
+        },
+        {
+          "address": "D22",
+          "row": 22,
+          "col": 4,
+          "value": 1.2941853168793118,
+          "python_type": "float"
+        },
+        {
+          "address": "E22",
+          "row": 22,
+          "col": 5,
+          "value": 12.266441988402617,
+          "python_type": "float"
+        },
+        {
+          "address": "A23",
+          "row": 23,
+          "col": 1,
+          "value": "Olefin rein",
+          "python_type": "str"
+        },
+        {
+          "address": "B23",
+          "row": 23,
+          "col": 2,
+          "value": 382.48,
+          "python_type": "float"
+        },
+        {
+          "address": "C23",
+          "row": 23,
+          "col": 3,
+          "value": 1.2920000000000016,
+          "python_type": "float"
+        },
+        {
+          "address": "D23",
+          "row": 23,
+          "col": 4,
+          "value": 3.3779544028445976,
+          "python_type": "float"
+        },
+        {
+          "address": "E23",
+          "row": 23,
+          "col": 5,
+          "value": 32.01665262427521,
+          "python_type": "float"
+        },
+        {
+          "address": "A24",
+          "row": 24,
+          "col": 1,
+          "value": "Alkohol rein",
+          "python_type": "str"
+        },
+        {
+          "address": "B24",
+          "row": 24,
+          "col": 2,
+          "value": 400.49,
+          "python_type": "float"
+        },
+        {
+          "address": "C24",
+          "row": 24,
+          "col": 3,
+          "value": 0.3149999999999977,
+          "python_type": "float"
+        },
+        {
+          "address": "D24",
+          "row": 24,
+          "col": 4,
+          "value": 0.7865364927963189,
+          "python_type": "float"
+        },
+        {
+          "address": "E24",
+          "row": 24,
+          "col": 5,
+          "value": 7.45488620123745,
+          "python_type": "float"
+        },
+        {
+          "address": "A27",
+          "row": 27,
+          "col": 1,
+          "value": "Vorschrift:",
+          "python_type": "str"
+        },
+        {
+          "address": "E27",
+          "row": 27,
+          "col": 5,
+          "value": "DC:",
+          "python_type": "str"
+        },
+        {
+          "address": "H27",
+          "row": 27,
+          "col": 8,
+          "value": "Beobachtungen:",
+          "python_type": "str"
+        },
+        {
+          "address": "A28",
+          "row": 28,
+          "col": 1,
+          "value": "Aminoaldehyd wird unter N2 in DCM gelöst und auf 0 °C gekühlt. Dann langsame Zugabe von FeCl3-Lsg (1 M in DEE). Die Reaktion wird ü.N. bei RT gerührt, dann mit 2M NaOH neutralisiert, mit DCM extrahiert und über MgSO4 getrocknet. Das Lösungsmittel wird am Roti entfernt und das Produkt wird durch Säulen (Pe/EtOAc 2:1 -> 1:1 -> 1:2) gereinigt. ",
+          "python_type": "str"
+        },
+        {
+          "address": "H28",
+          "row": 28,
+          "col": 8,
+          "value": "Achtung: großen Kolben mit möglichst breiter Oberfläche nehmen, langsam Lösung zutropfen und auf T achten!",
+          "python_type": "str"
+        },
+        {
+          "address": "H36",
+          "row": 36,
+          "col": 8,
+          "value": "Herkunft der Edukte:",
+          "python_type": "str"
+        },
+        {
+          "address": "H37",
+          "row": 37,
+          "col": 8,
+          "value": "Aminoaldehyd 082",
+          "python_type": "str"
+        },
+        {
+          "address": "J37",
+          "row": 37,
+          "col": 10,
+          "value": "Bench",
+          "python_type": "str"
+        },
+        {
+          "address": "H38",
+          "row": 38,
+          "col": 8,
+          "value": "FeCl3 (Schlenk)",
+          "python_type": "str"
+        },
+        {
+          "address": "J38",
+          "row": 38,
+          "col": 10,
+          "value": "Kühlschrank",
+          "python_type": "str"
+        },
+        {
+          "address": "H40",
+          "row": 40,
+          "col": 8,
+          "value": "DCM (Aldehyd)",
+          "python_type": "str"
+        },
+        {
+          "address": "H41",
+          "row": 41,
+          "col": 8,
+          "value": "DEE (FeCl3)",
+          "python_type": "str"
+        },
+        {
+          "address": "A44",
+          "row": 44,
+          "col": 1,
+          "value": "Literatur:",
+          "python_type": "str"
+        }
+      ],
+      "profile_summary": {
+        "profile_name": "chem_lab_journal",
+        "label_positions": {
+          "starting_materials": {
+            "address": "A7",
+            "row": 7,
+            "col": 1,
+            "label": "Edukte"
+          },
+          "products": {
+            "address": "A19",
+            "row": 19,
+            "col": 1,
+            "label": "Produkte"
+          },
+          "procedure": {
+            "address": "A27",
+            "row": 27,
+            "col": 1,
+            "label": "Vorschrift:"
+          },
+          "tlc_conditions": {
+            "address": "E27",
+            "row": 27,
+            "col": 5,
+            "label": "DC:"
+          },
+          "observations": {
+            "address": "H27",
+            "row": 27,
+            "col": 8,
+            "label": "Beobachtungen:"
+          },
+          "reagent_sources": {
+            "address": "H36",
+            "row": 36,
+            "col": 8,
+            "label": "Herkunft der Edukte:"
+          },
+          "literature": {
+            "address": "A44",
+            "row": 44,
+            "col": 1,
+            "label": "Literatur:"
+          }
+        },
+        "metadata": {
+          "journal_number": "WAT-Ch-083",
+          "researcher": "Timo Watzenborn",
+          "project_type": "Promotion",
+          "date": "2024-07-03",
+          "research_group": "AK Laschat",
+          "reaction_name_from_filename": "Cyclisierung Ile FeCl3 crude Aldehyd"
+        },
+        "batch_volume_mL": 120,
+        "procedure": "Aminoaldehyd wird unter N2 in DCM gelöst und auf 0 °C gekühlt. Dann langsame Zugabe von FeCl3-Lsg (1 M in DEE). Die Reaktion wird ü.N. bei RT gerührt, dann mit 2M NaOH neutralisiert, mit DCM extrahiert und über MgSO4 getrocknet. Das Lösungsmittel wird am Roti entfernt und das Produkt wird durch Säulen (Pe/EtOAc 2:1 -> 1:1 -> 1:2) gereinigt. ",
+        "tlc_conditions": null,
+        "observations": "Achtung: großen Kolben mit möglichst breiter Oberfläche nehmen, langsam Lösung zutropfen und auf T achten!",
+        "starting_material_table_rows": [
+          {
+            "name": "Aminoaldehyd 082",
+            "M g/mol": 382.48,
+            "eq": 1,
+            "n mmol": 10.550617025726835,
+            "g": 4.0354,
+            "enthalten": "0,088 mol/L"
+          },
+          {
+            "name": "FeCl3 (Schlenk)",
+            "M g/mol": 162.21,
+            "eq": 2,
+            "n mmol": 21.10123405145367,
+            "g": 3.4228311754863,
+            "enthalten": "0,176 mol/L"
+          },
+          {
+            "name": "DCM (Aldehyd)",
+            "V mL": 100,
+            "mL": 100
+          },
+          {
+            "name": "DEE (FeCl3)",
+            "V mL": 20,
+            "mL": 20
+          }
+        ],
+        "product_table_rows": [
+          {
+            "name": "Olefin verunreinigt",
+            "M g/mol": 382.48,
+            "Ausw. g": 0.4949999999999992,
+            "n mmol": 1.2941853168793118,
+            "Ausb. %": 12.266441988402617
+          },
+          {
+            "name": "Olefin rein",
+            "M g/mol": 382.48,
+            "Ausw. g": 1.2920000000000016,
+            "n mmol": 3.3779544028445976,
+            "Ausb. %": 32.01665262427521
+          },
+          {
+            "name": "Alkohol rein",
+            "M g/mol": 400.49,
+            "Ausw. g": 0.3149999999999977,
+            "n mmol": 0.7865364927963189,
+            "Ausb. %": 7.45488620123745
+          }
+        ],
+        "reagent_source_rows": [
+          [
+            "Aminoaldehyd 082",
+            "Bench"
+          ],
+          [
+            "FeCl3 (Schlenk)",
+            "Kühlschrank"
+          ],
+          [
+            "DCM (Aldehyd)"
+          ],
+          [
+            "DEE (FeCl3)"
+          ]
+        ],
+        "literature_rows": [
+          [
+            "Literatur:"
+          ]
+        ]
+      }
+    }
+  ],
+  "embedded_reaction_smiles": [
+    "[C@@H]([C@@H](C=O)N(S(=O)(=O)c1c(*)cccc1)CCC=C(C)C)(CC)C>>[C@H]1(N(CC[C@H]([C@H]1O)C(=C)C)S(=O)(=O)c1ccccc1[N+](=O)[O-])[C@H](CC)C.[C@H]1(N(CC[C@H]([C@H]1O)C(C)(C)O)S(=O)(=O)c1ccccc1[N+](=O)[O-])[C@H](CC)C",
+    "*"
+  ],
+  "embedded_reaction_structures": [
+    {
+      "role": "product",
+      "smiles": "[C@H]1(N(CC[C@H]([C@H]1O)C(=C)C)S(=O)(=O)c1ccccc1[N+](=O)[O-])[C@H](CC)C",
+      "inchi": "InChI=1S/C18H26N2O5S/c1-5-13(4)17-18(21)14(12(2)3)10-11-19(17)26(24,25)16-9-7-6-8-15(16)20(22)23/h6-9,13-14,17-18,21H,2,5,10-11H2,1,3-4H3/t13-,14-,17-,18+/m0/s1",
+      "inchikey": "KIZNYNPAVFKOJK-DFEHZGFQSA-N"
+    },
+    {
+      "role": "product",
+      "smiles": "[C@H]1(N(CC[C@H]([C@H]1O)C(C)(C)O)S(=O)(=O)c1ccccc1[N+](=O)[O-])[C@H](CC)C",
+      "inchi": "InChI=1S/C18H28N2O6S/c1-5-12(2)16-17(21)13(18(3,4)22)10-11-19(16)27(25,26)15-9-7-6-8-14(15)20(23)24/h6-9,12-13,16-17,21-22H,5,10-11H2,1-4H3/t12-,13+,16-,17+/m0/s1",
+      "inchikey": "VQGLKMHCMLODIN-UWWPHRKUSA-N"
+    }
+  ]
+}

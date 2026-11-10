@@ -1,0 +1,72 @@
+⏺ I wrote and ran the analysis script. Its output files are listed at the end. The headline:
+  compared with the C133 standard (53.2 % yield), only 4 eq Selectfluor clearly improved the
+  yield (+17.1 pp). Most other changes lowered it, and 75 % water was the worst (−45.6 pp).
+
+  How the changed parameter was identified: I didn't rely on the run titles. For each record,
+  the script extracts the relevant parameters from the converted JSON and compares them with
+  C133. The parameters it found agree with every run title, with the qualifications below.
+
+  ┌──────────────────────┬────────────────────────────────────────────────────────────────┐
+  │        Group         │                   Run: change → Δ yield (pp)                   │
+  ├──────────────────────┼────────────────────────────────────────────────────────────────┤
+  │ Selectfluor          │ C117 2→4 eq +17.1 · C118 2→1 eq −22.8                          │
+  ├──────────────────────┼────────────────────────────────────────────────────────────────┤
+  │ NaBH₄ amount         │ C119 6.4→12.8 eq −17.1 · C120 6.4→3.2 eq +1.9†                 │
+  ├──────────────────────┼────────────────────────────────────────────────────────────────┤
+  │ NaBH₄ portions (same │ C121 1 portion −1.9 · C122 3 portions −7.6                     │
+  │  total amount)       │                                                                │
+  ├──────────────────────┼────────────────────────────────────────────────────────────────┤
+  │ Fe(III) oxalate      │ C123 2→4 eq −3.8 · C124 2→1 eq −15.2                           │
+  ├──────────────────────┼────────────────────────────────────────────────────────────────┤
+  │ Addition temperature │ C131 −20 °C n/a · C132 RT −17.1†                               │
+  ├──────────────────────┼────────────────────────────────────────────────────────────────┤
+  │ Atmosphere           │ C125 all solvents degassed −11.4 · C126 O₂ sparge −20.9        │
+  ├──────────────────────┼────────────────────────────────────────────────────────────────┤
+  │ Extraction solvent   │ C134 DCM −11.4                                                 │
+  ├──────────────────────┼────────────────────────────────────────────────────────────────┤
+  │ H₂O/MeCN volumes     │ C127 75 % water −45.6† · C128 25 % water −20.9 · C129 half     │
+  │                      │ volume −1.9 · C130 double volume −15.2                         │
+  ├──────────────────────┼────────────────────────────────────────────────────────────────┤
+  │ Other (not in your   │ C113 extra water/brine washes −17.1 · C114 Fe(NO₃)₃ instead of │
+  │ list)                │  Fe oxalate −3.8 · C115 more NH₄OH quench −9.5 · C116 less     │
+  │                      │ NH₄OH quench +5.7                                              │
+  └──────────────────────┴────────────────────────────────────────────────────────────────┘
+
+  † The notebook notes an impure product, so the yield is probably overstated.
+
+  Missing data and ambiguities:
+
+  1. C131 has no valid yield, because the conversion is wrong. In the source workbook the
+     Fluorid (product) row is empty. The 20 mg / 40 % belongs to the Edukt row, which is
+     recovered starting material. The converted JSON puts that 40 % on the product. The script
+     catches this because 20 mg of the product's molar mass works out to 38.0 %, not 40 %. It
+     plots C131 as "n/a" rather than make up a number. C131 needs re-converting or a manual
+     fix.
+  2. NaBH₄ equivalents in the records are per portion. The standard is 3.2 eq × 2 additions =
+     6.4 eq in total. The "12 eq" and "3 eq" in the C119/C120 titles are the rounded totals,
+     12.8 and 3.2. C121 and C122 keep the total the same and change only the number of
+     portions. I gave them their own group because they don't change the equivalents.
+  3. C116's iron catalyst is ambiguous in the source itself. It is named Fe₂(ox)₃·6H₂O, but
+     its molar mass (403.99) and mass (105.6 mg) are identical to C114's Fe(NO₃)₃·9H₂O. The
+     sheet looks like it was copied from C114. The iron salt and amount actually used are
+  4. Confounded runs: in C127–C130 the NH₄OH quench volume changes along with the water/MeCN
+     volumes. In C132 the stirring temperature is also RT, as you'd expect. The CSV confounded
+     column flags these.
+  5. Substrate label: C133 lists "Olefin 145c", while every other run uses "Olefin 091". The
+     molar mass is the same, so this is likely a different batch, but it's unconfirmed.
+  6. Precision: each condition was run once, with no replicates. Masses are recorded to 1 mg,
+     which means about ±1 pp yield resolution. So differences of 2–4 pp are within noise. 
+  7. C125: the run differs from the standard only in the _degassed flags on the MeCN additions
+     and a note ("all solvents degassed, at least 10 min"). The nitrogen atmosphere is the
+     same as the standard.
+
+  The figure is 7 in wide (journal double-column width) and 0.62 times as tall as it is wide,
+  so under your two-thirds limit. I didn't change the old outputs/agent_response.txt.
+
+  Files are in generated_analyses/parameter_sweep_1/:
+  - parameter_sweep.py
+  - outputs/parameter_sweep.png (600 dpi)
+  - outputs/parameter_sweep.pdf
+  - outputs/parameter_sweep.csv (per-run yields, all detected differences, data issues and
+    notebook notes)
+  - outputs/standard_features.json (the C133 baseline parameters)

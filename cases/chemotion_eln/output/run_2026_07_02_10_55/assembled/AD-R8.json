@@ -1,0 +1,273 @@
+{
+  "journal_number": "AD-R8",
+  "reaction_name": "Synthesis of Co(ttpp) (more monitoring, proper Al2O3 pad)",
+  "date": "2025-12-15",
+  "researcher": "Zarfishan Dilruba",
+  "research_group": "AK Endo",
+  "project_type": "Promotion",
+  "reagent_sources": [],
+  "batch_volume_mL": 50,
+  "tlc_conditions": null,
+  "observations": "[18.12. RT 24.2°C and RH 31%]\nAdd 12.5 mL of neutral alumina to a 25 mL frit funnel.\nAttach the funnel to a vacuum filter adapter and a 250 mL RBF.\nWet the alumina with THF\nLoad the reaction mixture\nElute with THF (75 mL) and weak suction. (eluate: dark red to pale pink)  (The alumina pad became dark green at the top, pale green in the middle, and a little brown part at the bottom)\nAdd EtOH 25 mL to the eluate\nConcentrate with rotovap to 25 mL. (dark brown precipitation)\nCollect the solids by filtration with a filter paper (15A, ø 90 mm, tare: 0.51740 g), a glass funnel, a vacuum filter adapter, and a 100 mL RBF under suction. (filtrate: dark green solution)\nRinse with EtOH x3 and petroleum ether x2.\nDry filtrate with rotovap\n[15.1.]\n1H NMR-filtrate (DMSO)\nDry the residue under vacuum (diaphragm pump) for 1 h. [dark brown solid]\n 0.26716 g  wt. on Filter paper.\nTransfer to vial with label and tape (tare: 8.10142 g) --> 0.26232 g\nThe residue on filter paper → 1H NMR paper (CDCl3) [green solution]\n1H NMR P_unfiltered (CDCl3) [dark red-brown suspension] → Syringe filter → 1H NMR_P [dark red-brown solution]\n[15.1.]\n1H NMR P (DMSO)",
+  "starting_materials": [
+    {
+      "name": "TAPP",
+      "mass_g": 0.12527,
+      "molar_mass_g_mol": 674.79436,
+      "amount_mmol": 0.18565,
+      "equivalents": 1,
+      "density_g_mL": 1.35,
+      "volume_mL": null,
+      "note": "INV-14-4"
+    },
+    {
+      "name": "TrBr",
+      "mass_g": 0.30907,
+      "molar_mass_g_mol": 323.2264,
+      "amount_mmol": 0.95637,
+      "equivalents": 5.150796519661284,
+      "density_g_mL": null,
+      "volume_mL": null,
+      "note": "INV-20-3"
+    },
+    {
+      "name": "CoCl2",
+      "mass_g": 0.1445,
+      "molar_mass_g_mol": 129.8392,
+      "amount_mmol": 1.1133,
+      "equivalents": 5.994961284797981,
+      "density_g_mL": null,
+      "volume_mL": null,
+      "note": "INV-21-6"
+    },
+    {
+      "name": "Et3N",
+      "volume_mL": 0.258,
+      "mass_g": 0.187308,
+      "molar_mass_g_mol": 101.19,
+      "amount_mmol": 1.85061,
+      "equivalents": 9.97110058720481,
+      "density_g_mL": 0.726,
+      "note": "INV-22-4"
+    },
+    {
+      "name": "THF",
+      "volume_mL": 8.5,
+      "mass_g": 7.5565,
+      "molar_mass_g_mol": 72.10572,
+      "amount_mmol": 104.803,
+      "equivalents": 564.5148040751726,
+      "density_g_mL": 0.889,
+      "note": "INV-23-3"
+    }
+  ],
+  "products": [
+    {
+      "name": "C120H88CoN8",
+      "molar_mass_g_mol": 1700.96952,
+      "yield_g": 0.26232,
+      "amount_mmol": 0.1542,
+      "yield_percent": null,
+      "appearance": "dark brown solid",
+      "eluent_system": null,
+      "is_main_product": true,
+      "nmr_data": null,
+      "rf_value": null,
+      "note": "AD-28"
+    }
+  ],
+  "procedure": {
+    "Prep": {
+      "Step": [
+        {
+          "$xml_type": "HeatChill",
+          "_vessel": "50 mL two-neck RBF",
+          "_temp": {
+            "Unit": "celsius",
+            "Value": 120
+          },
+          "_time": {
+            "Unit": "hour",
+            "Value": 1.5
+          }
+        },
+        {
+          "$xml_type": "EvacuateAndRefill",
+          "_gas": "N2"
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "TAPP",
+          "_amount": {
+            "Unit": "gram",
+            "Value": 0.12527
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "TrBr",
+          "_amount": {
+            "Unit": "gram",
+            "Value": 0.30907
+          }
+        },
+        {
+          "$xml_type": "EvacuateAndRefill",
+          "_gas": "N2",
+          "_comment": "cycle slowly x3"
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "Et3N",
+          "_amount": {
+            "Unit": "microlitre",
+            "Value": 258
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "THF",
+          "_amount": {
+            "Unit": "millilitre",
+            "Value": 8.5
+          }
+        },
+        {
+          "$xml_type": "Sonicate",
+          "_comment": "0.1 mL sample + CDCl3 500 µL for 1H NMR"
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "CoCl2",
+          "_amount": {
+            "Unit": "gram",
+            "Value": 0.1445
+          },
+          "_comment": "added quickly"
+        }
+      ]
+    },
+    "Reaction": {
+      "Step": [
+        {
+          "$xml_type": "Wait",
+          "_time": {
+            "Unit": "minute",
+            "Value": 30
+          },
+          "_comment": "Bubble with N2"
+        },
+        {
+          "$xml_type": "HeatChill",
+          "_temp": {
+            "Unit": "celsius",
+            "Value": 85
+          },
+          "_time": {
+            "Unit": "hour",
+            "Value": 2
+          }
+        },
+        {
+          "$xml_type": "HeatChill",
+          "_temp": {
+            "Unit": "celsius",
+            "Value": 85
+          },
+          "_time": {
+            "Unit": "hour",
+            "Value": 17
+          }
+        },
+        {
+          "$xml_type": "Wait",
+          "_time": {
+            "Unit": "hour",
+            "Value": 24
+          },
+          "_comment": "stir at RT"
+        }
+      ]
+    },
+    "Workup": {
+      "Step": [
+        {
+          "$xml_type": "Add",
+          "_vessel": "25 mL frit funnel",
+          "_reagent": "neutral alumina",
+          "_amount": {
+            "Unit": "millilitre",
+            "Value": 12.5
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "THF",
+          "_comment": "wet the alumina; amount not stated"
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "reaction mixture",
+          "_comment": "load the reaction mixture; amount not stated"
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "THF",
+          "_amount": {
+            "Unit": "millilitre",
+            "Value": 75
+          },
+          "_comment": "elute the alumina pad"
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "ethanol",
+          "_amount": {
+            "Unit": "millilitre",
+            "Value": 25
+          },
+          "_comment": "add to the eluate"
+        },
+        {
+          "$xml_type": "Evaporate",
+          "_method": "rotary_evaporator",
+          "_comment": "concentrate to 25 mL"
+        },
+        {
+          "$xml_type": "Filter",
+          "_product_portion": "residue",
+          "_rinse": [
+            {
+              "name": "EtOH"
+            },
+            {
+              "name": "EtOH"
+            },
+            {
+              "name": "EtOH"
+            },
+            {
+              "name": "petroleum ether"
+            },
+            {
+              "name": "petroleum ether"
+            }
+          ]
+        },
+        {
+          "$xml_type": "Evaporate",
+          "_method": "rotary_evaporator",
+          "_comment": "dry filtrate"
+        },
+        {
+          "$xml_type": "Dry",
+          "_time": {
+            "Unit": "hour",
+            "Value": 1
+          },
+          "_comment": "dry residue under vacuum (diaphragm pump)"
+        }
+      ]
+    }
+  }
+}

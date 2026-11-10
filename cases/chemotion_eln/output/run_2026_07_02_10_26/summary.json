@@ -1,0 +1,169 @@
+{
+  "run_id": "run_2026_07_02_10_26",
+  "case": "chemotion_eln",
+  "output_dir": "cases/chemotion_eln/output/run_2026_07_02_10_26",
+  "results_dir": "cases/chemotion_eln/output/run_2026_07_02_10_26/results",
+  "previous_run": null,
+  "total": 11,
+  "successes": [],
+  "validation_warnings": [
+    {
+      "record_id": "AD-R10",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_02_10_26/results/AD-R10.json",
+      "usage": {
+        "prompt_tokens": 12846,
+        "completion_tokens": 10229,
+        "total_tokens": 23075
+      },
+      "errors": [
+        "$.journal_number: 'AD-R10' does not match '^[A-Z]{2,3}(-Ch)?-\\\\d{3,}$'"
+      ]
+    },
+    {
+      "record_id": "AD-R11",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_02_10_26/results/AD-R11.json",
+      "usage": {
+        "prompt_tokens": 13269,
+        "completion_tokens": 11695,
+        "total_tokens": 24964
+      },
+      "errors": [
+        "$.journal_number: 'AD-R11' does not match '^[A-Z]{2,3}(-Ch)?-\\\\d{3,}$'",
+        "$.reagent_sources: None is not of type 'array'",
+        "$.starting_materials.3.equivalents: 0 is less than or equal to the minimum of 0"
+      ]
+    },
+    {
+      "record_id": "AD-R13",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_02_10_26/results/AD-R13.json",
+      "usage": {
+        "prompt_tokens": 12966,
+        "completion_tokens": 9119,
+        "total_tokens": 22085
+      },
+      "errors": [
+        "$.journal_number: 'AD-R13' does not match '^[A-Z]{2,3}(-Ch)?-\\\\d{3,}$'",
+        "$.reagent_sources: None is not of type 'array'",
+        "$.starting_materials.4.equivalents: 0 is less than or equal to the minimum of 0"
+      ]
+    },
+    {
+      "record_id": "AD-R17",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_02_10_26/results/AD-R17.json",
+      "usage": {
+        "prompt_tokens": 13042,
+        "completion_tokens": 10132,
+        "total_tokens": 23174
+      },
+      "errors": [
+        "$.journal_number: 'AD-R17' does not match '^[A-Z]{2,3}(-Ch)?-\\\\d{3,}$'",
+        "$.products.0: Additional properties are not allowed ('note' was unexpected)",
+        "$.starting_materials.0.density_g_mL: 0.0 is less than or equal to the minimum of 0",
+        "$.starting_materials.1.density_g_mL: 0.0 is less than or equal to the minimum of 0",
+        "$.starting_materials.4.equivalents: 0.0 is less than or equal to the minimum of 0"
+      ]
+    },
+    {
+      "record_id": "AD-R18",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_02_10_26/results/AD-R18.json",
+      "usage": {
+        "prompt_tokens": 13534,
+        "completion_tokens": 8268,
+        "total_tokens": 21802
+      },
+      "errors": [
+        "$.journal_number: 'AD-R18' does not match '^[A-Z]{2,3}(-Ch)?-\\\\d{3,}$'",
+        "$.procedure.Workup.Step.2: {'$xml_type': 'Add', '_vessel': '250 mL RBF', '_comment': 'add reaction mixture'} is not valid under any of the given schemas",
+        "$.procedure.Workup.Step.4: {'$xml_type': 'HeatChill', '_comment': 'store in fridge overnight'} is not valid under any of the given schemas"
+      ]
+    },
+    {
+      "record_id": "AD-R27",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_02_10_26/results/AD-R27.json",
+      "usage": {
+        "prompt_tokens": 13106,
+        "completion_tokens": 8549,
+        "total_tokens": 21655
+      },
+      "errors": [
+        "$.journal_number: 'AD-R27' does not match '^[A-Z]{2,3}(-Ch)?-\\\\d{3,}$'",
+        "$.reagent_sources: None is not of type 'array'",
+        "$.starting_materials.4.equivalents: 0 is less than or equal to the minimum of 0"
+      ]
+    },
+    {
+      "record_id": "AD-R6",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_02_10_26/results/AD-R6.json",
+      "usage": {
+        "prompt_tokens": 13182,
+        "completion_tokens": 9354,
+        "total_tokens": 22536
+      },
+      "errors": [
+        "$.journal_number: 'AD-R6' does not match '^[A-Z]{2,3}(-Ch)?-\\\\d{3,}$'",
+        "$.reagent_sources: None is not of type 'array'"
+      ]
+    },
+    {
+      "record_id": "AD-R8",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_02_10_26/results/AD-R8.json",
+      "usage": {
+        "prompt_tokens": 13011,
+        "completion_tokens": 10343,
+        "total_tokens": 23354
+      },
+      "errors": [
+        "$.journal_number: 'AD-R8' does not match '^[A-Z]{2,3}(-Ch)?-\\\\d{3,}$'",
+        "$.starting_materials.1.density_g_mL: 0.0 is less than or equal to the minimum of 0",
+        "$.starting_materials.2.density_g_mL: 0.0 is less than or equal to the minimum of 0"
+      ]
+    },
+    {
+      "record_id": "AD-R9",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_02_10_26/results/AD-R9.json",
+      "usage": {
+        "prompt_tokens": 13452,
+        "completion_tokens": 9302,
+        "total_tokens": 22754
+      },
+      "errors": [
+        "$: 'reaction_name' is a required property",
+        "$.journal_number: 'AD-R9' does not match '^[A-Z]{2,3}(-Ch)?-\\\\d{3,}$'",
+        "$.reagent_sources: None is not of type 'array'"
+      ]
+    },
+    {
+      "record_id": "ZAR-438",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_02_10_26/results/ZAR-438.json",
+      "usage": {
+        "prompt_tokens": 12769,
+        "completion_tokens": 10057,
+        "total_tokens": 22826
+      },
+      "errors": [
+        "$.procedure.Workup.Step.2: {'$xml_type': 'Add', '_vessel': '100 mL RBF', '_comment': 'reaction mixture (amount not stated)'} is not valid under any of the given schemas"
+      ]
+    },
+    {
+      "record_id": "ZAR-439",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_02_10_26/results/ZAR-439.json",
+      "usage": {
+        "prompt_tokens": 12713,
+        "completion_tokens": 5690,
+        "total_tokens": 18403
+      },
+      "errors": [
+        "$.starting_materials.4.equivalents: 0 is less than or equal to the minimum of 0"
+      ]
+    }
+  ],
+  "failures": [],
+  "tokens": {
+    "prompt_tokens": 143890,
+    "completion_tokens": 102738,
+    "total_tokens": 246628,
+    "prompt_chars": 0,
+    "completion_chars": 0
+  },
+  "assembled_dir": "cases/chemotion_eln/output/run_2026_07_02_10_26/assembled"
+}

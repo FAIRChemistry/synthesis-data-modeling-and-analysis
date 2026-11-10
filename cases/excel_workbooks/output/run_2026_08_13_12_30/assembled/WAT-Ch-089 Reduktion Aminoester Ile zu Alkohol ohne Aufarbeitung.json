@@ -1,0 +1,239 @@
+{
+  "journal_number": "WAT-Ch-089",
+  "date": "2024-09-23",
+  "researcher": "Timo Watzenborn",
+  "research_group": "AK Laschat",
+  "project_type": "Promotion",
+  "reaction_name": "Reduktion Aminoester Ile zu Alkohol ohne Aufarbeitung",
+  "starting_materials": [
+    {
+      "name": "Aminoester 088b",
+      "molar_mass_g_mol": 446.52,
+      "equivalents": 1,
+      "density_g_mL": null,
+      "concentration_mol_L": 0.196,
+      "volume_mL": null,
+      "mass_fraction_percent": null,
+      "amount_mmol": 14.828003224939538,
+      "mass_g": 6.621000000000002,
+      "batch_concentration_mol_L": 0.1961060600255689,
+      "role": "limiting_reagent",
+      "note": null
+    },
+    {
+      "name": "LAH (fest)",
+      "molar_mass_g_mol": 37.95,
+      "equivalents": 1.1,
+      "density_g_mL": null,
+      "concentration_mol_L": 0.216,
+      "volume_mL": null,
+      "mass_fraction_percent": null,
+      "amount_mmol": 16.310803547433494,
+      "mass_g": 0.6189949946251011,
+      "batch_concentration_mol_L": 0.21572410285062896,
+      "role": "reductant",
+      "note": null
+    },
+    {
+      "name": "THF",
+      "molar_mass_g_mol": null,
+      "equivalents": null,
+      "density_g_mL": null,
+      "concentration_mol_L": null,
+      "volume_mL": 60,
+      "mass_fraction_percent": null,
+      "amount_mmol": null,
+      "mass_g": null,
+      "batch_concentration_mol_L": null,
+      "role": "solvent",
+      "note": null
+    },
+    {
+      "name": "THF (LAH)",
+      "molar_mass_g_mol": null,
+      "equivalents": null,
+      "density_g_mL": null,
+      "concentration_mol_L": null,
+      "volume_mL": 15,
+      "mass_fraction_percent": null,
+      "amount_mmol": null,
+      "mass_g": null,
+      "batch_concentration_mol_L": null,
+      "role": "solvent",
+      "note": "für LAH"
+    },
+    {
+      "name": "H2O (quenchen)",
+      "molar_mass_g_mol": null,
+      "equivalents": null,
+      "density_g_mL": null,
+      "concentration_mol_L": null,
+      "volume_mL": 0.6189949946251011,
+      "mass_fraction_percent": null,
+      "amount_mmol": null,
+      "mass_g": null,
+      "batch_concentration_mol_L": null,
+      "role": "quench",
+      "note": null
+    }
+  ],
+  "batch_volume_mL": 75.6189949946251,
+  "products": [
+    {
+      "name": "ausgewogen",
+      "molar_mass_g_mol": 384.49,
+      "yield_g": 5.701218959957004,
+      "amount_mmol": 14.828003224939538,
+      "yield_percent": 100,
+      "appearance": null,
+      "rf_value": null,
+      "eluent_system": null,
+      "nmr_data": null,
+      "is_main_product": true
+    }
+  ],
+  "procedure": {
+    "Prep": {
+      "Step": [
+        {
+          "$xml_type": "EvacuateAndRefill",
+          "_gas": "N2"
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "THF",
+          "_amount": {
+            "Value": 60,
+            "Unit": "millilitre"
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "Aminoester 088b",
+          "_amount": {
+            "Value": 6.621000000000002,
+            "Unit": "gram"
+          },
+          "_comment": "Aminoester unter N2 in THF lösen"
+        },
+        {
+          "$xml_type": "HeatChill",
+          "_temp": {
+            "Value": 0,
+            "Unit": "celsius"
+          },
+          "_comment": "auf 0 °C kühlen; Dauer nicht angegeben"
+        }
+      ]
+    },
+    "Reaction": {
+      "Step": [
+        {
+          "$xml_type": "Add",
+          "_reagent": "THF (LAH)",
+          "_amount": {
+            "Value": 15,
+            "Unit": "millilitre"
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "LAH (fest)",
+          "_amount": {
+            "Value": 0.6189949946251011,
+            "Unit": "gram"
+          },
+          "_dropwise": true
+        },
+        {
+          "$xml_type": "HeatChill",
+          "_temp": {
+            "Value": 0,
+            "Unit": "celsius"
+          },
+          "_time": {
+            "Value": 30,
+            "Unit": "minute"
+          },
+          "_comment": "Rühren für 30 min @0 °C"
+        }
+      ]
+    },
+    "Workup": {
+      "Step": [
+        {
+          "$xml_type": "Add",
+          "_reagent": "H2O (quenchen)",
+          "_amount": {
+            "Value": 0.6189949946251011,
+            "Unit": "millilitre"
+          },
+          "_comment": "quenchen mit Wasser"
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "Dichlormethan",
+          "_comment": "Zugabe von DCM; Menge nicht angegeben"
+        },
+        {
+          "$xml_type": "Extract",
+          "_solvent": "DCM",
+          "_phase_kept": "organic",
+          "_comment": "Zugabe von DCM, trennen der Phasen"
+        },
+        {
+          "$xml_type": "WashPhase",
+          "_solution": "HCl 1M",
+          "_phase": "organic",
+          "_repeat": 1,
+          "_comment": "gleiche Menge wie THF"
+        },
+        {
+          "$xml_type": "WashPhase",
+          "_solution": "brine",
+          "_phase": "organic",
+          "_repeat": 2
+        },
+        {
+          "$xml_type": "Dry",
+          "_desiccant": "MgSO4",
+          "_comment": "trocknen über MgSO4"
+        },
+        {
+          "$xml_type": "Evaporate",
+          "_method": "rotary_evaporator",
+          "_comment": "LM am Roti entfernen"
+        },
+        {
+          "$xml_type": "Purify",
+          "_eluent": "Pe/EtOAc 4:1 -> 3:1 -> 1:1",
+          "_comment": "Säule (Pe/EtOAc 4:1 -> 3:1 -> 1:1)"
+        }
+      ]
+    }
+  },
+  "tlc_conditions": null,
+  "observations": null,
+  "reagent_sources": [
+    {
+      "reagent_name": "Aminoester 088b",
+      "source": "Abzug"
+    },
+    {
+      "reagent_name": "LAH (fest)",
+      "source": "Peggy Regal"
+    },
+    {
+      "reagent_name": "THF",
+      "source": "Destille"
+    },
+    {
+      "reagent_name": "THF (LAH)",
+      "source": null
+    },
+    {
+      "reagent_name": "H2O (quenchen)",
+      "source": null
+    }
+  ]
+}

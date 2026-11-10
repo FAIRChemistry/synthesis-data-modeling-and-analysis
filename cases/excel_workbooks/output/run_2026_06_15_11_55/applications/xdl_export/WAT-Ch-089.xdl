@@ -1,0 +1,38 @@
+<XDL>
+  <Synthesis>
+    <Hardware>
+      <Component id="reactor" type="reactor" />
+    </Hardware>
+    <Metadata description="WAT-Ch-089 - Reduktion Aminoester Ile zu Alkohol ohne Aufarbeitung" product="ausgewogen" product_yield_percent="100" />
+    <Procedure>
+      <Prep>
+        <EvacuateAndRefill vessel="reactor" gas="N2" />
+        <Add vessel="reactor" reagent="THF" amount="60 millilitre" />
+        <Add vessel="reactor" reagent="Aminoester 088b" amount="6.621 gram" comment="Aminoester unter N2 in THF lösen" />
+        <HeatChill vessel="reactor" temp="0 celsius" comment="auf 0 °C kühlen; Dauer nicht angegeben" />
+      </Prep>
+      <Reaction>
+        <Add vessel="reactor" reagent="THF (LAH)" amount="15 millilitre" />
+        <Add vessel="reactor" reagent="LAH (fest)" amount="0.618995 gram" dropwise="true" />
+        <HeatChill vessel="reactor" temp="0 celsius" time="30 minute" comment="Rühren für 30 min @0 °C" />
+      </Reaction>
+      <Workup>
+        <Add vessel="reactor" reagent="H2O (quenchen)" amount="0.618995 millilitre" comment="quenchen mit Wasser" />
+        <Add vessel="reactor" reagent="Dichlormethan" comment="Zugabe von DCM; Menge nicht angegeben" />
+        <Extract vessel="reactor" solvent="DCM" phase_kept="organic" comment="Zugabe von DCM, trennen der Phasen" />
+        <WashPhase vessel="reactor" solution="HCl 1M" phase="organic" repeat="1" comment="gleiche Menge wie THF" />
+        <WashPhase vessel="reactor" solution="brine" phase="organic" repeat="2" />
+        <Dry vessel="reactor" desiccant="MgSO4" comment="trocknen über MgSO4" />
+        <Evaporate vessel="reactor" method="rotary_evaporator" comment="LM am Roti entfernen" />
+        <Purify vessel="reactor" eluent="Pe/EtOAc 4:1 -&gt; 3:1 -&gt; 1:1" comment="Säule (Pe/EtOAc 4:1 -&gt; 3:1 -&gt; 1:1)" />
+      </Workup>
+    </Procedure>
+    <Reagents>
+      <Reagent id="Aminoester 088b" name="Aminoester 088b" role="substrate" />
+      <Reagent id="LAH (fest)" name="LAH (fest)" role="reagent" />
+      <Reagent id="THF" name="THF" role="solvent" />
+      <Reagent id="THF (LAH)" name="THF (LAH)" role="solvent" />
+      <Reagent id="H2O (quenchen)" name="H2O (quenchen)" role="reagent" />
+    </Reagents>
+  </Synthesis>
+</XDL>

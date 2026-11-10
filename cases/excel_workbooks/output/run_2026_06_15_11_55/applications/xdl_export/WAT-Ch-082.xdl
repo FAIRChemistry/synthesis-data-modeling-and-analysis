@@ -1,0 +1,36 @@
+<XDL>
+  <Synthesis>
+    <Hardware>
+      <Component id="reactor" type="reactor" />
+    </Hardware>
+    <Metadata description="WAT-Ch-082 - DMP-Oxidation Aminoalkohol zu Aminoaldehyd Ile" product="Aminoaldehyd" product_yield_percent="100" />
+    <Procedure>
+      <Prep>
+        <Add vessel="reactor" reagent="DCM" amount="150 millilitre" />
+        <Add vessel="reactor" reagent="Alkohol 081" amount="4.0566 gram" comment="Aminoalkohol in DCM lösen" />
+      </Prep>
+      <Reaction>
+        <Add vessel="reactor" reagent="DMP" amount="11.1873 gram" />
+        <HeatChill vessel="reactor" temp="25 celsius" />
+        <Wait vessel="reactor" time="40 minute" comment="Rühren bei RT für 40 min" />
+      </Reaction>
+      <Workup>
+        <Add vessel="reactor" reagent="DEE" amount="5 millilitre" />
+        <Add vessel="reactor" reagent="Na2S2O3-/NaHCO3-Lsg" amount="5 millilitre" comment="1:1" />
+        <Wait vessel="reactor" time="15 minute" comment="rühren für weitere 15 min bis klare Lösung erhalten wird" />
+        <Extract vessel="reactor" solvent="DEE" phase_kept="organic" comment="wässrige Phase mit DEE extrahieren" />
+        <WashPhase vessel="reactor" solution="NaHCO3-Lsg" phase="organic" repeat="2" />
+        <WashPhase vessel="reactor" solution="Wasser" phase="organic" repeat="2" />
+        <WashPhase vessel="reactor" solution="brine" phase="organic" repeat="2" />
+        <Dry vessel="reactor" desiccant="MgSO4" />
+        <Evaporate vessel="reactor" method="rotary_evaporator" comment="LM an Roti entfernen" />
+        <Purify vessel="reactor" eluent="Pe/EtOAc 4:1 -&gt; 2:1" />
+      </Workup>
+    </Procedure>
+    <Reagents>
+      <Reagent id="Alkohol 081" name="Alkohol 081" role="substrate" />
+      <Reagent id="DMP" name="DMP" role="reagent" />
+      <Reagent id="DCM" name="DCM" role="solvent" />
+    </Reagents>
+  </Synthesis>
+</XDL>

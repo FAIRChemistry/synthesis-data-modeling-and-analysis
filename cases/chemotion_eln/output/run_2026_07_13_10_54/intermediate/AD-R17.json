@@ -1,0 +1,108 @@
+{
+  "short_label": "AD-R17",
+  "name": "Synthesis of [Co(ttpp)(py)2](OTf) (scale-up) ",
+  "created_at": "2026-03-24T10:12:58.551Z",
+  "status": "Successful",
+  "temperature": {
+    "data": [],
+    "userText": "RT",
+    "valueUnit": "°C"
+  },
+  "duration": "3 Hour(s)",
+  "vessel_size": {
+    "amount": 25,
+    "unit": "ml"
+  },
+  "plain_text_description": "Reference: AD-R13; 3x scale\nAnalysis\n1H NMR: [Co(ttpp)(py)₂](OTf) (85% purity), hexane (0.4 eq, 1.7% w/w) (D1 1 s was enough)\nICP-OES: Co w/w 4.97% (calcd. 2.93%) → Contradicting 1H NMR and CHN. Sample preparation or measurement failure?\nICP-OES: Ag/Co atomic ratio 0.00012 \nCHN: 0.4 n-hexane, 2 H2O (4% w/w)\nCo(II) 10%?\n\nProcedure\nRT 21.8°C RH 30 %\nStock solution preparation\n5 mL vial\nPut into the glovebox (H₂O < 1 ppm)\nWeigh in AgOTf → 80.26 mg\nTake it out of the glovebox. \nAdd 3000 µL of toluene → colorless solution.\n\nReaction\n25 mL flask\nAdd Co(ttpp)\nAdd pyridine\nAdd toluene 15 mL\nSonicate for 3 min → Dark red solution \nCover with aluminum foil\nStart stirring at 400 rpm\nAdd  1500 µL of AgOTf/toluene dropwise w/ mechanical pipette (750 x 2)\nContinue stirring for 1 h\n-> 50 μL + CDCl₃ 450 μL -> 1H NMR M1 (U1.834; SW 19, NS 16) (use mechanical pipette)\n",
+  "plain_text_observation": "Ag scavenging\nRemove volatiles with a rotovap (40 °C) for 1 h.\nDry under vacuum 1h\nAdd DCM 15 mL\nSwirl and sonicate → Dark green solution\nAdd ISOLUTE Si-Thiol\nStir at 500 rpm for 2 h\n20 mL plastic syringe, cotton plug, syringe filter (⌀ 25 mm, 0.45 µm, PTFE), syringe filter (0.2 µm, ⌀ 15 mm, PTFE), 250 mL RBF [difficult to press]. Better to use frit or a filter paper.\nFilter the mixture → Dark green filtrate collected\nTransfer and rinse with DCM 50 mL → pale green filtrate at the end.\nEvaporate the whole solvent. \n\nReprecipitation\nAdd 10 mL of DCM.\nAdd n-hexane (60 mL).\nSwirl and sonicate\nRefrigerate at 0 °C for o/n\n26.03.2026 RT 21.5°C RH 30 %\nMembrane filter (0.22 µm, hydrophobic, PVDF), membrane filter holder, 250 mL RBF.\nFilter the mixture [it was too slow and incomplete]\nDissolve in 30 mL of DCM\nEvaporate the whole solvent. \nAdd 10 mL of DCM.\nAdd n-hexane (60 mL).\nRefrigerate at 0 °C for 2 h\nFrit (por. 4)\nFilter the mixture →  light yellow filtrate\nTransfer and rinse with 2 x (DCM 3 mL + n-hexane 20 mL)\nRinse w/ hexane 4 x 4 mL\nDry w/ suction for 5 min\nDry under vacuum o/n\n\n2nd reprecipitation\n?\n\nAnalysis\n2026-03-27 RT 22.6 °C RH 26%\nVial (tare 15.40368 g)\nTransfer\n→ Weigh: 0.28554 g\n→ 2 mg → 1H NMR P (CDCl3; U1.834, SW 19, NS 16) [next time with internal standard and 19F]\n2026-04-01\n→ 9.02 mg into a PTFE microwave tube\nAdd 4 g of HNO3 aq (65%, chemically pure, Buchmeiser Group)\nAdd 1 g of H2O2 aq (33%. p.a., Buchmeiser Group)\nWait for 20 min\nSeal\nMicrowave heating (CEM Mars 6, program: xxx, 200 °C for ca 3.5 h; cool down to RT, 2 h) (time not sure because of machine trouble); observe colorless solution\nTransfer to 10 mL volumetric flask with DI water and fill up to 10.00 mL\no/n\nTransfer to test tube\n→ ICP-OES (0.517, Agilent 5800; Co, Ag)\n→ 2.00 mL\ntest tube\nAdd 8.00 mL of DI water\n→ ICP-OES\n2026-04-13\n→ ca. 1.00 mg into a 2 mL centrifuge tube\nAdd ca. 1.00 mg durene \nAdd 550 µL of CDCl3\nSonicate until dissolved\nTransfer to an NMR tube\n→ 1H NMR P (U1.834, N PROTON15ppm, D1 1/12/24)\n2026-04-15\n→ 20.46 mg to CHN analysis (IOC)\n",
+  "starting_materials": [
+    {
+      "short_label": "AD-31-3",
+      "name": "Co(ttpp)",
+      "molecular_weight": 1700.9695200000008,
+      "real_amount_value": 0.30382,
+      "real_amount_unit": "g",
+      "target_amount_value": 0.3,
+      "target_amount_unit": "g",
+      "density": null,
+      "inchikey": "SZVLKHGYPSMSBU-FIVSXPDESA-N",
+      "equivalent": 1.0,
+      "reference": true,
+      "position": 0
+    },
+    {
+      "short_label": "INV-29-3",
+      "name": "AgOTf",
+      "molecular_weight": 256.93730959999994,
+      "real_amount_value": 0.040130000000000006,
+      "real_amount_unit": "g",
+      "target_amount_value": 0.039265125128729796,
+      "target_amount_unit": "g",
+      "density": null,
+      "inchikey": "QRUBYZBWAOOHSV-UHFFFAOYSA-M",
+      "equivalent": 0.8744241821825688,
+      "reference": false,
+      "position": 1
+    },
+    {
+      "short_label": "INV-24-5",
+      "name": "pyridine",
+      "molecular_weight": 79.09989999999999,
+      "real_amount_value": 7.15e-05,
+      "real_amount_unit": "l",
+      "target_amount_value": 0.06975424815372348,
+      "target_amount_unit": "g",
+      "density": 0.978,
+      "inchikey": "JUJWROOIHBZHMG-UHFFFAOYSA-N",
+      "equivalent": 4.949361026965731,
+      "reference": false,
+      "position": 2
+    },
+    {
+      "short_label": "INV-111-2",
+      "name": "toluene",
+      "molecular_weight": 92.13842000000001,
+      "real_amount_value": null,
+      "real_amount_unit": "l",
+      "target_amount_value": 0.0165,
+      "target_amount_unit": "l",
+      "density": 0.865,
+      "inchikey": "YXFVVABEGXRONW-UHFFFAOYSA-N",
+      "equivalent": 867.2403241725207,
+      "reference": false,
+      "position": 3
+    },
+    {
+      "short_label": "INV-90-4",
+      "name": "3-mercaptopropyl silica",
+      "molecular_weight": null,
+      "real_amount_value": 0.608,
+      "real_amount_unit": "g",
+      "target_amount_value": 0.6,
+      "target_amount_unit": "g",
+      "density": 0.7,
+      "inchikey": "DUMMY",
+      "equivalent": null,
+      "reference": false,
+      "position": 4
+    }
+  ],
+  "solvents": [],
+  "purification_solvents": [],
+  "products": [
+    {
+      "short_label": "AD-46",
+      "name": "[Co(ttpp)(py)2](OTf)",
+      "molecular_weight": 2008.238429600001,
+      "real_amount_value": 0.28600000000000003,
+      "real_amount_unit": "g",
+      "target_amount_value": null,
+      "target_amount_unit": "g",
+      "density": null,
+      "inchikey": "SLJLTKRWPCLTQF-BXFYCLSASA-M",
+      "equivalent": 0.7973168306024764,
+      "reference": false,
+      "position": 0
+    }
+  ]
+}

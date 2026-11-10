@@ -1,0 +1,12 @@
+journal_number,date,substance,product_name,sample_label,formula,amount_mmol,yield_g,molar_mass_g_mol,amount_check_mmol,yield_percent,reaction_name
+AD-R6,2025-11-17,Co(ttpp),C120H88CoN8,AD-26,C120H88CoN8,,,1700.96952,,,Synthesis of Co(ttpp)
+AD-R8,2025-12-15,Co(ttpp),C120H88CoN8,AD-28,,0.15421,0.26232,1700.9695200000008,0.15422,83.0728746088521,"Synthesis of Co(ttpp) (more monitoring, proper Al2O3 pad)"
+AD-R9,2026-01-07,Co(ttpp),C120H88CoN8,AD-30,C120H88CoN8,,,1700.9695200000008,,,Synthesis of Co(ttpp) (discontinued due to leakage)
+AD-R10,2026-01-12,Co(ttpp),Co(ttpp),AD-31,,0.28193,0.47948,1700.96952,0.28189,75.95850317607412,Synthesis of Co(ttpp) (CHCl3/hexane reprecipitation)
+AD-R11,2026-01-19,[Co(ttpp)(pba)2](OTf),[Co(ttpp)(pba)2](OTf),AD-32,C133H101Br2CoF3N10O3S,0.03951,0.08665,2194.0837096,0.03949,66.32,Synthesis of [Co(ttpp)(pba)2](OTf)
+AD-R13,2026-02-10,[Co(ttpp)(py)2](OTf),[Co(ttpp)(py)2](OTf),AD-36,C131H99CoF3N10O3S,0.03838,0.07708,2008.238429600001,0.03838,64.90944363805372,Synthesis of [Co(ttpp)(py)2](OTf)
+AD-R17,2026-03-24,[Co(ttpp)(py)2](OTf),[Co(ttpp)(py)2](OTf),AD-46,C131H99CoF3N10O3S,0.1423602557531788,0.286,2008.238429600001,0.14241,79.73168306024763,Synthesis of [Co(ttpp)(py)2](OTf) (scale-up)
+AD-R18,2026-04-07,Co(ttpp),Co(ttpp),AD-47,C120H88CoN8,0.57444,0.97666,1700.96952,0.57418,77.00839998348953,Synthesis of Co(ttpp) (scale-up)
+AD-R27,2026-05-10,[Co(ttpp)(py)2](OTf),[Co(ttpp)(py)2](OTf),AD-56,C131H99CoF3N10O3S,0.2808,0.56392,2008.238429600001,0.2808,95.52757457285139,Synthesis of [Co(ttpp)(py)2](OTf) (500 mg scale-up)
+ZAR-438,2026-06-09,Co(ttpp),Co(ttpp),ZAR-1096,C120H88CoN8,0.33872,0.5759,1700.96952,0.33857,91.34629453794058,Synthesis of Co(ttpp)
+ZAR-439,2026-06-10,[Co(ttpp)(py)2](OTf),[Co(ttpp)(py)2](OTf),ZAR-1097,,0.2087,0.4192,2008,0.20876,71,Synthesis of [Co(ttpp)(py)2](OTf)

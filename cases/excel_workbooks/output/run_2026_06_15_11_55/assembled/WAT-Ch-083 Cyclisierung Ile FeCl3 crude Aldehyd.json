@@ -1,0 +1,221 @@
+{
+  "journal_number": "WAT-Ch-083",
+  "date": "2024-07-03",
+  "researcher": "Timo Watzenborn",
+  "research_group": "AK Laschat",
+  "project_type": "Promotion",
+  "reaction_name": "Cyclisierung Ile FeCl3 crude Aldehyd",
+  "starting_materials": [
+    {
+      "name": "Aminoaldehyd 082",
+      "molar_mass_g_mol": 382.48,
+      "equivalents": 1,
+      "density_g_mL": null,
+      "concentration_mol_L": 0.088,
+      "volume_mL": null,
+      "mass_fraction_percent": null,
+      "amount_mmol": 10.550617025726835,
+      "mass_g": 4.0354,
+      "batch_concentration_mol_L": 0.08792180854772363,
+      "role": "limiting_reagent",
+      "note": null
+    },
+    {
+      "name": "FeCl3 (Schlenk)",
+      "molar_mass_g_mol": 162.21,
+      "equivalents": 2,
+      "density_g_mL": null,
+      "concentration_mol_L": 0.176,
+      "volume_mL": null,
+      "mass_fraction_percent": null,
+      "amount_mmol": 21.10123405145367,
+      "mass_g": 3.4228311754863,
+      "batch_concentration_mol_L": 0.17584361709544724,
+      "role": "catalyst",
+      "note": null
+    },
+    {
+      "name": "DCM (Aldehyd)",
+      "molar_mass_g_mol": null,
+      "equivalents": null,
+      "density_g_mL": null,
+      "concentration_mol_L": null,
+      "volume_mL": 100,
+      "mass_fraction_percent": null,
+      "amount_mmol": null,
+      "mass_g": null,
+      "batch_concentration_mol_L": null,
+      "role": "solvent",
+      "note": "für Aldehyd"
+    },
+    {
+      "name": "DEE (FeCl3)",
+      "molar_mass_g_mol": null,
+      "equivalents": null,
+      "density_g_mL": null,
+      "concentration_mol_L": null,
+      "volume_mL": 20,
+      "mass_fraction_percent": null,
+      "amount_mmol": null,
+      "mass_g": null,
+      "batch_concentration_mol_L": null,
+      "role": "solvent",
+      "note": "für FeCl3"
+    }
+  ],
+  "batch_volume_mL": 120,
+  "products": [
+    {
+      "name": "Olefin verunreinigt",
+      "molar_mass_g_mol": 382.48,
+      "yield_g": 0.4949999999999992,
+      "amount_mmol": 1.2941853168793118,
+      "yield_percent": 12.266441988402617,
+      "appearance": null,
+      "rf_value": null,
+      "eluent_system": null,
+      "nmr_data": null,
+      "is_main_product": false
+    },
+    {
+      "name": "Olefin rein",
+      "molar_mass_g_mol": 382.48,
+      "yield_g": 1.2920000000000016,
+      "amount_mmol": 3.3779544028445976,
+      "yield_percent": 32.01665262427521,
+      "appearance": null,
+      "rf_value": null,
+      "eluent_system": null,
+      "nmr_data": null,
+      "is_main_product": true
+    },
+    {
+      "name": "Alkohol rein",
+      "molar_mass_g_mol": 400.49,
+      "yield_g": 0.3149999999999977,
+      "amount_mmol": 0.7865364927963189,
+      "yield_percent": 7.45488620123745,
+      "appearance": null,
+      "rf_value": null,
+      "eluent_system": null,
+      "nmr_data": null,
+      "is_main_product": false
+    }
+  ],
+  "procedure": {
+    "Prep": {
+      "Step": [
+        {
+          "$xml_type": "EvacuateAndRefill",
+          "_gas": "N2"
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "DCM (Aldehyd)",
+          "_amount": {
+            "Value": 100,
+            "Unit": "millilitre"
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "Aminoaldehyd 082",
+          "_amount": {
+            "Value": 4.0354,
+            "Unit": "gram"
+          },
+          "_comment": "Aminoaldehyd in DCM lösen"
+        },
+        {
+          "$xml_type": "HeatChill",
+          "_temp": {
+            "Value": 0,
+            "Unit": "celsius"
+          },
+          "_comment": "auf 0 °C gekühlt"
+        }
+      ]
+    },
+    "Reaction": {
+      "Step": [
+        {
+          "$xml_type": "Add",
+          "_reagent": "DEE (FeCl3)",
+          "_amount": {
+            "Value": 20,
+            "Unit": "millilitre"
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "FeCl3 (Schlenk)",
+          "_amount": {
+            "Value": 3.4228311754863,
+            "Unit": "gram"
+          },
+          "_dropwise": true,
+          "_comment": "langsame Zugabe von FeCl3-Lsg (1 M in DEE)"
+        },
+        {
+          "$xml_type": "HeatChill",
+          "_temp": {
+            "Value": 25,
+            "Unit": "celsius"
+          },
+          "_comment": "Reaktion ü.N. bei RT gerührt"
+        }
+      ]
+    },
+    "Workup": {
+      "Step": [
+        {
+          "$xml_type": "WashPhase",
+          "_solution": "2M NaOH",
+          "_phase": "organic",
+          "_comment": "neutralisiert mit 2M NaOH"
+        },
+        {
+          "$xml_type": "Extract",
+          "_solvent": "DCM",
+          "_phase_kept": "organic",
+          "_comment": "mit DCM extrahieren"
+        },
+        {
+          "$xml_type": "Dry",
+          "_desiccant": "MgSO4",
+          "_comment": "über MgSO4 trocknen"
+        },
+        {
+          "$xml_type": "Evaporate",
+          "_method": "rotary_evaporator",
+          "_comment": "LM wird am Roti entfernt"
+        },
+        {
+          "$xml_type": "Purify",
+          "_eluent": "Pe/EtOAc 2:1 -> 1:1 -> 1:2",
+          "_comment": "Säulen (Pe/EtOAc 2:1 -> 1:1 -> 1:2)"
+        }
+      ]
+    }
+  },
+  "tlc_conditions": null,
+  "observations": "Achtung: großen Kolben mit möglichst breiter Oberfläche nehmen, langsam Lösung zutropfen und auf T achten!",
+  "reagent_sources": [
+    {
+      "reagent_name": "Aminoaldehyd 082",
+      "source": "Bench"
+    },
+    {
+      "reagent_name": "FeCl3 (Schlenk)",
+      "source": "Kühlschrank"
+    },
+    {
+      "reagent_name": "DCM (Aldehyd)",
+      "source": null
+    },
+    {
+      "reagent_name": "DEE (FeCl3)",
+      "source": null
+    }
+  ]
+}

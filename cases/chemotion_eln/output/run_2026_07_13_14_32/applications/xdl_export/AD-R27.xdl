@@ -1,0 +1,51 @@
+<XDL>
+  <Synthesis>
+    <Hardware>
+      <Component id="5 mL vial" type="5 mL vial" />
+      <Component id="50 mL flask" type="50 mL flask" />
+      <Component id="250 mL RBF" type="250 mL RBF" />
+      <Component id="Frit (por. 4)" type="Frit (por. 4)" />
+      <Component id="Filter" type="Filter" />
+    </Hardware>
+    <Metadata description="AD-R27 - Synthesis of [Co(ttpp)(py)2](OTf) (500 mg scale-up)" product="[Co(ttpp)(py)2](OTf)" product_yield_percent="95.5276" />
+    <Procedure>
+      <Prep>
+        <Add vessel="5 mL vial" reagent="AgOTf" amount="128.72 milligram" dropwise="false" comment="Stock solution preparation: 5 mL vial. Put into the glovebox (H₂O &lt; 1 ppm). Weigh in AgOTf → 128.72 mg" />
+        <Add vessel="5 mL vial" reagent="toluene" amount="3000 microlitre" dropwise="false" comment="Take it out of the glovebox. Add 3000 µL of toluene → colorless solution." />
+      </Prep>
+      <Reaction>
+        <Add vessel="50 mL flask" reagent="Co(ttpp)" dropwise="false" comment="Reaction: Add Co(ttpp)" />
+        <Add vessel="50 mL flask" reagent="pyridine" dropwise="false" comment="Add pyridine" />
+        <Add vessel="50 mL flask" amount="26 millilitre" reagent="toluene" dropwise="false" comment="Add toluene 26 mL" />
+        <Sonicate vessel="50 mL flask" time="3 minute" comment="Sonicate for 3 min → Dark red solution" />
+        <Add vessel="50 mL flask" reagent="AgOTf" dropwise="true" comment="Cover with aluminum foil. Start stirring at 400 rpm. Add 1500 µL of AgOTf/toluene dropwise w/ mechanical pipette (750 x 2)" />
+        <Add vessel="50 mL flask" reagent="toluene" amount="1500 microlitre" dropwise="true" comment="Add 1500 µL of AgOTf/toluene dropwise w/ mechanical pipette (750 x 2)" />
+        <Wait vessel="50 mL flask" time="1 hour" comment="Continue stirring for 1 h → Dark green mixture" />
+      </Reaction>
+      <Workup>
+        <Evaporate vessel="50 mL flask" method="rotary_evaporator" temp="40 celsius" comment="Ag scavenging: Remove volatiles with a rotovap (40 °C) for 1 h." />
+        <Dry vessel="50 mL flask" time="1 hour" comment="Dry under vacuum 1h" />
+        <Add vessel="50 mL flask" amount="25 millilitre" reagent="DCM" dropwise="false" comment="Add DCM 25 mL" />
+        <Sonicate vessel="50 mL flask" comment="Swirl and sonicate → Dark green mixture" />
+        <Add vessel="50 mL flask" reagent="3-mercaptopropyl silica" dropwise="false" comment="Add ISOLUTE Si-Thiol" />
+        <Wait vessel="50 mL flask" time="2 hour" comment="Stir at 500 rpm for 2 h" />
+        <Filter vessel="250 mL RBF" rinse="DCM (50 millilitre)" comment="20 mL plastic syringe, cotton plug, syringe filter (⌀ 25 mm, 0.45 µm, PTFE), syringe filter (0.2 µm, ⌀ 15 mm, PTFE), 250 mL RBF [difficult to press]. Better to use a frit. or a filter paper.; Filter the mixture → Dark green filtrate collected; Transfer and rinse with DCM 50 mL → pale green filtrate at the end." />
+        <Evaporate vessel="250 mL RBF" comment="Evaporate the whole solvent." />
+        <Add vessel="250 mL RBF" amount="50 millilitre" reagent="DCM" dropwise="false" comment="Reprecipitation: Add 50 mL of DCM." />
+        <Add vessel="250 mL RBF" amount="300 millilitre" reagent="n-hexane" dropwise="false" comment="Add n-hexane (300 mL)." />
+        <Sonicate vessel="250 mL RBF" comment="Swirl and sonicate" />
+        <HeatChill vessel="250 mL RBF" temp="0 celsius" time="0.5 day" comment="Refrigerate at 0 °C for o/n" />
+        <Filter vessel="Frit (por. 4)" product_portion="residue" rinse="DCM + n-hexane; n-hexane" comment="Frit (por. 4); Filter the mixture → light yellow filtrate; Transfer and rinse with 2 x (DCM 15 mL + n-hexane 100 mL); Rinse w/ hexane 4 x 20 mL" />
+        <Dry vessel="Filter" time="10 minute" comment="Dry w/ suction for 10 min" />
+        <Dry vessel="Filter" time="0.5 day" comment="Dry under vacuum o/n" />
+      </Workup>
+    </Procedure>
+    <Reagents>
+      <Reagent id="Co(ttpp)" name="Co(ttpp)" role="reagent" />
+      <Reagent id="AgOTf" name="AgOTf" role="reagent" />
+      <Reagent id="pyridine" name="pyridine" role="reagent" />
+      <Reagent id="toluene" name="toluene" role="reagent" />
+      <Reagent id="3-mercaptopropyl silica" name="3-mercaptopropyl silica" role="reagent" />
+    </Reagents>
+  </Synthesis>
+</XDL>

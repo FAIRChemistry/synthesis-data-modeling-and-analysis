@@ -1,0 +1,20 @@
+⏺ Done.
+
+  Files
+  - generated_analyses/substrate_scope_1/substrate_scope.py — script (self-contained, argparse, self_check() asserts every recorded yield equals the one its own masses imply)
+  - generated_analyses/substrate_scope_1/outputs/substrate_scope.md — paper-style scope table, ranked
+  - generated_analyses/substrate_scope_1/outputs/substrate_scope.csv — underlying numbers (full precision, incl. recomputed yield)
+  - generated_analyses/substrate_scope_1/outputs/substrate_scope.png — yield ranking bar chart
+
+  Result: HOL-412 57.0 % > HOL-309 56.9 % > HOL-180 41.7 % > JEN-15.2 OD1 39.7 %; HAU-12, HAU-25A and JEN-48.1 not determined.
+
+  Ambiguities / missing data
+  - C238, C239, C241 have no isolated yield. Product row carries a molar mass (201.29 / 201.29 / 450.53) but the isolated-mass and mmol cells are empty. I checked the raw workbook dumps
+    (intermediate/, row 22): the cells are blank at source, so this is a record gap, not an extraction loss. Treated as n.d., never as 0 %.
+  - Substrates are internal codes only (HOL-180, HAU-12, …). The assembled records carry no structure or IUPAC name — SMILES do exist in intermediate/*.json (embedded_reaction_smiles,
+    from the embedded ChemDraw) if you want structures in the paper table; say so and I'll pull them in.
+  - C233 vs. C234 — HOL-180 and HOL-309 share M = 368.48 and the same product mass, so they are likely diastereomers/isomers; nothing in the data distinguishes them beyond the code.
+  - Scale varies 10–105 mg (0.051–0.244 mmol), so C238/C239 at 10 mg would have given ~5 mg of product — plausibly why no isolated mass was recorded.
+  - Conditions are identical across all seven runs (2 eq Fe(NO₃)₃, 2 eq Selectfluor, 2 × 3.2 eq NaBH₄, H₂O/MeCN 2:1), so the comparison is clean.
+
+  skipped: structures/SMILES in the table and a light/dark chart variant — add when the figure goes into the manuscript.

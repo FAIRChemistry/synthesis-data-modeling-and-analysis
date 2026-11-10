@@ -1,0 +1,32 @@
+{
+  "run_id": "run_2026_07_02_11_16",
+  "case": "chemotion_eln",
+  "output_dir": "cases/chemotion_eln/output/run_2026_07_02_11_16",
+  "results_dir": "cases/chemotion_eln/output/run_2026_07_02_11_16/results",
+  "previous_run": "cases/chemotion_eln/output/run_2026_07_02_10_55",
+  "total": 1,
+  "successes": [],
+  "validation_warnings": [
+    {
+      "record_id": "AD-R18",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_02_11_16/results/AD-R18.json",
+      "usage": {
+        "prompt_tokens": 13857,
+        "completion_tokens": 11482,
+        "total_tokens": 25339
+      },
+      "errors": [
+        "$.procedure.Prep.Step.1: {'$xml_type': 'EvacuateAndRefill', '_vessel': '100 mL two-neck RBF', '_gas': 'N2', '_time': None, '_comment': 'Evacuate system while hot (pressure reported 1.2 × 10⁻³ mbar)'} is not valid under any of the given schemas"
+      ]
+    }
+  ],
+  "failures": [],
+  "tokens": {
+    "prompt_tokens": 13857,
+    "completion_tokens": 11482,
+    "total_tokens": 25339,
+    "prompt_chars": 0,
+    "completion_chars": 0
+  },
+  "assembled_dir": "cases/chemotion_eln/output/run_2026_07_02_11_16/assembled"
+}

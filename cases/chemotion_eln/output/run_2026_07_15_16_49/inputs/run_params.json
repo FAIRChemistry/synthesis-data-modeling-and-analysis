@@ -1,0 +1,30 @@
+{
+  "command": [
+    "cli.py",
+    "convert",
+    "--case",
+    "chemotion_eln"
+  ],
+  "cli_args": {
+    "command": "convert",
+    "case": "chemotion_eln",
+    "output_dir": null,
+    "config": "config/config.json",
+    "endpoint": "openai",
+    "no_examples": false,
+    "temperature": 0,
+    "limit": null,
+    "only": null,
+    "dry_run": false,
+    "mock": false
+  },
+  "endpoint": "openai",
+  "endpoint_config": {
+    "model": "gpt-5-mini",
+    "base_url": "https://api.openai.com/v1",
+    "max_tokens": null,
+    "top_p": null,
+    "seed": null,
+    "endpoint": "openai"
+  }
+}

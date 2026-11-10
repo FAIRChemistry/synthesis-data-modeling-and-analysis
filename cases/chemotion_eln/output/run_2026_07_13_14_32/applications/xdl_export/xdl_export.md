@@ -1,0 +1,13 @@
+| record | steps | reagents | file |
+| --- | --- | --- | --- |
+| AD-R10 | 25 | 5 | AD-R10.xdl |
+| AD-R11 | 23 | 5 | AD-R11.xdl |
+| AD-R13 | 21 | 5 | AD-R13.xdl |
+| AD-R17 | 30 | 5 | AD-R17.xdl |
+| AD-R18 | 32 | 5 | AD-R18.xdl |
+| AD-R27 | 24 | 5 | AD-R27.xdl |
+| AD-R6 | 30 | 5 | AD-R6.xdl |
+| AD-R8 | 24 | 5 | AD-R8.xdl |
+| AD-R9 | 30 | 6 | AD-R9.xdl |
+| ZAR-438 | 27 | 5 | ZAR-438.xdl |
+| ZAR-439 | 20 | 5 | ZAR-439.xdl |

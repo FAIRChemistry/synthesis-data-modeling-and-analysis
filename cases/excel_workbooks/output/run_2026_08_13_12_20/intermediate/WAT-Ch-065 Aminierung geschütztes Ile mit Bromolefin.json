@@ -1,0 +1,873 @@
+{
+  "source_file": "cases/excel_workbooks/input/workbooks/WAT-Ch-065 Aminierung geschütztes Ile mit Bromolefin.xlsx",
+  "source_filename": "WAT-Ch-065 Aminierung geschütztes Ile mit Bromolefin.xlsx",
+  "preprocessor": {
+    "library": "openpyxl",
+    "mode": "profile",
+    "options": {
+      "data_only": true,
+      "read_only": true,
+      "formatting_images_and_charts": "not extracted",
+      "profile_name": "chem_lab_journal",
+      "embedded_chemdraw": "extracted as CDX via Open Babel"
+    }
+  },
+  "sheets": [
+    {
+      "sheet_name": "WAT-Ch-001",
+      "max_row": 47,
+      "max_column": 11,
+      "merged_ranges": [],
+      "non_empty_rows": [
+        [
+          "Laborjournal",
+          "Nr.:",
+          "WAT-Ch-065"
+        ],
+        [
+          "Timo Watzenborn"
+        ],
+        [
+          "Promotion",
+          "Angesetzt am:",
+          "2023-12-07"
+        ],
+        [
+          "AK Laschat"
+        ],
+        [
+          "Edukte",
+          "eingesetzte\nMenge",
+          "Ansatz"
+        ],
+        [
+          "M",
+          "eq",
+          "Dichte",
+          "c",
+          "V",
+          "w",
+          "n",
+          30
+        ],
+        [
+          "g/mol",
+          "g/mL",
+          "mol/L",
+          "mL",
+          "%",
+          "mmol",
+          "g",
+          "mL",
+          "enthalten"
+        ],
+        [
+          "Ns-Ile-OMe 063",
+          330.36,
+          1,
+          5.663518585785203,
+          1.871,
+          "0,189 mol/L"
+        ],
+        [
+          "Bromolefin 021",
+          163.03,
+          1.5,
+          84.3,
+          8.495277878677804,
+          1.6429242616380102,
+          "0,283 mol/L"
+        ],
+        [
+          "Cs2CO3",
+          325.82,
+          2,
+          11.327037171570407,
+          3.69057525124107,
+          "0,378 mol/L"
+        ],
+        [
+          "DMF",
+          30,
+          30
+        ],
+        [
+          "Produkte"
+        ],
+        [
+          "M",
+          "Ausw.",
+          "n",
+          "Ausb."
+        ],
+        [
+          "g/mol",
+          "g",
+          "mmol",
+          "%",
+          "Habitus",
+          "Rf",
+          "Laufmittel",
+          "NMR"
+        ],
+        [
+          "tert. Amin",
+          412.5,
+          1.0850000000000009,
+          2.630303030303032,
+          46.44291336669748
+        ],
+        [
+          "Vorschrift:",
+          "DC:",
+          "Beobachtungen:"
+        ],
+        [
+          "Aminoester in DMF unter N2 lösen, dann mit Cs2CO3 und Bromolefin versetzen. Auf 60 °C erwärmen, rühren ü.N.                                                                   Aufarbeitung: Auf RT abkühlen, dann mit DEE versetzen. Organische Phase mit Wasser (2x) und brine (2x) waschen, trocknen über MgSO4. LM am Roti entfernen und Rohprodukt über Säule (Pe/EtOAc 3:1 -> 2:1) reinigen. ",
+          "Note: Rkt unter Pseudo-Schutzgas                                                             "
+        ],
+        [
+          "Herkunft der Edukte:"
+        ],
+        [
+          "Ns-Ile-OMe 063",
+          "Abzug"
+        ],
+        [
+          "Bromolefin 021",
+          "Abzug"
+        ],
+        [
+          "Cs2CO3",
+          "167 Regal Julius"
+        ],
+        [
+          "DMF"
+        ],
+        [
+          "Literatur:"
+        ]
+      ],
+      "non_empty_cells": [
+        {
+          "address": "B1",
+          "row": 1,
+          "col": 2,
+          "value": "Laborjournal",
+          "python_type": "str"
+        },
+        {
+          "address": "I1",
+          "row": 1,
+          "col": 9,
+          "value": "Nr.:",
+          "python_type": "str"
+        },
+        {
+          "address": "J1",
+          "row": 1,
+          "col": 10,
+          "value": "WAT-Ch-065",
+          "python_type": "str"
+        },
+        {
+          "address": "A2",
+          "row": 2,
+          "col": 1,
+          "value": "Timo Watzenborn",
+          "python_type": "str"
+        },
+        {
+          "address": "A3",
+          "row": 3,
+          "col": 1,
+          "value": "Promotion",
+          "python_type": "str"
+        },
+        {
+          "address": "H3",
+          "row": 3,
+          "col": 8,
+          "value": "Angesetzt am:",
+          "python_type": "str"
+        },
+        {
+          "address": "J3",
+          "row": 3,
+          "col": 10,
+          "value": "2023-12-07",
+          "python_type": "datetime"
+        },
+        {
+          "address": "A4",
+          "row": 4,
+          "col": 1,
+          "value": "AK Laschat",
+          "python_type": "str"
+        },
+        {
+          "address": "A7",
+          "row": 7,
+          "col": 1,
+          "value": "Edukte",
+          "python_type": "str"
+        },
+        {
+          "address": "I7",
+          "row": 7,
+          "col": 9,
+          "value": "eingesetzte\nMenge",
+          "python_type": "str"
+        },
+        {
+          "address": "K7",
+          "row": 7,
+          "col": 11,
+          "value": "Ansatz",
+          "python_type": "str"
+        },
+        {
+          "address": "B8",
+          "row": 8,
+          "col": 2,
+          "value": "M",
+          "python_type": "str"
+        },
+        {
+          "address": "C8",
+          "row": 8,
+          "col": 3,
+          "value": "eq",
+          "python_type": "str"
+        },
+        {
+          "address": "D8",
+          "row": 8,
+          "col": 4,
+          "value": "Dichte",
+          "python_type": "str"
+        },
+        {
+          "address": "E8",
+          "row": 8,
+          "col": 5,
+          "value": "c",
+          "python_type": "str"
+        },
+        {
+          "address": "F8",
+          "row": 8,
+          "col": 6,
+          "value": "V",
+          "python_type": "str"
+        },
+        {
+          "address": "G8",
+          "row": 8,
+          "col": 7,
+          "value": "w",
+          "python_type": "str"
+        },
+        {
+          "address": "H8",
+          "row": 8,
+          "col": 8,
+          "value": "n",
+          "python_type": "str"
+        },
+        {
+          "address": "K8",
+          "row": 8,
+          "col": 11,
+          "value": 30,
+          "python_type": "int"
+        },
+        {
+          "address": "B9",
+          "row": 9,
+          "col": 2,
+          "value": "g/mol",
+          "python_type": "str"
+        },
+        {
+          "address": "D9",
+          "row": 9,
+          "col": 4,
+          "value": "g/mL",
+          "python_type": "str"
+        },
+        {
+          "address": "E9",
+          "row": 9,
+          "col": 5,
+          "value": "mol/L",
+          "python_type": "str"
+        },
+        {
+          "address": "F9",
+          "row": 9,
+          "col": 6,
+          "value": "mL",
+          "python_type": "str"
+        },
+        {
+          "address": "G9",
+          "row": 9,
+          "col": 7,
+          "value": "%",
+          "python_type": "str"
+        },
+        {
+          "address": "H9",
+          "row": 9,
+          "col": 8,
+          "value": "mmol",
+          "python_type": "str"
+        },
+        {
+          "address": "I9",
+          "row": 9,
+          "col": 9,
+          "value": "g",
+          "python_type": "str"
+        },
+        {
+          "address": "J9",
+          "row": 9,
+          "col": 10,
+          "value": "mL",
+          "python_type": "str"
+        },
+        {
+          "address": "K9",
+          "row": 9,
+          "col": 11,
+          "value": "enthalten",
+          "python_type": "str"
+        },
+        {
+          "address": "A10",
+          "row": 10,
+          "col": 1,
+          "value": "Ns-Ile-OMe 063",
+          "python_type": "str"
+        },
+        {
+          "address": "B10",
+          "row": 10,
+          "col": 2,
+          "value": 330.36,
+          "python_type": "float"
+        },
+        {
+          "address": "C10",
+          "row": 10,
+          "col": 3,
+          "value": 1,
+          "python_type": "int"
+        },
+        {
+          "address": "H10",
+          "row": 10,
+          "col": 8,
+          "value": 5.663518585785203,
+          "python_type": "float"
+        },
+        {
+          "address": "I10",
+          "row": 10,
+          "col": 9,
+          "value": 1.871,
+          "python_type": "float"
+        },
+        {
+          "address": "K10",
+          "row": 10,
+          "col": 11,
+          "value": "0,189 mol/L",
+          "python_type": "str"
+        },
+        {
+          "address": "A11",
+          "row": 11,
+          "col": 1,
+          "value": "Bromolefin 021",
+          "python_type": "str"
+        },
+        {
+          "address": "B11",
+          "row": 11,
+          "col": 2,
+          "value": 163.03,
+          "python_type": "float"
+        },
+        {
+          "address": "C11",
+          "row": 11,
+          "col": 3,
+          "value": 1.5,
+          "python_type": "float"
+        },
+        {
+          "address": "G11",
+          "row": 11,
+          "col": 7,
+          "value": 84.3,
+          "python_type": "float"
+        },
+        {
+          "address": "H11",
+          "row": 11,
+          "col": 8,
+          "value": 8.495277878677804,
+          "python_type": "float"
+        },
+        {
+          "address": "I11",
+          "row": 11,
+          "col": 9,
+          "value": 1.6429242616380102,
+          "python_type": "float"
+        },
+        {
+          "address": "K11",
+          "row": 11,
+          "col": 11,
+          "value": "0,283 mol/L",
+          "python_type": "str"
+        },
+        {
+          "address": "A12",
+          "row": 12,
+          "col": 1,
+          "value": "Cs2CO3",
+          "python_type": "str"
+        },
+        {
+          "address": "B12",
+          "row": 12,
+          "col": 2,
+          "value": 325.82,
+          "python_type": "float"
+        },
+        {
+          "address": "C12",
+          "row": 12,
+          "col": 3,
+          "value": 2,
+          "python_type": "int"
+        },
+        {
+          "address": "H12",
+          "row": 12,
+          "col": 8,
+          "value": 11.327037171570407,
+          "python_type": "float"
+        },
+        {
+          "address": "I12",
+          "row": 12,
+          "col": 9,
+          "value": 3.69057525124107,
+          "python_type": "float"
+        },
+        {
+          "address": "K12",
+          "row": 12,
+          "col": 11,
+          "value": "0,378 mol/L",
+          "python_type": "str"
+        },
+        {
+          "address": "A14",
+          "row": 14,
+          "col": 1,
+          "value": "DMF",
+          "python_type": "str"
+        },
+        {
+          "address": "F14",
+          "row": 14,
+          "col": 6,
+          "value": 30,
+          "python_type": "int"
+        },
+        {
+          "address": "J14",
+          "row": 14,
+          "col": 10,
+          "value": 30,
+          "python_type": "int"
+        },
+        {
+          "address": "A19",
+          "row": 19,
+          "col": 1,
+          "value": "Produkte",
+          "python_type": "str"
+        },
+        {
+          "address": "B20",
+          "row": 20,
+          "col": 2,
+          "value": "M",
+          "python_type": "str"
+        },
+        {
+          "address": "C20",
+          "row": 20,
+          "col": 3,
+          "value": "Ausw.",
+          "python_type": "str"
+        },
+        {
+          "address": "D20",
+          "row": 20,
+          "col": 4,
+          "value": "n",
+          "python_type": "str"
+        },
+        {
+          "address": "E20",
+          "row": 20,
+          "col": 5,
+          "value": "Ausb.",
+          "python_type": "str"
+        },
+        {
+          "address": "B21",
+          "row": 21,
+          "col": 2,
+          "value": "g/mol",
+          "python_type": "str"
+        },
+        {
+          "address": "C21",
+          "row": 21,
+          "col": 3,
+          "value": "g",
+          "python_type": "str"
+        },
+        {
+          "address": "D21",
+          "row": 21,
+          "col": 4,
+          "value": "mmol",
+          "python_type": "str"
+        },
+        {
+          "address": "E21",
+          "row": 21,
+          "col": 5,
+          "value": "%",
+          "python_type": "str"
+        },
+        {
+          "address": "F21",
+          "row": 21,
+          "col": 6,
+          "value": "Habitus",
+          "python_type": "str"
+        },
+        {
+          "address": "G21",
+          "row": 21,
+          "col": 7,
+          "value": "Rf",
+          "python_type": "str"
+        },
+        {
+          "address": "H21",
+          "row": 21,
+          "col": 8,
+          "value": "Laufmittel",
+          "python_type": "str"
+        },
+        {
+          "address": "J21",
+          "row": 21,
+          "col": 10,
+          "value": "NMR",
+          "python_type": "str"
+        },
+        {
+          "address": "A22",
+          "row": 22,
+          "col": 1,
+          "value": "tert. Amin",
+          "python_type": "str"
+        },
+        {
+          "address": "B22",
+          "row": 22,
+          "col": 2,
+          "value": 412.5,
+          "python_type": "float"
+        },
+        {
+          "address": "C22",
+          "row": 22,
+          "col": 3,
+          "value": 1.0850000000000009,
+          "python_type": "float"
+        },
+        {
+          "address": "D22",
+          "row": 22,
+          "col": 4,
+          "value": 2.630303030303032,
+          "python_type": "float"
+        },
+        {
+          "address": "E22",
+          "row": 22,
+          "col": 5,
+          "value": 46.44291336669748,
+          "python_type": "float"
+        },
+        {
+          "address": "A27",
+          "row": 27,
+          "col": 1,
+          "value": "Vorschrift:",
+          "python_type": "str"
+        },
+        {
+          "address": "E27",
+          "row": 27,
+          "col": 5,
+          "value": "DC:",
+          "python_type": "str"
+        },
+        {
+          "address": "H27",
+          "row": 27,
+          "col": 8,
+          "value": "Beobachtungen:",
+          "python_type": "str"
+        },
+        {
+          "address": "A28",
+          "row": 28,
+          "col": 1,
+          "value": "Aminoester in DMF unter N2 lösen, dann mit Cs2CO3 und Bromolefin versetzen. Auf 60 °C erwärmen, rühren ü.N.                                                                   Aufarbeitung: Auf RT abkühlen, dann mit DEE versetzen. Organische Phase mit Wasser (2x) und brine (2x) waschen, trocknen über MgSO4. LM am Roti entfernen und Rohprodukt über Säule (Pe/EtOAc 3:1 -> 2:1) reinigen. ",
+          "python_type": "str"
+        },
+        {
+          "address": "H28",
+          "row": 28,
+          "col": 8,
+          "value": "Note: Rkt unter Pseudo-Schutzgas                                                             ",
+          "python_type": "str"
+        },
+        {
+          "address": "H36",
+          "row": 36,
+          "col": 8,
+          "value": "Herkunft der Edukte:",
+          "python_type": "str"
+        },
+        {
+          "address": "H37",
+          "row": 37,
+          "col": 8,
+          "value": "Ns-Ile-OMe 063",
+          "python_type": "str"
+        },
+        {
+          "address": "J37",
+          "row": 37,
+          "col": 10,
+          "value": "Abzug",
+          "python_type": "str"
+        },
+        {
+          "address": "H38",
+          "row": 38,
+          "col": 8,
+          "value": "Bromolefin 021",
+          "python_type": "str"
+        },
+        {
+          "address": "J38",
+          "row": 38,
+          "col": 10,
+          "value": "Abzug",
+          "python_type": "str"
+        },
+        {
+          "address": "H39",
+          "row": 39,
+          "col": 8,
+          "value": "Cs2CO3",
+          "python_type": "str"
+        },
+        {
+          "address": "J39",
+          "row": 39,
+          "col": 10,
+          "value": "167 Regal Julius",
+          "python_type": "str"
+        },
+        {
+          "address": "H41",
+          "row": 41,
+          "col": 8,
+          "value": "DMF",
+          "python_type": "str"
+        },
+        {
+          "address": "A44",
+          "row": 44,
+          "col": 1,
+          "value": "Literatur:",
+          "python_type": "str"
+        }
+      ],
+      "profile_summary": {
+        "profile_name": "chem_lab_journal",
+        "label_positions": {
+          "starting_materials": {
+            "address": "A7",
+            "row": 7,
+            "col": 1,
+            "label": "Edukte"
+          },
+          "products": {
+            "address": "A19",
+            "row": 19,
+            "col": 1,
+            "label": "Produkte"
+          },
+          "procedure": {
+            "address": "A27",
+            "row": 27,
+            "col": 1,
+            "label": "Vorschrift:"
+          },
+          "tlc_conditions": {
+            "address": "E27",
+            "row": 27,
+            "col": 5,
+            "label": "DC:"
+          },
+          "observations": {
+            "address": "H27",
+            "row": 27,
+            "col": 8,
+            "label": "Beobachtungen:"
+          },
+          "reagent_sources": {
+            "address": "H36",
+            "row": 36,
+            "col": 8,
+            "label": "Herkunft der Edukte:"
+          },
+          "literature": {
+            "address": "A44",
+            "row": 44,
+            "col": 1,
+            "label": "Literatur:"
+          }
+        },
+        "metadata": {
+          "journal_number": "WAT-Ch-065",
+          "researcher": "Timo Watzenborn",
+          "project_type": "Promotion",
+          "date": "2023-12-07",
+          "research_group": "AK Laschat",
+          "reaction_name_from_filename": "Aminierung geschütztes Ile mit Bromolefin"
+        },
+        "batch_volume_mL": 30,
+        "procedure": "Aminoester in DMF unter N2 lösen, dann mit Cs2CO3 und Bromolefin versetzen. Auf 60 °C erwärmen, rühren ü.N.                                                                   Aufarbeitung: Auf RT abkühlen, dann mit DEE versetzen. Organische Phase mit Wasser (2x) und brine (2x) waschen, trocknen über MgSO4. LM am Roti entfernen und Rohprodukt über Säule (Pe/EtOAc 3:1 -> 2:1) reinigen. ",
+        "tlc_conditions": null,
+        "observations": "Note: Rkt unter Pseudo-Schutzgas                                                             ",
+        "starting_material_table_rows": [
+          {
+            "name": "Ns-Ile-OMe 063",
+            "M g/mol": 330.36,
+            "eq": 1,
+            "n mmol": 5.663518585785203,
+            "g": 1.871,
+            "enthalten": "0,189 mol/L",
+            "smiles": "C([C@@H]([C@@H](C(=O)OC)NS(=O)(=O)c1ccccc1[N+](=O)[O-])C)C",
+            "inchi": "InChI=1S/C13H18N2O6S/c1-4-9(2)12(13(16)21-3)14-22(19,20)11-8-6-5-7-10(11)15(17)18/h5-9,12,14H,4H2,1-3H3/t9-,12-/m0/s1",
+            "inchikey": "KYILFFWWKQIEEZ-CABZTGNLSA-N"
+          },
+          {
+            "name": "Bromolefin 021",
+            "M g/mol": 163.03,
+            "eq": 1.5,
+            "w %": 84.3,
+            "n mmol": 8.495277878677804,
+            "g": 1.6429242616380102,
+            "enthalten": "0,283 mol/L"
+          },
+          {
+            "name": "Cs2CO3",
+            "M g/mol": 325.82,
+            "eq": 2,
+            "n mmol": 11.327037171570407,
+            "g": 3.69057525124107,
+            "enthalten": "0,378 mol/L"
+          },
+          {
+            "name": "DMF",
+            "V mL": 30,
+            "mL": 30
+          }
+        ],
+        "product_table_rows": [
+          {
+            "name": "tert. Amin",
+            "M g/mol": 412.5,
+            "Ausw. g": 1.0850000000000009,
+            "n mmol": 2.630303030303032,
+            "Ausb. %": 46.44291336669748
+          }
+        ],
+        "reagent_source_rows": [
+          [
+            "Ns-Ile-OMe 063",
+            "Abzug"
+          ],
+          [
+            "Bromolefin 021",
+            "Abzug"
+          ],
+          [
+            "Cs2CO3",
+            "167 Regal Julius"
+          ],
+          [
+            "DMF"
+          ]
+        ],
+        "literature_rows": [
+          [
+            "Literatur:"
+          ]
+        ]
+      }
+    }
+  ],
+  "embedded_reaction_smiles": [
+    "C([C@@H]([C@@H](C(=O)OC)NS(=O)(=O)c1ccccc1[N+](=O)[O-])C)C>>[C@@H]([C@@H](C(=O)OC)N(S(=O)(=O)c1c(*)cccc1)CCC=C(C)C)(CC)C",
+    "CC(=CCCBr)C",
+    "*"
+  ],
+  "embedded_reaction_structures": [
+    {
+      "role": "reactant",
+      "smiles": "C([C@@H]([C@@H](C(=O)OC)NS(=O)(=O)c1ccccc1[N+](=O)[O-])C)C",
+      "inchi": "InChI=1S/C13H18N2O6S/c1-4-9(2)12(13(16)21-3)14-22(19,20)11-8-6-5-7-10(11)15(17)18/h5-9,12,14H,4H2,1-3H3/t9-,12-/m0/s1",
+      "inchikey": "KYILFFWWKQIEEZ-CABZTGNLSA-N"
+    },
+    {
+      "role": "unknown",
+      "smiles": "CC(=CCCBr)C",
+      "inchi": "InChI=1S/C6H11Br/c1-6(2)4-3-5-7/h4H,3,5H2,1-2H3",
+      "inchikey": "UNXURIHDFUQNOC-UHFFFAOYSA-N"
+    }
+  ]
+}

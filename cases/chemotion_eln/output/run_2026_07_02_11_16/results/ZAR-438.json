@@ -1,0 +1,333 @@
+{
+  "journal_number": "ZAR-438",
+  "reaction_name": "Synthesis of Co(ttpp)",
+  "date": "2026-06-09",
+  "researcher": "Zarfishan Dilruba",
+  "research_group": "AK Endo",
+  "project_type": "Promotion",
+  "reagent_sources": [],
+  "batch_volume_mL": 20,
+  "observations": "Short-pad chromatography\nFritted funnel (50mL, por. 4), suction adapter, 100 mL RBF, T-connector, diaphragm pump\nAdd 15 g of neutral alumina\nAdd THF to fully wet the alumina\nAdd the reaction mixture\nElute with suction and THF until the eluate becomes pale red → 70 mL, alumina pad (Green at the top, off white at the bottom)\nRotovap\nDry under vacuum Schlenk line, 1 h \nDark brown solid\n\nRT 21.9 °C, RH 32 %\nCHCl₃ deacidification\n250 mL RBF\nAdd basic alumina 20 g\nAdd CHCl₃ 150 mL and swirl\nFritted funnel (50 mL, por. 4), suction adapter, 250 mL RBF, diaphragm pump\nFilter the mixture under suction\n\nReprecipitation\nAdd 30 mL of purified CHCl₃ to the flask and sonicate → dark red solution\nAdd 180 mL of n-hexane, swirl, sonicate\nStore in fridge (0 °C) for 1 h\nFritted funnel (50 mL, por. 4), suction adapter, 500 mL RBF, diaphragm pump \nFilter the mixture under suction → faint brown filtrate\nRinse w/ 2 x (10 mL of purified CHCl₃ + 60 mL of hexane)\nRinse with 2 × 30 mL of petroleum ether [hexane should be used]\nDry under vacuum (desiccator, diaphragm pump, overnight) → reddish brown solid\n\nAnalysis\nRT 20.4 °C, RH 45%\n20 mL vial with PTFE sealing (tare: 15.52848 g)\nWeigh : 575.90 g\n→ 1H NMR P (CDCl₃; U1.834; N PROTON 20 ppm; O1P 6, SW 22) (dark red solution)  [should be measured in DMSO as well]\nStore in the fridge",
+  "tlc_conditions": null,
+  "starting_materials": [
+    {
+      "name": "TAPP",
+      "note": "INV-72-1",
+      "mass_g": 0.25011,
+      "molar_mass_g_mol": 674.79436,
+      "amount_mmol": 0.3707,
+      "equivalents": 1
+    },
+    {
+      "name": "TrBr",
+      "note": "INV-20-7",
+      "mass_g": 0.60071,
+      "molar_mass_g_mol": 323.2264,
+      "amount_mmol": 1.8588,
+      "equivalents": 5.014162728306287
+    },
+    {
+      "name": "CoCl2",
+      "note": "INV-21-11",
+      "mass_g": 0.28963,
+      "molar_mass_g_mol": 129.8392,
+      "amount_mmol": 2.2319,
+      "equivalents": 6.018359152048455
+    },
+    {
+      "name": "Et3N",
+      "note": "INV-22-9",
+      "mass_g": 0.3749,
+      "molar_mass_g_mol": 101.19,
+      "amount_mmol": 3.7049,
+      "equivalents": 9.995815520941518,
+      "density_g_mL": 0.726
+    },
+    {
+      "name": "THF",
+      "note": "INV-77-1",
+      "volume_mL": 20,
+      "mass_g": 17.78,
+      "molar_mass_g_mol": 72.10572,
+      "amount_mmol": 246.577,
+      "equivalents": 665.2768735309111,
+      "density_g_mL": 0.889
+    }
+  ],
+  "products": [
+    {
+      "name": "Co(ttpp)",
+      "note": "ZAR-1096",
+      "yield_g": 0.5759,
+      "amount_mmol": 0.3387,
+      "molar_mass_g_mol": 1700.96952,
+      "is_main_product": true,
+      "appearance": "dark brown solid",
+      "yield_percent": null,
+      "nmr_data": null,
+      "rf_value": null,
+      "eluent_system": null
+    }
+  ],
+  "procedure": {
+    "Prep": {
+      "Step": [
+        {
+          "$xml_type": "HeatChill",
+          "_vessel": "100 mL two-neck RBF",
+          "_temp": {
+            "Value": 120,
+            "Unit": "celsius"
+          }
+        },
+        {
+          "$xml_type": "EvacuateAndRefill",
+          "_vessel": "100 mL two-neck RBF",
+          "_gas": "N2",
+          "_comment": "assemble and evacuate system while hot (5.7 × 10⁻³ mbar)"
+        },
+        {
+          "$xml_type": "HeatChill",
+          "_vessel": "100 mL two-neck RBF",
+          "_temp": {
+            "Value": 250,
+            "Unit": "celsius"
+          },
+          "_comment": "heat flask and bottom part of reflux condenser with heat gun"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "100 mL two-neck RBF",
+          "_reagent": "TAPP",
+          "_amount": {
+            "Value": 250.11,
+            "Unit": "milligram"
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "100 mL two-neck RBF",
+          "_reagent": "TrBr",
+          "_amount": {
+            "Value": 600.71,
+            "Unit": "milligram"
+          }
+        },
+        {
+          "$xml_type": "EvacuateAndRefill",
+          "_vessel": "100 mL two-neck RBF",
+          "_gas": "N2",
+          "_comment": "cycle with N2 slowly ×3"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "100 mL two-neck RBF",
+          "_reagent": "Et3N",
+          "_amount": {
+            "Value": 374.9,
+            "Unit": "milligram"
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "100 mL two-neck RBF",
+          "_reagent": "THF",
+          "_amount": {
+            "Value": 20,
+            "Unit": "millilitre"
+          }
+        }
+      ]
+    },
+    "Reaction": {
+      "Step": [
+        {
+          "$xml_type": "Wait",
+          "_time": {
+            "Value": 1,
+            "Unit": "hour"
+          },
+          "_comment": "start stirring (350 rpm); cover with aluminum foil"
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "CoCl2",
+          "_vessel": "100 mL two-neck RBF",
+          "_amount": {
+            "Value": 289.63,
+            "Unit": "milligram"
+          }
+        },
+        {
+          "$xml_type": "EvacuateAndRefill",
+          "_gas": "N2",
+          "_time": {
+            "Value": 10,
+            "Unit": "second"
+          },
+          "_comment": "purge with N2 for 10 s"
+        },
+        {
+          "$xml_type": "EvacuateAndRefill",
+          "_gas": "N2",
+          "_time": {
+            "Value": 30,
+            "Unit": "minute"
+          },
+          "_comment": "bubble with N2 for 30 min"
+        },
+        {
+          "$xml_type": "HeatChill",
+          "_temp": {
+            "Value": 85,
+            "Unit": "celsius"
+          },
+          "_time": {
+            "Value": 2,
+            "Unit": "hour"
+          },
+          "_comment": "reflux (oil bath)"
+        }
+      ]
+    },
+    "Workup": {
+      "Step": [
+        {
+          "$xml_type": "Add",
+          "_vessel": "fritted funnel (50 mL)",
+          "_reagent": "neutral alumina",
+          "_amount": {
+            "Value": 15,
+            "Unit": "gram"
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "fritted funnel (50 mL)",
+          "_reagent": "THF",
+          "_comment": "amount not stated (to fully wet the alumina)"
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "reaction mixture",
+          "_vessel": "fritted funnel (50 mL)",
+          "_comment": "amount not stated"
+        },
+        {
+          "$xml_type": "Purify",
+          "_eluent": "THF",
+          "_comment": "short-pad chromatography, elute until pale red (≈70 mL)"
+        },
+        {
+          "$xml_type": "Evaporate",
+          "_method": "rotary_evaporator"
+        },
+        {
+          "$xml_type": "Dry",
+          "_time": {
+            "Value": 1,
+            "Unit": "hour"
+          },
+          "_comment": "dry under vacuum (Schlenk line)"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "250 mL RBF",
+          "_reagent": "basic alumina",
+          "_amount": {
+            "Value": 20,
+            "Unit": "gram"
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "250 mL RBF",
+          "_reagent": "CHCl3",
+          "_amount": {
+            "Value": 150,
+            "Unit": "millilitre"
+          }
+        },
+        {
+          "$xml_type": "Filter",
+          "_product_portion": "filtrate"
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "CHCl3",
+          "_amount": {
+            "Value": 30,
+            "Unit": "millilitre"
+          }
+        },
+        {
+          "$xml_type": "Sonicate",
+          "_comment": "sonicate to dissolve (dark red solution)"
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "n-hexane",
+          "_amount": {
+            "Value": 180,
+            "Unit": "millilitre"
+          }
+        },
+        {
+          "$xml_type": "HeatChill",
+          "_temp": {
+            "Value": 0,
+            "Unit": "celsius"
+          },
+          "_time": {
+            "Value": 1,
+            "Unit": "hour"
+          },
+          "_comment": "store in fridge"
+        },
+        {
+          "$xml_type": "Filter",
+          "_product_portion": "filtrate",
+          "_rinse": [
+            {
+              "name": "purified CHCl3",
+              "amount": {
+                "Value": 10,
+                "Unit": "millilitre"
+              }
+            },
+            {
+              "name": "n-hexane",
+              "amount": {
+                "Value": 60,
+                "Unit": "millilitre"
+              }
+            }
+          ],
+          "_comment": "repeat 2×"
+        },
+        {
+          "$xml_type": "Filter",
+          "_product_portion": "filtrate",
+          "_rinse": [
+            {
+              "name": "petroleum ether",
+              "amount": {
+                "Value": 30,
+                "Unit": "millilitre"
+              }
+            }
+          ],
+          "_comment": "repeat 2× (note: hexane should be used)"
+        },
+        {
+          "$xml_type": "Dry",
+          "_time": {
+            "Value": 0.5,
+            "Unit": "day"
+          },
+          "_comment": "dry under vacuum (desiccator, diaphragm pump), overnight"
+        }
+      ]
+    }
+  }
+}

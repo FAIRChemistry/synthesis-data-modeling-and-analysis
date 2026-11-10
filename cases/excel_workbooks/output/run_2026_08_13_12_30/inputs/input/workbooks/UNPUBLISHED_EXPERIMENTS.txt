@@ -1,0 +1,31 @@
+Some experiments and results have not yet been published. The corresponding files and content will be added to this dataset once published.
+
+- WAT-Ch-113 Fluorierung Olefin geschützt FeOx_Selectfluor mehr waschen.xlsx
+- WAT-Ch-114 Fluorierung Olefin geschützt FeNO3_Selectfluor.xlsx
+- WAT-Ch-115 Fluorierung Olefin geschützt FeOx_Selectfluor mehr NH4OH quenchen.xlsx
+- WAT-Ch-116 Fluorierung Olefin geschützt FeOx_Selectfluor weniger NH4OH quenchen.xlsx
+- WAT-Ch-117 Fluorierung Olefin geschützt FeOx_Selectfluor 4 eq. SelF.xlsx
+- WAT-Ch-118 Fluorierung Olefin geschützt FeOx_Selectfluor 1 eq. SelF.xlsx
+- WAT-Ch-119 Fluorierung Olefin geschützt FeOx_Selectfluor 12 eq. NaBH4.xlsx
+- WAT-Ch-120 Fluorierung Olefin geschützt FeOx_Selectfluor 3 eq. NaBH4.xlsx
+- WAT-Ch-121 Fluorierung Olefin geschützt FeOx_Selectfluor 1 potion NaBH4.xlsx
+- WAT-Ch-122 Fluorierung Olefin geschützt FeOx_Selectfluor 3 potion NaBH4.xlsx
+- WAT-Ch-123 Fluorierung Olefin geschützt FeOx_Selectfluor 4 eq. FeOx.xlsx
+- WAT-Ch-124 Fluorierung Olefin geschützt FeOx_Selectfluor 1 eq. FeOx.xlsx
+- WAT-Ch-125 Fluorierung Olefin geschützt FeOx_Selectfluor full degas.xlsx
+- WAT-Ch-126 Fluorierung Olefin geschützt FeOx_Selectfluor O2 atmosphere.xlsx
+- WAT-Ch-127 Fluorierung Olefin geschützt FeOx_Selectfluor 75% Wasser.xlsx
+- WAT-Ch-128 Fluorierung Olefin geschützt FeOx_Selectfluor 25% Wasser.xlsx
+- WAT-Ch-129 Fluorierung Olefin geschützt FeOx_Selectfluor conc höher.xlsx
+- WAT-Ch-130 Fluorierung Olefin geschützt FeOx_Selectfluor conc niedriger.xlsx
+- WAT-Ch-131 Fluorierung Olefin geschützt FeOx_Selectfluor -20 °C.xlsx
+- WAT-Ch-132 Fluorierung Olefin geschützt FeOx_Selectfluor RT.xlsx
+- WAT-Ch-133 Fluorierung Olefin geschützt FeOx_Selectfluor standard.xlsx
+- WAT-Ch-134 Fluorierung Olefin geschützt FeOx_Selectfluor DCM extr.xlsx
+- WAT-Ch-233 Fluorierung HOL180 geschützt FeNO3_Selectfluor.xlsx
+- WAT-Ch-234 Fluorierung HOL309 geschützt FeNO3_Selectfluor.xlsx
+- WAT-Ch-238 Fluorierung HAU-12 FeNO3_Selectfluor.xlsx
+- WAT-Ch-239 Fluorierung HAU-25A FeNO3_Selectfluor.xlsx
+- WAT-Ch-240 Fluorierung JEN-15.2 OD1 FeNO3_Selectfluor.xlsx
+- WAT-Ch-241 Fluorierung JEN48.1 FeNO3_Selectfluor.xlsx
+- WAT-Ch-242 Fluorierung HOL-412 FeNO3_Selectfluor.xlsx

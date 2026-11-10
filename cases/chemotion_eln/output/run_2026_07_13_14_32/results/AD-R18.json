@@ -1,0 +1,389 @@
+{
+  "journal_number": "AD-R18",
+  "reaction_name": "Synthesis of Co(ttpp) (scale-up)",
+  "date": "2026-04-07",
+  "starting_materials": [
+    {
+      "name": "TAPP",
+      "note": "INV-14-7",
+      "molar_mass_g_mol": 674.79436,
+      "mass_g": 0.50313,
+      "amount_mmol": 0.745676,
+      "equivalents": 1,
+      "density_g_mL": 1.35,
+      "volume_mL": null
+    },
+    {
+      "name": "TrBr",
+      "note": "INV-20-6",
+      "molar_mass_g_mol": 323.2264,
+      "mass_g": 1.2049999999999998,
+      "amount_mmol": 3.72748,
+      "equivalents": 5.00001666805036,
+      "density_g_mL": null,
+      "volume_mL": null
+    },
+    {
+      "name": "CoCl2",
+      "note": "INV-21-9",
+      "molar_mass_g_mol": 129.8392,
+      "mass_g": 0.58636,
+      "amount_mmol": 4.51596,
+      "equivalents": 6.056890685815249,
+      "density_g_mL": null,
+      "volume_mL": null
+    },
+    {
+      "name": "Et3N",
+      "note": "INV-22-7",
+      "molar_mass_g_mol": 101.19,
+      "mass_g": 0.74778,
+      "amount_mmol": 7.3897,
+      "equivalents": 9.911228297492745,
+      "density_g_mL": 0.726,
+      "volume_mL": 1.03
+    },
+    {
+      "name": "THF",
+      "note": "INV-23-7",
+      "molar_mass_g_mol": 72.10572,
+      "mass_g": null,
+      "amount_mmol": null,
+      "equivalents": 661.4290495053613,
+      "density_g_mL": 0.889,
+      "volume_mL": null
+    }
+  ],
+  "batch_volume_mL": 1.03,
+  "products": [
+    {
+      "name": "Co(ttpp)",
+      "note": "AD-47",
+      "molar_mass_g_mol": 1700.9695200000008,
+      "yield_g": 0.97666,
+      "amount_mmol": 0.574285,
+      "yield_percent": 77.00839998348953,
+      "is_main_product": true,
+      "appearance": "reddish brown solid",
+      "eluent_system": null,
+      "nmr_data": null,
+      "rf_value": null
+    }
+  ],
+  "procedure": {
+    "Prep": {
+      "Step": [
+        {
+          "$xml_type": "HeatChill",
+          "_vessel": "100 mL two-neck RBF",
+          "_temp": {
+            "Value": 120,
+            "Unit": "celsius"
+          },
+          "_comment": "Reaction: 100 mL two-neck RBF with a stir bar, septum (natural rubber), reflux condenser, T-shaped connector, bubbler (with paraffin oil), Schlenk line (N₂, 1.25 atm), heat gun, magnetic stirrer, oil bath; Heat the flask in an oven at 120 °C for >1.5 h"
+        },
+        {
+          "$xml_type": "EvacuateAndRefill",
+          "_vessel": "100 mL two-neck RBF",
+          "_comment": "Quickly assemble and evacuate the system while it is still hot (1.2 × 10⁻³ mbar)"
+        },
+        {
+          "$xml_type": "HeatChill",
+          "_vessel": "100 mL two-neck RBF",
+          "_temp": {
+            "Value": 250,
+            "Unit": "celsius"
+          },
+          "_comment": "Heat the flask and the bottom part of the reflux condenser with a heat gun (250 °C)"
+        },
+        {
+          "$xml_type": "EvacuateAndRefill",
+          "_vessel": "100 mL two-neck RBF",
+          "_gas": "N2",
+          "_comment": "Backfill with N₂"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "100 mL two-neck RBF",
+          "_reagent": "TAPP",
+          "_amount": {
+            "Value": 0.50313,
+            "Unit": "gram"
+          },
+          "_dropwise": false,
+          "_comment": "Close the N₂ connection. Add TAPP and TrBr (plastic spatula) quickly"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "100 mL two-neck RBF",
+          "_reagent": "TrBr",
+          "_amount": {
+            "Value": 1.2049999999999998,
+            "Unit": "gram"
+          },
+          "_dropwise": false,
+          "_comment": "Add TAPP and TrBr (plastic spatula) quickly"
+        },
+        {
+          "$xml_type": "EvacuateAndRefill",
+          "_vessel": "100 mL two-neck RBF",
+          "_comment": "Cycle with N₂ slowly ×3"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "100 mL two-neck RBF",
+          "_reagent": "Et3N",
+          "_amount": {
+            "Value": 1.03,
+            "Unit": "millilitre"
+          },
+          "_dropwise": false,
+          "_comment": "Add Et₃N"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "100 mL two-neck RBF",
+          "_reagent": "THF",
+          "_dropwise": false,
+          "_comment": "Add THF → dark green liquid. Start stirring (350 rpm) [10:45]. Cover the flask with aluminum foil"
+        }
+      ]
+    },
+    "Reaction": {
+      "Step": [
+        {
+          "$xml_type": "Wait",
+          "_vessel": "100 mL two-neck RBF",
+          "_time": {
+            "Value": 1,
+            "Unit": "hour"
+          },
+          "_comment": "Wait for 1 hr"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "100 mL two-neck RBF",
+          "_reagent": "CoCl2",
+          "_amount": {
+            "Value": 0.58636,
+            "Unit": "gram"
+          },
+          "_dropwise": false,
+          "_comment": "Stop stirring. Close the N₂ connection. Add CoCl₂ quickly."
+        },
+        {
+          "$xml_type": "EvacuateAndRefill",
+          "_vessel": "100 mL two-neck RBF",
+          "_gas": "N2",
+          "_time": {
+            "Value": 10,
+            "Unit": "second"
+          },
+          "_comment": "Purge with N₂ for 10 s. Close. Resume stirring. [12:30]"
+        },
+        {
+          "$xml_type": "EvacuateAndRefill",
+          "_vessel": "100 mL two-neck RBF",
+          "_gas": "N2",
+          "_time": {
+            "Value": 30,
+            "Unit": "minute"
+          },
+          "_comment": "Bubble with N₂ for 30 min [12:32]"
+        },
+        {
+          "$xml_type": "HeatChill",
+          "_vessel": "100 mL two-neck RBF",
+          "_temp": {
+            "Value": 85,
+            "Unit": "celsius"
+          },
+          "_reflux": true,
+          "_time": {
+            "Value": 2,
+            "Unit": "hour"
+          },
+          "_comment": "Heat to reflux (85 °C, oil bath) for 2 h [15:03]"
+        },
+        {
+          "$xml_type": "EvacuateAndRefill",
+          "_vessel": "100 mL two-neck RBF",
+          "_comment": "Cool down to RT. → 0.1 mL + 400 µL of CDCl₃ → syringe filter (PVDF) → ¹H NMR M2 (U1.834; N PROTON20ppm; O1P 6, SW 22)"
+        }
+      ]
+    },
+    "Workup": {
+      "Step": [
+        {
+          "$xml_type": "Add",
+          "_vessel": "Fritted funnel (x mL, por. 4)",
+          "_reagent": "neutral alumina",
+          "_amount": {
+            "Value": 30,
+            "Unit": "gram"
+          },
+          "_dropwise": false,
+          "_comment": "Short-pad chromatography: Fritted funnel (x mL, por. 4), suction adapter, 250 mL RBF, T-connector, diaphragm pump; Add 30 g of neutral alumina"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "Fritted funnel (x mL, por. 4)",
+          "_reagent": "THF",
+          "_dropwise": false,
+          "_comment": "Add THF to fully wet the alumina"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "Fritted funnel (x mL, por. 4)",
+          "_reagent": "reaction mixture",
+          "_dropwise": false,
+          "_comment": "Add the reaction mixture"
+        },
+        {
+          "$xml_type": "Purify",
+          "_vessel": "Fritted funnel (x mL, por. 4)",
+          "_eluent": "THF",
+          "_stationary_phase": "neutral alumina",
+          "_comment": "Elute with suction and THF until the eluate becomes pale red → 220 mL, alumina pad blue-green at the top, pale red at the bottom"
+        },
+        {
+          "$xml_type": "Wait",
+          "_vessel": "250 mL RBF",
+          "_time": {
+            "Value": 0.5,
+            "Unit": "day"
+          },
+          "_comment": "Store in the fridge o/n"
+        },
+        {
+          "$xml_type": "Evaporate",
+          "_vessel": "250 mL RBF",
+          "_method": "rotary_evaporator",
+          "_comment": "Rotovap"
+        },
+        {
+          "$xml_type": "Dry",
+          "_vessel": "250 mL RBF",
+          "_time": {
+            "Value": 1,
+            "Unit": "hour"
+          },
+          "_comment": "Dry under vacuum Schlenk line, 1 h"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "250 mL RBF",
+          "_reagent": "basic alumina",
+          "_amount": {
+            "Value": 40,
+            "Unit": "gram"
+          },
+          "_dropwise": false,
+          "_comment": "CHCl₃ deacidification: 250 mL RBF; Add basic alumina 40 g"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "250 mL RBF",
+          "_reagent": "CHCl3",
+          "_amount": {
+            "Value": 150,
+            "Unit": "millilitre"
+          },
+          "_dropwise": false,
+          "_comment": "Add CHCl₃ 150 mL and swirl"
+        },
+        {
+          "$xml_type": "Filter",
+          "_vessel": "Fritted funnel (x mL, por. 4)",
+          "_comment": "Fritted funnel (x mL, por. 4), suction adapter, 250 mL RBF, diaphragm pump; Filter the mixture under suction"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "250 mL RBF",
+          "_reagent": "purified CHCl3",
+          "_amount": {
+            "Value": 50,
+            "Unit": "millilitre"
+          },
+          "_dropwise": false,
+          "_comment": "Reprecipitation: Add 50 mL of purified CHCl₃ to the flask and sonicate → dark red solution"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "250 mL RBF",
+          "_reagent": "n-heptane",
+          "_amount": {
+            "Value": 280,
+            "Unit": "millilitre"
+          },
+          "_dropwise": false,
+          "_comment": "Add 280 mL of n-heptane, swirl, sonicate"
+        },
+        {
+          "$xml_type": "HeatChill",
+          "_vessel": "250 mL RBF",
+          "_temp": {
+            "Value": 0,
+            "Unit": "celsius"
+          },
+          "_time": {
+            "Value": 80,
+            "Unit": "minute"
+          },
+          "_comment": "Store in fridge (0 °C) for 1 h 20 min"
+        },
+        {
+          "$xml_type": "Filter",
+          "_vessel": "Fritted funnel (x mL, por. 4)",
+          "_comment": "Fritted funnel (x mL, por. 4), suction adapter, 250 mL RBF, diaphragm pump; Filter the mixture under suction → dark brown filtrate; Filter the filtrate again → faint brown filtrate"
+        },
+        {
+          "$xml_type": "Filter",
+          "_vessel": "Filter",
+          "_product_portion": "filtrate",
+          "_rinse": [
+            {
+              "name": "purified CHCl3",
+              "amount": {
+                "Value": 12,
+                "Unit": "millilitre"
+              }
+            },
+            {
+              "name": "heptane",
+              "amount": {
+                "Value": 40,
+                "Unit": "millilitre"
+              }
+            }
+          ],
+          "_comment": "Transfer & rinse w/ 2 x (12 mL of purified CHCl₃ + 40 mL of heptane)"
+        },
+        {
+          "$xml_type": "Filter",
+          "_vessel": "Filter",
+          "_rinse": [
+            {
+              "name": "petroleum ether",
+              "amount": {
+                "Value": 30,
+                "Unit": "millilitre"
+              }
+            }
+          ],
+          "_comment": "Rinse with 2 × 30 mL of petroleum ether"
+        },
+        {
+          "$xml_type": "Dry",
+          "_vessel": "Filter",
+          "_time": {
+            "Value": 4,
+            "Unit": "day"
+          },
+          "_comment": "Dry under vacuum (desiccator, diaphragm pump, 4 days) → reddish brown solid"
+        }
+      ]
+    }
+  },
+  "tlc_conditions": null
+}

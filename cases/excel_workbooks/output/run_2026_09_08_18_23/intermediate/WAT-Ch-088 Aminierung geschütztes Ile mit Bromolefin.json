@@ -1,0 +1,1147 @@
+{
+  "source_file": "cases/excel_workbooks/input/workbooks/WAT-Ch-088 Aminierung geschütztes Ile mit Bromolefin.xlsx",
+  "source_filename": "WAT-Ch-088 Aminierung geschütztes Ile mit Bromolefin.xlsx",
+  "preprocessor": {
+    "library": "openpyxl",
+    "mode": "profile",
+    "options": {
+      "data_only": true,
+      "read_only": true,
+      "formulas": "preserved alongside cached values in non_empty_cells",
+      "formatting_images_and_charts": "not extracted",
+      "profile_name": "chem_lab_journal",
+      "embedded_chemdraw": "extracted as CDX via Open Babel"
+    }
+  },
+  "sheets": [
+    {
+      "sheet_name": "WAT-Ch-001",
+      "max_row": 47,
+      "max_column": 11,
+      "merged_ranges": [],
+      "non_empty_rows": [
+        [
+          "Laborjournal",
+          "Nr.:",
+          "WAT-Ch-088"
+        ],
+        [
+          "Timo Watzenborn"
+        ],
+        [
+          "Promotion",
+          "Angesetzt am:",
+          "2024-08-30"
+        ],
+        [
+          "AK Laschat"
+        ],
+        [
+          "Edukte",
+          "eingesetzte\nMenge",
+          "Ansatz"
+        ],
+        [
+          "M",
+          "eq",
+          "Dichte",
+          "c",
+          "V",
+          "w",
+          "n",
+          100
+        ],
+        [
+          "g/mol",
+          "g/mL",
+          "mol/L",
+          "mL",
+          "%",
+          "mmol",
+          "g",
+          "mL",
+          "enthalten"
+        ],
+        [
+          "Ns-Ile-OMe 087",
+          330.36,
+          1,
+          48.28066351858578,
+          15.95,
+          "0,483 mol/L"
+        ],
+        [
+          "Bromolefin 086",
+          163.03,
+          1.5,
+          82.7,
+          72.42099527787867,
+          14.27665642098254,
+          "0,724 mol/L"
+        ],
+        [
+          "Cs2CO3",
+          325.82,
+          2,
+          96.56132703717157,
+          31.461611575251236,
+          "0,966 mol/L"
+        ],
+        [
+          "DMF",
+          100,
+          100
+        ],
+        [
+          "Produkte"
+        ],
+        [
+          "M",
+          "Ausw.",
+          "n",
+          "Ausb."
+        ],
+        [
+          "g/mol",
+          "g",
+          "mmol",
+          "%",
+          "Habitus",
+          "Rf",
+          "Laufmittel",
+          "NMR"
+        ],
+        [
+          "tert. Amin a+b",
+          412.5,
+          10.454,
+          25.343030303030304,
+          52.491056369336
+        ],
+        [
+          "Vorschrift:",
+          "DC:",
+          "Beobachtungen:"
+        ],
+        [
+          "Aminoester in DMF unter N2 lösen, dann mit Cs2CO3 und Bromolefin versetzen. Auf 60 °C erwärmen, rühren ü.N.                                                                   Aufarbeitung: Auf RT abkühlen, dann mit DEE versetzen. Organische Phase mit Wasser (2x) und brine (2x) waschen, trocknen über MgSO4. LM am Roti entfernen und Rohprodukt über Säule (Pe/EtOAc 3:1 -> 2:1) reinigen. ",
+          "Note: Rkt unter Pseudo-Schutzgas                                                             "
+        ],
+        [
+          "Herkunft der Edukte:"
+        ],
+        [
+          "Ns-Ile-OMe 087",
+          "Abzug"
+        ],
+        [
+          "Bromolefin 086",
+          "Abzug"
+        ],
+        [
+          "Cs2CO3",
+          "167 Regal Julius"
+        ],
+        [
+          "DMF"
+        ],
+        [
+          "Literatur:"
+        ]
+      ],
+      "non_empty_cells": [
+        {
+          "address": "B1",
+          "row": 1,
+          "col": 2,
+          "value": "Laborjournal",
+          "python_type": "str"
+        },
+        {
+          "address": "I1",
+          "row": 1,
+          "col": 9,
+          "value": "Nr.:",
+          "python_type": "str"
+        },
+        {
+          "address": "J1",
+          "row": 1,
+          "col": 10,
+          "value": "WAT-Ch-088",
+          "python_type": "str"
+        },
+        {
+          "address": "A2",
+          "row": 2,
+          "col": 1,
+          "value": "Timo Watzenborn",
+          "python_type": "str"
+        },
+        {
+          "address": "A3",
+          "row": 3,
+          "col": 1,
+          "value": "Promotion",
+          "python_type": "str"
+        },
+        {
+          "address": "H3",
+          "row": 3,
+          "col": 8,
+          "value": "Angesetzt am:",
+          "python_type": "str"
+        },
+        {
+          "address": "J3",
+          "row": 3,
+          "col": 10,
+          "value": "2024-08-30",
+          "python_type": "datetime"
+        },
+        {
+          "address": "A4",
+          "row": 4,
+          "col": 1,
+          "value": "AK Laschat",
+          "python_type": "str"
+        },
+        {
+          "address": "A7",
+          "row": 7,
+          "col": 1,
+          "value": "Edukte",
+          "python_type": "str"
+        },
+        {
+          "address": "I7",
+          "row": 7,
+          "col": 9,
+          "value": "eingesetzte\nMenge",
+          "python_type": "str"
+        },
+        {
+          "address": "K7",
+          "row": 7,
+          "col": 11,
+          "value": "Ansatz",
+          "python_type": "str"
+        },
+        {
+          "address": "B8",
+          "row": 8,
+          "col": 2,
+          "value": "M",
+          "python_type": "str"
+        },
+        {
+          "address": "C8",
+          "row": 8,
+          "col": 3,
+          "value": "eq",
+          "python_type": "str"
+        },
+        {
+          "address": "D8",
+          "row": 8,
+          "col": 4,
+          "value": "Dichte",
+          "python_type": "str"
+        },
+        {
+          "address": "E8",
+          "row": 8,
+          "col": 5,
+          "value": "c",
+          "python_type": "str"
+        },
+        {
+          "address": "F8",
+          "row": 8,
+          "col": 6,
+          "value": "V",
+          "python_type": "str"
+        },
+        {
+          "address": "G8",
+          "row": 8,
+          "col": 7,
+          "value": "w",
+          "python_type": "str"
+        },
+        {
+          "address": "H8",
+          "row": 8,
+          "col": 8,
+          "value": "n",
+          "python_type": "str"
+        },
+        {
+          "address": "K8",
+          "row": 8,
+          "col": 11,
+          "value": 100,
+          "python_type": "int",
+          "formula": "=IF(SUM(J10:J17)>0,SUM(J10:J17),\"\")"
+        },
+        {
+          "address": "B9",
+          "row": 9,
+          "col": 2,
+          "value": "g/mol",
+          "python_type": "str"
+        },
+        {
+          "address": "D9",
+          "row": 9,
+          "col": 4,
+          "value": "g/mL",
+          "python_type": "str"
+        },
+        {
+          "address": "E9",
+          "row": 9,
+          "col": 5,
+          "value": "mol/L",
+          "python_type": "str"
+        },
+        {
+          "address": "F9",
+          "row": 9,
+          "col": 6,
+          "value": "mL",
+          "python_type": "str"
+        },
+        {
+          "address": "G9",
+          "row": 9,
+          "col": 7,
+          "value": "%",
+          "python_type": "str"
+        },
+        {
+          "address": "H9",
+          "row": 9,
+          "col": 8,
+          "value": "mmol",
+          "python_type": "str"
+        },
+        {
+          "address": "I9",
+          "row": 9,
+          "col": 9,
+          "value": "g",
+          "python_type": "str"
+        },
+        {
+          "address": "J9",
+          "row": 9,
+          "col": 10,
+          "value": "mL",
+          "python_type": "str"
+        },
+        {
+          "address": "K9",
+          "row": 9,
+          "col": 11,
+          "value": "enthalten",
+          "python_type": "str"
+        },
+        {
+          "address": "A10",
+          "row": 10,
+          "col": 1,
+          "value": "Ns-Ile-OMe 087",
+          "python_type": "str"
+        },
+        {
+          "address": "B10",
+          "row": 10,
+          "col": 2,
+          "value": 330.36,
+          "python_type": "float"
+        },
+        {
+          "address": "C10",
+          "row": 10,
+          "col": 3,
+          "value": 1,
+          "python_type": "int"
+        },
+        {
+          "address": "F10",
+          "row": 10,
+          "col": 6,
+          "value": null,
+          "python_type": "NoneType",
+          "formula": "=IF(ISNUMBER(I10),IF(ISNUMBER(D10),I10/D10,\"\"),\"\")"
+        },
+        {
+          "address": "H10",
+          "row": 10,
+          "col": 8,
+          "value": 48.28066351858578,
+          "python_type": "float",
+          "formula": "=I10/B10*1000"
+        },
+        {
+          "address": "I10",
+          "row": 10,
+          "col": 9,
+          "value": 15.95,
+          "python_type": "float"
+        },
+        {
+          "address": "K10",
+          "row": 10,
+          "col": 11,
+          "value": "0,483 mol/L",
+          "python_type": "str",
+          "formula": "=IF(OR(NOT(ISNUMBER(H10)),NOT(ISNUMBER(K$8))),\"\",IF(ISNUMBER(C10),CONCATENATE(TEXT(H10/K$8,\"[<10]0,000;[>999]#.###;0,0\"),\" mol/L\"),CONCATENATE(TEXT(H10/H$10,\"[<10]0,000;[>999]#.###;0,0\"),\" Äq.\")))"
+        },
+        {
+          "address": "A11",
+          "row": 11,
+          "col": 1,
+          "value": "Bromolefin 086",
+          "python_type": "str"
+        },
+        {
+          "address": "B11",
+          "row": 11,
+          "col": 2,
+          "value": 163.03,
+          "python_type": "float"
+        },
+        {
+          "address": "C11",
+          "row": 11,
+          "col": 3,
+          "value": 1.5,
+          "python_type": "float"
+        },
+        {
+          "address": "G11",
+          "row": 11,
+          "col": 7,
+          "value": 82.7,
+          "python_type": "float"
+        },
+        {
+          "address": "H11",
+          "row": 11,
+          "col": 8,
+          "value": 72.42099527787867,
+          "python_type": "float",
+          "formula": "=IF(AND(ISNUMBER(C11),ISNUMBER($H$10)),$H$10*C11/$C$10,IF(AND(ISNUMBER(E11),ISNUMBER(F11)),F11*E11,IF(AND(ISNUMBER(B11),ISNUMBER(D11),ISNUMBER(F11)),D11*F11/B11*1000,\"\")))"
+        },
+        {
+          "address": "I11",
+          "row": 11,
+          "col": 9,
+          "value": 14.27665642098254,
+          "python_type": "float",
+          "formula": "=IF(AND(ISNUMBER(D11),ISNUMBER(E11),ISNUMBER(H11)),D11*H11/E11,IF(ISNUMBER(E11),\"\",IF(AND(ISNUMBER(B11),ISNUMBER(G11),ISNUMBER(H11)),H11/1000*B11*100/G11,IF(AND(ISNUMBER(B11),ISNUMBER(H11)),H11/1000*B11,\"\"))))"
+        },
+        {
+          "address": "J11",
+          "row": 11,
+          "col": 10,
+          "value": null,
+          "python_type": "NoneType",
+          "formula": "=IF(AND(ISNUMBER(E11),ISNUMBER(H11)),H11/E11,IF(ISNUMBER(F11),F11,IF(AND(ISNUMBER(G11),ISNUMBER(D11),ISNUMBER(B11),ISNUMBER(H11)),H11*B11/G11*100/1000/D11,IF(AND(ISNUMBER(D11),ISNUMBER(B11),ISNUMBER(H11)),H11*B11/1000/D11,\"\"))))"
+        },
+        {
+          "address": "K11",
+          "row": 11,
+          "col": 11,
+          "value": "0,724 mol/L",
+          "python_type": "str",
+          "formula": "=IF(OR(NOT(ISNUMBER(H11)),NOT(ISNUMBER(K$8))),\"\",IF(ISNUMBER(C11),CONCATENATE(TEXT(H11/K$8,\"[<10]0,000;[>999]#.###;0,0\"),\" mol/L\"),CONCATENATE(TEXT(H11/H$10,\"[<10]0,000;[>999]#.###;0,0\"),\" Äq.\")))"
+        },
+        {
+          "address": "A12",
+          "row": 12,
+          "col": 1,
+          "value": "Cs2CO3",
+          "python_type": "str"
+        },
+        {
+          "address": "B12",
+          "row": 12,
+          "col": 2,
+          "value": 325.82,
+          "python_type": "float"
+        },
+        {
+          "address": "C12",
+          "row": 12,
+          "col": 3,
+          "value": 2,
+          "python_type": "int"
+        },
+        {
+          "address": "H12",
+          "row": 12,
+          "col": 8,
+          "value": 96.56132703717157,
+          "python_type": "float",
+          "formula": "=IF(AND(ISNUMBER(C12),ISNUMBER($H$10)),$H$10*C12/$C$10,IF(AND(ISNUMBER(E12),ISNUMBER(F12)),F12*E12,IF(AND(ISNUMBER(B12),ISNUMBER(D12),ISNUMBER(F12)),D12*F12/B12*1000,\"\")))"
+        },
+        {
+          "address": "I12",
+          "row": 12,
+          "col": 9,
+          "value": 31.461611575251236,
+          "python_type": "float",
+          "formula": "=IF(AND(ISNUMBER(D12),ISNUMBER(E12),ISNUMBER(H12)),D12*H12/E12,IF(ISNUMBER(E12),\"\",IF(AND(ISNUMBER(B12),ISNUMBER(G12),ISNUMBER(H12)),H12/1000*B12*100/G12,IF(AND(ISNUMBER(B12),ISNUMBER(H12)),H12/1000*B12,\"\"))))"
+        },
+        {
+          "address": "J12",
+          "row": 12,
+          "col": 10,
+          "value": null,
+          "python_type": "NoneType",
+          "formula": "=IF(AND(ISNUMBER(E12),ISNUMBER(H12)),H12/E12,IF(ISNUMBER(F12),F12,IF(AND(ISNUMBER(G12),ISNUMBER(D12),ISNUMBER(B12),ISNUMBER(H12)),H12*B12/G12*100/1000/D12,IF(AND(ISNUMBER(D12),ISNUMBER(B12),ISNUMBER(H12)),H12*B12/1000/D12,\"\"))))"
+        },
+        {
+          "address": "K12",
+          "row": 12,
+          "col": 11,
+          "value": "0,966 mol/L",
+          "python_type": "str",
+          "formula": "=IF(OR(NOT(ISNUMBER(H12)),NOT(ISNUMBER(K$8))),\"\",IF(ISNUMBER(C12),CONCATENATE(TEXT(H12/K$8,\"[<10]0,000;[>999]#.###;0,0\"),\" mol/L\"),CONCATENATE(TEXT(H12/H$10,\"[<10]0,000;[>999]#.###;0,0\"),\" Äq.\")))"
+        },
+        {
+          "address": "H13",
+          "row": 13,
+          "col": 8,
+          "value": null,
+          "python_type": "NoneType",
+          "formula": "=IF(AND(ISNUMBER(C13),ISNUMBER($H$10)),$H$10*C13/$C$10,IF(AND(ISNUMBER(E13),ISNUMBER(F13)),F13*E13,IF(AND(ISNUMBER(B13),ISNUMBER(D13),ISNUMBER(F13)),D13*F13/B13*1000,\"\")))"
+        },
+        {
+          "address": "I13",
+          "row": 13,
+          "col": 9,
+          "value": null,
+          "python_type": "NoneType",
+          "formula": "=IF(AND(ISNUMBER(D13),ISNUMBER(E13),ISNUMBER(H13)),D13*H13/E13,IF(ISNUMBER(E13),\"\",IF(AND(ISNUMBER(B13),ISNUMBER(G13),ISNUMBER(H13)),H13/1000*B13*100/G13,IF(AND(ISNUMBER(B13),ISNUMBER(H13)),H13/1000*B13,\"\"))))"
+        },
+        {
+          "address": "J13",
+          "row": 13,
+          "col": 10,
+          "value": null,
+          "python_type": "NoneType",
+          "formula": "=IF(AND(ISNUMBER(E13),ISNUMBER(H13)),H13/E13,IF(ISNUMBER(F13),F13,IF(AND(ISNUMBER(G13),ISNUMBER(D13),ISNUMBER(B13),ISNUMBER(H13)),H13*B13/G13*100/1000/D13,IF(AND(ISNUMBER(D13),ISNUMBER(B13),ISNUMBER(H13)),H13*B13/1000/D13,\"\"))))"
+        },
+        {
+          "address": "K13",
+          "row": 13,
+          "col": 11,
+          "value": null,
+          "python_type": "NoneType",
+          "formula": "=IF(OR(NOT(ISNUMBER(H13)),NOT(ISNUMBER(K$8))),\"\",IF(ISNUMBER(C13),CONCATENATE(TEXT(H13/K$8,\"[<10]0,000;[>999]#.###;0,0\"),\" mol/L\"),CONCATENATE(TEXT(H13/H$10,\"[<10]0,000;[>999]#.###;0,0\"),\" Äq.\")))"
+        },
+        {
+          "address": "A14",
+          "row": 14,
+          "col": 1,
+          "value": "DMF",
+          "python_type": "str"
+        },
+        {
+          "address": "F14",
+          "row": 14,
+          "col": 6,
+          "value": 100,
+          "python_type": "int"
+        },
+        {
+          "address": "H14",
+          "row": 14,
+          "col": 8,
+          "value": null,
+          "python_type": "NoneType",
+          "formula": "=IF(AND(ISNUMBER(C14),ISNUMBER($H$10)),$H$10*C14/$C$10,IF(AND(ISNUMBER(E14),ISNUMBER(F14)),F14*E14,IF(AND(ISNUMBER(B14),ISNUMBER(D14),ISNUMBER(F14)),D14*F14/B14*1000,\"\")))"
+        },
+        {
+          "address": "I14",
+          "row": 14,
+          "col": 9,
+          "value": null,
+          "python_type": "NoneType",
+          "formula": "=IF(AND(ISNUMBER(D14),ISNUMBER(E14),ISNUMBER(H14)),D14*H14/E14,IF(ISNUMBER(E14),\"\",IF(AND(ISNUMBER(B14),ISNUMBER(G14),ISNUMBER(H14)),H14/1000*B14*100/G14,IF(AND(ISNUMBER(B14),ISNUMBER(H14)),H14/1000*B14,\"\"))))"
+        },
+        {
+          "address": "J14",
+          "row": 14,
+          "col": 10,
+          "value": 100,
+          "python_type": "int",
+          "formula": "=IF(AND(ISNUMBER(E14),ISNUMBER(H14)),H14/E14,IF(ISNUMBER(F14),F14,IF(AND(ISNUMBER(G14),ISNUMBER(D14),ISNUMBER(B14),ISNUMBER(H14)),H14*B14/G14*100/1000/D14,IF(AND(ISNUMBER(D14),ISNUMBER(B14),ISNUMBER(H14)),H14*B14/1000/D14,\"\"))))"
+        },
+        {
+          "address": "K14",
+          "row": 14,
+          "col": 11,
+          "value": null,
+          "python_type": "NoneType",
+          "formula": "=IF(OR(NOT(ISNUMBER(H14)),NOT(ISNUMBER(K$8))),\"\",IF(ISNUMBER(C14),CONCATENATE(TEXT(H14/K$8,\"[<10]0,000;[>999]#.###;0,0\"),\" mol/L\"),CONCATENATE(TEXT(H14/H$10,\"[<10]0,000;[>999]#.###;0,0\"),\" Äq.\")))"
+        },
+        {
+          "address": "H15",
+          "row": 15,
+          "col": 8,
+          "value": null,
+          "python_type": "NoneType",
+          "formula": "=IF(AND(ISNUMBER(C15),ISNUMBER($H$10)),$H$10*C15/$C$10,IF(AND(ISNUMBER(E15),ISNUMBER(F15)),F15*E15,IF(AND(ISNUMBER(B15),ISNUMBER(D15),ISNUMBER(F15)),D15*F15/B15*1000,\"\")))"
+        },
+        {
+          "address": "I15",
+          "row": 15,
+          "col": 9,
+          "value": null,
+          "python_type": "NoneType",
+          "formula": "=IF(AND(ISNUMBER(D15),ISNUMBER(E15),ISNUMBER(H15)),D15*H15/E15,IF(ISNUMBER(E15),\"\",IF(AND(ISNUMBER(B15),ISNUMBER(G15),ISNUMBER(H15)),H15/1000*B15*100/G15,IF(AND(ISNUMBER(B15),ISNUMBER(H15)),H15/1000*B15,\"\"))))"
+        },
+        {
+          "address": "J15",
+          "row": 15,
+          "col": 10,
+          "value": null,
+          "python_type": "NoneType",
+          "formula": "=IF(AND(ISNUMBER(E15),ISNUMBER(H15)),H15/E15,IF(ISNUMBER(F15),F15,IF(AND(ISNUMBER(G15),ISNUMBER(D15),ISNUMBER(B15),ISNUMBER(H15)),H15*B15/G15*100/1000/D15,IF(AND(ISNUMBER(D15),ISNUMBER(B15),ISNUMBER(H15)),H15*B15/1000/D15,\"\"))))"
+        },
+        {
+          "address": "K15",
+          "row": 15,
+          "col": 11,
+          "value": null,
+          "python_type": "NoneType",
+          "formula": "=IF(OR(NOT(ISNUMBER(H15)),NOT(ISNUMBER(K$8))),\"\",IF(ISNUMBER(C15),CONCATENATE(TEXT(H15/K$8,\"[<10]0,000;[>999]#.###;0,0\"),\" mol/L\"),CONCATENATE(TEXT(H15/H$10,\"[<10]0,000;[>999]#.###;0,0\"),\" Äq.\")))"
+        },
+        {
+          "address": "H16",
+          "row": 16,
+          "col": 8,
+          "value": null,
+          "python_type": "NoneType",
+          "formula": "=IF(AND(ISNUMBER(C16),ISNUMBER($H$10)),$H$10*C16/$C$10,IF(AND(ISNUMBER(E16),ISNUMBER(F16)),F16*E16,IF(AND(ISNUMBER(B16),ISNUMBER(D16),ISNUMBER(F16)),D16*F16/B16*1000,\"\")))"
+        },
+        {
+          "address": "I16",
+          "row": 16,
+          "col": 9,
+          "value": null,
+          "python_type": "NoneType",
+          "formula": "=IF(AND(ISNUMBER(D16),ISNUMBER(E16),ISNUMBER(H16)),D16*H16/E16,IF(ISNUMBER(E16),\"\",IF(AND(ISNUMBER(B16),ISNUMBER(G16),ISNUMBER(H16)),H16/1000*B16*100/G16,IF(AND(ISNUMBER(B16),ISNUMBER(H16)),H16/1000*B16,\"\"))))"
+        },
+        {
+          "address": "J16",
+          "row": 16,
+          "col": 10,
+          "value": null,
+          "python_type": "NoneType",
+          "formula": "=IF(AND(ISNUMBER(E16),ISNUMBER(H16)),H16/E16,IF(ISNUMBER(F16),F16,IF(AND(ISNUMBER(G16),ISNUMBER(D16),ISNUMBER(B16),ISNUMBER(H16)),H16*B16/G16*100/1000/D16,IF(AND(ISNUMBER(D16),ISNUMBER(B16),ISNUMBER(H16)),H16*B16/1000/D16,\"\"))))"
+        },
+        {
+          "address": "K16",
+          "row": 16,
+          "col": 11,
+          "value": null,
+          "python_type": "NoneType",
+          "formula": "=IF(OR(NOT(ISNUMBER(H16)),NOT(ISNUMBER(K$8))),\"\",IF(ISNUMBER(C16),CONCATENATE(TEXT(H16/K$8,\"[<10]0,000;[>999]#.###;0,0\"),\" mol/L\"),CONCATENATE(TEXT(H16/H$10,\"[<10]0,000;[>999]#.###;0,0\"),\" Äq.\")))"
+        },
+        {
+          "address": "H17",
+          "row": 17,
+          "col": 8,
+          "value": null,
+          "python_type": "NoneType",
+          "formula": "=IF(AND(ISNUMBER(C17),ISNUMBER($H$10)),$H$10*C17/$C$10,IF(AND(ISNUMBER(E17),ISNUMBER(F17)),F17*E17,IF(AND(ISNUMBER(B17),ISNUMBER(D17),ISNUMBER(F17)),D17*F17/B17*1000,\"\")))"
+        },
+        {
+          "address": "I17",
+          "row": 17,
+          "col": 9,
+          "value": null,
+          "python_type": "NoneType",
+          "formula": "=IF(AND(ISNUMBER(D17),ISNUMBER(E17),ISNUMBER(H17)),D17*H17/E17,IF(ISNUMBER(E17),\"\",IF(AND(ISNUMBER(B17),ISNUMBER(G17),ISNUMBER(H17)),H17/1000*B17*100/G17,IF(AND(ISNUMBER(B17),ISNUMBER(H17)),H17/1000*B17,\"\"))))"
+        },
+        {
+          "address": "J17",
+          "row": 17,
+          "col": 10,
+          "value": null,
+          "python_type": "NoneType",
+          "formula": "=IF(AND(ISNUMBER(E17),ISNUMBER(H17)),H17/E17,IF(ISNUMBER(F17),F17,IF(AND(ISNUMBER(G17),ISNUMBER(D17),ISNUMBER(B17),ISNUMBER(H17)),H17*B17/G17*100/1000/D17,IF(AND(ISNUMBER(D17),ISNUMBER(B17),ISNUMBER(H17)),H17*B17/1000/D17,\"\"))))"
+        },
+        {
+          "address": "K17",
+          "row": 17,
+          "col": 11,
+          "value": null,
+          "python_type": "NoneType",
+          "formula": "=IF(OR(NOT(ISNUMBER(H17)),NOT(ISNUMBER(K$8))),\"\",IF(ISNUMBER(C17),CONCATENATE(TEXT(H17/K$8,\"[<10]0,000;[>999]#.###;0,0\"),\" mol/L\"),CONCATENATE(TEXT(H17/H$10,\"[<10]0,000;[>999]#.###;0,0\"),\" Äq.\")))"
+        },
+        {
+          "address": "A19",
+          "row": 19,
+          "col": 1,
+          "value": "Produkte",
+          "python_type": "str"
+        },
+        {
+          "address": "B20",
+          "row": 20,
+          "col": 2,
+          "value": "M",
+          "python_type": "str"
+        },
+        {
+          "address": "C20",
+          "row": 20,
+          "col": 3,
+          "value": "Ausw.",
+          "python_type": "str"
+        },
+        {
+          "address": "D20",
+          "row": 20,
+          "col": 4,
+          "value": "n",
+          "python_type": "str"
+        },
+        {
+          "address": "E20",
+          "row": 20,
+          "col": 5,
+          "value": "Ausb.",
+          "python_type": "str"
+        },
+        {
+          "address": "B21",
+          "row": 21,
+          "col": 2,
+          "value": "g/mol",
+          "python_type": "str"
+        },
+        {
+          "address": "C21",
+          "row": 21,
+          "col": 3,
+          "value": "g",
+          "python_type": "str"
+        },
+        {
+          "address": "D21",
+          "row": 21,
+          "col": 4,
+          "value": "mmol",
+          "python_type": "str"
+        },
+        {
+          "address": "E21",
+          "row": 21,
+          "col": 5,
+          "value": "%",
+          "python_type": "str"
+        },
+        {
+          "address": "F21",
+          "row": 21,
+          "col": 6,
+          "value": "Habitus",
+          "python_type": "str"
+        },
+        {
+          "address": "G21",
+          "row": 21,
+          "col": 7,
+          "value": "Rf",
+          "python_type": "str"
+        },
+        {
+          "address": "H21",
+          "row": 21,
+          "col": 8,
+          "value": "Laufmittel",
+          "python_type": "str"
+        },
+        {
+          "address": "J21",
+          "row": 21,
+          "col": 10,
+          "value": "NMR",
+          "python_type": "str"
+        },
+        {
+          "address": "A22",
+          "row": 22,
+          "col": 1,
+          "value": "tert. Amin a+b",
+          "python_type": "str"
+        },
+        {
+          "address": "B22",
+          "row": 22,
+          "col": 2,
+          "value": 412.5,
+          "python_type": "float"
+        },
+        {
+          "address": "C22",
+          "row": 22,
+          "col": 3,
+          "value": 10.454,
+          "python_type": "float",
+          "formula": "=31.216-24.596+26.063-22.229"
+        },
+        {
+          "address": "D22",
+          "row": 22,
+          "col": 4,
+          "value": 25.343030303030304,
+          "python_type": "float",
+          "formula": "=IF(ISNUMBER(B22),IF(ISNUMBER(C22),C22/B22*1000,\"\"),\"\")"
+        },
+        {
+          "address": "E22",
+          "row": 22,
+          "col": 5,
+          "value": 52.491056369336,
+          "python_type": "float",
+          "formula": "=IF(ISNUMBER(D22),D22/$H$10*100,\"\")"
+        },
+        {
+          "address": "D23",
+          "row": 23,
+          "col": 4,
+          "value": null,
+          "python_type": "NoneType",
+          "formula": "=IF(ISNUMBER(B23),IF(ISNUMBER(C23),C23/B23*1000,\"\"),\"\")"
+        },
+        {
+          "address": "E23",
+          "row": 23,
+          "col": 5,
+          "value": null,
+          "python_type": "NoneType",
+          "formula": "=IF(ISNUMBER(D23),D23/$H$10*100,\"\")"
+        },
+        {
+          "address": "D24",
+          "row": 24,
+          "col": 4,
+          "value": null,
+          "python_type": "NoneType",
+          "formula": "=IF(ISNUMBER(B24),IF(ISNUMBER(C24),C24/B24*1000,\"\"),\"\")"
+        },
+        {
+          "address": "E24",
+          "row": 24,
+          "col": 5,
+          "value": null,
+          "python_type": "NoneType",
+          "formula": "=IF(ISNUMBER(D24),D24/$H$10*100,\"\")"
+        },
+        {
+          "address": "D25",
+          "row": 25,
+          "col": 4,
+          "value": null,
+          "python_type": "NoneType",
+          "formula": "=IF(ISNUMBER(B25),IF(ISNUMBER(C25),C25/B25*1000,\"\"),\"\")"
+        },
+        {
+          "address": "E25",
+          "row": 25,
+          "col": 5,
+          "value": null,
+          "python_type": "NoneType",
+          "formula": "=IF(ISNUMBER(D25),D25/$H$10*100,\"\")"
+        },
+        {
+          "address": "A27",
+          "row": 27,
+          "col": 1,
+          "value": "Vorschrift:",
+          "python_type": "str"
+        },
+        {
+          "address": "E27",
+          "row": 27,
+          "col": 5,
+          "value": "DC:",
+          "python_type": "str"
+        },
+        {
+          "address": "H27",
+          "row": 27,
+          "col": 8,
+          "value": "Beobachtungen:",
+          "python_type": "str"
+        },
+        {
+          "address": "A28",
+          "row": 28,
+          "col": 1,
+          "value": "Aminoester in DMF unter N2 lösen, dann mit Cs2CO3 und Bromolefin versetzen. Auf 60 °C erwärmen, rühren ü.N.                                                                   Aufarbeitung: Auf RT abkühlen, dann mit DEE versetzen. Organische Phase mit Wasser (2x) und brine (2x) waschen, trocknen über MgSO4. LM am Roti entfernen und Rohprodukt über Säule (Pe/EtOAc 3:1 -> 2:1) reinigen. ",
+          "python_type": "str"
+        },
+        {
+          "address": "H28",
+          "row": 28,
+          "col": 8,
+          "value": "Note: Rkt unter Pseudo-Schutzgas                                                             ",
+          "python_type": "str"
+        },
+        {
+          "address": "H36",
+          "row": 36,
+          "col": 8,
+          "value": "Herkunft der Edukte:",
+          "python_type": "str"
+        },
+        {
+          "address": "H37",
+          "row": 37,
+          "col": 8,
+          "value": "Ns-Ile-OMe 087",
+          "python_type": "str",
+          "formula": "=IF(ISTEXT(A10),A10,\"\")"
+        },
+        {
+          "address": "J37",
+          "row": 37,
+          "col": 10,
+          "value": "Abzug",
+          "python_type": "str"
+        },
+        {
+          "address": "H38",
+          "row": 38,
+          "col": 8,
+          "value": "Bromolefin 086",
+          "python_type": "str",
+          "formula": "=IF(ISTEXT(A11),A11,\"\")"
+        },
+        {
+          "address": "J38",
+          "row": 38,
+          "col": 10,
+          "value": "Abzug",
+          "python_type": "str"
+        },
+        {
+          "address": "H39",
+          "row": 39,
+          "col": 8,
+          "value": "Cs2CO3",
+          "python_type": "str",
+          "formula": "=IF(ISTEXT(A12),A12,\"\")"
+        },
+        {
+          "address": "J39",
+          "row": 39,
+          "col": 10,
+          "value": "167 Regal Julius",
+          "python_type": "str"
+        },
+        {
+          "address": "H40",
+          "row": 40,
+          "col": 8,
+          "value": null,
+          "python_type": "NoneType",
+          "formula": "=IF(ISTEXT(A13),A13,\"\")"
+        },
+        {
+          "address": "H41",
+          "row": 41,
+          "col": 8,
+          "value": "DMF",
+          "python_type": "str",
+          "formula": "=IF(ISTEXT(A14),A14,\"\")"
+        },
+        {
+          "address": "H42",
+          "row": 42,
+          "col": 8,
+          "value": null,
+          "python_type": "NoneType",
+          "formula": "=IF(ISTEXT(A15),A15,\"\")"
+        },
+        {
+          "address": "H43",
+          "row": 43,
+          "col": 8,
+          "value": null,
+          "python_type": "NoneType",
+          "formula": "=IF(ISTEXT(A16),A16,\"\")"
+        },
+        {
+          "address": "A44",
+          "row": 44,
+          "col": 1,
+          "value": "Literatur:",
+          "python_type": "str"
+        },
+        {
+          "address": "H44",
+          "row": 44,
+          "col": 8,
+          "value": null,
+          "python_type": "NoneType",
+          "formula": "=IF(ISTEXT(A17),A17,\"\")"
+        }
+      ],
+      "profile_summary": {
+        "profile_name": "chem_lab_journal",
+        "label_positions": {
+          "starting_materials": {
+            "address": "A7",
+            "row": 7,
+            "col": 1,
+            "label": "Edukte"
+          },
+          "products": {
+            "address": "A19",
+            "row": 19,
+            "col": 1,
+            "label": "Produkte"
+          },
+          "procedure": {
+            "address": "A27",
+            "row": 27,
+            "col": 1,
+            "label": "Vorschrift:"
+          },
+          "tlc_conditions": {
+            "address": "E27",
+            "row": 27,
+            "col": 5,
+            "label": "DC:"
+          },
+          "observations": {
+            "address": "H27",
+            "row": 27,
+            "col": 8,
+            "label": "Beobachtungen:"
+          },
+          "reagent_sources": {
+            "address": "H36",
+            "row": 36,
+            "col": 8,
+            "label": "Herkunft der Edukte:"
+          },
+          "literature": {
+            "address": "A44",
+            "row": 44,
+            "col": 1,
+            "label": "Literatur:"
+          }
+        },
+        "metadata": {
+          "journal_number": "WAT-Ch-088",
+          "researcher": "Timo Watzenborn",
+          "project_type": "Promotion",
+          "date": "2024-08-30",
+          "research_group": "AK Laschat",
+          "reaction_name_from_filename": "Aminierung geschütztes Ile mit Bromolefin"
+        },
+        "batch_volume_mL": 100,
+        "procedure": "Aminoester in DMF unter N2 lösen, dann mit Cs2CO3 und Bromolefin versetzen. Auf 60 °C erwärmen, rühren ü.N.                                                                   Aufarbeitung: Auf RT abkühlen, dann mit DEE versetzen. Organische Phase mit Wasser (2x) und brine (2x) waschen, trocknen über MgSO4. LM am Roti entfernen und Rohprodukt über Säule (Pe/EtOAc 3:1 -> 2:1) reinigen. ",
+        "tlc_conditions": null,
+        "observations": "Note: Rkt unter Pseudo-Schutzgas                                                             ",
+        "starting_material_table_rows": [
+          {
+            "name": "Ns-Ile-OMe 087",
+            "M g/mol": 330.36,
+            "eq": 1,
+            "n mmol": 48.28066351858578,
+            "g": 15.95,
+            "enthalten": "0,483 mol/L",
+            "smiles": "C([C@@H]([C@@H](C(=O)OC)NS(=O)(=O)c1ccccc1[N+](=O)[O-])C)C",
+            "inchi": "InChI=1S/C13H18N2O6S/c1-4-9(2)12(13(16)21-3)14-22(19,20)11-8-6-5-7-10(11)15(17)18/h5-9,12,14H,4H2,1-3H3/t9-,12-/m0/s1",
+            "inchikey": "KYILFFWWKQIEEZ-CABZTGNLSA-N"
+          },
+          {
+            "name": "Bromolefin 086",
+            "M g/mol": 163.03,
+            "eq": 1.5,
+            "w %": 82.7,
+            "n mmol": 72.42099527787867,
+            "g": 14.27665642098254,
+            "enthalten": "0,724 mol/L"
+          },
+          {
+            "name": "Cs2CO3",
+            "M g/mol": 325.82,
+            "eq": 2,
+            "n mmol": 96.56132703717157,
+            "g": 31.461611575251236,
+            "enthalten": "0,966 mol/L"
+          },
+          {
+            "name": "DMF",
+            "V mL": 100,
+            "mL": 100
+          }
+        ],
+        "product_table_rows": [
+          {
+            "name": "tert. Amin a+b",
+            "M g/mol": 412.5,
+            "Ausw. g": 10.454,
+            "n mmol": 25.343030303030304,
+            "Ausb. %": 52.491056369336
+          }
+        ],
+        "reagent_source_rows": [
+          [
+            "Ns-Ile-OMe 087",
+            "Abzug"
+          ],
+          [
+            "Bromolefin 086",
+            "Abzug"
+          ],
+          [
+            "Cs2CO3",
+            "167 Regal Julius"
+          ],
+          [
+            "DMF"
+          ]
+        ],
+        "literature_rows": [
+          [
+            "Literatur:"
+          ]
+        ]
+      }
+    }
+  ],
+  "embedded_reaction_smiles": [
+    "C([C@@H]([C@@H](C(=O)OC)NS(=O)(=O)c1ccccc1[N+](=O)[O-])C)C>>[C@@H]([C@@H](C(=O)OC)N(S(=O)(=O)c1c(*)cccc1)CCC=C(C)C)(CC)C",
+    "CC(=CCCBr)C",
+    "*"
+  ],
+  "embedded_reaction_structures": [
+    {
+      "role": "reactant",
+      "smiles": "C([C@@H]([C@@H](C(=O)OC)NS(=O)(=O)c1ccccc1[N+](=O)[O-])C)C",
+      "inchi": "InChI=1S/C13H18N2O6S/c1-4-9(2)12(13(16)21-3)14-22(19,20)11-8-6-5-7-10(11)15(17)18/h5-9,12,14H,4H2,1-3H3/t9-,12-/m0/s1",
+      "inchikey": "KYILFFWWKQIEEZ-CABZTGNLSA-N"
+    },
+    {
+      "role": "unknown",
+      "smiles": "CC(=CCCBr)C",
+      "inchi": "InChI=1S/C6H11Br/c1-6(2)4-3-5-7/h4H,3,5H2,1-2H3",
+      "inchikey": "UNXURIHDFUQNOC-UHFFFAOYSA-N"
+    }
+  ]
+}

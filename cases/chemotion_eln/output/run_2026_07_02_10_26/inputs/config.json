@@ -1,0 +1,16 @@
+{
+  "openai": {
+    "model": "gpt-5-mini",
+    "base_url": "https://api.openai.com/v1",
+    "max_tokens": null,
+    "top_p": null,
+    "seed": null
+  },
+  "blablador": {
+    "model": "alias-fast",
+    "base_url": "https://api.helmholtz-blablador.fz-juelich.de/v1",
+    "max_tokens": null,
+    "top_p": null,
+    "seed": null
+  }
+}

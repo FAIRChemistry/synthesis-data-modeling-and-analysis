@@ -1,0 +1,282 @@
+{
+  "journal_number": "AD-R6",
+  "date": "2025-11-17",
+  "researcher": "Zarfishan Dilruba",
+  "research_group": "AK Endo",
+  "project_type": "Promotion",
+  "reaction_name": "Synthesis of Co(ttpp)",
+  "batch_volume_mL": 17,
+  "starting_materials": [
+    {
+      "name": "TAPP",
+      "note": "INV-14-2",
+      "mass_g": 0.251,
+      "molar_mass_g_mol": 674.79436,
+      "amount_mmol": 0.372058,
+      "equivalents": 1,
+      "density_g_mL": 1.35
+    },
+    {
+      "name": "TrBr",
+      "note": "INV-20-2",
+      "mass_g": 0.627,
+      "molar_mass_g_mol": 323.2264,
+      "amount_mmol": 1.9408,
+      "equivalents": 5.215049538427214,
+      "density_g_mL": null
+    },
+    {
+      "name": "CoCl2",
+      "note": "INV-21-5",
+      "mass_g": 0.29,
+      "molar_mass_g_mol": 129.8392,
+      "amount_mmol": 2.233938,
+      "equivalents": 6.0046802972890845,
+      "density_g_mL": null
+    },
+    {
+      "name": "Et3N",
+      "note": "INV-22-3",
+      "volume_mL": 0.516,
+      "mass_g": 0.374616,
+      "molar_mass_g_mol": 101.19,
+      "amount_mmol": 3.7019,
+      "equivalents": 9.952826857044991,
+      "density_g_mL": 0.726
+    },
+    {
+      "name": "THF",
+      "note": "solvent",
+      "volume_mL": 17,
+      "molar_mass_g_mol": 72.10572,
+      "amount_mmol": null,
+      "equivalents": null,
+      "density_g_mL": 0.889
+    }
+  ],
+  "products": [
+    {
+      "name": "C120H88CoN8",
+      "molar_mass_g_mol": 1700.96952,
+      "yield_g": null,
+      "yield_percent": null,
+      "amount_mmol": null,
+      "is_main_product": true,
+      "appearance": null,
+      "eluent_system": null,
+      "nmr_data": null,
+      "rf_value": null
+    }
+  ],
+  "procedure": {
+    "Prep": {
+      "Step": [
+        {
+          "$xml_type": "HeatChill",
+          "_vessel": "50 mL two-neck RBF",
+          "_temp": {
+            "Value": 120,
+            "Unit": "celsius"
+          },
+          "_time": {
+            "Value": 1.5,
+            "Unit": "hour"
+          }
+        },
+        {
+          "$xml_type": "EvacuateAndRefill",
+          "_vessel": "50 mL two-neck RBF",
+          "_gas": "N2",
+          "_comment": "Evacuate (0.33 mbar); heat condenser bottom with heat gun (250 °C)"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "50 mL two-neck RBF",
+          "_reagent": "TAPP",
+          "_amount": {
+            "Value": 0.251,
+            "Unit": "gram"
+          },
+          "_dropwise": false
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "50 mL two-neck RBF",
+          "_reagent": "TrBr",
+          "_amount": {
+            "Value": 0.627,
+            "Unit": "gram"
+          },
+          "_dropwise": false
+        },
+        {
+          "$xml_type": "EvacuateAndRefill",
+          "_vessel": "50 mL two-neck RBF",
+          "_gas": "N2",
+          "_comment": "Cycle with N2 slowly x3"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "50 mL two-neck RBF",
+          "_reagent": "Et3N",
+          "_amount": {
+            "Value": 516,
+            "Unit": "microlitre"
+          },
+          "_dropwise": false
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "50 mL two-neck RBF",
+          "_reagent": "THF",
+          "_amount": {
+            "Value": 17,
+            "Unit": "millilitre"
+          },
+          "_dropwise": false,
+          "_comment": "added with double-tipped needle"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "50 mL two-neck RBF",
+          "_reagent": "CoCl2",
+          "_amount": {
+            "Value": 0.29,
+            "Unit": "gram"
+          },
+          "_dropwise": false,
+          "_comment": "added quickly"
+        }
+      ]
+    },
+    "Reaction": {
+      "Step": [
+        {
+          "$xml_type": "Wait",
+          "_time": {
+            "Value": 30,
+            "Unit": "minute"
+          },
+          "_comment": "Bubble with N2"
+        },
+        {
+          "$xml_type": "HeatChill",
+          "_temp": {
+            "Value": 85,
+            "Unit": "celsius"
+          },
+          "_time": {
+            "Value": 2,
+            "Unit": "hour"
+          }
+        }
+      ]
+    },
+    "Workup": {
+      "Step": [
+        {
+          "$xml_type": "Filter",
+          "_vessel": "25 mL frit funnel",
+          "_product_portion": "filtrate",
+          "_rinse": [
+            {
+              "name": "THF",
+              "amount": {
+                "Value": 70,
+                "Unit": "millilitre"
+              }
+            }
+          ],
+          "_comment": "load alumina, elute with THF 70 mL under weak suction"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "250 mL RBF",
+          "_reagent": "EtOH",
+          "_amount": {
+            "Value": 25,
+            "Unit": "millilitre"
+          },
+          "_dropwise": false
+        },
+        {
+          "$xml_type": "Evaporate",
+          "_vessel": "250 mL RBF",
+          "_method": "rotary_evaporator"
+        },
+        {
+          "$xml_type": "Filter",
+          "_product_portion": "residue",
+          "_vessel": "50 mL RBF",
+          "_rinse": [
+            {
+              "name": "EtOH"
+            },
+            {
+              "name": "petroleum ether"
+            }
+          ],
+          "_comment": "collect solids by filtration (filter paper 15A, ø 90 mm)"
+        },
+        {
+          "$xml_type": "Evaporate",
+          "_method": "rotary_evaporator",
+          "_comment": "dry filtrate with rotovap"
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "EtOH",
+          "_amount": {
+            "Value": 25,
+            "Unit": "millilitre"
+          },
+          "_dropwise": false
+        },
+        {
+          "$xml_type": "Wait",
+          "_time": {
+            "Value": 0.5,
+            "Unit": "day"
+          },
+          "_comment": "o/n"
+        },
+        {
+          "$xml_type": "Sonicate",
+          "_comment": "sonicate (dark green-brown)"
+        },
+        {
+          "$xml_type": "Filter",
+          "_product_portion": "residue",
+          "_rinse": [
+            {
+              "name": "EtOH"
+            },
+            {
+              "name": "petroleum ether"
+            }
+          ],
+          "_comment": "collect solids by filtration"
+        },
+        {
+          "$xml_type": "Dry",
+          "_time": {
+            "Value": 1,
+            "Unit": "hour"
+          },
+          "_comment": "dry with diaphragm pump"
+        },
+        {
+          "$xml_type": "Dry",
+          "_time": {
+            "Value": 1,
+            "Unit": "hour"
+          },
+          "_comment": "dry residue under vacuum (diaphragm pump)"
+        }
+      ]
+    }
+  },
+  "tlc_conditions": null,
+  "reagent_sources": null,
+  "observations": null
+}

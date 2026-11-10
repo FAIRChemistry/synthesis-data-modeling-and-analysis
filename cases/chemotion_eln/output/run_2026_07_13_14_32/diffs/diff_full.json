@@ -1,0 +1,6385 @@
+{
+  "AD-R10.json": [
+    {
+      "path": "$.procedure.Prep.Step[0]._time",
+      "status": "changed",
+      "a": {
+        "Unit": "hour",
+        "Value": 1.5
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Prep.Step[1]._comment",
+      "status": "changed",
+      "a": "Evacuate (0.089 mbar) and heat the bottom part of the reflux condenser and flask with a heat gun (250°C). Backfill with N₂.",
+      "b": "Assemble and fix a reflux condenser, a T-shaped connector, and a bubbler (filled with paraffin oil) at a Schlenk line; Remove the RBF and quickly assemble it with a stir bar, rubber septum, and reflux condenser while it is still hot. Evacuate (0.089 mbar) and heat the bottom part of the reflux condenser and flask with a heat gun (250°C). Backfill with N₂.",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[1]._pressure",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "Value": 0.089,
+        "Unit": "mbar"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[1]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "50 mL two-neck RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[2]._amount",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "Value": 0.25042,
+        "Unit": "gram"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[2]._dropwise",
+      "status": "changed",
+      "a": null,
+      "b": false,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[3]._amount",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "Value": 0.5987,
+        "Unit": "gram"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[3]._dropwise",
+      "status": "changed",
+      "a": null,
+      "b": false,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[4]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "50 mL two-neck RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[5]._amount",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "Value": 0.3749,
+        "Unit": "gram"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[5]._dropwise",
+      "status": "changed",
+      "a": null,
+      "b": false,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[6]._amount",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "Value": 20,
+        "Unit": "millilitre"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[6]._dropwise",
+      "status": "changed",
+      "a": null,
+      "b": false,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[8]._amount",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "Value": 0.2886,
+        "Unit": "gram"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[8]._comment",
+      "status": "changed",
+      "a": "Add CoCl₂ quickly.  Purge with N₂ for 10 s. Close. Resume stirring.",
+      "b": "Stop stirring. Close the N₂ connection. Add CoCl₂ quickly. Close. Resume stirring.",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[8]._dropwise",
+      "status": "changed",
+      "a": null,
+      "b": false,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[9]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "50 mL two-neck RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step.__len__",
+      "status": "changed",
+      "a": 4,
+      "b": 3,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[0]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "50 mL two-neck RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[1]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "50 mL two-neck RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[2].$xml_type",
+      "status": "changed",
+      "a": "HeatChill",
+      "b": "Wait",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[2]._comment",
+      "status": "changed",
+      "a": "Heat for 2 h (16:37)",
+      "b": "Heat for 2 h (16:37). Cool down to RT.",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[2]._reflux",
+      "status": "changed",
+      "a": true,
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Reaction.Step[2]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "50 mL two-neck RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[3]",
+      "status": "changed",
+      "a": {
+        "$xml_type": "Sonicate",
+        "_comment": "→ 0.1 mL + CDCl₃ 500 µL → syringe filter → sonicate → ¹H NMR M2-CDCl3 [16:30]"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step.__len__",
+      "status": "changed",
+      "a": 16,
+      "b": 12,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[0]._comment",
+      "status": "changed",
+      "a": "Add 12.5 mL of neutral alumina in a 15 mL membrane filter holder (frit) with a membrane filter.",
+      "b": "[ 12.01, RT 22.1 °C and RH 30 %]; Add 12.5 mL of neutral alumina in a 15 mL membrane filter holder (frit). Attach the funnel to a vacuum and a 250 mL RBF.",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[0]._dropwise",
+      "status": "changed",
+      "a": null,
+      "b": false,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[0]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "15 mL membrane filter holder",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[1]._comment",
+      "status": "changed",
+      "a": "Wet the alumina with THF",
+      "b": "Wet the alumina with THF; Load the reaction mixture; Elute with THF and full power suction with occasional digging of the top layer. (Eluate became red at the end). Eluent was kept in the fridge o/n.",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[1]._dropwise",
+      "status": "changed",
+      "a": null,
+      "b": false,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[1]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "250 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[2].$xml_type",
+      "status": "changed",
+      "a": "Add",
+      "b": "Evaporate",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[2]._comment",
+      "status": "changed",
+      "a": "Load the reaction mixture",
+      "b": "Rotovap",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[2]._method",
+      "status": "changed",
+      "a": null,
+      "b": "rotary_evaporator",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[2]._reagent",
+      "status": "changed",
+      "a": "reaction mixture",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[2]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "250 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[3].$xml_type",
+      "status": "changed",
+      "a": "Purify",
+      "b": "Dry",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[3]._comment",
+      "status": "changed",
+      "a": "Elute with THF and full power suction with occasional digging of the top layer.",
+      "b": "Dry under vacuum, 1 h",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[3]._eluent",
+      "status": "changed",
+      "a": "THF",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[3]._time",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "Value": 1,
+        "Unit": "hour"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[3]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "250 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[4].$xml_type",
+      "status": "changed",
+      "a": "Wait",
+      "b": "Add",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[4]._amount",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "Value": 50,
+        "Unit": "millilitre"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[4]._comment",
+      "status": "changed",
+      "a": "Eluent was kept in the fridge o/n.",
+      "b": "CHCl3 deacidification: 250 mL RBF; Basic Al2O3 --> 50 mL; CHCl3 50 mL (mix in flask ---> then filter)",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[4]._dropwise",
+      "status": "changed",
+      "a": null,
+      "b": false,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[4]._reagent",
+      "status": "changed",
+      "a": null,
+      "b": "CHCl3",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[4]._time",
+      "status": "changed",
+      "a": {
+        "Unit": "day",
+        "Value": 0.5
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[4]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "250 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[5].$xml_type",
+      "status": "changed",
+      "a": "Evaporate",
+      "b": "Filter",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[5]._comment",
+      "status": "changed",
+      "a": "Rotovap",
+      "b": "Fritted funnel (por.4), suction adapter, 250 mL RBF; Filtered",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[5]._method",
+      "status": "changed",
+      "a": "rotary_evaporator",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[5]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "Fritted funnel (por.4)",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[6].$xml_type",
+      "status": "changed",
+      "a": "Dry",
+      "b": "Add",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[6]._amount",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "Value": 25,
+        "Unit": "millilitre"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[6]._comment",
+      "status": "changed",
+      "a": "Dry under vacuum, 1 h",
+      "b": "Reprecipitation: Purified CHCl3 25 mL, sonicate (dark red solution)",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[6]._dropwise",
+      "status": "changed",
+      "a": null,
+      "b": false,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[6]._reagent",
+      "status": "changed",
+      "a": null,
+      "b": "CHCl3",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[6]._time",
+      "status": "changed",
+      "a": {
+        "Unit": "hour",
+        "Value": 1
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[6]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "250 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[7].$xml_type",
+      "status": "changed",
+      "a": "Add",
+      "b": "Sonicate",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[7]._amount",
+      "status": "changed",
+      "a": {
+        "Unit": "millilitre",
+        "Value": 50
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[7]._comment",
+      "status": "changed",
+      "a": "Basic Al2O3 --> 50 mL",
+      "b": "→ 0.1 mL + DMSO-d6 500 µL → ¹H NMR M5 [09:17]; sonicate",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[7]._reagent",
+      "status": "changed",
+      "a": "Basic Al2O3",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[7]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "250 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[8]._amount.Value",
+      "status": "changed",
+      "a": 50,
+      "b": 140,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[8]._comment",
+      "status": "changed",
+      "a": "CHCl3 50 mL (mix in flask ---> then filter)",
+      "b": "n-hexane 140 mL, manually stir, sonicate",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[8]._dropwise",
+      "status": "changed",
+      "a": null,
+      "b": false,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[8]._reagent",
+      "status": "changed",
+      "a": "CHCl3",
+      "b": "n-hexane",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[8]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "250 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[9].$xml_type",
+      "status": "changed",
+      "a": "Filter",
+      "b": "Wait",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[9]._comment",
+      "status": "changed",
+      "a": "Filtered",
+      "b": "Fridge, 30 min",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[9]._product_portion",
+      "status": "changed",
+      "a": "filtrate",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[9]._time",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "Value": 30,
+        "Unit": "minute"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[9]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "250 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[10].$xml_type",
+      "status": "changed",
+      "a": "Add",
+      "b": "Filter",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[10]._amount",
+      "status": "changed",
+      "a": {
+        "Unit": "millilitre",
+        "Value": 25
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[10]._comment",
+      "status": "changed",
+      "a": "Purified CHCl3 25 mL, sonicate (dark red solution)",
+      "b": "Glass Funnel, Filter paper (big, 15A), suction adapter, 250 mL RBF; Filter w/ suction; Transfer & rinse w/ 2 x (purified CHCl3 3 mL + 10 mL hex); Rinse w/ hex x2 (2x 15 mL)",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[10]._reagent",
+      "status": "changed",
+      "a": "purified CHCl3",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[10]._rinse",
+      "status": "changed",
+      "a": null,
+      "b": [
+        {
+          "name": "purified CHCl3 + n-hexane"
+        },
+        {
+          "name": "n-hexane"
+        }
+      ],
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[10]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "Glass Funnel",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[11].$xml_type",
+      "status": "changed",
+      "a": "Sonicate",
+      "b": "Dry",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[11]._comment",
+      "status": "changed",
+      "a": "Purified CHCl3 25 mL, sonicate (dark red solution)",
+      "b": "Dry under vacuum o/n; 20 mL vial, PTFE sealing (tare w/ lid: 8.94046g); → 479 mg product",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[11]._time",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "Value": 0.5,
+        "Unit": "day"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[11]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "Filter",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[12]",
+      "status": "changed",
+      "a": {
+        "$xml_type": "Add",
+        "_reagent": "n-hexane",
+        "_amount": {
+          "Unit": "millilitre",
+          "Value": 140
+        },
+        "_comment": "n-hexane 140 mL, manually stir, sonicate"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[13]",
+      "status": "changed",
+      "a": {
+        "$xml_type": "Wait",
+        "_time": {
+          "Unit": "minute",
+          "Value": 30
+        },
+        "_comment": "Fridge, 30 min"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[14]",
+      "status": "changed",
+      "a": {
+        "$xml_type": "Filter",
+        "_product_portion": "residue",
+        "_rinse": [
+          {
+            "name": "purified CHCl3 + n-hexane"
+          },
+          {
+            "name": "n-hexane"
+          }
+        ],
+        "_comment": "Filter w/ suction; Transfer & rinse w/ 2 x (purified CHCl3 3 mL + 10 mL hex); Rinse w/ hex x2 (2x 15 mL)"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[15]",
+      "status": "changed",
+      "a": {
+        "$xml_type": "Dry",
+        "_time": {
+          "Unit": "day",
+          "Value": 0.5
+        },
+        "_comment": "Dry under vacuum o/n"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.products[0].amount_mmol",
+      "status": "changed",
+      "a": 0.28194,
+      "b": 0.28197,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.products[0].note",
+      "status": "changed",
+      "a": "AD-31",
+      "b": null,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[0].amount_mmol",
+      "status": "changed",
+      "a": 0.37122,
+      "b": 0.37119,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[1].amount_mmol",
+      "status": "changed",
+      "a": 1.85292,
+      "b": 1.85254,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[2].amount_mmol",
+      "status": "changed",
+      "a": 2.22301,
+      "b": 2.2231,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[4].amount_mmol",
+      "status": "changed",
+      "a": 247.1069,
+      "b": 247.165,
+      "a_missing": false,
+      "b_missing": false
+    }
+  ],
+  "AD-R11.json": [
+    {
+      "path": "$.procedure.Prep.Step.__len__",
+      "status": "changed",
+      "a": 8,
+      "b": 2,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[0]._comment",
+      "status": "changed",
+      "a": "5 mL vial into GB --> AgOTf (0.0133 g) --> Out of GB",
+      "b": "AgOTf/toluene solution preparation: 5 mL vial into GB --> AgOTf (0.0133 g) --> Out of GB",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[1]._comment",
+      "status": "changed",
+      "a": "5 mL vial --> AgOTf from the vial: 0.0133 g --> Toluene 500 μL",
+      "b": "5 mL vial --> AgOTf from the vial: 0.0133 g --> Toluene 500 μL [should have been prepared as a stock solution with a certain concentration and in >10% excess volume]",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[2]",
+      "status": "changed",
+      "a": {
+        "$xml_type": "Add",
+        "_vessel": "10 mL flask",
+        "_dropwise": false,
+        "_reagent": "Co(ttpp)",
+        "_comment": "Co(ttpp)"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Prep.Step[3]",
+      "status": "changed",
+      "a": {
+        "$xml_type": "Add",
+        "_vessel": "10 mL flask",
+        "_dropwise": false,
+        "_reagent": "p-bromoaniline",
+        "_comment": "PBA"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Prep.Step[4]",
+      "status": "changed",
+      "a": {
+        "$xml_type": "Add",
+        "_vessel": "10 mL flask",
+        "_amount": {
+          "Unit": "millilitre",
+          "Value": 5
+        },
+        "_dropwise": false,
+        "_reagent": "toluene",
+        "_comment": "5 mL toluene, sonicate 3 min. (dissolved) -> add stir bar (14:07)"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Prep.Step[5]",
+      "status": "changed",
+      "a": {
+        "$xml_type": "Sonicate",
+        "_vessel": "10 mL flask",
+        "_time": {
+          "Unit": "minute",
+          "Value": 3
+        },
+        "_comment": "5 mL toluene, sonicate 3 min. (dissolved) -> add stir bar (14:07)"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Prep.Step[6]",
+      "status": "changed",
+      "a": {
+        "$xml_type": "Add",
+        "_vessel": "10 mL flask",
+        "_dropwise": true,
+        "_reagent": "AgOTf",
+        "_comment": "AgOTf/toluene (whole) dropwise w/ micropipette while stirring"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Prep.Step[7]",
+      "status": "changed",
+      "a": {
+        "$xml_type": "Add",
+        "_vessel": "10 mL flask",
+        "_amount": {
+          "Unit": "microlitre",
+          "Value": 500
+        },
+        "_dropwise": false,
+        "_reagent": "toluene",
+        "_comment": "AgOTf/toluene (whole) dropwise w/ micropipette while stirring"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Reaction.Step.__len__",
+      "status": "changed",
+      "a": 2,
+      "b": 9,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[0]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "Add",
+        "_vessel": "10 mL flask",
+        "_reagent": "Co(ttpp)",
+        "_dropwise": false,
+        "_comment": "Reaction: 10 mL flask; Co(ttpp)"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[1]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "Add",
+        "_vessel": "10 mL flask",
+        "_reagent": "p-bromoaniline",
+        "_dropwise": false,
+        "_comment": "PBA"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[2]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "Add",
+        "_vessel": "10 mL flask",
+        "_reagent": "toluene",
+        "_amount": {
+          "Unit": "millilitre",
+          "Value": 5
+        },
+        "_dropwise": false,
+        "_comment": "5 mL toluene, sonicate 3 min. (dissolved) --> add stir bar (14:07) [stir bar should have been added in step 1]"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[3]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "Sonicate",
+        "_vessel": "10 mL flask",
+        "_time": {
+          "Unit": "minute",
+          "Value": 3
+        },
+        "_comment": "sonicate 3 min. (dissolved)"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[4]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "Add",
+        "_vessel": "10 mL flask",
+        "_reagent": "AgOTf",
+        "_dropwise": true,
+        "_comment": "Dark, 400 rpm. AgOTf/toluene (whole) dropwise w/ micropipette while stirring [volume of used stock solution should be calculated according to the required amount]"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[5]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "Add",
+        "_vessel": "10 mL flask",
+        "_reagent": "toluene",
+        "_amount": {
+          "Unit": "microlitre",
+          "Value": 500
+        },
+        "_dropwise": true,
+        "_comment": "AgOTf/toluene (whole) dropwise w/ micropipette while stirring [volume of used stock solution should be calculated according to the required amount]"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[6]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "Sonicate",
+        "_vessel": "10 mL flask",
+        "_comment": "Sonicated and manually stirred [not necessary]"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[0]._comment",
+      "status": "changed",
+      "a": "Rotovap (40 °C) (1:30 h)",
+      "b": "Workup: Rotovap (40 °C) (1:30 h)",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[1]._comment",
+      "status": "changed",
+      "a": "vacuum  for 30 min",
+      "b": "vacuum for 30 min",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[5]._comment",
+      "status": "changed",
+      "a": "stir (1000 rpm, 2 h) 12:45 --> 14:45",
+      "b": "stir (1000 rpm, 2 h) 12:45 --> 14:45 [stirring does not need to be this fast]",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[6]._comment",
+      "status": "changed",
+      "a": "filtered, transferred, and rinsed w/ 15 mL DCM (until pale green)",
+      "b": "12 mL plastic syringe, cotton plug (compressed), syringe filter (⌀ 25 mm, 0.45 μm, PTFE), 100 mL RBF; filtered, transferred, and rinsed w/ 15 mL DCM (until pale green)",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[6]._product_portion",
+      "status": "changed",
+      "a": "filtrate",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[6]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "100 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[7]._comment",
+      "status": "changed",
+      "a": "Hexane 90 mL",
+      "b": "Hexane 90 mL; manually stirred and sonicated",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[7]._reagent",
+      "status": "changed",
+      "a": "n-hexane",
+      "b": "hexane",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[7]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "100 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[8].$xml_type",
+      "status": "changed",
+      "a": "Wait",
+      "b": "HeatChill",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[8]._temp",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "Unit": "celsius",
+        "Value": 4
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[8]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "100 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[9]._product_portion",
+      "status": "changed",
+      "a": "residue",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[9]._rinse[0].name",
+      "status": "changed",
+      "a": "DCM + n-hexane",
+      "b": "DCM + hexane",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[9]._rinse[1].name",
+      "status": "changed",
+      "a": "n-hexane",
+      "b": "hexane",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[9]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "100 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[10]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "100 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[11]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "100 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.products[0].note",
+      "status": "changed",
+      "a": "AD-32",
+      "b": null,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.products[0].yield_percent",
+      "status": "changed",
+      "a": 66.32,
+      "b": 66.32012474846768,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[0].amount_mmol",
+      "status": "changed",
+      "a": 0.05956,
+      "b": 0.05957,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[2].amount_mmol",
+      "status": "changed",
+      "a": 0.30135,
+      "b": 0.30133,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[4].amount_mmol",
+      "status": "changed",
+      "a": 51.931,
+      "b": 51.925,
+      "a_missing": false,
+      "b_missing": false
+    }
+  ],
+  "AD-R13.json": [
+    {
+      "path": "$.procedure.Prep.Step[0]._amount.Unit",
+      "status": "changed",
+      "a": "gram",
+      "b": "milligram",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[0]._amount.Value",
+      "status": "changed",
+      "a": 0.01318,
+      "b": 14.52,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[0]._comment",
+      "status": "changed",
+      "a": "Weigh in AgOTf → 14.52 mg",
+      "b": "Stock solution preparation: 5 mL vial. Put into the glovebox (H₂O < 1 ppm). Weigh in AgOTf → 14.52 mg",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[1]._amount.Unit",
+      "status": "changed",
+      "a": "millilitre",
+      "b": "microlitre",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[1]._amount.Value",
+      "status": "changed",
+      "a": 0.55,
+      "b": 550,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[1]._comment",
+      "status": "changed",
+      "a": "Add toluene 550 µL → colorless solution",
+      "b": "Take it out of the glovebox. Add toluene 550 µL → colorless solution",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[0]._amount",
+      "status": "changed",
+      "a": {
+        "Unit": "gram",
+        "Value": 0.1007
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Reaction.Step[0]._comment",
+      "status": "changed",
+      "a": "Add Co(ttpp)",
+      "b": "Reaction: Add Co(ttpp)",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[1]._amount",
+      "status": "changed",
+      "a": {
+        "Unit": "millilitre",
+        "Value": 0.024
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Reaction.Step[2]._amount.Value",
+      "status": "changed",
+      "a": 0.55,
+      "b": 5,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[3]._comment",
+      "status": "changed",
+      "a": "Sonicate for 3 min → Dark green solution ",
+      "b": "Sonicate for 3 min → Dark green solution",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[4]._comment",
+      "status": "changed",
+      "a": "Add 500 µL of AgOTf/toluene dropwise with a mechanical pipette [syringe should be used]",
+      "b": "Cover with aluminum foil. Start stirring at 400 rpm. Sonicate [unnecessary]. -> 50 μL + CDCl₃ (w/ Ag foil) 550 μL -> 1H NMR M1 [unnecessary]. Add 500 µL of AgOTf/toluene dropwise with a mechanical pipette [syringe should be used]",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[5]._comment",
+      "status": "changed",
+      "a": "Add 500 µL of AgOTf/toluene dropwise with a mechanical pipette [syringe should be used]",
+      "b": "Cover with aluminum foil. Start stirring at 400 rpm. Add 500 µL of AgOTf/toluene dropwise with a mechanical pipette [syringe should be used]",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[5]._dropwise",
+      "status": "changed",
+      "a": false,
+      "b": true,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[6]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "10 mL flask",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step.__len__",
+      "status": "changed",
+      "a": 13,
+      "b": 12,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[0]._comment",
+      "status": "changed",
+      "a": "Remove volatiles with rotovap (40 °C) → took 1.5 h",
+      "b": "Ag scavenging: Remove volatiles with rotovap (40 °C) → took 1.5 h",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[2]._comment",
+      "status": "changed",
+      "a": "Add DCM 5 mL",
+      "b": "12.02.2026 RT 23 °C RH 34%. Add DCM 5 mL",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[4]._reagent",
+      "status": "changed",
+      "a": "ISOLUTE Si-Thiol",
+      "b": "3-mercaptopropyl silica",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[5]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "10 mL flask",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[6]._comment",
+      "status": "changed",
+      "a": "Filter the mixture → Dark green filtrate collected; Transfer and rinse with DCM 10 mL → Pale green filtrate in the end",
+      "b": "12 mL plastic syringe, cotton plug, syringe filter (⌀ 25 mm, 0.45 μm, PTFE), syringe filter (0.2 µm, ⌀ 15 mm, PET), 100 mL RBF [PTFE syringe filter next time should be used]; Filter the mixture → Dark green filtrate collected; Transfer and rinse with DCM 10 mL → Pale green filtrate in the end",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[6]._product_portion",
+      "status": "changed",
+      "a": "filtrate",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[6]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "100 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[7]._comment",
+      "status": "changed",
+      "a": "Add n-hexane (60 mL).",
+      "b": "Reprecipitation: Add n-hexane (60 mL). Swirl and sonicate",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[7]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "? mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[8].$xml_type",
+      "status": "changed",
+      "a": "Sonicate",
+      "b": "HeatChill",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[8]._comment",
+      "status": "changed",
+      "a": "Swirl and sonicate",
+      "b": "Refrigerate at 4 °C for 3 h",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[8]._temp",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "Unit": "celsius",
+        "Value": 4
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[8]._time",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "Unit": "hour",
+        "Value": 3
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[8]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "? mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[9].$xml_type",
+      "status": "changed",
+      "a": "HeatChill",
+      "b": "Filter",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[9]._comment",
+      "status": "changed",
+      "a": "Refrigerate at 4 °C for 3 h",
+      "b": "Membrane filter (0.22 µm, hydrophobic, PVDF, tare with weighing bottle: 16.78675 g), membrane filter holder, 250 mL RBF; Filter the mixture → Dark orange filtrate; Transfer and rinse with 2 x (DCM 3 mL + n-hexane 20 mL); Rinse w/ hexane 4 x 4 mL",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[9]._rinse",
+      "status": "changed",
+      "a": null,
+      "b": [
+        {
+          "name": "DCM + n-hexane"
+        },
+        {
+          "name": "n-hexane"
+        }
+      ],
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[9]._temp",
+      "status": "changed",
+      "a": {
+        "Unit": "celsius",
+        "Value": 4
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[9]._time",
+      "status": "changed",
+      "a": {
+        "Unit": "hour",
+        "Value": 3
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[9]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "250 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[10].$xml_type",
+      "status": "changed",
+      "a": "Filter",
+      "b": "Dry",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[10]._comment",
+      "status": "changed",
+      "a": "Filter the mixture → Dark orange filtrate; Transfer and rinse with 2 x (DCM 3 mL + n-hexane 20 mL); Rinse w/ hexane 4 x 4 mL",
+      "b": "Dry w/ suction for 5 min",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[10]._product_portion",
+      "status": "changed",
+      "a": "filtrate",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[10]._rinse",
+      "status": "changed",
+      "a": [
+        {
+          "name": "DCM + n-hexane"
+        },
+        {
+          "name": "n-hexane"
+        }
+      ],
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[10]._time",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "Unit": "minute",
+        "Value": 5
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[10]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "Filter",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[11]._comment",
+      "status": "changed",
+      "a": "Dry w/ suction for 5 min",
+      "b": "Dry under vacuum o/n",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[11]._time.Unit",
+      "status": "changed",
+      "a": "minute",
+      "b": "day",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[11]._time.Value",
+      "status": "changed",
+      "a": 5,
+      "b": 0.5,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[11]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "Filter",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[12]",
+      "status": "changed",
+      "a": {
+        "$xml_type": "Dry",
+        "_time": {
+          "Unit": "day",
+          "Value": 0.5
+        },
+        "_comment": "Dry under vacuum o/n"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.products[0].amount_mmol",
+      "status": "changed",
+      "a": 0.03838,
+      "b": 0.03836,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.products[0].note",
+      "status": "changed",
+      "a": "AD-36",
+      "b": null,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[0].amount_mmol",
+      "status": "changed",
+      "a": 0.05917,
+      "b": 0.05915,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[0].density_g_mL",
+      "status": "changed",
+      "a": null,
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.starting_materials[0].volume_mL",
+      "status": "changed",
+      "a": null,
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.starting_materials[1].amount_mmol",
+      "status": "changed",
+      "a": 0.05131,
+      "b": 0.0513,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[1].density_g_mL",
+      "status": "changed",
+      "a": null,
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.starting_materials[1].volume_mL",
+      "status": "changed",
+      "a": null,
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.starting_materials[2].amount_mmol",
+      "status": "changed",
+      "a": 0.29685,
+      "b": 0.2966,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[3].amount_mmol",
+      "status": "changed",
+      "a": 5.164,
+      "b": 5.1639,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[4].volume_mL",
+      "status": "changed",
+      "a": null,
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    }
+  ],
+  "AD-R17.json": [
+    {
+      "path": "$.batch_volume_mL",
+      "status": "changed",
+      "a": 0.0715,
+      "b": 16.5715,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[0]._amount.Unit",
+      "status": "changed",
+      "a": "gram",
+      "b": "milligram",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[0]._amount.Value",
+      "status": "changed",
+      "a": 0.04013,
+      "b": 80.26,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[0]._comment",
+      "status": "changed",
+      "a": "Weigh in AgOTf \u000027\u00027\u00027\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003",
+      "b": "RT 21.8°C RH 30 %. Stock solution preparation: 5 mL vial. Put into the glovebox (H₂O < 1 ppm). Weigh in AgOTf → 80.26 mg",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[1]._amount",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "Unit": "microlitre",
+        "Value": 3000
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[1]._comment",
+      "status": "changed",
+      "a": "Add 3000 \u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003",
+      "b": "Take it out of the glovebox. Add 3000 µL of toluene → colorless solution.",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[0]._comment",
+      "status": "changed",
+      "a": "Add Co(ttpp)",
+      "b": "Reaction: 25 mL flask; Add Co(ttpp)",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[2]._amount",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "Unit": "millilitre",
+        "Value": 15
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[3]._comment",
+      "status": "changed",
+      "a": "Sonicate for 3 min \u00027 Dark red solution",
+      "b": "Sonicate for 3 min → Dark red solution",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[4]._comment",
+      "status": "changed",
+      "a": "Add  1500 \u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003 (750 x 2) of AgOTf/toluene dropwise w/ mechanical pipette (750 x 2)",
+      "b": "Cover with aluminum foil. Start stirring at 400 rpm. Add 1500 µL of AgOTf/toluene dropwise w/ mechanical pipette (750 x 2)",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[5]._amount.Value",
+      "status": "changed",
+      "a": 1500,
+      "b": 750,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[5]._comment",
+      "status": "changed",
+      "a": "Add  1500 \u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003 (750 x 2) of AgOTf/toluene dropwise w/ mechanical pipette (750 x 2)",
+      "b": "Add 1500 µL of AgOTf/toluene dropwise w/ mechanical pipette (750 x 2)",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[5]._dropwise",
+      "status": "changed",
+      "a": false,
+      "b": true,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[5]._repeat",
+      "status": "changed",
+      "a": null,
+      "b": 2,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[6]._comment",
+      "status": "changed",
+      "a": "Continue stirring for 1 h",
+      "b": "Continue stirring for 1 h. -> 50 μL + CDCl₃ 450 μL -> 1H NMR M1 (U1.834; SW 19, NS 16) (use mechanical pipette)",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[6]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "25 mL flask",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step.__len__",
+      "status": "changed",
+      "a": 20,
+      "b": 21,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[0]._comment",
+      "status": "changed",
+      "a": "Remove volatiles with a rotovap (40 \u0003\u0003\u0003) for 1 h.",
+      "b": "Ag scavenging: Remove volatiles with a rotovap (40 °C) for 1 h.",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[0]._time",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "Unit": "hour",
+        "Value": 1
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[0]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "25 mL flask",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[1]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "25 mL flask",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[2]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "25 mL flask",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[3]._comment",
+      "status": "changed",
+      "a": "Swirl and sonicate \u00027 Dark green solution",
+      "b": "Swirl and sonicate → Dark green solution",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[3]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "25 mL flask",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[4]._reagent",
+      "status": "changed",
+      "a": "ISOLUTE Si-Thiol",
+      "b": "3-mercaptopropyl silica",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[4]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "25 mL flask",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[5]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "25 mL flask",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[6]._comment",
+      "status": "changed",
+      "a": "Filter the mixture \u00027 Dark green filtrate collected; Transfer and rinse with DCM 50 mL \u00027 pale green filtrate at the end.",
+      "b": "20 mL plastic syringe, cotton plug, syringe filter (⌀ 25 mm, 0.45 µm, PTFE), syringe filter (0.2 µm, ⌀ 15 mm, PTFE), 250 mL RBF [difficult to press]. Better to use frit or a filter paper.; Filter the mixture → Dark green filtrate collected; Transfer and rinse with DCM 50 mL → pale green filtrate at the end.",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[6]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "250 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[7]._method",
+      "status": "changed",
+      "a": "rotary_evaporator",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[7]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "250 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[8]._comment",
+      "status": "changed",
+      "a": "Add 10 mL of DCM.",
+      "b": "Reprecipitation: Add 10 mL of DCM.",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[8]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "250 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[9]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "250 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[10]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "250 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[11]._comment",
+      "status": "changed",
+      "a": "Refrigerate at 0 \u0003\u0003\u0003 o/n",
+      "b": "Refrigerate at 0 °C for o/n",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[11]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "250 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[12].$xml_type",
+      "status": "changed",
+      "a": "Add",
+      "b": "Filter",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[12]._amount",
+      "status": "changed",
+      "a": {
+        "Unit": "millilitre",
+        "Value": 30
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[12]._comment",
+      "status": "changed",
+      "a": "Dissolve in 30 mL of DCM",
+      "b": "26.03.2026 RT 21.5°C RH 30 %. Membrane filter (0.22 µm, hydrophobic, PVDF), membrane filter holder, 250 mL RBF.; Filter the mixture [it was too slow and incomplete]",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[12]._dropwise",
+      "status": "changed",
+      "a": false,
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[12]._reagent",
+      "status": "changed",
+      "a": "DCM",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[12]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "250 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[13].$xml_type",
+      "status": "changed",
+      "a": "Evaporate",
+      "b": "Add",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[13]._amount",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "Unit": "millilitre",
+        "Value": 30
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[13]._comment",
+      "status": "changed",
+      "a": "Evaporate the whole solvent.",
+      "b": "Dissolve in 30 mL of DCM",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[13]._dropwise",
+      "status": "changed",
+      "a": null,
+      "b": false,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[13]._method",
+      "status": "changed",
+      "a": "rotary_evaporator",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[13]._reagent",
+      "status": "changed",
+      "a": null,
+      "b": "DCM",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[13]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "250 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[14].$xml_type",
+      "status": "changed",
+      "a": "Add",
+      "b": "Evaporate",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[14]._amount",
+      "status": "changed",
+      "a": {
+        "Unit": "millilitre",
+        "Value": 10
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[14]._comment",
+      "status": "changed",
+      "a": "Add 10 mL of DCM.",
+      "b": "Evaporate the whole solvent.",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[14]._dropwise",
+      "status": "changed",
+      "a": false,
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[14]._reagent",
+      "status": "changed",
+      "a": "DCM",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[14]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "250 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[15]._amount.Value",
+      "status": "changed",
+      "a": 60,
+      "b": 10,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[15]._comment",
+      "status": "changed",
+      "a": "Add n-hexane (60 mL).",
+      "b": "Add 10 mL of DCM.",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[15]._reagent",
+      "status": "changed",
+      "a": "n-hexane",
+      "b": "DCM",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[15]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "250 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[16].$xml_type",
+      "status": "changed",
+      "a": "HeatChill",
+      "b": "Add",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[16]._amount",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "Unit": "millilitre",
+        "Value": 60
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[16]._comment",
+      "status": "changed",
+      "a": "Refrigerate at 0 \u0003\u0003\u0003 for 2 h",
+      "b": "Add n-hexane (60 mL).",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[16]._dropwise",
+      "status": "changed",
+      "a": null,
+      "b": false,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[16]._reagent",
+      "status": "changed",
+      "a": null,
+      "b": "n-hexane",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[16]._temp",
+      "status": "changed",
+      "a": {
+        "Unit": "celsius",
+        "Value": 0
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[16]._time",
+      "status": "changed",
+      "a": {
+        "Unit": "hour",
+        "Value": 2
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[16]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "250 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[17].$xml_type",
+      "status": "changed",
+      "a": "Filter",
+      "b": "HeatChill",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[17]._comment",
+      "status": "changed",
+      "a": "Filter the mixture \u00027 light yellow filtrate; Transfer and rinse with 2 x (DCM 3 mL + n-hexane 20 mL); Rinse w/ hexane 4 x 4 mL",
+      "b": "Refrigerate at 0 °C for 2 h",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[17]._product_portion",
+      "status": "changed",
+      "a": "filtrate",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[17]._rinse",
+      "status": "changed",
+      "a": [
+        {
+          "name": "DCM + n-hexane"
+        },
+        {
+          "name": "hexane"
+        }
+      ],
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[17]._temp",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "Unit": "celsius",
+        "Value": 0
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[17]._time",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "Unit": "hour",
+        "Value": 2
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[17]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "250 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[18].$xml_type",
+      "status": "changed",
+      "a": "Dry",
+      "b": "Filter",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[18]._comment",
+      "status": "changed",
+      "a": "Dry w/ suction for 5 min",
+      "b": "Frit (por. 4); Filter the mixture →  light yellow filtrate; Transfer and rinse with 2 x (DCM 3 mL + n-hexane 20 mL); Rinse w/ hexane 4 x 4 mL",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[18]._product_portion",
+      "status": "changed",
+      "a": null,
+      "b": "residue",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[18]._rinse",
+      "status": "changed",
+      "a": null,
+      "b": [
+        {
+          "name": "DCM + n-hexane"
+        },
+        {
+          "name": "n-hexane"
+        }
+      ],
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[18]._time",
+      "status": "changed",
+      "a": {
+        "Unit": "minute",
+        "Value": 5
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[18]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "Filter",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[19]._comment",
+      "status": "changed",
+      "a": "Dry under vacuum o/n",
+      "b": "Dry w/ suction for 5 min",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[19]._time.Unit",
+      "status": "changed",
+      "a": "day",
+      "b": "minute",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[19]._time.Value",
+      "status": "changed",
+      "a": 0.5,
+      "b": 5,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[19]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "Filter",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[20]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "Dry",
+        "_vessel": "Filter",
+        "_time": {
+          "Unit": "day",
+          "Value": 0.5
+        },
+        "_comment": "Dry under vacuum o/n"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.products[0].amount_mmol",
+      "status": "changed",
+      "a": 0.14238,
+      "b": 0.14233,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.products[0].molar_mass_g_mol",
+      "status": "changed",
+      "a": 2008.2384296,
+      "b": 2008.238429600001,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[0].amount_mmol",
+      "status": "changed",
+      "a": 0.17858,
+      "b": 0.17861,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[0].density_g_mL",
+      "status": "changed",
+      "a": null,
+      "b": null,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[0].molar_mass_g_mol",
+      "status": "changed",
+      "a": 1700.96952,
+      "b": 1700.9695200000008,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[0].volume_mL",
+      "status": "changed",
+      "a": null,
+      "b": null,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[1].amount_mmol",
+      "status": "changed",
+      "a": 0.15624,
+      "b": 0.15623,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[1].density_g_mL",
+      "status": "changed",
+      "a": null,
+      "b": null,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[1].molar_mass_g_mol",
+      "status": "changed",
+      "a": 256.9373096,
+      "b": 256.93730959999994,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[1].volume_mL",
+      "status": "changed",
+      "a": null,
+      "b": null,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[2].amount_mmol",
+      "status": "changed",
+      "a": 0.88499,
+      "b": 0.88475,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[2].mass_g",
+      "status": "changed",
+      "a": 0.069987,
+      "b": 0.06996,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[2].molar_mass_g_mol",
+      "status": "changed",
+      "a": 79.0999,
+      "b": 79.09989999999999,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[3].amount_mmol",
+      "status": "changed",
+      "a": null,
+      "b": 154.90672,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[3].mass_g",
+      "status": "changed",
+      "a": null,
+      "b": 14.2725,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[3].molar_mass_g_mol",
+      "status": "changed",
+      "a": 92.13842,
+      "b": 92.13842000000001,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[3].volume_mL",
+      "status": "changed",
+      "a": null,
+      "b": 16.5,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[4].volume_mL",
+      "status": "changed",
+      "a": null,
+      "b": null,
+      "a_missing": true,
+      "b_missing": false
+    }
+  ],
+  "AD-R18.json": [
+    {
+      "path": "$.batch_volume_mL",
+      "status": "changed",
+      "a": 41.03,
+      "b": 1.03,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step.__len__",
+      "status": "changed",
+      "a": 11,
+      "b": 9,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[0]._comment",
+      "status": "changed",
+      "a": "Heat the flask in an oven at 120 °C for >1.5 h",
+      "b": "Reaction: 100 mL two-neck RBF with a stir bar, septum (natural rubber), reflux condenser, T-shaped connector, bubbler (with paraffin oil), Schlenk line (N₂, 1.25 atm), heat gun, magnetic stirrer, oil bath; Heat the flask in an oven at 120 °C for >1.5 h",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[1]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "EvacuateAndRefill",
+        "_vessel": "100 mL two-neck RBF",
+        "_comment": "Quickly assemble and evacuate the system while it is still hot (1.2 × 10⁻³ mbar)"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[3]._amount",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "Value": 0.50313,
+        "Unit": "gram"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[4]._amount",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "Value": 1.2049999999999998,
+        "Unit": "gram"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[4]._comment",
+      "status": "changed",
+      "a": "Close the N₂ connection. Add TAPP and TrBr (plastic spatula) quickly",
+      "b": "Add TAPP and TrBr (plastic spatula) quickly",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[5]._gas",
+      "status": "changed",
+      "a": "N2",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Prep.Step[6]._amount",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "Value": 1.03,
+        "Unit": "millilitre"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[7]._comment",
+      "status": "changed",
+      "a": "Add THF → dark green liquid",
+      "b": "Add THF → dark green liquid. Start stirring (350 rpm) [10:45]. Cover the flask with aluminum foil",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[8]",
+      "status": "changed",
+      "a": {
+        "$xml_type": "Add",
+        "_vessel": "100 mL two-neck RBF",
+        "_reagent": "CoCl2",
+        "_dropwise": false,
+        "_comment": "Stop stirring. Close the N₂ connection. Add CoCl₂ quickly. Purge with N₂ for 10 s. Close. Resume stirring. [12:30]"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Prep.Step[9]",
+      "status": "changed",
+      "a": {
+        "$xml_type": "EvacuateAndRefill",
+        "_vessel": "100 mL two-neck RBF",
+        "_gas": "N2",
+        "_time": {
+          "Unit": "second",
+          "Value": 10
+        },
+        "_comment": "Purge with N₂ for 10 s. Close. Resume stirring. [12:30]"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Prep.Step[10]",
+      "status": "changed",
+      "a": {
+        "$xml_type": "EvacuateAndRefill",
+        "_vessel": "100 mL two-neck RBF",
+        "_gas": "N2",
+        "_time": {
+          "Unit": "minute",
+          "Value": 30
+        },
+        "_comment": "Bubble with N₂ for 30 min [12:32]"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Reaction.Step.__len__",
+      "status": "changed",
+      "a": 2,
+      "b": 6,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[1].$xml_type",
+      "status": "changed",
+      "a": "HeatChill",
+      "b": "Add",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[1]._amount",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "Value": 0.58636,
+        "Unit": "gram"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[1]._comment",
+      "status": "changed",
+      "a": "Heat to reflux (85 °C, oil bath) for 2 h [15:03]",
+      "b": "Stop stirring. Close the N₂ connection. Add CoCl₂ quickly.",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[1]._dropwise",
+      "status": "changed",
+      "a": null,
+      "b": false,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[1]._reagent",
+      "status": "changed",
+      "a": null,
+      "b": "CoCl2",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[1]._temp",
+      "status": "changed",
+      "a": {
+        "Unit": "celsius",
+        "Value": 85
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Reaction.Step[1]._time",
+      "status": "changed",
+      "a": {
+        "Unit": "hour",
+        "Value": 2
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Reaction.Step[2]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "EvacuateAndRefill",
+        "_vessel": "100 mL two-neck RBF",
+        "_gas": "N2",
+        "_time": {
+          "Value": 10,
+          "Unit": "second"
+        },
+        "_comment": "Purge with N₂ for 10 s. Close. Resume stirring. [12:30]"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[3]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "EvacuateAndRefill",
+        "_vessel": "100 mL two-neck RBF",
+        "_gas": "N2",
+        "_time": {
+          "Value": 30,
+          "Unit": "minute"
+        },
+        "_comment": "Bubble with N₂ for 30 min [12:32]"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[4]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "HeatChill",
+        "_vessel": "100 mL two-neck RBF",
+        "_temp": {
+          "Value": 85,
+          "Unit": "celsius"
+        },
+        "_reflux": true,
+        "_time": {
+          "Value": 2,
+          "Unit": "hour"
+        },
+        "_comment": "Heat to reflux (85 °C, oil bath) for 2 h [15:03]"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[5]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "EvacuateAndRefill",
+        "_vessel": "100 mL two-neck RBF",
+        "_comment": "Cool down to RT. → 0.1 mL + 400 µL of CDCl₃ → syringe filter (PVDF) → ¹H NMR M2 (U1.834; N PROTON20ppm; O1P 6, SW 22)"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step.__len__",
+      "status": "changed",
+      "a": 18,
+      "b": 17,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[0]._comment",
+      "status": "changed",
+      "a": "Add 30 g of neutral alumina",
+      "b": "Short-pad chromatography: Fritted funnel (x mL, por. 4), suction adapter, 250 mL RBF, T-connector, diaphragm pump; Add 30 g of neutral alumina",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[0]._vessel",
+      "status": "changed",
+      "a": "250 mL RBF",
+      "b": "Fritted funnel (x mL, por. 4)",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[1]._vessel",
+      "status": "changed",
+      "a": "250 mL RBF",
+      "b": "Fritted funnel (x mL, por. 4)",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[2]._vessel",
+      "status": "changed",
+      "a": "250 mL RBF",
+      "b": "Fritted funnel (x mL, por. 4)",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[3]._vessel",
+      "status": "changed",
+      "a": "250 mL RBF",
+      "b": "Fritted funnel (x mL, por. 4)",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[4]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "250 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[7]._comment",
+      "status": "changed",
+      "a": "Add basic alumina 40 g",
+      "b": "CHCl₃ deacidification: 250 mL RBF; Add basic alumina 40 g",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[8]._reagent",
+      "status": "changed",
+      "a": "CHCl₃",
+      "b": "CHCl3",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[9]._comment",
+      "status": "changed",
+      "a": "Filter the mixture under suction",
+      "b": "Fritted funnel (x mL, por. 4), suction adapter, 250 mL RBF, diaphragm pump; Filter the mixture under suction",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[9]._product_portion",
+      "status": "changed",
+      "a": "filtrate",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[9]._vessel",
+      "status": "changed",
+      "a": "250 mL RBF",
+      "b": "Fritted funnel (x mL, por. 4)",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[10]._comment",
+      "status": "changed",
+      "a": "Add 50 mL of purified CHCl₃ to the flask and sonicate → dark red solution",
+      "b": "Reprecipitation: Add 50 mL of purified CHCl₃ to the flask and sonicate → dark red solution",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[10]._reagent",
+      "status": "changed",
+      "a": "purified CHCl₃",
+      "b": "purified CHCl3",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[11]",
+      "status": "changed",
+      "a": {
+        "$xml_type": "Sonicate",
+        "_vessel": "250 mL RBF",
+        "_comment": "Add 50 mL of purified CHCl₃ to the flask and sonicate → dark red solution"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[13]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "250 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[14]._comment",
+      "status": "changed",
+      "a": "Filter the mixture under suction → dark brown filtrate",
+      "b": "Fritted funnel (x mL, por. 4), suction adapter, 250 mL RBF, diaphragm pump; Filter the mixture under suction → dark brown filtrate; Filter the filtrate again → faint brown filtrate",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[14]._product_portion",
+      "status": "changed",
+      "a": "filtrate",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[14]._vessel",
+      "status": "changed",
+      "a": "250 mL RBF",
+      "b": "Fritted funnel (x mL, por. 4)",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[15]._comment",
+      "status": "changed",
+      "a": "Filter the filtrate again → faint brown filtrate",
+      "b": "Transfer & rinse w/ 2 x (12 mL of purified CHCl₃ + 40 mL of heptane)",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[15]._rinse",
+      "status": "changed",
+      "a": null,
+      "b": [
+        {
+          "name": "purified CHCl3",
+          "amount": {
+            "Value": 12,
+            "Unit": "millilitre"
+          }
+        },
+        {
+          "name": "heptane",
+          "amount": {
+            "Value": 40,
+            "Unit": "millilitre"
+          }
+        }
+      ],
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[15]._vessel",
+      "status": "changed",
+      "a": "250 mL RBF",
+      "b": "Filter",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[16]._comment",
+      "status": "changed",
+      "a": "Transfer & rinse w/ 2 x (12 mL of purified CHCl₃ + 40 mL of heptane); Rinse with 2 × 30 mL of petroleum ether",
+      "b": "Rinse with 2 × 30 mL of petroleum ether",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[16]._product_portion",
+      "status": "changed",
+      "a": "residue",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[16]._rinse.__len__",
+      "status": "changed",
+      "a": 2,
+      "b": 1,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[16]._rinse[0].amount",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "Value": 30,
+        "Unit": "millilitre"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[16]._rinse[0].name",
+      "status": "changed",
+      "a": "purified CHCl₃ + heptane",
+      "b": "petroleum ether",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[16]._rinse[1]",
+      "status": "changed",
+      "a": {
+        "name": "petroleum ether"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[16]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "Filter",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[17]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "Filter",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.products[0].amount_mmol",
+      "status": "changed",
+      "a": 0.5743,
+      "b": 0.574285,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.products[0].appearance",
+      "status": "changed",
+      "a": null,
+      "b": "reddish brown solid",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.products[0].molar_mass_g_mol",
+      "status": "changed",
+      "a": 1700.96952,
+      "b": 1700.9695200000008,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.products[0].yield_percent",
+      "status": "changed",
+      "a": 77.01,
+      "b": 77.00839998348953,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[0].amount_mmol",
+      "status": "changed",
+      "a": 0.7455,
+      "b": 0.745676,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[1].amount_mmol",
+      "status": "changed",
+      "a": 3.728,
+      "b": 3.72748,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[1].mass_g",
+      "status": "changed",
+      "a": 1.205,
+      "b": 1.2049999999999998,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[2].amount_mmol",
+      "status": "changed",
+      "a": 4.5153,
+      "b": 4.51596,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[3].amount_mmol",
+      "status": "changed",
+      "a": 7.3877,
+      "b": 7.3897,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[4].amount_mmol",
+      "status": "changed",
+      "a": 493,
+      "b": null,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[4].mass_g",
+      "status": "changed",
+      "a": 35.56,
+      "b": null,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[4].volume_mL",
+      "status": "changed",
+      "a": 40,
+      "b": null,
+      "a_missing": false,
+      "b_missing": false
+    }
+  ],
+  "AD-R27.json": [
+    {
+      "path": "$.procedure.Prep.Step.__len__",
+      "status": "changed",
+      "a": 6,
+      "b": 2,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[0]._amount",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "Unit": "milligram",
+        "Value": 128.72
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[0]._comment",
+      "status": "changed",
+      "a": "Add Co(ttpp)",
+      "b": "Stock solution preparation: 5 mL vial. Put into the glovebox (H₂O < 1 ppm). Weigh in AgOTf → 128.72 mg",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[0]._reagent",
+      "status": "changed",
+      "a": "Co(ttpp)",
+      "b": "AgOTf",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[0]._vessel",
+      "status": "changed",
+      "a": "50 mL flask",
+      "b": "5 mL vial",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[1]._amount",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "Unit": "microlitre",
+        "Value": 3000
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[1]._comment",
+      "status": "changed",
+      "a": "Add pyridine",
+      "b": "Take it out of the glovebox. Add 3000 µL of toluene → colorless solution.",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[1]._reagent",
+      "status": "changed",
+      "a": "pyridine",
+      "b": "toluene",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[1]._vessel",
+      "status": "changed",
+      "a": "50 mL flask",
+      "b": "5 mL vial",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[2]",
+      "status": "changed",
+      "a": {
+        "$xml_type": "Add",
+        "_vessel": "50 mL flask",
+        "_amount": {
+          "Unit": "millilitre",
+          "Value": 26
+        },
+        "_dropwise": false,
+        "_reagent": "toluene",
+        "_comment": "Add toluene 26 mL"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Prep.Step[3]",
+      "status": "changed",
+      "a": {
+        "$xml_type": "Sonicate",
+        "_vessel": "50 mL flask",
+        "_time": {
+          "Unit": "minute",
+          "Value": 3
+        },
+        "_comment": "Sonicate for 3 min → Dark red solution"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Prep.Step[4]",
+      "status": "changed",
+      "a": {
+        "$xml_type": "Add",
+        "_vessel": "50 mL flask",
+        "_dropwise": true,
+        "_reagent": "AgOTf",
+        "_comment": "Add  1500 µL of AgOTf/toluene dropwise w/ mechanical pipette (750 x 2)"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Prep.Step[5]",
+      "status": "changed",
+      "a": {
+        "$xml_type": "Add",
+        "_vessel": "50 mL flask",
+        "_amount": {
+          "Unit": "microlitre",
+          "Value": 1500
+        },
+        "_dropwise": true,
+        "_reagent": "toluene",
+        "_comment": "Add  1500 µL of AgOTf/toluene dropwise w/ mechanical pipette (750 x 2)"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Reaction.Step.__len__",
+      "status": "changed",
+      "a": 1,
+      "b": 7,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[0].$xml_type",
+      "status": "changed",
+      "a": "Wait",
+      "b": "Add",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[0]._comment",
+      "status": "changed",
+      "a": "Continue stirring for 1 h → Dark green mixture",
+      "b": "Reaction: Add Co(ttpp)",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[0]._dropwise",
+      "status": "changed",
+      "a": null,
+      "b": false,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[0]._reagent",
+      "status": "changed",
+      "a": null,
+      "b": "Co(ttpp)",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[0]._time",
+      "status": "changed",
+      "a": {
+        "Unit": "hour",
+        "Value": 1
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Reaction.Step[0]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "50 mL flask",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[1]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "Add",
+        "_vessel": "50 mL flask",
+        "_reagent": "pyridine",
+        "_dropwise": false,
+        "_comment": "Add pyridine"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[2]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "Add",
+        "_vessel": "50 mL flask",
+        "_amount": {
+          "Unit": "millilitre",
+          "Value": 26
+        },
+        "_reagent": "toluene",
+        "_dropwise": false,
+        "_comment": "Add toluene 26 mL"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[3]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "Sonicate",
+        "_vessel": "50 mL flask",
+        "_time": {
+          "Unit": "minute",
+          "Value": 3
+        },
+        "_comment": "Sonicate for 3 min → Dark red solution"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[4]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "Add",
+        "_vessel": "50 mL flask",
+        "_reagent": "AgOTf",
+        "_dropwise": true,
+        "_comment": "Cover with aluminum foil. Start stirring at 400 rpm. Add 1500 µL of AgOTf/toluene dropwise w/ mechanical pipette (750 x 2)"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[5]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "Add",
+        "_vessel": "50 mL flask",
+        "_reagent": "toluene",
+        "_amount": {
+          "Unit": "microlitre",
+          "Value": 1500
+        },
+        "_dropwise": true,
+        "_comment": "Add 1500 µL of AgOTf/toluene dropwise w/ mechanical pipette (750 x 2)"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[6]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "Wait",
+        "_vessel": "50 mL flask",
+        "_time": {
+          "Unit": "hour",
+          "Value": 1
+        },
+        "_comment": "Continue stirring for 1 h → Dark green mixture"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[0]._comment",
+      "status": "changed",
+      "a": "Remove volatiles with a rotovap (40 °C) for 1 h.",
+      "b": "Ag scavenging: Remove volatiles with a rotovap (40 °C) for 1 h.",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[0]._time",
+      "status": "changed",
+      "a": {
+        "Unit": "hour",
+        "Value": 1
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[4]._dropwise",
+      "status": "changed",
+      "a": null,
+      "b": false,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[4]._reagent",
+      "status": "changed",
+      "a": "ISOLUTE Si-Thiol",
+      "b": "3-mercaptopropyl silica",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[5]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "50 mL flask",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[6]._comment",
+      "status": "changed",
+      "a": "Filter the mixture → Dark green filtrate collected; Transfer and rinse with DCM 50 mL → pale green filtrate at the end.",
+      "b": "20 mL plastic syringe, cotton plug, syringe filter (⌀ 25 mm, 0.45 µm, PTFE), syringe filter (0.2 µm, ⌀ 15 mm, PTFE), 250 mL RBF [difficult to press]. Better to use a frit. or a filter paper.; Filter the mixture → Dark green filtrate collected; Transfer and rinse with DCM 50 mL → pale green filtrate at the end.",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[6]._product_portion",
+      "status": "changed",
+      "a": "filtrate",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[6]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "250 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[7]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "250 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[8]._comment",
+      "status": "changed",
+      "a": "Add 50 mL of DCM.",
+      "b": "Reprecipitation: Add 50 mL of DCM.",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[8]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "250 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[9]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "250 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[10]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "250 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[11]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "250 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[12]._comment",
+      "status": "changed",
+      "a": "Filter the mixture → light yellow filtrate; Transfer and rinse with 2 x (DCM 15 mL + n-hexane 100 mL); Rinse w/ hexane 4 x 20 mL",
+      "b": "Frit (por. 4); Filter the mixture → light yellow filtrate; Transfer and rinse with 2 x (DCM 15 mL + n-hexane 100 mL); Rinse w/ hexane 4 x 20 mL",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[12]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "Frit (por. 4)",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[13]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "Filter",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[14]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "Filter",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.products[0].amount_mmol",
+      "status": "changed",
+      "a": 0.28059735817502746,
+      "b": 0.2806,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.products[0].molar_mass_g_mol",
+      "status": "changed",
+      "a": 2008.238429600001,
+      "b": 2008.2384296,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[0].amount_mmol",
+      "status": "changed",
+      "a": 0.29395103684771096,
+      "b": 0.2937,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[0].density_g_mL",
+      "status": "changed",
+      "a": null,
+      "b": null,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[0].molar_mass_g_mol",
+      "status": "changed",
+      "a": 1700.9695200000008,
+      "b": 1700.96952,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[0].volume_mL",
+      "status": "changed",
+      "a": null,
+      "b": null,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[1].amount_mmol",
+      "status": "changed",
+      "a": 0.25455190219770724,
+      "b": 0.2545,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[1].density_g_mL",
+      "status": "changed",
+      "a": null,
+      "b": null,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[1].molar_mass_g_mol",
+      "status": "changed",
+      "a": 256.93730959999994,
+      "b": 256.9373096,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[1].volume_mL",
+      "status": "changed",
+      "a": null,
+      "b": null,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[2].amount_mmol",
+      "status": "changed",
+      "a": 1.4712618200898877,
+      "b": 1.4713,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[2].molar_mass_g_mol",
+      "status": "changed",
+      "a": 79.09989999999999,
+      "b": 79.0999,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[3].amount_mmol",
+      "status": "changed",
+      "a": 258.1631447959745,
+      "b": 258.1713,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[3].molar_mass_g_mol",
+      "status": "changed",
+      "a": 92.13842000000001,
+      "b": 92.13842,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[4].volume_mL",
+      "status": "changed",
+      "a": null,
+      "b": null,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.tlc_conditions",
+      "status": "changed",
+      "a": null,
+      "b": null,
+      "a_missing": true,
+      "b_missing": false
+    }
+  ],
+  "AD-R6.json": [
+    {
+      "path": "$.batch_volume_mL",
+      "status": "changed",
+      "a": 0.516,
+      "b": 17.516,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step.__len__",
+      "status": "changed",
+      "a": 9,
+      "b": 11,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[1]._comment",
+      "status": "changed",
+      "a": "Evacuate (0.33 mbar), heat the bottom part of the reflux condenser with a heat gun (250 °C).",
+      "b": "Assemble and fix a reflux condenser, a T-shape connector, and a bubbler (paraffin oil) at a Schlenk line; Take out the RBF and quickly assemble it with a stir bar, rubber septum, and the reflux condenser while hot; Evacuate (0.33 mbar), heat the bottom part of the reflux condenser with a heat gun (250 °C).",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[1]._gas",
+      "status": "changed",
+      "a": "N2",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Prep.Step[2]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "EvacuateAndRefill",
+        "_vessel": "50 mL two-neck RBF",
+        "_gas": "N2",
+        "_comment": "Backfill with N2"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[4]._gas",
+      "status": "changed",
+      "a": "N2",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Prep.Step[4]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "50 mL two-neck RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[6]._comment",
+      "status": "changed",
+      "a": "Add THF w/ double-tipped needle.",
+      "b": "Add THF w/ double-tipped needle. (black mixture)",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[7].$xml_type",
+      "status": "changed",
+      "a": "Add",
+      "b": "Sonicate",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[7]._comment",
+      "status": "changed",
+      "a": "Add CoCl2 quickly.",
+      "b": "Start stirring (350 rpm). Cover the flask with Al foil. → 0.1 mL + CDCl3 500 µL, sonicate → 1H NMR M1",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[7]._reagent",
+      "status": "changed",
+      "a": "CoCl2",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Prep.Step[8].$xml_type",
+      "status": "changed",
+      "a": "EvacuateAndRefill",
+      "b": "Sonicate",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[8]._comment",
+      "status": "changed",
+      "a": "Purge with N2 for 10 s",
+      "b": "→ 0.1 mL + CDCl3 500 µL, sonicate → 1H NMR M2",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[8]._gas",
+      "status": "changed",
+      "a": "N2",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Prep.Step[8]._time",
+      "status": "changed",
+      "a": {
+        "Value": 10,
+        "Unit": "second"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Prep.Step[8]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "50 mL two-neck RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[10]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "Sonicate",
+        "_vessel": "50 mL two-neck RBF",
+        "_comment": "→ 0.1 mL + CDCl3 500 µL, sonicate → 1H NMR M3"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step.__len__",
+      "status": "changed",
+      "a": 2,
+      "b": 5,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[0].$xml_type",
+      "status": "changed",
+      "a": "EvacuateAndRefill",
+      "b": "Add",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[0]._comment",
+      "status": "changed",
+      "a": "Bubble with N2, 30 min.",
+      "b": "Stop stirring. Close the N2 connection. Add CoCl2 quickly. Close. Resume stirring.",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[0]._gas",
+      "status": "changed",
+      "a": "N2",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Reaction.Step[0]._reagent",
+      "status": "changed",
+      "a": null,
+      "b": "CoCl2",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[0]._time",
+      "status": "changed",
+      "a": {
+        "Value": 30,
+        "Unit": "minute"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Reaction.Step[0]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "50 mL two-neck RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[1]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "EvacuateAndRefill",
+        "_vessel": "50 mL two-neck RBF",
+        "_gas": "N2",
+        "_time": {
+          "Value": 10,
+          "Unit": "second"
+        },
+        "_comment": "Purge with N2 for 10 s"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[2]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "EvacuateAndRefill",
+        "_vessel": "50 mL two-neck RBF",
+        "_gas": "N2",
+        "_time": {
+          "Value": 30,
+          "Unit": "minute"
+        },
+        "_comment": "Bubble with N2, 30 min."
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[4]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "Sonicate",
+        "_vessel": "50 mL two-neck RBF",
+        "_comment": "Cool down to RT. → 0.1 mL + CDCl3 500 µL, sonicate → 1H NMR M4"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step.__len__",
+      "status": "changed",
+      "a": 11,
+      "b": 14,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[0]._amount",
+      "status": "changed",
+      "a": {
+        "Value": 70,
+        "Unit": "millilitre"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[0]._comment",
+      "status": "changed",
+      "a": "Elute with THF 70 mL and weak suction. (eluate: dark red to pale pink)",
+      "b": "Frit funnel 25 mL and add a folded filter paper add alumina (neutral) until the half of the filter paper; wet it with THF.",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[0]._reagent",
+      "status": "changed",
+      "a": "THF",
+      "b": "neutral alumina",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[0]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "25 mL frit funnel",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[1]._amount",
+      "status": "changed",
+      "a": {
+        "Value": 25,
+        "Unit": "millilitre"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[1]._comment",
+      "status": "changed",
+      "a": "Add EtOH 25 mL to the eluate",
+      "b": "Attach the funnel to a vacuum filter adapter and a 250 mL RBF; Wet the alumina with THF; Load the rest of the reaction mixture; Charge the loaded alumina (A)",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[1]._reagent",
+      "status": "changed",
+      "a": "EtOH",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[1]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "25 mL frit funnel",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[2].$xml_type",
+      "status": "changed",
+      "a": "Evaporate",
+      "b": "Purify",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[2]._comment",
+      "status": "changed",
+      "a": "Concentrate with rotovap to 25 mL. (purple precipitation)",
+      "b": "Elute with THF 70 mL and weak suction. (eluate: dark red to pale pink)",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[2]._eluent",
+      "status": "changed",
+      "a": null,
+      "b": "THF 70 mL",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[2]._method",
+      "status": "changed",
+      "a": "rotary_evaporator",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[2]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "25 mL frit funnel",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[3]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "Add",
+        "_vessel": "250 mL RBF",
+        "_reagent": "EtOH",
+        "_amount": {
+          "Unit": "millilitre",
+          "Value": 25
+        },
+        "_comment": "Add EtOH 25 mL to the eluate"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[4]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "Evaporate",
+        "_vessel": "250 mL RBF",
+        "_method": "rotary_evaporator",
+        "_comment": "Concentrate with rotovap to 25 mL. (purple precipitation)"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[4]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "50 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[5]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "50 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[6]._comment",
+      "status": "changed",
+      "a": "Add EtOH 25 mL. o/n",
+      "b": "o/n",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[6]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "50 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[7]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "50 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[8]._comment",
+      "status": "changed",
+      "a": "Collect the solids by filtration with a filter paper (15A, ø 90 mm), a glass funnel, a vacuum filter adapter, and a 50 mL RBF under suction. (filtrate: dark green brown); Rinse with EtOH and petroleum ether.",
+      "b": "Collect the solids by filtration with a filter paper (15A, ø 90 mm, tare: x g), a glass funnel, a vacuum filter adapter, and a 50 mL RBF (tare: ?) under suction. (filtrate: dark green brown); Rinse with EtOH and petroleum ether.",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[9].$xml_type",
+      "status": "changed",
+      "a": "Dry",
+      "b": "Evaporate",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[9]._comment",
+      "status": "changed",
+      "a": "Dry with a diaphragm pump for 1 h",
+      "b": "Dry the filtrate with rotovap",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[9]._method",
+      "status": "changed",
+      "a": null,
+      "b": "rotary_evaporator",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[9]._time",
+      "status": "changed",
+      "a": {
+        "Value": 1,
+        "Unit": "hour"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[9]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "50 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[10]._comment",
+      "status": "changed",
+      "a": "Dry the residue under vacuum (diaphragm pump) for 1 h",
+      "b": "Dry with a diaphragm pump for 1 h",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[10]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "Filter",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[13]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "Dry",
+        "_vessel": "Filter",
+        "_time": {
+          "Value": 1,
+          "Unit": "hour"
+        },
+        "_comment": "Dry the residue under vacuum (diaphragm pump) for 1 h"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.products[0].is_main_product",
+      "status": "changed",
+      "a": null,
+      "b": true,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials.__len__",
+      "status": "changed",
+      "a": 4,
+      "b": 5,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[0].amount_mmol",
+      "status": "changed",
+      "a": 0.3721,
+      "b": 0.37212,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[0].volume_mL",
+      "status": "changed",
+      "a": null,
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.starting_materials[1].amount_mmol",
+      "status": "changed",
+      "a": 1.9404,
+      "b": 1.94002,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[1].volume_mL",
+      "status": "changed",
+      "a": null,
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.starting_materials[2].amount_mmol",
+      "status": "changed",
+      "a": 2.2335,
+      "b": 2.23392,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[2].volume_mL",
+      "status": "changed",
+      "a": null,
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.starting_materials[3].amount_mmol",
+      "status": "changed",
+      "a": 3.7007,
+      "b": 3.70156,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[3].mass_g",
+      "status": "changed",
+      "a": 0.37462,
+      "b": 0.374616,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[4]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "name": "THF",
+        "note": "solvent",
+        "molar_mass_g_mol": 72.10572,
+        "mass_g": 15.113,
+        "amount_mmol": 209.579,
+        "equivalents": null,
+        "density_g_mL": 0.889,
+        "volume_mL": 17
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.tlc_conditions",
+      "status": "changed",
+      "a": null,
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    }
+  ],
+  "AD-R8.json": [
+    {
+      "path": "$.procedure.Prep.Step.__len__",
+      "status": "changed",
+      "a": 10,
+      "b": 8,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[0].$xml_type",
+      "status": "changed",
+      "a": "HeatChill",
+      "b": "Add",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[0]._comment",
+      "status": "changed",
+      "a": "Heat a 50 mL two-neck RBF in an oven (120 °C) for >1.5 h.",
+      "b": "Heat a 50 mL two-neck RBF in an oven (120 °C) for >1.5 h.; Assemble and fix a reflux condenser, a T-shaped connector, and a bubbler (filled with paraffin oil) at a Schlenk line.; Remove the RBF and quickly assemble it with a stir bar, rubber septum, and reflux condenser while it is still hot.; Evacuate (0.24 mbar), heat the bottom part of the reflux condenser and flask with a heat gun (250 °C). [Heating flask might not be necessary]; Backfill with N2; Add TAPP and TrBr (plastic spatula) quickly",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[0]._reagent",
+      "status": "changed",
+      "a": null,
+      "b": "TAPP",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[0]._temp",
+      "status": "changed",
+      "a": {
+        "Value": 120,
+        "Unit": "celsius"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Prep.Step[0]._time",
+      "status": "changed",
+      "a": {
+        "Value": 1.5,
+        "Unit": "hour"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Prep.Step[1]",
+      "status": "changed",
+      "a": {
+        "$xml_type": "EvacuateAndRefill",
+        "_vessel": "50 mL two-neck RBF",
+        "_gas": "N2",
+        "_comment": "Backfill with N2"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Prep.Step[2]",
+      "status": "changed",
+      "a": {
+        "$xml_type": "Add",
+        "_vessel": "50 mL two-neck RBF",
+        "_reagent": "TAPP",
+        "_comment": "Add TAPP and TrBr (plastic spatula) quickly"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Prep.Step[5]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "Sonicate",
+        "_vessel": "50 mL two-neck RBF",
+        "_comment": "Start stirring (350 rpm). Cover the flask with Al foil. → 0.1 mL + CDCl3 500 µL, sonicate → 1H NMR M1"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[6]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "Sonicate",
+        "_vessel": "50 mL two-neck RBF",
+        "_comment": "[16.12] [08:15] → 0.1 mL + CDCl3 500 µL, sonicate → 1H NMR M2"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[8]",
+      "status": "changed",
+      "a": {
+        "$xml_type": "EvacuateAndRefill",
+        "_vessel": "50 mL two-neck RBF",
+        "_gas": "N2",
+        "_time": {
+          "Value": 10,
+          "Unit": "second"
+        },
+        "_comment": "Purge with N2 for 10 s."
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Prep.Step[9]",
+      "status": "changed",
+      "a": {
+        "$xml_type": "EvacuateAndRefill",
+        "_vessel": "50 mL two-neck RBF",
+        "_gas": "N2",
+        "_time": {
+          "Value": 30,
+          "Unit": "minute"
+        },
+        "_comment": "Bubble with N2, 30 min."
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Reaction.Step.__len__",
+      "status": "changed",
+      "a": 3,
+      "b": 7,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[0]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "EvacuateAndRefill",
+        "_vessel": "50 mL two-neck RBF",
+        "_gas": "N2",
+        "_time": {
+          "Value": 30,
+          "Unit": "minute"
+        },
+        "_comment": "Bubble with N2, 30 min."
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[2]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "Sonicate",
+        "_vessel": "50 mL two-neck RBF",
+        "_comment": "Cool down to RT. → 0.1 mL + CDCl3 500 µL, sonicate → 1H NMR M3 unfiltered → syringe filter → 1H NMR M3"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[4]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "Sonicate",
+        "_vessel": "50 mL two-neck RBF",
+        "_comment": "Cool down to RT. → 0.1 mL + CDCl3 500 µL, sonicate → 1H NMR failed because of autosampler problem"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[6]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "Sonicate",
+        "_vessel": "50 mL two-neck RBF",
+        "_comment": "→ 0.1 mL + CDCl3 500 µL, sonicate → syringe filter, rinsed with CDCl3 → 1H NMR M4"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step.__len__",
+      "status": "changed",
+      "a": 7,
+      "b": 9,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[0]._dropwise",
+      "status": "changed",
+      "a": false,
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[1].$xml_type",
+      "status": "changed",
+      "a": "Purify",
+      "b": "Add",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[1]._comment",
+      "status": "changed",
+      "a": "Elute with THF (75 mL) and weak suction. (eluate: dark red to pale pink)  (The alumina pad became dark green at the top, pale green in the middle, and a little brown part at the bottom)",
+      "b": "Attach the funnel to a vacuum filter adapter and a 250 mL RBF.; Wet the alumina with THF",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[1]._eluent",
+      "status": "changed",
+      "a": "THF (75 mL)",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[1]._reagent",
+      "status": "changed",
+      "a": null,
+      "b": "THF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[1]._stationary_phase",
+      "status": "changed",
+      "a": "neutral alumina",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[1]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "250 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[2]._amount",
+      "status": "changed",
+      "a": {
+        "Value": 25,
+        "Unit": "millilitre"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[2]._comment",
+      "status": "changed",
+      "a": "Add EtOH 25 mL to the eluate",
+      "b": "Load the reaction mixture",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[2]._dropwise",
+      "status": "changed",
+      "a": false,
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[2]._reagent",
+      "status": "changed",
+      "a": "ethanol",
+      "b": "reaction mixture",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[3]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "Add",
+        "_vessel": "250 mL RBF",
+        "_amount": {
+          "Value": 75,
+          "Unit": "millilitre"
+        },
+        "_reagent": "THF",
+        "_comment": "Elute with THF (75 mL) and weak suction. (eluate: dark red to pale pink)  (The alumina pad became dark green at the top, pale green in the middle, and a little brown part at the bottom)"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[4]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "Add",
+        "_vessel": "250 mL RBF",
+        "_amount": {
+          "Value": 25,
+          "Unit": "millilitre"
+        },
+        "_reagent": "ethanol",
+        "_comment": "Add EtOH 25 mL to the eluate"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[4]._product_portion",
+      "status": "changed",
+      "a": "residue",
+      "b": null,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[4]._rinse[0].name",
+      "status": "changed",
+      "a": "ethanol",
+      "b": "EtOH",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[5]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "100 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[6]._comment",
+      "status": "changed",
+      "a": "Dry the residue under vacuum (diaphragm pump) for 1 h. [dark brown solid]",
+      "b": "Dry the residue under vacuum (diaphragm pump) for 1 h. [dark brown solid]; 0.26716 g  wt. on Filter paper. Transfer to vial with label and tape (tare: 8.10142 g) --> 0.26232 g; The residue on filter paper → 1H NMR paper (CDCl3) [green solution]",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[6]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "Filter",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.products[0].amount_mmol",
+      "status": "changed",
+      "a": 0.15422,
+      "b": 0.15418,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.products[0].yield_percent",
+      "status": "changed",
+      "a": 83.07,
+      "b": 83.0728746088521,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[0].amount_mmol",
+      "status": "changed",
+      "a": 0.18562,
+      "b": 0.18563,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[0].volume_mL",
+      "status": "changed",
+      "a": null,
+      "b": null,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[1].amount_mmol",
+      "status": "changed",
+      "a": 0.95673,
+      "b": 0.95637,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[1].volume_mL",
+      "status": "changed",
+      "a": null,
+      "b": null,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[2].amount_mmol",
+      "status": "changed",
+      "a": 1.11359,
+      "b": 1.11338,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[2].volume_mL",
+      "status": "changed",
+      "a": null,
+      "b": null,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[3].amount_mmol",
+      "status": "changed",
+      "a": 1.85186,
+      "b": 1.85135,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[4].amount_mmol",
+      "status": "changed",
+      "a": 104.81008,
+      "b": 104.827,
+      "a_missing": false,
+      "b_missing": false
+    }
+  ],
+  "AD-R9.json": [
+    {
+      "path": "$.procedure.Prep.Step.__len__",
+      "status": "changed",
+      "a": 12,
+      "b": 10,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[0].$xml_type",
+      "status": "changed",
+      "a": "HeatChill",
+      "b": "EvacuateAndRefill",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[0]._comment",
+      "status": "changed",
+      "a": "Heat a 50 mL two-neck RBF in an oven (120°C) for >1.5 h.",
+      "b": "Heat a 50 mL two-neck RBF in an oven (120°C) for >1.5 h.; [08.01., RT 21.5°C, RH 24 %]. Assemble and fix a reflux condenser (NS29/42), a T-shaped connector, and a bubbler (filled with paraffin oil) at a Schlenk line.; Remove the RBF and quickly assemble it with a stir bar, rubber septum, enlarging adapter, and reflux condenser while it is still hot.; Evacuate (0.23 mbar) and heat the bottom part of the reflux condenser and flask with a heat gun (250°C). [The vacuum level was low because the gas ballast valve was open]",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[0]._temp",
+      "status": "changed",
+      "a": {
+        "Value": 120,
+        "Unit": "celsius"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Prep.Step[1].$xml_type",
+      "status": "changed",
+      "a": "HeatChill",
+      "b": "EvacuateAndRefill",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[1]._comment",
+      "status": "changed",
+      "a": "Evacuate (0.23 mbar) and heat the bottom part of the reflux condenser and flask with a heat gun (250°C).",
+      "b": "Backfill with N₂.",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[1]._gas",
+      "status": "changed",
+      "a": null,
+      "b": "N2",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[1]._temp",
+      "status": "changed",
+      "a": {
+        "Value": 250,
+        "Unit": "celsius"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Prep.Step[2]",
+      "status": "changed",
+      "a": {
+        "$xml_type": "EvacuateAndRefill",
+        "_vessel": "50 mL two-neck RBF",
+        "_gas": "N₂",
+        "_comment": "Backfill with N₂."
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Prep.Step[5]._gas",
+      "status": "changed",
+      "a": "N₂",
+      "b": "N2",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[7]._comment",
+      "status": "changed",
+      "a": "Add the THF syringe. (greenish-black mixture)",
+      "b": "Add the THF syringe. [09:15] (greenish-black mixture)",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[8]._comment",
+      "status": "changed",
+      "a": "Add CoCl2 quickly",
+      "b": "Start stirring (350 rpm). Cover the flask with Al foil.",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[8]._reagent",
+      "status": "changed",
+      "a": "CoCl2",
+      "b": "stir bar / start stirring",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[9].$xml_type",
+      "status": "changed",
+      "a": "EvacuateAndRefill",
+      "b": "Sonicate",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[9]._comment",
+      "status": "changed",
+      "a": "Purge with N₂ for 10 s.",
+      "b": "→ 0.1 mL + CDCl₃ 500 µL, sonicate → ¹H NMR M1 [09:25]",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[9]._gas",
+      "status": "changed",
+      "a": "N₂",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Prep.Step[9]._time",
+      "status": "changed",
+      "a": {
+        "Value": 10,
+        "Unit": "second"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Prep.Step[10].$xml_type",
+      "status": "changed",
+      "a": "EvacuateAndRefill",
+      "b": "Sonicate",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[10]._comment",
+      "status": "changed",
+      "a": "Bubble with N₂, 30 min.",
+      "b": "[10:37] → 0.1 mL → syringe filter + CDCl₃ 500 µL, sonicate → 1H NMR M2",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[10]._gas",
+      "status": "changed",
+      "a": "N₂",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Prep.Step[10]._time",
+      "status": "changed",
+      "a": {
+        "Value": 30,
+        "Unit": "minute"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Prep.Step[11]",
+      "status": "changed",
+      "a": {
+        "$xml_type": "Add",
+        "_vessel": "50 mL two-neck RBF",
+        "_amount": {
+          "Value": 10,
+          "Unit": "millilitre"
+        },
+        "_reagent": "THF",
+        "_comment": "Add 10 mL THF (bubbled with N2 for 20 min) and seal the joint with Teflon tape."
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Reaction.Step.__len__",
+      "status": "changed",
+      "a": 3,
+      "b": 11,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[0].$xml_type",
+      "status": "changed",
+      "a": "HeatChill",
+      "b": "Add",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[0]._comment",
+      "status": "changed",
+      "a": "Heat to reflux (85 °C, 1.25 atm) for ca. 15 min (Mixture volume almost dried up, greenish-brown)",
+      "b": "Stop stirring. Close the N₂ connection. Add CoCl₂ quickly. Purge with N₂ for 10 s. Close. Resume stirring. [12:45]",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[0]._reagent",
+      "status": "changed",
+      "a": null,
+      "b": "CoCl2",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[0]._reflux",
+      "status": "changed",
+      "a": true,
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Reaction.Step[0]._temp",
+      "status": "changed",
+      "a": {
+        "Value": 85,
+        "Unit": "celsius"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Reaction.Step[0]._time",
+      "status": "changed",
+      "a": {
+        "Value": 15,
+        "Unit": "minute"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Reaction.Step[1]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "EvacuateAndRefill",
+        "_vessel": "50 mL two-neck RBF",
+        "_gas": "N2",
+        "_time": {
+          "Value": 10,
+          "Unit": "second"
+        },
+        "_comment": "Purge with N₂ for 10 s."
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[2]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "EvacuateAndRefill",
+        "_vessel": "50 mL two-neck RBF",
+        "_gas": "N2",
+        "_time": {
+          "Value": 30,
+          "Unit": "minute"
+        },
+        "_comment": "Bubble with N₂, 30 min. [–13:15]"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[3]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "HeatChill",
+        "_vessel": "50 mL two-neck RBF",
+        "_reflux": true,
+        "_temp": {
+          "Value": 85,
+          "Unit": "celsius"
+        },
+        "_time": {
+          "Value": 15,
+          "Unit": "minute"
+        },
+        "_comment": "[13:32] Heat to reflux (85 °C, 1.25 atm) for ca. 15 min (Mixture volume almost dried up, greenish-brown)"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[4]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "Add",
+        "_vessel": "50 mL two-neck RBF",
+        "_amount": {
+          "Value": 10,
+          "Unit": "millilitre"
+        },
+        "_reagent": "THF",
+        "_comment": "Add 10 mL THF (bubbled with N2 for 20 min) and seal the joint with Teflon tape."
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[2].$xml_type",
+      "status": "changed",
+      "a": "HeatChill",
+      "b": "Sonicate",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[2]._comment",
+      "status": "changed",
+      "a": "Heat to reflux (85 °C, 1.25 atm) for 1 h; Discontinued",
+      "b": "Cool down to RT. → 0.1 mL + CDCl₃ 500 µL → syringe filter → sonicate → ¹H NMR M3 [15:55]",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[2]._reflux",
+      "status": "changed",
+      "a": true,
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Reaction.Step[2]._temp",
+      "status": "changed",
+      "a": {
+        "Value": 85,
+        "Unit": "celsius"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Reaction.Step[2]._time",
+      "status": "changed",
+      "a": {
+        "Value": 1,
+        "Unit": "hour"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Reaction.Step[7]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "HeatChill",
+        "_vessel": "50 mL two-neck RBF",
+        "_reflux": true,
+        "_temp": {
+          "Value": 85,
+          "Unit": "celsius"
+        },
+        "_comment": "Heat to reflux (85 °C, 1.25 atm)"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[8]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "Sonicate",
+        "_vessel": "50 mL two-neck RBF",
+        "_comment": "→ 0.2 mL → syringe filter + CDCl₃ 500 µL → sonicate → ¹H NMR M4 [16:10]"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[9]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "Sonicate",
+        "_vessel": "50 mL two-neck RBF",
+        "_comment": "→ 0.1 mL + CDCl₃ 500 µL → syringe filter → sonicate → 1H NMR M5 [17:40]"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[10]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "HeatChill",
+        "_vessel": "50 mL two-neck RBF",
+        "_reflux": true,
+        "_temp": {
+          "Value": 85,
+          "Unit": "celsius"
+        },
+        "_time": {
+          "Value": 1,
+          "Unit": "hour"
+        },
+        "_comment": "Heat to reflux (85 °C, 1.25 atm) for 1 h. Discontinued"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step.__len__",
+      "status": "changed",
+      "a": 8,
+      "b": 9,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[1]._comment",
+      "status": "changed",
+      "a": "Wet the alumina with THF",
+      "b": "Attach the funnel to a vacuum filter adapter and a 250 mL RBF.; Wet the alumina with THF",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[2].$xml_type",
+      "status": "changed",
+      "a": "Add",
+      "b": "Purify",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[2]._comment",
+      "status": "changed",
+      "a": "Load the reaction mixture",
+      "b": "Load the reaction mixture. Elute with THF (75 mL) and weak suction. (eluate:  )  (The alumina pad became xx green at the top, xx green in the middle, and a xx brown part at the bottom.)",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[2]._eluent",
+      "status": "changed",
+      "a": null,
+      "b": "THF 75 mL",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[2]._reagent",
+      "status": "changed",
+      "a": "reaction mixture",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[3]",
+      "status": "changed",
+      "a": {
+        "$xml_type": "Add",
+        "_vessel": "25 mL frit funnel",
+        "_amount": {
+          "Value": 75,
+          "Unit": "millilitre"
+        },
+        "_reagent": "THF",
+        "_comment": "Elute with THF (75 mL) and weak suction."
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[6]._comment",
+      "status": "changed",
+      "a": "Collect the solids by filtration with filter paper (15A, ø 90 mm) under suction; Rinse with EtOH x3 and petroleum ether x2.",
+      "b": "Collect the solids by filtration with a filter paper (15A, ø 90 mm, tare: 0.51740 g), a glass funnel, a vacuum filter adapter, and a 100 mL RBF under suction. (filtrate: dark green solution); Rinse with EtOH x3 and petroleum ether x2.",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[6]._product_portion",
+      "status": "changed",
+      "a": "residue",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[7]._comment",
+      "status": "changed",
+      "a": "Dry the residue under vacuum (diaphragm pump) for 1 h",
+      "b": "Dry the residue under vacuum (diaphragm pump) for 1 h. [dark brown solid]",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[7]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "Filter",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[7]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "Filter",
+        "_vessel": "Filter",
+        "_comment": "xxx g wt. on filter paper.; Transfer to vial with label and tape (tare: g). -->  g"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[8]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "Purify",
+        "_vessel": "500 mL RBF",
+        "_eluent": "CHCl3 170 mL; Basic Al2O3 deacidification",
+        "_comment": "CHCl3 deacidification: 500 mL RBF; Basic Al2O3; CHCl3 170 mL (mix in flask ---> then filter); Fritted funnel (por.4), suction adapter (60 mbar, full open), 50 mL wide-neck RBF (blow-cleaned)"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.products[0].is_main_product",
+      "status": "changed",
+      "a": null,
+      "b": true,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[0].amount_mmol",
+      "status": "changed",
+      "a": 0.1879,
+      "b": 0.18785,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[1].amount_mmol",
+      "status": "changed",
+      "a": 0.9623,
+      "b": 0.96255,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[2].amount_mmol",
+      "status": "changed",
+      "a": 1.1527,
+      "b": 1.153,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[3].amount_mmol",
+      "status": "changed",
+      "a": 1.866,
+      "b": 1.865,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[4].amount_mmol",
+      "status": "changed",
+      "a": 123.275,
+      "b": 123.299,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[5].amount_mmol",
+      "status": "changed",
+      "a": 123.275,
+      "b": 123.299,
+      "a_missing": false,
+      "b_missing": false
+    }
+  ],
+  "ZAR-438.json": [
+    {
+      "path": "$.procedure.Prep.Step[0]._comment",
+      "status": "changed",
+      "a": "Heat the flask in an oven at 120 °C for >1.5 h",
+      "b": "100 mL two-neck RBF with a stir bar, septum (natural rubber), reflux condenser, T-shaped connector, bubbler (with paraffin oil), Schlenk line (N₂, 1.25 atm), heat gun, magnetic stirrer, oil bath; Heat the flask in an oven at 120 °C for >1.5 h",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[0]._time",
+      "status": "changed",
+      "a": {
+        "Value": 1.5,
+        "Unit": "hour"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Prep.Step[0]._vessel",
+      "status": "changed",
+      "a": "100 mL two-neck RBF with a stir bar, septum (natural rubber), reflux condenser, T-shaped connector, bubbler (with paraffin oil), Schlenk line (N₂, 1.25 atm), heat gun, magnetic stirrer, oil bath",
+      "b": "100 mL two-neck RBF",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[1]._gas",
+      "status": "changed",
+      "a": "N₂",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Prep.Step[1]._vessel",
+      "status": "changed",
+      "a": "100 mL two-neck RBF with a stir bar, septum (natural rubber), reflux condenser, T-shaped connector, bubbler (with paraffin oil), Schlenk line (N₂, 1.25 atm), heat gun, magnetic stirrer, oil bath",
+      "b": "100 mL two-neck RBF",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[2]._vessel",
+      "status": "changed",
+      "a": "100 mL two-neck RBF with a stir bar, septum (natural rubber), reflux condenser, T-shaped connector, bubbler (with paraffin oil), Schlenk line (N₂, 1.25 atm), heat gun, magnetic stirrer, oil bath",
+      "b": "100 mL two-neck RBF",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[4]._comment",
+      "status": "changed",
+      "a": "Close the N₂ connection. Add TAPP and TrBr (plastic spatula) quickly",
+      "b": "Add TAPP and TrBr (plastic spatula) quickly",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[5]._gas",
+      "status": "changed",
+      "a": "N₂",
+      "b": "N2",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[7]._amount",
+      "status": "changed",
+      "a": {
+        "Value": 20,
+        "Unit": "millilitre"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Reaction.Step.__len__",
+      "status": "changed",
+      "a": 5,
+      "b": 4,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[0]._comment",
+      "status": "changed",
+      "a": "Let it stir for 1 h",
+      "b": "Start stirring (350 rpm) [9:30]; Cover the flask with aluminum foil. Let it stir for 1 h",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[0]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "100 mL two-neck RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[1]._comment",
+      "status": "changed",
+      "a": "Stop stirring. Close the N₂ connection. Add CoCl₂ quickly.",
+      "b": "Stop stirring. Close the N₂ connection. Add CoCl₂ quickly. Purge with N₂ for 10 s. Close. Resume stirring.",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[2]._comment",
+      "status": "changed",
+      "a": "Purge with N₂ for 10 s",
+      "b": "Bubble with N₂ for 30 min [11:00]",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[2]._gas",
+      "status": "changed",
+      "a": "N₂",
+      "b": "N2",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[2]._time.Unit",
+      "status": "changed",
+      "a": "second",
+      "b": "minute",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[2]._time.Value",
+      "status": "changed",
+      "a": 10,
+      "b": 30,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[3].$xml_type",
+      "status": "changed",
+      "a": "EvacuateAndRefill",
+      "b": "HeatChill",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[3]._comment",
+      "status": "changed",
+      "a": "Bubble with N₂ for 30 min [11:00]",
+      "b": "Heat to reflux (85 °C, oil bath) for 2 h [13:30]; Cool down to RT",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[3]._gas",
+      "status": "changed",
+      "a": "N₂",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Reaction.Step[3]._reflux",
+      "status": "changed",
+      "a": null,
+      "b": true,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[3]._temp",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "Value": 85,
+        "Unit": "celsius"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[3]._time.Unit",
+      "status": "changed",
+      "a": "minute",
+      "b": "hour",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[3]._time.Value",
+      "status": "changed",
+      "a": 30,
+      "b": 2,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[4]",
+      "status": "changed",
+      "a": {
+        "$xml_type": "HeatChill",
+        "_vessel": "100 mL two-neck RBF",
+        "_temp": {
+          "Value": 85,
+          "Unit": "celsius"
+        },
+        "_time": {
+          "Value": 2,
+          "Unit": "hour"
+        },
+        "_comment": "Heat to reflux (85 °C, oil bath) for 2 h [13:30]"
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[0]._comment",
+      "status": "changed",
+      "a": "Add 15 g of neutral alumina",
+      "b": "Short-pad chromatography: Fritted funnel (50mL, por. 4), suction adapter, 100 mL RBF, T-connector, diaphragm pump; Add 15 g of neutral alumina",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[2]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "Fritted funnel (50mL, por. 4)",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[3]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "Fritted funnel (50mL, por. 4)",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[4]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "100 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[5]._comment",
+      "status": "changed",
+      "a": "Dry under vacuum Schlenk line, 1 h",
+      "b": "Dry under vacuum Schlenk line, 1 h; Dark brown solid",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[5]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "100 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[6]._comment",
+      "status": "changed",
+      "a": "Add basic alumina 20 g",
+      "b": "CHCl₃ deacidification: 250 mL RBF; Add basic alumina 20 g",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[7]._reagent",
+      "status": "changed",
+      "a": "CHCl₃",
+      "b": "CHCl3",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[8]._comment",
+      "status": "changed",
+      "a": "Filter the mixture under suction",
+      "b": "Fritted funnel (50 mL, por. 4), suction adapter, 250 mL RBF, diaphragm pump; Filter the mixture under suction",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[8]._product_portion",
+      "status": "changed",
+      "a": "filtrate",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[9]._comment",
+      "status": "changed",
+      "a": "Add 30 mL of purified CHCl₃ to the flask and sonicate → dark red solution",
+      "b": "Reprecipitation: Add 30 mL of purified CHCl₃ to the flask and sonicate → dark red solution",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[9]._reagent",
+      "status": "changed",
+      "a": "purified CHCl₃",
+      "b": "CHCl3",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[9]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "? mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[10]._comment",
+      "status": "changed",
+      "a": "sonicate → dark red solution",
+      "b": "Sonicate → dark red solution",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[10]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "? mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[11]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "? mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[12]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "? mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[13]._comment",
+      "status": "changed",
+      "a": "Filter the mixture under suction → faint brown filtrate; Rinse w/ 2 x (10 mL of purified CHCl₃ + 60 mL of hexane); Rinse with 2 × 30 mL of petroleum ether [hexane should be used]",
+      "b": "Fritted funnel (50 mL, por. 4), suction adapter, 500 mL RBF, diaphragm pump; Filter the mixture under suction → faint brown filtrate; Rinse w/ 2 x (10 mL of purified CHCl₃ + 60 mL of hexane); Rinse with 2 × 30 mL of petroleum ether [hexane should be used]",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[13]._product_portion",
+      "status": "changed",
+      "a": "filtrate",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[13]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "Fritted funnel (50 mL, por. 4)",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[14]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "Fritted funnel (50 mL, por. 4)",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.products[0].amount_mmol",
+      "status": "changed",
+      "a": 0.33858,
+      "b": 0.3386,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.products[0].appearance",
+      "status": "changed",
+      "a": "dark brown solid",
+      "b": "reddish brown solid",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.products[0].eluent_system",
+      "status": "changed",
+      "a": null,
+      "b": null,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.products[0].nmr_data",
+      "status": "changed",
+      "a": null,
+      "b": null,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.products[0].note",
+      "status": "changed",
+      "a": null,
+      "b": null,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.products[0].rf_value",
+      "status": "changed",
+      "a": null,
+      "b": null,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[0].amount_mmol",
+      "status": "changed",
+      "a": 0.37065,
+      "b": 0.37066,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[0].density_g_mL",
+      "status": "changed",
+      "a": null,
+      "b": null,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[0].volume_mL",
+      "status": "changed",
+      "a": null,
+      "b": null,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[1].amount_mmol",
+      "status": "changed",
+      "a": 1.8591,
+      "b": 1.85874,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[1].density_g_mL",
+      "status": "changed",
+      "a": null,
+      "b": null,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[1].volume_mL",
+      "status": "changed",
+      "a": null,
+      "b": null,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[2].amount_mmol",
+      "status": "changed",
+      "a": 2.23192,
+      "b": 2.23119,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[2].density_g_mL",
+      "status": "changed",
+      "a": null,
+      "b": null,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[2].volume_mL",
+      "status": "changed",
+      "a": null,
+      "b": null,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[3].amount_mmol",
+      "status": "changed",
+      "a": 3.70469,
+      "b": 3.7045,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[3].volume_mL",
+      "status": "changed",
+      "a": null,
+      "b": null,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[4].amount_mmol",
+      "status": "changed",
+      "a": 246.5629,
+      "b": 246.5206,
+      "a_missing": false,
+      "b_missing": false
+    }
+  ],
+  "ZAR-439.json": [
+    {
+      "path": "$.procedure.Prep.Step.__len__",
+      "status": "changed",
+      "a": 6,
+      "b": 8,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[0]._amount",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "Unit": "milligram",
+        "Value": 128.2
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[0]._comment",
+      "status": "changed",
+      "a": "Add Co(ttpp)",
+      "b": "Stock solution preparation: 5 mL vial. Put into the glovebox (H₂O < 1 ppm). Weigh in AgOTf → 128.2 mg",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[0]._reagent",
+      "status": "changed",
+      "a": "Co(ttpp)",
+      "b": "AgOTf",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[0]._vessel",
+      "status": "changed",
+      "a": "50 mL flask",
+      "b": "5 mL vial",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[1]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "Add",
+        "_vessel": "5 mL vial",
+        "_reagent": "toluene",
+        "_amount": {
+          "Unit": "microlitre",
+          "Value": 3000
+        },
+        "_dropwise": false,
+        "_comment": "Take it out of the glovebox. Add toluene 3000 µL [should be adjusted according to the AgOTf amount] → colorless solution."
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[2]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "Add",
+        "_vessel": "50 mL flask",
+        "_reagent": "Co(ttpp)",
+        "_dropwise": false,
+        "_comment": "Reaction: Add Co(ttpp)"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[0]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "50 mL flask",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[0]._comment",
+      "status": "changed",
+      "a": "Remove volatiles with rotovap (40 °C)",
+      "b": "Ag scavenging: Remove volatiles with rotovap (40 °C)",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[2]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "50 mL flask",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[3]._dropwise",
+      "status": "changed",
+      "a": null,
+      "b": false,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[3]._reagent",
+      "status": "changed",
+      "a": "ISOLUTE Si-Thiol",
+      "b": "3-mercaptopropyl silica",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[4]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "50 mL flask",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[5]._comment",
+      "status": "changed",
+      "a": "Filter the mixture → Dark green filtrate; Rinse with DCM 50 mL → Pale green filtrate and xxx residue at the end",
+      "b": "? mL RBF, suction adapter, glass funnel, filter paper (90 mm?, 15A?), diaphragm pump suction; Filter the mixture → Dark green filtrate; Rinse with DCM 50 mL → Pale green filtrate and xxx residue at the end",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[5]._product_portion",
+      "status": "changed",
+      "a": "filtrate",
+      "b": null,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[5]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "? mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[6]._comment",
+      "status": "changed",
+      "a": "Add n-hexane (300 mL)",
+      "b": "Reprecipitation: Add n-hexane (300 mL)",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[6]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "? mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[7]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "? mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[8]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "Filter",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[9]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "Filter",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[10]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "Filter",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.products[0].molar_mass_g_mol",
+      "status": "changed",
+      "a": 2008.2384296,
+      "b": 2008,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[0].molar_mass_g_mol",
+      "status": "changed",
+      "a": 1700.96952,
+      "b": 1700.9695,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[1].equivalents",
+      "status": "changed",
+      "a": 0.8671,
+      "b": 0.8670899296882398,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[1].molar_mass_g_mol",
+      "status": "changed",
+      "a": 256.9373096,
+      "b": 256.9373,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[2].equivalents",
+      "status": "changed",
+      "a": 5.0091,
+      "b": 5.009079283657728,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[3].molar_mass_g_mol",
+      "status": "changed",
+      "a": 92.13842,
+      "b": 92.1384,
+      "a_missing": false,
+      "b_missing": false
+    }
+  ]
+}

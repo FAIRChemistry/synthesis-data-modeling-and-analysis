@@ -1,0 +1,3 @@
+Some experiments and results have not yet been published. The corresponding files and content will be added to this dataset once published.
+
+- WAT-Ch-125 Fluorierung Olefin geschützt FeOx_Selectfluor full degas.json

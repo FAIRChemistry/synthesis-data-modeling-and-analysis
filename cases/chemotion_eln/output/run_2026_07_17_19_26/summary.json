@@ -1,0 +1,126 @@
+{
+  "run_id": "run_2026_07_17_19_26",
+  "case": "chemotion_eln",
+  "output_dir": "cases/chemotion_eln/output/run_2026_07_17_19_26",
+  "results_dir": "cases/chemotion_eln/output/run_2026_07_17_19_26/results",
+  "previous_run": "cases/chemotion_eln/output/run_2026_07_16_10_24",
+  "total": 11,
+  "successes": [
+    {
+      "record_id": "AD-R13",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_17_19_26/results/AD-R13.json",
+      "usage": {
+        "prompt_tokens": 13866,
+        "completion_tokens": 15218,
+        "total_tokens": 29084
+      }
+    },
+    {
+      "record_id": "AD-R17",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_17_19_26/results/AD-R17.json",
+      "usage": {
+        "prompt_tokens": 13927,
+        "completion_tokens": 12042,
+        "total_tokens": 25969
+      }
+    },
+    {
+      "record_id": "AD-R18",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_17_19_26/results/AD-R18.json",
+      "usage": {
+        "prompt_tokens": 14305,
+        "completion_tokens": 15933,
+        "total_tokens": 30238
+      }
+    },
+    {
+      "record_id": "AD-R27",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_17_19_26/results/AD-R27.json",
+      "usage": {
+        "prompt_tokens": 14071,
+        "completion_tokens": 14368,
+        "total_tokens": 28439
+      }
+    },
+    {
+      "record_id": "AD-R6",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_17_19_26/results/AD-R6.json",
+      "usage": {
+        "prompt_tokens": 13877,
+        "completion_tokens": 14212,
+        "total_tokens": 28089
+      }
+    },
+    {
+      "record_id": "AD-R8",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_17_19_26/results/AD-R8.json",
+      "usage": {
+        "prompt_tokens": 13715,
+        "completion_tokens": 14138,
+        "total_tokens": 27853
+      }
+    },
+    {
+      "record_id": "AD-R9",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_17_19_26/results/AD-R9.json",
+      "usage": {
+        "prompt_tokens": 14110,
+        "completion_tokens": 15654,
+        "total_tokens": 29764
+      }
+    },
+    {
+      "record_id": "ZAR-438",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_17_19_26/results/ZAR-438.json",
+      "usage": {
+        "prompt_tokens": 13380,
+        "completion_tokens": 12142,
+        "total_tokens": 25522
+      }
+    },
+    {
+      "record_id": "ZAR-439",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_17_19_26/results/ZAR-439.json",
+      "usage": {
+        "prompt_tokens": 13595,
+        "completion_tokens": 3339,
+        "total_tokens": 16934
+      }
+    }
+  ],
+  "validation_warnings": [
+    {
+      "record_id": "AD-R10",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_17_19_26/results/AD-R10.json",
+      "usage": {
+        "prompt_tokens": 13460,
+        "completion_tokens": 13953,
+        "total_tokens": 27413
+      },
+      "errors": [
+        "$.procedure.Reaction.Step.1: {'$xml_type': 'HeatChill', '_vessel': '50 mL two-neck RBF', '_time': {'Value': 2, 'Unit': 'hour'}, '_comment': 'Heat for 2 h (16:37). Cool down to RT. → 0.1 mL + CDCl₃ 500 µL → syringe filter → sonicate → ¹H NMR M2-CDCl3 [16:30] → 0.1 mL + DMSO-d6 500 µL → syringe filter → sonicate → ¹H NMR M2-DMSO [18:39]'} is not valid under any of the given schemas"
+      ]
+    },
+    {
+      "record_id": "AD-R11",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_17_19_26/results/AD-R11.json",
+      "usage": {
+        "prompt_tokens": 14173,
+        "completion_tokens": 19272,
+        "total_tokens": 33445
+      },
+      "errors": [
+        "$.starting_materials.3.smiles: None is not of type 'string'"
+      ]
+    }
+  ],
+  "failures": [],
+  "tokens": {
+    "prompt_tokens": 152479,
+    "completion_tokens": 150271,
+    "total_tokens": 302750,
+    "prompt_chars": 0,
+    "completion_chars": 0
+  },
+  "assembled_dir": "cases/chemotion_eln/output/run_2026_07_17_19_26/assembled"
+}

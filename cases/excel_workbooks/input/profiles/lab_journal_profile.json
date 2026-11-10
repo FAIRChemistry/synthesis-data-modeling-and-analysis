@@ -1,0 +1,120 @@
+{
+  "profile_name": "chem_lab_journal",
+  "description": "Layout profile for the current chemistry lab journal Excel files.",
+  "section_labels": {
+    "starting_materials": "Edukte",
+    "products": "Produkte",
+    "procedure": "Vorschrift:",
+    "tlc_conditions": "DC:",
+    "observations": "Beobachtungen:",
+    "reagent_sources": "Herkunft der Edukte:",
+    "literature": "Literatur:"
+  },
+  "metadata_fields": [
+    {
+      "name": "journal_number",
+      "label": "Nr.:",
+      "value": "next_in_row"
+    },
+    {
+      "name": "researcher",
+      "row": 2,
+      "min_col": 1
+    },
+    {
+      "name": "project_type",
+      "row": 3,
+      "min_col": 1
+    },
+    {
+      "name": "date",
+      "label": "Angesetzt am:",
+      "value": "next_in_row"
+    },
+    {
+      "name": "research_group",
+      "row": 4,
+      "min_col": 1
+    },
+    {
+      "name": "reaction_name_from_filename",
+      "filename_strip_regex": "^WAT-Ch-\\d{3,}\\s*"
+    }
+  ],
+  "scalar_fields": [
+    {
+      "name": "batch_volume_mL",
+      "label": "Ansatz",
+      "row_offset": 1,
+      "col_offset": 0
+    }
+  ],
+  "aligned_text_fields": [
+    {
+      "name": "procedure",
+      "label": "Vorschrift:",
+      "row_offset": 1,
+      "col_offset": 0
+    },
+    {
+      "name": "tlc_conditions",
+      "label": "DC:",
+      "row_offset": 1,
+      "col_offset": 0
+    },
+    {
+      "name": "observations",
+      "label": "Beobachtungen:",
+      "row_offset": 1,
+      "col_offset": 0
+    }
+  ],
+  "table_ranges": [
+    {
+      "name": "starting_material_table_rows",
+      "start": {
+        "label": "Edukte",
+        "offset": 3
+      },
+      "end": {
+        "label": "Produkte",
+        "offset": 0
+      },
+      "labeled": true,
+      "header_rows": 2,
+      "header_start_offset": -2
+    },
+    {
+      "name": "product_table_rows",
+      "start": {
+        "label": "Produkte",
+        "offset": 1
+      },
+      "end": {
+        "label": "Vorschrift:",
+        "offset": 0
+      },
+      "labeled": true,
+      "header_rows": 2,
+      "header_start_offset": 0
+    },
+    {
+      "name": "reagent_source_rows",
+      "start": {
+        "label": "Herkunft der Edukte:",
+        "offset": 1
+      },
+      "min_col_label": "Herkunft der Edukte:",
+      "ignored_labels": [
+        "Literatur:"
+      ]
+    },
+    {
+      "name": "literature_rows",
+      "start": {
+        "label": "Literatur:",
+        "offset": 0
+      }
+    }
+  ]
+}

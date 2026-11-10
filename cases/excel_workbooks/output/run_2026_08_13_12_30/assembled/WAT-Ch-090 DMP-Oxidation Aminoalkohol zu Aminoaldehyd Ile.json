@@ -1,0 +1,200 @@
+{
+  "journal_number": "WAT-Ch-090",
+  "date": "2024-09-24",
+  "researcher": "Timo Watzenborn",
+  "research_group": "AK Laschat",
+  "project_type": "Promotion",
+  "reaction_name": "DMP-Oxidation Aminoalkohol zu Aminoaldehyd Ile",
+  "starting_materials": [
+    {
+      "name": "Alkohol 089",
+      "molar_mass_g_mol": 384.49,
+      "equivalents": 1,
+      "density_g_mL": null,
+      "concentration_mol_L": 0.099,
+      "volume_mL": null,
+      "mass_fraction_percent": null,
+      "amount_mmol": 14.824832895523942,
+      "mass_g": 5.7,
+      "batch_concentration_mol_L": 0.09883221930349295,
+      "role": "limiting_reagent",
+      "note": null
+    },
+    {
+      "name": "DMP",
+      "molar_mass_g_mol": 424.14,
+      "equivalents": 2.5,
+      "density_g_mL": null,
+      "concentration_mol_L": 0.247,
+      "volume_mL": null,
+      "mass_fraction_percent": null,
+      "amount_mmol": 37.06208223880986,
+      "mass_g": 15.719511560768812,
+      "batch_concentration_mol_L": 0.2470805482587324,
+      "role": "oxidant",
+      "note": null
+    },
+    {
+      "name": "DCM",
+      "molar_mass_g_mol": null,
+      "equivalents": null,
+      "density_g_mL": null,
+      "concentration_mol_L": null,
+      "volume_mL": 150,
+      "mass_fraction_percent": null,
+      "amount_mmol": null,
+      "mass_g": null,
+      "batch_concentration_mol_L": null,
+      "role": "solvent",
+      "note": null
+    }
+  ],
+  "batch_volume_mL": 150,
+  "products": [
+    {
+      "name": "Aminoaldehyd",
+      "molar_mass_g_mol": 382.48,
+      "yield_g": 5.670202085879998,
+      "amount_mmol": 14.824832895523944,
+      "yield_percent": 100,
+      "appearance": null,
+      "rf_value": null,
+      "eluent_system": null,
+      "nmr_data": null,
+      "is_main_product": true
+    }
+  ],
+  "procedure": {
+    "Prep": {
+      "Step": [
+        {
+          "$xml_type": "Add",
+          "_reagent": "DCM",
+          "_amount": {
+            "Value": 150,
+            "Unit": "millilitre"
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "Alkohol 089",
+          "_amount": {
+            "Value": 5.7,
+            "Unit": "gram"
+          },
+          "_comment": "Aminoalkohol in DCM lösen"
+        }
+      ]
+    },
+    "Reaction": {
+      "Step": [
+        {
+          "$xml_type": "Add",
+          "_reagent": "DMP",
+          "_amount": {
+            "Value": 15.719511560768812,
+            "Unit": "gram"
+          }
+        },
+        {
+          "$xml_type": "HeatChill",
+          "_temp": {
+            "Value": 25,
+            "Unit": "celsius"
+          }
+        },
+        {
+          "$xml_type": "Wait",
+          "_time": {
+            "Value": 40,
+            "Unit": "minute"
+          },
+          "_comment": "Rühren bei RT für 40 min"
+        }
+      ]
+    },
+    "Workup": {
+      "Step": [
+        {
+          "$xml_type": "Add",
+          "_reagent": "DEE",
+          "_amount": {
+            "Value": 5,
+            "Unit": "millilitre"
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "Na2S2O3-/NaHCO3-Lsg",
+          "_amount": {
+            "Value": 50,
+            "Unit": "millilitre"
+          }
+        },
+        {
+          "$xml_type": "Wait",
+          "_time": {
+            "Value": 15,
+            "Unit": "minute"
+          },
+          "_comment": "rühren für weitere 15 min bis klare Lösung erhalten wird"
+        },
+        {
+          "$xml_type": "Extract",
+          "_solvent": "DEE",
+          "_phase_kept": "organic",
+          "_comment": "wässrige Phase mit DEE extrahieren"
+        },
+        {
+          "$xml_type": "WashPhase",
+          "_solution": "NaHCO3-Lsg",
+          "_phase": "organic",
+          "_repeat": 2
+        },
+        {
+          "$xml_type": "WashPhase",
+          "_solution": "Wasser",
+          "_phase": "organic",
+          "_repeat": 2
+        },
+        {
+          "$xml_type": "WashPhase",
+          "_solution": "brine",
+          "_phase": "organic",
+          "_repeat": 2
+        },
+        {
+          "$xml_type": "Dry",
+          "_desiccant": "MgSO4",
+          "_comment": "Trocknen über MgSO4"
+        },
+        {
+          "$xml_type": "Evaporate",
+          "_method": "rotary_evaporator",
+          "_comment": "LM an Roti entfernen"
+        },
+        {
+          "$xml_type": "Purify",
+          "_eluent": "Pe/EtOAc 4:1 -> 2:1",
+          "_comment": "Produkt via Säule aufreinigen (Pe/EtOAc 4:1 -> 2:1)"
+        }
+      ]
+    }
+  },
+  "tlc_conditions": null,
+  "observations": "note: nur 1,3 eq. an DMP verwendet",
+  "reagent_sources": [
+    {
+      "reagent_name": "Alkohol 089",
+      "source": "Bench"
+    },
+    {
+      "reagent_name": "DMP",
+      "source": "169 K-B3"
+    },
+    {
+      "reagent_name": "DCM",
+      "source": null
+    }
+  ]
+}

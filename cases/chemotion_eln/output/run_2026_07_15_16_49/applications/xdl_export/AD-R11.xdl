@@ -1,0 +1,49 @@
+<XDL>
+  <Synthesis>
+    <Hardware>
+      <Component id="5 mL vial" type="5 mL vial" />
+      <Component id="10 mL flask" type="10 mL flask" />
+      <Component id="100 mL RBF" type="100 mL RBF" />
+      <Component id="Filter" type="Filter" />
+      <Component id="20 mL screw vial" type="20 mL screw vial" />
+    </Hardware>
+    <Metadata description="AD-R11 - Synthesis of [Co(ttpp)(pba)2](OTf)" product="[Co(ttpp)(pba)2](OTf)" product_inchi="InChI=1S/C120H88N8.2C6H6BrN.CHF3O3S.Co/c1-13-37-89(38-14-1)117(90-39-15-2-16-40-90,91-41-17-3-18-42-91)125-101-69-61-85(62-70-101)113-105-77-79-107(121-105)114(86-63-71-102(72-64-86)126-118(92-43-19-4-20-44-92,93-45-21-5-22-46-93)94-47-23-6-24-48-94)109-81-83-111(123-109)116(88-67-75-104(76-68-88)128-120(98-55-31-10-32-56-98,99-57-33-11-34-58-99)100-59-35-12-36-60-100)112-84-82-110(124-112)115(108-80-78-106(113)122-108)87-65-73-103(74-66-87)127-119(95-49-25-7-26-50-95,96-51-27-8-28-52-96)97-53-29-9-30-54-97;2*7-5-1-3-6(8)4-2-5;2-1(3,4)8(5,6)7;/h1-84,125-128H;2*1-4H,8H2;(H,5,6,7);/q-2;;;;+3/p-1/b113-105-,113-106-,114-107-,114-109-,115-108-,115-110-,116-111-,116-112-;;;;" product_yield_percent="66.3201" />
+    <Procedure>
+      <Prep>
+        <Add vessel="5 mL vial" reagent="AgOTf" amount="0.0133 gram" dropwise="false" comment="AgOTf/toluene solution preparation: 5 mL vial into GB --&gt; AgOTf (0.0133 g) --&gt; Out of GB" />
+        <Add vessel="5 mL vial" reagent="toluene" amount="500 microlitre" dropwise="false" comment="5 mL vial --&gt; AgOTf from the vial: 0.0133 g --&gt; Toluene 500 μL [should have been prepared as a stock solution with a certain concentration and in &gt;10% excess volume]" />
+      </Prep>
+      <Reaction>
+        <Add vessel="10 mL flask" reagent="Co(ttpp)" dropwise="false" comment="Reaction: Co(ttpp)" />
+        <Add vessel="10 mL flask" reagent="p-bromoaniline" dropwise="false" comment="PBA" />
+        <Add vessel="10 mL flask" reagent="toluene" amount="5 millilitre" dropwise="false" comment="Add 5 mL toluene" />
+        <Sonicate vessel="10 mL flask" time="3 minute" comment="sonicate 3 min. (dissolved) --&gt; add stir bar (14:07) [stir bar should have been added in step 1]" />
+        <Add vessel="10 mL flask" reagent="AgOTf" dropwise="true" comment="AgOTf/toluene (whole) dropwise w/ micropipette while stirring [volume of used stock solution should be calculated according to the required amount]" />
+        <Add vessel="10 mL flask" reagent="toluene" amount="500 microlitre" dropwise="true" comment="AgOTf/toluene (whole) dropwise w/ micropipette while stirring [volume of used stock solution should be calculated according to the required amount]" />
+        <Wait vessel="10 mL flask" time="1 hour" comment="1 hour of stirring" />
+        <Wait vessel="10 mL flask" time="0.5 day" comment="o/n" />
+      </Reaction>
+      <Workup>
+        <Evaporate vessel="10 mL flask" method="rotary_evaporator" temp="40 celsius" comment="Workup: Rotovap (40 °C) (1:30 h)" />
+        <Dry vessel="10 mL flask" time="30 minute" comment="vacuum for 30 min" />
+        <Add vessel="10 mL flask" reagent="DCM" amount="5 millilitre" dropwise="false" comment="Add 5 mL DCM" />
+        <Sonicate vessel="10 mL flask" time="5 minute" comment="manually stirred and sonicated for 5 min (dissolved)" />
+        <Add vessel="10 mL flask" reagent="3-Mercaptopropyl Silica Gel" amount="0.196 gram" dropwise="false" comment="Si-SH (0.196 g)" />
+        <Wait vessel="10 mL flask" time="2 hour" comment="stir (1000 rpm, 2 h) 12:45 --&gt; 14:45 [stirring does not need to be this fast]" />
+        <Filter vessel="100 mL RBF" rinse="DCM (15 millilitre)" comment="12 mL plastic syringe, cotton plug (compressed), syringe filter (⌀ 25 mm, 0.45 μm, PTFE), 100 mL RBF; filtered, transferred, and rinsed w/ 15 mL DCM (until pale green)" />
+        <Add vessel="100 mL RBF" reagent="n-hexane" amount="90 millilitre" dropwise="false" comment="Hexane 90 mL; manually stirred and sonicated" />
+        <HeatChill vessel="100 mL RBF" temp="4 celsius" time="4 day" comment="Fridge: 4 days (15:30)" />
+        <Filter vessel="Filter" product_portion="residue" rinse="DCM + n-hexane; n-hexane" comment="Filter paper (90 mm, 15A), glass funnel, suction adapter --&gt; 100 mL RBF; Filtered and transferred w/ 2 x (3 mL DCM + 20 mL hexane) (orange filtrate, green residue); Rinsed w/ hexane 4 x 4 mL" />
+        <Dry vessel="Filter" time="1 minute" comment="Dried w/ suction for 1 min" />
+        <Dry vessel="20 mL screw vial" time="0.5 day" comment="20 mL screw vial (tare wt of vial (7.85387 g)); Vacuum o/n" />
+      </Workup>
+    </Procedure>
+    <Reagents>
+      <Reagent id="Co(ttpp)" name="Co(ttpp)" role="reagent" inchi="InChI=1S/C120H88N8.Co/c1-13-37-89(38-14-1)117(90-39-15-2-16-40-90,91-41-17-3-18-42-91)125-101-69-61-85(62-70-101)113-105-77-79-107(121-105)114(86-63-71-102(72-64-86)126-118(92-43-19-4-20-44-92,93-45-21-5-22-46-93)94-47-23-6-24-48-94)109-81-83-111(123-109)116(88-67-75-104(76-68-88)128-120(98-55-31-10-32-56-98,99-57-33-11-34-58-99)100-59-35-12-36-60-100)112-84-82-110(124-112)115(108-80-78-106(113)122-108)87-65-73-103(74-66-87)127-119(95-49-25-7-26-50-95,96-51-27-8-28-52-96)97-53-29-9-30-54-97;/h1-84,125-128H;/b113-105-,113-106-,114-107-,114-109-,115-108-,115-110-,116-111-,116-112-;" smiles="c1ccc(cc1)C(c1ccccc1)(c1ccccc1)Nc1ccc(cc1)/C/1=C/2\C=CC(=N2)/C(=C\2/C=CC(=N2)/C(=C/2\N=C(/C(=C/3\N=C1C=C3)/c1ccc(cc1)NC(c1ccccc1)(c1ccccc1)c1ccccc1)C=C2)/c1ccc(cc1)NC(c1ccccc1)(c1ccccc1)c1ccccc1)/c1ccc(cc1)NC(c1ccccc1)(c1ccccc1)c1ccccc1.[Co]" />
+      <Reagent id="AgOTf" name="AgOTf" role="reagent" inchi="InChI=1S/CHF3O3S.Ag/c2-1(3,4)8(5,6)7;/h(H,5,6,7);/q;+1/p-1" smiles="[Ag]OS(=O)(=O)C(F)(F)F" />
+      <Reagent id="p-bromoaniline" name="p-bromoaniline" role="reagent" inchi="InChI=1S/C6H6BrN/c7-5-1-3-6(8)4-2-5/h1-4H,8H2" smiles="Nc1ccc(cc1)Br" />
+      <Reagent id="3-Mercaptopropyl Silica Gel" name="3-Mercaptopropyl Silica Gel" role="reagent" />
+      <Reagent id="toluene" name="toluene" role="reagent" inchi="InChI=1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3" smiles="Cc1ccccc1" />
+    </Reagents>
+  </Synthesis>
+</XDL>

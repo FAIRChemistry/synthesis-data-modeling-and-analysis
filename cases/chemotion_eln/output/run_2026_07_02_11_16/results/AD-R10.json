@@ -1,0 +1,315 @@
+{
+  "journal_number": "AD-R10",
+  "reaction_name": "Synthesis of Co(ttpp) (CHCl3/hexane reprecipitation)",
+  "date": "2026-01-12",
+  "researcher": "Zarfishan Dilruba",
+  "research_group": "AK Endo",
+  "project_type": "Promotion",
+  "reagent_sources": [],
+  "batch_volume_mL": 50,
+  "starting_materials": [
+    {
+      "name": "TAPP",
+      "mass_g": 0.25042,
+      "molar_mass_g_mol": 674.79436,
+      "amount_mmol": 0.37135,
+      "equivalents": 1,
+      "density_g_mL": 1.35,
+      "batch_concentration_mol_L": 7.427
+    },
+    {
+      "name": "TrBr",
+      "mass_g": 0.5987,
+      "molar_mass_g_mol": 323.2264,
+      "amount_mmol": 1.8526,
+      "equivalents": 4.991198772172797,
+      "density_g_mL": null,
+      "batch_concentration_mol_L": 37.052
+    },
+    {
+      "name": "CoCl2",
+      "mass_g": 0.2886,
+      "molar_mass_g_mol": 129.8392,
+      "amount_mmol": 2.2238,
+      "equivalents": 5.989532539584605,
+      "density_g_mL": null,
+      "batch_concentration_mol_L": 44.4756
+    },
+    {
+      "name": "Et3N",
+      "mass_g": 0.3749,
+      "molar_mass_g_mol": 101.19,
+      "amount_mmol": 3.7047,
+      "equivalents": 9.983441498054,
+      "density_g_mL": 0.726,
+      "batch_concentration_mol_L": 74.094
+    },
+    {
+      "name": "THF",
+      "volume_mL": 20,
+      "mass_g": 17.81821177343568,
+      "molar_mass_g_mol": 72.10572,
+      "amount_mmol": 247.114,
+      "equivalents": 664.4533137881007,
+      "density_g_mL": 0.889,
+      "batch_concentration_mol_L": 4942.28
+    }
+  ],
+  "products": [
+    {
+      "name": "Co(ttpp)",
+      "note": "AD-31",
+      "molar_mass_g_mol": 1700.9695200000008,
+      "yield_g": 0.47948,
+      "yield_percent": null,
+      "amount_mmol": 0.28194,
+      "is_main_product": true,
+      "appearance": null,
+      "nmr_data": null,
+      "rf_value": null,
+      "eluent_system": null
+    }
+  ],
+  "observations": "[ 12.01, RT 22.1 °C and RH 30 %]\nAdd 12.5 mL of neutral alumina in a 15 mL membrane filter holder (frit) with a membrane filter.\nAttach the funnel to a vacuum and a 250 mL RBF.\nWet the alumina with THF\nLoad the reaction mixture\nElute with THF and full power suction with occasional digging of the top layer. (It took a long time to elute. The alumina pad became blue-green at the top with some streaks but not fully down to the bottom. Other parts became dark red brown. Eluate became red at the end)\nEluent was kept in the fridge o/n.\n[13.01]\n→ 0.1 mL + DMSO-d6 500 µL → ¹H NMR M4 [16:59]\n[14.01]\nRotovap\nDry under vacuum, 1 h\n\nCHCl3 deacidification\n250 mL RBF\nBasic Al2O3 --> 50 mL\nCHCl3 50 mL (mix in flask ---> then filter)\nFritted funnel (por.4), suction adapter, 250 mL RBF\nFiltered\n\nReprecipitation\nPurified CHCl3 25 mL, sonicate (dark red solution)\n→ 0.1 mL + DMSO-d6 500 µL → ¹H NMR M5 [09:17]\nn-hexane 140 mL, manually stir, sonicate\nFridge, 30 min\nGlass Funnel, Filter paper (big, 15A), suction adapter, 250 mL RBF\nFilter w/ suction\nTransfer & rinse w/ 2 x (purified CHCl3 3 mL + 10 mL hex)\nRinse w/ hex x2 (2x 15 mL)\nDry under vacuum o/n\n[15.01]\n20 mL vial, PTFE sealing (tare w/ lid: 8.94046g)\n→ 479 mg product\n-> NMR  (CDCl3, DMSO)",
+  "tlc_conditions": null,
+  "procedure": {
+    "Prep": {
+      "Step": [
+        {
+          "$xml_type": "HeatChill",
+          "_vessel": "50 mL two-neck RBF",
+          "_temp": {
+            "Unit": "celsius",
+            "Value": 120
+          },
+          "_time": {
+            "Unit": "hour",
+            "Value": 1.5
+          }
+        },
+        {
+          "$xml_type": "EvacuateAndRefill",
+          "_gas": "N2",
+          "_comment": "backfill with N2"
+        },
+        {
+          "$xml_type": "HeatChill",
+          "_vessel": "reflux condenser and flask",
+          "_temp": {
+            "Unit": "celsius",
+            "Value": 250
+          },
+          "_comment": "heat bottom part of condenser and flask with heat gun"
+        },
+        {
+          "$xml_type": "EvacuateAndRefill",
+          "_gas": "N2",
+          "_comment": "cycle with N2 slowly x3"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "50 mL two-neck RBF",
+          "_reagent": "TAPP",
+          "_amount": {
+            "Unit": "milligram",
+            "Value": 250.42
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "50 mL two-neck RBF",
+          "_reagent": "TrBr",
+          "_amount": {
+            "Unit": "milligram",
+            "Value": 598.7
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "50 mL two-neck RBF",
+          "_reagent": "Et3N",
+          "_amount": {
+            "Unit": "milligram",
+            "Value": 374.9
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "50 mL two-neck RBF",
+          "_reagent": "THF",
+          "_amount": {
+            "Unit": "millilitre",
+            "Value": 20
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "50 mL two-neck RBF",
+          "_reagent": "CoCl2",
+          "_amount": {
+            "Unit": "milligram",
+            "Value": 288.6
+          },
+          "_comment": "added quickly"
+        },
+        {
+          "$xml_type": "EvacuateAndRefill",
+          "_gas": "N2",
+          "_time": {
+            "Unit": "second",
+            "Value": 10
+          },
+          "_comment": "purge with N2 for 10 s"
+        },
+        {
+          "$xml_type": "EvacuateAndRefill",
+          "_gas": "N2",
+          "_time": {
+            "Unit": "minute",
+            "Value": 30
+          },
+          "_comment": "bubble with N2"
+        }
+      ]
+    },
+    "Reaction": {
+      "Step": [
+        {
+          "$xml_type": "HeatChill",
+          "_temp": {
+            "Unit": "celsius",
+            "Value": 85
+          },
+          "_time": {
+            "Unit": "minute",
+            "Value": 15
+          }
+        },
+        {
+          "$xml_type": "Wait",
+          "_time": {
+            "Unit": "hour",
+            "Value": 2
+          }
+        }
+      ]
+    },
+    "Workup": {
+      "Step": [
+        {
+          "$xml_type": "Add",
+          "_vessel": "15 mL membrane filter holder",
+          "_reagent": "neutral alumina",
+          "_amount": {
+            "Unit": "millilitre",
+            "Value": 12.5
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "THF",
+          "_comment": "wet the alumina; amount not stated"
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "reaction mixture",
+          "_comment": "load the reaction mixture"
+        },
+        {
+          "$xml_type": "Filter",
+          "_product_portion": "filtrate"
+        },
+        {
+          "$xml_type": "Wait",
+          "_time": {
+            "Unit": "day",
+            "Value": 0.5
+          },
+          "_comment": "eluent kept in fridge overnight"
+        },
+        {
+          "$xml_type": "Evaporate",
+          "_method": "rotary_evaporator"
+        },
+        {
+          "$xml_type": "Dry",
+          "_time": {
+            "Unit": "hour",
+            "Value": 1
+          },
+          "_comment": "dry under vacuum"
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "purified CHCl3",
+          "_amount": {
+            "Unit": "millilitre",
+            "Value": 25
+          }
+        },
+        {
+          "$xml_type": "Sonicate"
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "n-hexane",
+          "_amount": {
+            "Unit": "millilitre",
+            "Value": 140
+          }
+        },
+        {
+          "$xml_type": "Wait",
+          "_time": {
+            "Unit": "minute",
+            "Value": 30
+          },
+          "_comment": "fridge"
+        },
+        {
+          "$xml_type": "Filter",
+          "_product_portion": "residue",
+          "_rinse": [
+            {
+              "name": "purified CHCl3",
+              "amount": {
+                "Unit": "millilitre",
+                "Value": 3
+              }
+            },
+            {
+              "name": "n-hexane",
+              "amount": {
+                "Unit": "millilitre",
+                "Value": 10
+              }
+            },
+            {
+              "name": "n-hexane",
+              "amount": {
+                "Unit": "millilitre",
+                "Value": 15
+              }
+            },
+            {
+              "name": "n-hexane",
+              "amount": {
+                "Unit": "millilitre",
+                "Value": 15
+              }
+            }
+          ],
+          "_comment": "transfer and rinse; first two rinses performed twice as indicated"
+        },
+        {
+          "$xml_type": "Dry",
+          "_time": {
+            "Unit": "day",
+            "Value": 0.5
+          },
+          "_comment": "dry under vacuum overnight"
+        }
+      ]
+    }
+  }
+}

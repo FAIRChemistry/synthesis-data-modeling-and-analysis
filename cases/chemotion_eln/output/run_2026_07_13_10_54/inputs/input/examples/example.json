@@ -1,0 +1,233 @@
+{
+  "procedure": {
+    "Prep": {
+      "Step": [
+        {
+          "$xml_type": "Add",
+          "_vessel": "50 mL flask",
+          "_dropwise": false,
+          "_reagent": "Co(ttpp)",
+          "_comment": "Add Co(ttpp)"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "50 mL flask",
+          "_dropwise": false,
+          "_reagent": "pyridine",
+          "_comment": "Add pyridine"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "50 mL flask",
+          "_amount": {
+            "Unit": "millilitre",
+            "Value": 26
+          },
+          "_dropwise": false,
+          "_reagent": "toluene",
+          "_comment": "Add toluene 26 mL"
+        },
+        {
+          "$xml_type": "Sonicate",
+          "_vessel": "50 mL flask",
+          "_time": {
+            "Unit": "minute",
+            "Value": 3
+          },
+          "_comment": "Sonicate for 3 min → Dark red solution"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "50 mL flask",
+          "_dropwise": true,
+          "_reagent": "AgOTf",
+          "_comment": "Add 1500 µL of AgOTf/toluene dropwise with a mechanical pipette [syringe should be used]"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "50 mL flask",
+          "_dropwise": true,
+          "_reagent": "toluene",
+          "_amount": {
+            "Unit": "microlitre",
+            "Value": 1500
+          },
+          "_comment": "Add 1500 µL of AgOTf/toluene dropwise with a mechanical pipette [syringe should be used]"
+        }
+      ]
+    },
+    "Reaction": {
+      "Step": [
+        {
+          "$xml_type": "Wait",
+          "_time": {
+            "Unit": "hour",
+            "Value": 2
+          },
+          "_comment": "Continue stirring for 2 h → Dark green mixture [1 h is enough]"
+        }
+      ]
+    },
+    "Workup": {
+      "Step": [
+        {
+          "$xml_type": "Evaporate",
+          "_vessel": "50 mL flask",
+          "_method": "rotary_evaporator",
+          "_temp": {
+            "Unit": "celsius",
+            "Value": 40
+          },
+          "_comment": "Remove volatiles with rotovap (40 °C)"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "50 mL flask",
+          "_amount": {
+            "Unit": "millilitre",
+            "Value": 25
+          },
+          "_dropwise": false,
+          "_reagent": "DCM",
+          "_comment": "Add 25 mL of DCM"
+        },
+        {
+          "$xml_type": "Sonicate",
+          "_comment": "Swirl and sonicate → Dark green mixture"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "50 mL flask",
+          "_reagent": "ISOLUTE Si-Thiol",
+          "_comment": "Add ISOLUTE Si-Thiol"
+        },
+        {
+          "$xml_type": "Wait",
+          "_time": {
+            "Unit": "hour",
+            "Value": 1
+          },
+          "_comment": "Stir at 500 rpm for 1 h"
+        },
+        {
+          "$xml_type": "Filter",
+          "_product_portion": "filtrate",
+          "_rinse": [
+            {
+              "name": "DCM",
+              "amount": {
+                "Unit": "millilitre",
+                "Value": 50
+              }
+            }
+          ],
+          "_comment": "Filter the mixture → Dark green filtrate; Rinse with DCM 50 mL → Pale green filtrate and xxx residue at the end"
+        },
+        {
+          "$xml_type": "Add",
+          "_dropwise": false,
+          "_amount": {
+            "Unit": "millilitre",
+            "Value": 300
+          },
+          "_reagent": "n-hexane",
+          "_comment": "Add n-hexane (300 mL)"
+        },
+        {
+          "$xml_type": "HeatChill",
+          "_temp": {
+            "Unit": "celsius",
+            "Value": 0
+          },
+          "_time": {
+            "Unit": "day",
+            "Value": 0.5
+          },
+          "_comment": "Refrigerate at 0 °C o/n"
+        },
+        {
+          "$xml_type": "Filter",
+          "_product_portion": "residue",
+          "_rinse": [
+            {
+              "name": "DCM + n-hexane"
+            },
+            {
+              "name": "n-hexane"
+            }
+          ],
+          "_comment": "Filter the mixture → Light yellow filtrate; Rinse with 2 x (DCM 15 mL + n-hexane 100 mL); Rinse w/ n-hexane 4 x 20 mL"
+        },
+        {
+          "$xml_type": "Dry",
+          "_time": {
+            "Unit": "minute",
+            "Value": 10
+          },
+          "_comment": "Dry w/ suction for 10 min"
+        },
+        {
+          "$xml_type": "Dry",
+          "_time": {
+            "Unit": "hour",
+            "Value": 5
+          },
+          "_comment": "Dry under vacuum (diaphragm pump) for 5 h"
+        }
+      ]
+    }
+  },
+  "products": [
+    {
+      "amount_mmol": 0.2087,
+      "appearance": "green solids",
+      "is_main_product": true,
+      "molar_mass_g_mol": 2008,
+      "name": "[Co(ttpp)(py)2](OTf)",
+      "yield_g": 0.4192,
+      "yield_percent": 71
+    }
+  ],
+  "starting_materials": [
+    {
+      "amount_mmol": 0.2937,
+      "equivalents": 1,
+      "mass_g": 0.49963,
+      "molar_mass_g_mol": 1700.9695,
+      "name": "Co(ttpp)",
+      "note": "ZAR-1096-1"
+    },
+    {
+      "name": "AgOTf",
+      "amount_mmol": 0.2547,
+      "equivalents": 0.8671,
+      "mass_g": 0.06544,
+      "molar_mass_g_mol": 256.9373,
+      "note": "INV-29-5"
+    },
+    {
+      "name": "pyridine",
+      "amount_mmol": 1.4713,
+      "equivalents": 5.0091,
+      "mass_g": 0.116382,
+      "molar_mass_g_mol": 79.0999,
+      "note": "INV-24-13",
+      "volume_mL": 0.119,
+      "density_g_mL": 0.978
+    },
+    {
+      "name": "toluene",
+      "amount_mmol": 258.1713,
+      "equivalents": 878.9335951607361,
+      "density_g_mL": 0.865,
+      "mass_g": 23.7875,
+      "molar_mass_g_mol": 92.1384,
+      "note": "INV-128-1",
+      "volume_mL": 27.5
+    }
+  ],
+  "batch_volume_mL": 27.5,
+  "date": "2026-06-10",
+  "journal_number": "ZAR-439",
+  "reaction_name": "Synthesis of [Co(ttpp)(py)2](OTf)"
+}

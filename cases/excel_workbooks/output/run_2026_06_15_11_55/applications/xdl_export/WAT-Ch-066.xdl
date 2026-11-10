@@ -1,0 +1,36 @@
+<XDL>
+  <Synthesis>
+    <Hardware>
+      <Component id="reactor" type="reactor" />
+    </Hardware>
+    <Metadata description="WAT-Ch-066 - Reduktion Aminoester Ile zu Alkohol" product="sauber" product_yield_percent="51.6979" />
+    <Procedure>
+      <Prep>
+        <EvacuateAndRefill vessel="reactor" gas="N2" />
+        <Add vessel="reactor" reagent="THF (Aminoester)" amount="50 millilitre" />
+        <Add vessel="reactor" reagent="Aminoester 065" amount="1.085 gram" comment="Aminoester in THF lösen" />
+        <HeatChill vessel="reactor" temp="0 celsius" comment="auf 0 °C kühlen" />
+      </Prep>
+      <Reaction>
+        <Add vessel="reactor" reagent="THF (LAH)" amount="10 millilitre" />
+        <Add vessel="reactor" reagent="LAH " amount="0.101436 gram" dropwise="true" />
+        <HeatChill vessel="reactor" temp="0 celsius" time="30 minute" comment="Rühren für 30 min @0 °C" />
+      </Reaction>
+      <Workup>
+        <Add vessel="reactor" reagent="Wasser" comment="quenchen mit Wasser" />
+        <Extract vessel="reactor" solvent="DCM" phase_kept="organic" comment="Zugabe von DCM, Phasen trennen" />
+        <WashPhase vessel="reactor" solution="HCl 1M" phase="organic" repeat="1" comment="gleiche Menge wie THF" />
+        <WashPhase vessel="reactor" solution="brine" phase="organic" repeat="2" />
+        <Dry vessel="reactor" desiccant="MgSO4" />
+        <Evaporate vessel="reactor" method="rotary_evaporator" comment="LM am Roti entfernen" />
+        <Purify vessel="reactor" eluent="Pe/EtOAc 4:1 -&gt; 3:1 -&gt; 1:1" />
+      </Workup>
+    </Procedure>
+    <Reagents>
+      <Reagent id="Aminoester 065" name="Aminoester 065" role="substrate" />
+      <Reagent id="LAH " name="LAH " role="reagent" />
+      <Reagent id="THF (Aminoester)" name="THF (Aminoester)" role="solvent" />
+      <Reagent id="THF (LAH)" name="THF (LAH)" role="solvent" />
+    </Reagents>
+  </Synthesis>
+</XDL>

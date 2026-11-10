@@ -1,0 +1,34 @@
+<XDL>
+  <Synthesis>
+    <Hardware>
+      <Component id="reactor" type="reactor" />
+    </Hardware>
+    <Metadata description="WAT-Ch-083 - Cyclisierung Ile FeCl3 crude Aldehyd" product="Olefin rein" product_yield_percent="32.0167" />
+    <Procedure>
+      <Prep>
+        <EvacuateAndRefill vessel="reactor" gas="N2" />
+        <Add vessel="reactor" reagent="DCM (Aldehyd)" amount="100 millilitre" />
+        <Add vessel="reactor" reagent="Aminoaldehyd 082" amount="4.0354 gram" comment="Aminoaldehyd in DCM lösen" />
+        <HeatChill vessel="reactor" temp="0 celsius" comment="auf 0 °C gekühlt" />
+      </Prep>
+      <Reaction>
+        <Add vessel="reactor" reagent="DEE (FeCl3)" amount="20 millilitre" />
+        <Add vessel="reactor" reagent="FeCl3 (Schlenk)" amount="3.42283 gram" dropwise="true" comment="langsame Zugabe von FeCl3-Lsg (1 M in DEE)" />
+        <HeatChill vessel="reactor" temp="25 celsius" comment="Reaktion ü.N. bei RT gerührt" />
+      </Reaction>
+      <Workup>
+        <WashPhase vessel="reactor" solution="2M NaOH" phase="organic" comment="neutralisiert mit 2M NaOH" />
+        <Extract vessel="reactor" solvent="DCM" phase_kept="organic" comment="mit DCM extrahieren" />
+        <Dry vessel="reactor" desiccant="MgSO4" comment="über MgSO4 trocknen" />
+        <Evaporate vessel="reactor" method="rotary_evaporator" comment="LM wird am Roti entfernt" />
+        <Purify vessel="reactor" eluent="Pe/EtOAc 2:1 -&gt; 1:1 -&gt; 1:2" comment="Säulen (Pe/EtOAc 2:1 -&gt; 1:1 -&gt; 1:2)" />
+      </Workup>
+    </Procedure>
+    <Reagents>
+      <Reagent id="Aminoaldehyd 082" name="Aminoaldehyd 082" role="substrate" />
+      <Reagent id="FeCl3 (Schlenk)" name="FeCl3 (Schlenk)" role="catalyst" />
+      <Reagent id="DCM (Aldehyd)" name="DCM (Aldehyd)" role="solvent" />
+      <Reagent id="DEE (FeCl3)" name="DEE (FeCl3)" role="solvent" />
+    </Reagents>
+  </Synthesis>
+</XDL>

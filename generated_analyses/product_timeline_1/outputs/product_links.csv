@@ -1,0 +1,6 @@
+source,source_label,target,used_sample,used_as,used_mmol
+AD-R10,AD-31,AD-R11,AD-31-1,Co(ttpp),0.05958
+AD-R10,AD-31,AD-R13,AD-31-2,Co(ttpp),0.05918
+AD-R10,AD-31,AD-R17,AD-31-3,Co(ttpp),0.1786059400957082
+AD-R18,AD-47,AD-R27,AD-47-1,Co(ttpp),0.2937
+ZAR-438,ZAR-1096,ZAR-439,ZAR-1096-1,Co(ttpp),0.2937

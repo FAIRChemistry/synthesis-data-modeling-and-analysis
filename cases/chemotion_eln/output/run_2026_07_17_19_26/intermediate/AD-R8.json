@@ -1,0 +1,153 @@
+{
+  "short_label": "AD-R8",
+  "name": "Synthesis of Co(ttpp) (more monitoring, proper Al2O3 pad)",
+  "created_at": "2025-12-15T08:31:16.936Z",
+  "status": "Successful",
+  "temperature": {
+    "data": [],
+    "userText": "1. RT 2. Reflux",
+    "valueUnit": "°C"
+  },
+  "duration": "",
+  "vessel_size": {
+    "amount": 50,
+    "unit": "ml"
+  },
+  "plain_text_description": "Heat a 50 mL two-neck RBF in an oven (120 °C) for >1.5 h.\n[15.12., RT 24.7°C, RH 30 %]\nAssemble and fix a reflux condenser, a T-shaped connector, and a bubbler (filled with paraffin oil) at a Schlenk line.\nRemove the RBF and quickly assemble it with a stir bar, rubber septum, and reflux condenser while it is still hot.\nEvacuate (0.24 mbar), heat the bottom part of the reflux condenser and flask with a heat gun (250 °C). [Heating flask might not be necessary]\nBackfill with N2\nAdd TAPP and TrBr (plastic spatula) quickly\nCycle with N2 slowly x3\nAdd Et3N\nAdd THF w/ double-tipped needle. [15:10] (black mixture)\nStart stirring (350 rpm)\nCover the flask with Al foil.\n→ 0.1 mL + CDCl3 500 µL, sonicate → 1H NMR M1\n[16.12]\n[08:15] → 0.1 mL + CDCl3 500 µL, sonicate → 1H NMR M2\nStop stirring. Close the N2 connection. Add CoCl2 quickly. Purge with N2 for 10 s. Close. Resume stirring.\nBubble with N2, 30 min.\nHeat to reflux (85 °C, 1.25 atm) for 2 h\nCool down to RT.\n→ 0.1 mL + CDCl3 500 µL, sonicate → 1H NMR M3 unfiltered → syringe filter → 1H NMR M3\nHeat to reflux (85 °C, 1.25 atm) for 17 h\n[17.12.]\nCool down to RT.\n→ 0.1 mL + CDCl3 500 µL, sonicate → 1H NMR failed because of autosampler problem\nStir at RT for 24 h\n→ 0.1 mL + CDCl3 500 µL, sonicate → syringe filter, rinsed with CDCl3 → 1H NMR M4\n",
+  "plain_text_observation": "[18.12. RT 24.2°C and RH 31%]\nAdd 12.5 mL of neutral alumina to a 25 mL frit funnel.\nAttach the funnel to a vacuum filter adapter and a 250 mL RBF.\nWet the alumina with THF\nLoad the reaction mixture\nElute with THF (75 mL) and weak suction. (eluate: dark red to pale pink)  (The alumina pad became dark green at the top, pale green in the middle, and a little brown part at the bottom)\nAdd EtOH 25 mL to the eluate\nConcentrate with rotovap to 25 mL. (dark brown precipitation)\nCollect the solids by filtration with a filter paper (15A, ø 90 mm, tare: 0.51740 g), a glass funnel, a vacuum filter adapter, and a 100 mL RBF under suction. (filtrate: dark green solution)\nRinse with EtOH x3 and petroleum ether x2.\nDry filtrate with rotovap\n[15.1.]\n1H NMR-filtrate (DMSO)\nDry the residue under vacuum (diaphragm pump) for 1 h. [dark brown solid]\n 0.26716 g  wt. on Filter paper.\nTransfer to vial with label and tape (tare: 8.10142 g) --> 0.26232 g\nThe residue on filter paper → 1H NMR paper (CDCl3) [green solution]\n1H NMR P_unfiltered (CDCl3) [dark red-brown suspension] → Syringe filter → 1H NMR_P [dark red-brown solution]\n[15.1.]\n1H NMR P (DMSO)\n",
+  "starting_materials": [
+    {
+      "short_label": "INV-14-4",
+      "name": "TAPP",
+      "molecular_weight": 674.7943600000002,
+      "real_amount_value": 0.12527,
+      "real_amount_unit": "g",
+      "target_amount_value": 0.12527,
+      "target_amount_unit": "g",
+      "density": 1.35,
+      "smiles": "Nc1ccc(cc1)/C/1=C/2\\C=CC(=N2)/C(=c\\2/cc/c(=C(/C3=N/C(=C(\\c4[nH]c1cc4)/c1ccc(cc1)N)/C=C3)\\c1ccc(cc1)N)/[nH]2)/c1ccc(cc1)N",
+      "inchi": "InChI=1S/C44H34N8/c45-29-9-1-25(2-10-29)41-33-17-19-35(49-33)42(26-3-11-30(46)12-4-26)37-21-23-39(51-37)44(28-7-15-32(48)16-8-28)40-24-22-38(52-40)43(36-20-18-34(41)50-36)27-5-13-31(47)14-6-27/h1-24,49,52H,45-48H2/b41-33-,41-34-,42-35-,42-37-,43-36-,43-38-,44-39-,44-40-",
+      "inchikey": "REPFNYFEIOZRLM-LWQDQPMZSA-N",
+      "equivalent": 1.0,
+      "reference": true,
+      "position": 0
+    },
+    {
+      "short_label": "INV-20-3",
+      "name": "TrBr",
+      "molecular_weight": 323.2264,
+      "real_amount_value": 0.30907,
+      "real_amount_unit": "g",
+      "target_amount_value": 0.29937490882407486,
+      "target_amount_unit": "g",
+      "density": null,
+      "smiles": "BrC(c1ccccc1)(c1ccccc1)c1ccccc1",
+      "inchi": "InChI=1S/C19H15Br/c20-19(16-10-4-1-5-11-16,17-12-6-2-7-13-17)18-14-8-3-9-15-18/h1-15H",
+      "inchikey": "NZHXEWZGTQSYJM-UHFFFAOYSA-N",
+      "equivalent": 5.150796519661284,
+      "reference": false,
+      "position": 1
+    },
+    {
+      "short_label": "INV-21-6",
+      "name": "CoCl2",
+      "molecular_weight": 129.8392,
+      "real_amount_value": 0.1445,
+      "real_amount_unit": "g",
+      "target_amount_value": 0.1443097420079207,
+      "target_amount_unit": "g",
+      "density": null,
+      "smiles": "[Cl-].[Cl-].[Co+2]",
+      "inchi": "InChI=1S/2ClH.Co/h2*1H;/q;;+2/p-2",
+      "inchikey": "GVPFVAHMJGGAJG-UHFFFAOYSA-L",
+      "equivalent": 5.994961284797981,
+      "reference": false,
+      "position": 2
+    },
+    {
+      "short_label": "INV-22-4",
+      "name": "Et3N",
+      "molecular_weight": 101.19,
+      "real_amount_value": 0.000258,
+      "real_amount_unit": "l",
+      "target_amount_value": 0.18744599465828368,
+      "target_amount_unit": "g",
+      "density": 0.726,
+      "smiles": "CCN(CC)CC",
+      "inchi": "InChI=1S/C6H15N/c1-4-7(5-2)6-3/h4-6H2,1-3H3",
+      "inchikey": "ZMANZCXQSJIPKH-UHFFFAOYSA-N",
+      "equivalent": 9.97110058720481,
+      "reference": false,
+      "position": 3
+    },
+    {
+      "short_label": "INV-23-3",
+      "name": "THF",
+      "molecular_weight": 72.10572,
+      "real_amount_value": 0.0085,
+      "real_amount_unit": "l",
+      "target_amount_value": 0.0085,
+      "target_amount_unit": "l",
+      "density": 0.889,
+      "smiles": "C1CCCO1",
+      "inchi": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2",
+      "inchikey": "WYURNTSHIVDZCO-UHFFFAOYSA-N",
+      "equivalent": 564.5148040751726,
+      "reference": false,
+      "position": 4
+    }
+  ],
+  "solvents": [],
+  "purification_solvents": [
+    {
+      "short_label": "AD-29",
+      "name": "ethanol",
+      "molecular_weight": 46.068439999999995,
+      "real_amount_value": null,
+      "real_amount_unit": "g",
+      "target_amount_value": 0.05,
+      "target_amount_unit": "l",
+      "density": 0.789,
+      "smiles": "CCO",
+      "inchi": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3",
+      "inchikey": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N",
+      "equivalent": 4612.834445194248,
+      "reference": false,
+      "position": 0
+    },
+    {
+      "short_label": "KE-17",
+      "name": "oxolane",
+      "molecular_weight": 72.10572,
+      "real_amount_value": null,
+      "real_amount_unit": "g",
+      "target_amount_value": 0.075,
+      "target_amount_unit": "l",
+      "density": 0.889,
+      "smiles": "C1CCCO1",
+      "inchi": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2",
+      "inchikey": "WYURNTSHIVDZCO-UHFFFAOYSA-N",
+      "equivalent": null,
+      "reference": false,
+      "position": 1
+    }
+  ],
+  "products": [
+    {
+      "short_label": "AD-28",
+      "name": "C120H88CoN8",
+      "molecular_weight": 1700.9695200000008,
+      "real_amount_value": 0.26232,
+      "real_amount_unit": "g",
+      "target_amount_value": null,
+      "target_amount_unit": "g",
+      "density": null,
+      "smiles": "c1ccc(cc1)C(c1ccccc1)(c1ccccc1)Nc1ccc(cc1)/C/1=C/2\\C=CC(=N2)/C(=c/2\\n3[Co]n4c1ccc4/C(=C\\1/C=CC(=N1)/C(=c\\3/cc2)/c1ccc(cc1)NC(c1ccccc1)(c1ccccc1)c1ccccc1)/c1ccc(cc1)NC(c1ccccc1)(c1ccccc1)c1ccccc1)/c1ccc(cc1)NC(c1ccccc1)(c1ccccc1)c1ccccc1",
+      "inchi": "InChI=1S/C120H88N8.Co/c1-13-37-89(38-14-1)117(90-39-15-2-16-40-90,91-41-17-3-18-42-91)125-101-69-61-85(62-70-101)113-105-77-79-107(121-105)114(86-63-71-102(72-64-86)126-118(92-43-19-4-20-44-92,93-45-21-5-22-46-93)94-47-23-6-24-48-94)109-81-83-111(123-109)116(88-67-75-104(76-68-88)128-120(98-55-31-10-32-56-98,99-57-33-11-34-58-99)100-59-35-12-36-60-100)112-84-82-110(124-112)115(108-80-78-106(113)122-108)87-65-73-103(74-66-87)127-119(95-49-25-7-26-50-95,96-51-27-8-28-52-96)97-53-29-9-30-54-97;/h1-84,125-128H;/q-2;+2/b113-105-,113-106-,114-107-,114-109-,115-108-,115-110-,116-111-,116-112-;",
+      "inchikey": "SZVLKHGYPSMSBU-FIVSXPDESA-N",
+      "equivalent": 0.8307287460885211,
+      "reference": false,
+      "position": 0
+    }
+  ]
+}

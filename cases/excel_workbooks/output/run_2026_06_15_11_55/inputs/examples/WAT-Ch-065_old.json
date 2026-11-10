@@ -1,0 +1,171 @@
+{
+  "journal_number": "WAT-Ch-065",
+  "date": "2023-12-07",
+  "researcher": "Timo Watzenborn",
+  "research_group": "AK Laschat",
+  "project_type": "Promotion",
+  "reaction_name": "Aminierung geschütztes Ile mit Bromolefin",
+  "starting_materials": [
+    {
+      "name": "Ns-Ile-OMe 063",
+      "molar_mass_g_mol": 330.36,
+      "equivalents": 1,
+      "density_g_mL": null,
+      "concentration_mol_L": null,
+      "volume_mL": null,
+      "mass_fraction_percent": null,
+      "amount_mmol": 5.663518585785203,
+      "mass_g": 1.871,
+      "batch_concentration_mol_L": 0.189,
+      "role": "limiting_reagent",
+      "note": null
+    },
+    {
+      "name": "Bromolefin 021",
+      "molar_mass_g_mol": 163.03,
+      "equivalents": 1.5,
+      "density_g_mL": null,
+      "concentration_mol_L": null,
+      "volume_mL": null,
+      "mass_fraction_percent": 84.3,
+      "amount_mmol": 8.495277878677804,
+      "mass_g": 1.6429242616380102,
+      "batch_concentration_mol_L": 0.283,
+      "role": "reagent",
+      "note": null
+    },
+    {
+      "name": "Cs2CO3",
+      "molar_mass_g_mol": 325.82,
+      "equivalents": 2,
+      "density_g_mL": null,
+      "concentration_mol_L": null,
+      "volume_mL": null,
+      "mass_fraction_percent": null,
+      "amount_mmol": 11.327037171570407,
+      "mass_g": 3.69057525124107,
+      "batch_concentration_mol_L": 0.378,
+      "role": "base",
+      "note": null
+    },
+    {
+      "name": "DMF",
+      "molar_mass_g_mol": null,
+      "equivalents": null,
+      "density_g_mL": null,
+      "concentration_mol_L": null,
+      "volume_mL": 30,
+      "mass_fraction_percent": null,
+      "amount_mmol": null,
+      "mass_g": null,
+      "batch_concentration_mol_L": null,
+      "role": "solvent",
+      "note": null
+    }
+  ],
+  "batch_volume_mL": 30,
+  "products": [
+    {
+      "name": "tert. Amin",
+      "molar_mass_g_mol": 412.5,
+      "yield_g": 1.085,
+      "amount_mmol": 2.630303030303032,
+      "yield_percent": 46.44291336669748,
+      "appearance": null,
+      "rf_value": null,
+      "eluent_system": "Pe/EtOAc 3:1 → 2:1",
+      "nmr_data": null,
+      "is_main_product": true
+    }
+  ],
+  "procedure": {
+    "Prep": {
+      "Step": [
+        {
+          "$xml_type": "EvacuateAndRefill",
+          "_gas": "N2",
+          "_comment": "Schutzgasatmosphäre (N2) herstellen"
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "DMF",
+          "_amount": { "Value": 30.0, "Unit": "millilitre" }
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "Ns-Ile-OMe 063",
+          "_amount": { "Value": 1.871, "Unit": "gram" },
+          "_comment": "Aminoester in DMF lösen"
+        }
+      ]
+    },
+    "Reaction": {
+      "Step": [
+        {
+          "$xml_type": "Add",
+          "_reagent": "Cs2CO3",
+          "_amount": { "Value": 3.691, "Unit": "gram" }
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "Bromolefin 021",
+          "_amount": { "Value": 1.643, "Unit": "gram" }
+        },
+        {
+          "$xml_type": "HeatChill",
+          "_temp": { "Value": 60.0, "Unit": "celsius" },
+          "_time": { "Value": 18.0, "Unit": "hour" },
+          "_comment": "rühren über Nacht (ü.N.)"
+        }
+      ]
+    },
+    "Workup": {
+      "Step": [
+        {
+          "$xml_type": "HeatChill",
+          "_temp": { "Value": 25.0, "Unit": "celsius" },
+          "_comment": "auf RT abkühlen; Dauer nicht angegeben"
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "DEE",
+          "_comment": "mit DEE versetzen; keine Phasentrennung beschrieben; Menge nicht angegeben"
+        },
+        {
+          "$xml_type": "WashPhase",
+          "_solution": "Wasser",
+          "_phase": "organic",
+          "_repeat": 2
+        },
+        {
+          "$xml_type": "WashPhase",
+          "_solution": "brine",
+          "_phase": "organic",
+          "_repeat": 2
+        },
+        {
+          "$xml_type": "Dry",
+          "_desiccant": "MgSO4",
+          "_comment": "trocknen über MgSO4, anschließend abfiltrieren"
+        },
+        {
+          "$xml_type": "Evaporate",
+          "_method": "rotary_evaporator",
+          "_comment": "Lösungsmittel am Roti entfernen → Rohprodukt"
+        },
+        {
+          "$xml_type": "Purify",
+          "_eluent": "Pe/EtOAc 3:1 → 2:1"
+        }
+      ]
+    }
+  },
+  "tlc_conditions": null,
+  "observations": "Rkt unter Pseudo-Schutzgas",
+  "reagent_sources": [
+    { "reagent_name": "Ns-Ile-OMe 063", "source": "Abzug" },
+    { "reagent_name": "Bromolefin 021", "source": "Abzug" },
+    { "reagent_name": "Cs2CO3", "source": "167 Regal Julius" },
+    { "reagent_name": "DMF", "source": null }
+  ]
+}

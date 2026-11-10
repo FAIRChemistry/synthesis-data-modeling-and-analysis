@@ -1,0 +1,229 @@
+{
+  "journal_number": "WAT-Ch-081",
+  "date": "2024-07-03",
+  "researcher": "Timo Watzenborn",
+  "research_group": "AK Laschat",
+  "project_type": "Promotion",
+  "reaction_name": "Reduktion Aminoester Ile zu Alkohol ohne Aufarbeitung",
+  "starting_materials": [
+    {
+      "name": "Aminoester 080",
+      "molar_mass_g_mol": 446.52,
+      "equivalents": 1,
+      "density_g_mL": null,
+      "concentration_mol_L": 0.106,
+      "volume_mL": null,
+      "mass_fraction_percent": null,
+      "amount_mmol": 10.550479261847176,
+      "mass_g": 4.711,
+      "batch_concentration_mol_L": 0.10550479261847176,
+      "role": "limiting_reagent",
+      "note": null
+    },
+    {
+      "name": "LAH (fest)",
+      "molar_mass_g_mol": 37.95,
+      "equivalents": 1.1,
+      "density_g_mL": null,
+      "concentration_mol_L": 0.116,
+      "volume_mL": null,
+      "mass_fraction_percent": null,
+      "amount_mmol": 11.605527188031894,
+      "mass_g": 0.4404297567858104,
+      "batch_concentration_mol_L": 0.11605527188031894,
+      "role": "reductant",
+      "note": null
+    },
+    {
+      "name": "THF",
+      "molar_mass_g_mol": null,
+      "equivalents": null,
+      "density_g_mL": null,
+      "concentration_mol_L": null,
+      "volume_mL": 85,
+      "mass_fraction_percent": null,
+      "amount_mmol": null,
+      "mass_g": null,
+      "batch_concentration_mol_L": null,
+      "role": "solvent",
+      "note": null
+    },
+    {
+      "name": "THF (LAH)",
+      "molar_mass_g_mol": null,
+      "equivalents": null,
+      "density_g_mL": null,
+      "concentration_mol_L": null,
+      "volume_mL": 15,
+      "mass_fraction_percent": null,
+      "amount_mmol": null,
+      "mass_g": null,
+      "batch_concentration_mol_L": null,
+      "role": "solvent",
+      "note": "für LAH"
+    }
+  ],
+  "batch_volume_mL": 100,
+  "products": [
+    {
+      "name": "ausgewogen",
+      "molar_mass_g_mol": 384.49,
+      "yield_g": null,
+      "amount_mmol": null,
+      "yield_percent": null,
+      "appearance": null,
+      "rf_value": null,
+      "eluent_system": null,
+      "nmr_data": null,
+      "is_main_product": true
+    },
+    {
+      "name": "quant",
+      "molar_mass_g_mol": 384.49,
+      "yield_g": 4.0565537713876205,
+      "amount_mmol": 10.550479261847176,
+      "yield_percent": 100,
+      "appearance": null,
+      "rf_value": null,
+      "eluent_system": null,
+      "nmr_data": null,
+      "is_main_product": true
+    }
+  ],
+  "procedure": {
+    "Prep": {
+      "Step": [
+        {
+          "$xml_type": "EvacuateAndRefill",
+          "_gas": "N2"
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "THF",
+          "_amount": {
+            "Value": 85,
+            "Unit": "millilitre"
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "Aminoester 080",
+          "_amount": {
+            "Value": 4.711,
+            "Unit": "gram"
+          },
+          "_comment": "Aminoester unter N2 in THF lösen"
+        },
+        {
+          "$xml_type": "HeatChill",
+          "_temp": {
+            "Value": 0,
+            "Unit": "celsius"
+          },
+          "_comment": "kühlen auf 0 °C; Dauer nicht angegeben"
+        }
+      ]
+    },
+    "Reaction": {
+      "Step": [
+        {
+          "$xml_type": "Add",
+          "_reagent": "THF (LAH)",
+          "_amount": {
+            "Value": 15,
+            "Unit": "millilitre"
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "LAH (fest)",
+          "_amount": {
+            "Value": 0.4404297567858104,
+            "Unit": "gram"
+          },
+          "_dropwise": true
+        },
+        {
+          "$xml_type": "HeatChill",
+          "_temp": {
+            "Value": 0,
+            "Unit": "celsius"
+          },
+          "_time": {
+            "Value": 30,
+            "Unit": "minute"
+          },
+          "_comment": "Rühren für 30 min @0 °C"
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "Wasser",
+          "_comment": "quenchen mit Wasser; Menge nicht angegeben"
+        }
+      ]
+    },
+    "Workup": {
+      "Step": [
+        {
+          "$xml_type": "Add",
+          "_reagent": "DCM",
+          "_comment": "Zugabe von DCM; Phasen trennen"
+        },
+        {
+          "$xml_type": "Extract",
+          "_solvent": "DCM",
+          "_phase_kept": "organic",
+          "_comment": "Phasentrennung nach Zugabe von DCM"
+        },
+        {
+          "$xml_type": "WashPhase",
+          "_solution": "HCl 1M",
+          "_phase": "organic",
+          "_repeat": 1,
+          "_comment": "gleiche Menge wie THF"
+        },
+        {
+          "$xml_type": "WashPhase",
+          "_solution": "brine",
+          "_phase": "organic",
+          "_repeat": 2
+        },
+        {
+          "$xml_type": "Dry",
+          "_desiccant": "MgSO4",
+          "_comment": "Trocknen über MgSO4"
+        },
+        {
+          "$xml_type": "Evaporate",
+          "_method": "rotary_evaporator",
+          "_comment": "LM am Roti entfernen"
+        },
+        {
+          "$xml_type": "Purify",
+          "_eluent": "Pe/EtOAc 4:1 -> 3:1 -> 1:1",
+          "_comment": "Säule (Pe/EtOAc 4:1 -> 3:1 -> 1:1)"
+        }
+      ]
+    }
+  },
+  "tlc_conditions": null,
+  "observations": null,
+  "reagent_sources": [
+    {
+      "reagent_name": "Aminoester 080",
+      "source": "Abzug"
+    },
+    {
+      "reagent_name": "LAH (fest)",
+      "source": "Peggy Regal"
+    },
+    {
+      "reagent_name": "THF",
+      "source": "Destille"
+    },
+    {
+      "reagent_name": "THF (LAH)",
+      "source": null
+    }
+  ]
+}

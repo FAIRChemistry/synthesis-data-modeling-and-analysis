@@ -1,0 +1,119 @@
+{
+  "run_id": "run_2026_07_13_10_54",
+  "case": "chemotion_eln",
+  "output_dir": "cases/chemotion_eln/output/run_2026_07_13_10_54",
+  "results_dir": "cases/chemotion_eln/output/run_2026_07_13_10_54/results",
+  "previous_run": "cases/chemotion_eln/output/run_2026_07_02_10_55",
+  "total": 11,
+  "successes": [
+    {
+      "record_id": "AD-R10",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_13_10_54/results/AD-R10.json",
+      "usage": {
+        "prompt_tokens": 11498,
+        "completion_tokens": 10994,
+        "total_tokens": 22492
+      }
+    },
+    {
+      "record_id": "AD-R11",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_13_10_54/results/AD-R11.json",
+      "usage": {
+        "prompt_tokens": 11912,
+        "completion_tokens": 13071,
+        "total_tokens": 24983
+      }
+    },
+    {
+      "record_id": "AD-R13",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_13_10_54/results/AD-R13.json",
+      "usage": {
+        "prompt_tokens": 11615,
+        "completion_tokens": 11282,
+        "total_tokens": 22897
+      }
+    },
+    {
+      "record_id": "AD-R17",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_13_10_54/results/AD-R17.json",
+      "usage": {
+        "prompt_tokens": 11691,
+        "completion_tokens": 11671,
+        "total_tokens": 23362
+      }
+    },
+    {
+      "record_id": "AD-R18",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_13_10_54/results/AD-R18.json",
+      "usage": {
+        "prompt_tokens": 12150,
+        "completion_tokens": 15987,
+        "total_tokens": 28137
+      }
+    },
+    {
+      "record_id": "AD-R27",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_13_10_54/results/AD-R27.json",
+      "usage": {
+        "prompt_tokens": 11749,
+        "completion_tokens": 8064,
+        "total_tokens": 19813
+      }
+    },
+    {
+      "record_id": "AD-R6",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_13_10_54/results/AD-R6.json",
+      "usage": {
+        "prompt_tokens": 11825,
+        "completion_tokens": 10886,
+        "total_tokens": 22711
+      }
+    },
+    {
+      "record_id": "AD-R8",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_13_10_54/results/AD-R8.json",
+      "usage": {
+        "prompt_tokens": 11663,
+        "completion_tokens": 9469,
+        "total_tokens": 21132
+      }
+    },
+    {
+      "record_id": "AD-R9",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_13_10_54/results/AD-R9.json",
+      "usage": {
+        "prompt_tokens": 12101,
+        "completion_tokens": 12034,
+        "total_tokens": 24135
+      }
+    },
+    {
+      "record_id": "ZAR-438",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_13_10_54/results/ZAR-438.json",
+      "usage": {
+        "prompt_tokens": 11418,
+        "completion_tokens": 10962,
+        "total_tokens": 22380
+      }
+    },
+    {
+      "record_id": "ZAR-439",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_13_10_54/results/ZAR-439.json",
+      "usage": {
+        "prompt_tokens": 11359,
+        "completion_tokens": 3607,
+        "total_tokens": 14966
+      }
+    }
+  ],
+  "validation_warnings": [],
+  "failures": [],
+  "tokens": {
+    "prompt_tokens": 128981,
+    "completion_tokens": 118027,
+    "total_tokens": 247008,
+    "prompt_chars": 0,
+    "completion_chars": 0
+  },
+  "assembled_dir": "cases/chemotion_eln/output/run_2026_07_13_10_54/assembled"
+}

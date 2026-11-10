@@ -1,0 +1,38 @@
+<XDL>
+  <Synthesis>
+    <Hardware>
+      <Component id="reactor" type="reactor" />
+    </Hardware>
+    <Metadata description="WAT-Ch-063 - L-Ile oNs-Schützung" product="Fr 28-NL (sauber)" product_yield_percent="35.5535" />
+    <Procedure>
+      <Prep>
+        <EvacuateAndRefill vessel="reactor" gas="N2" />
+        <Add vessel="reactor" reagent="DCM  " amount="50 millilitre" />
+        <Add vessel="reactor" reagent="L-Phe-Me HCl 061" amount="4.15 gram" comment="Aminosäureester in DCM lösen" />
+        <HeatChill vessel="reactor" temp="0 celsius" comment="auf 0 °C kühlen" />
+      </Prep>
+      <Reaction>
+        <Add vessel="reactor" reagent="DCM (NsCl)" amount="10 millilitre" />
+        <Add vessel="reactor" reagent="2-NsCl" amount="5.54358 gram" dropwise="true" />
+        <Add vessel="reactor" reagent="Triethylamin" amount="6.66796 millilitre" dropwise="true" />
+        <HeatChill vessel="reactor" temp="25 celsius" />
+        <Wait vessel="reactor" time="18 hour" comment="rühren für 18 h bei RT" />
+      </Reaction>
+      <Workup>
+        <Add vessel="reactor" reagent="HCl 1M" comment="für Phasentrennung" />
+        <Extract vessel="reactor" solvent="DCM" repeat="1" phase_kept="organic" comment="wässrige Phase extrahieren mit 1x DCM" />
+        <WashPhase vessel="reactor" solution="Wasser" phase="organic" repeat="3" />
+        <Dry vessel="reactor" comment="Trocknen" />
+        <Evaporate vessel="reactor" comment="LM entfernen" />
+        <Purify vessel="reactor" eluent="Pe/EtOAc 5:1 -&gt; 3:1" />
+      </Workup>
+    </Procedure>
+    <Reagents>
+      <Reagent id="L-Phe-Me HCl 061" name="L-Phe-Me HCl 061" role="substrate" />
+      <Reagent id="2-NsCl" name="2-NsCl" role="reagent" />
+      <Reagent id="Triethylamin" name="Triethylamin" role="reagent" />
+      <Reagent id="DCM (NsCl)" name="DCM (NsCl)" role="solvent" />
+      <Reagent id="DCM  " name="DCM  " role="solvent" />
+    </Reagents>
+  </Synthesis>
+</XDL>

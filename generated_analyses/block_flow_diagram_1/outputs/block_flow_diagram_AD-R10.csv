@@ -1,0 +1,27 @@
+order,phase,row,col,step_type,vessel,parameters,comment
+1,Prep,0,0,HeatChill,50 mL two-neck RBF,T: 120 °C; t: 1.5 h,Heat a 50 mL two-neck RBF in an oven (120°C) for >1.5 h.
+2,Prep,0,1,EvacuateAndRefill,50 mL two-neck RBF,"Assemble and fix a reflux condenser, a T-shaped connector,…","Assemble and fix a reflux condenser, a T-shaped connector, and a bubbler (filled with paraffin oil) at a Schlenk line.; Remove the RBF and quickly assemble it with a stir bar, rubber septum, and reflux condenser while it is still hot.; Evacuate (0.089 mbar) and heat the bottom part of the reflux condenser and flask with a heat gun (250°C)."
+3,Prep,0,2,EvacuateAndRefill,50 mL two-neck RBF,Backfill with N₂,Backfill with N₂.
+4,Prep,0,3,Add,50 mL two-neck RBF,"TAPP – 0.25 g, 0.37 mmol, 1 eq",Add TAPP and TrBr (plastic spatula) quickly
+5,Prep,0,4,Add,50 mL two-neck RBF,"TrBr – 0.6 g, 1.85 mmol, 4.99 eq",Add TAPP and TrBr (plastic spatula) quickly
+6,Prep,1,4,EvacuateAndRefill,50 mL two-neck RBF,gas: N₂,Cycle with N₂ slowly x3
+7,Prep,1,3,Add,50 mL two-neck RBF,"Et3N – 0.37 g, 3.7 mmol, 9.98 eq",Add Et3N
+8,Prep,1,2,Add,50 mL two-neck RBF,"THF – 20 mL, 246.57 mmol","Add the THF syringe. [10:57] ( Dark Green ) → 0.1 mL + CDCl₃ 500 µL, sonicate → ¹H NMR M1 [11:08]"
+9,Prep,1,1,Add,50 mL two-neck RBF,"CoCl2 – 0.29 g, 2.22 mmol, 5.99 eq",Stop stirring. Close the N₂ connection. Add CoCl₂ quickly.  Purge with N₂ for 10 s. Close. Resume stirring. [13:58 ]
+10,Prep,1,0,EvacuateAndRefill,50 mL two-neck RBF,gas: N₂; t: 10 s,Stop stirring. Close the N₂ connection. Add CoCl₂ quickly.  Purge with N₂ for 10 s. Close. Resume stirring. [13:58 ]
+11,Prep,2,0,EvacuateAndRefill,50 mL two-neck RBF,gas: N₂; t: 30 min,"Bubble with N₂, 30 min. [14: 30]"
+12,Reaction,3,0,HeatChill,50 mL two-neck RBF,reflux; T: 85 °C; t: 15 min,"[14:37 ] Heat to reflux (85 °C, 1.25 atm) for ca. 15 min (Dark green brown colour)"
+13,Reaction,3,1,HeatChill,50 mL two-neck RBF,t: 2 h,Heat for 2 h (16:37). Cool down to RT. → 0.1 mL + CDCl₃ 500 µL → syringe filter → sonicate → ¹H NMR M2-CDCl3 [16:30] → 0.1 mL + DMSO-d6 500 µL → syringe filter → sonicate → ¹H NMR M2-DMSO [18:39]
+14,Workup,4,0,Add,15 mL membrane filter holder (frit),neutral alumina – 12.5 mL,Add 12.5 mL of neutral alumina in a 15 mL membrane filter holder (frit) with a membrane filter.
+15,Workup,4,1,Add,15 mL membrane filter holder (frit),THF,Attach the funnel to a vacuum and a 250 mL RBF.; Wet the alumina with THF
+16,Workup,4,2,Purify,250 mL RBF,eluent: THF,Load the reaction mixture; Elute with THF and full power suction with occasional digging of the top layer. (It took a long time to elute. The alumina pad became blue-green at the top with some streaks but not fully down to the bottom. Other parts became dark red brown. Eluate became red at the end)
+17,Workup,4,3,Wait,250 mL RBF,t: 0.5 d,Eluent was kept in the fridge o/n.
+18,Workup,4,4,Evaporate,250 mL RBF,Rotovap,Rotovap
+19,Workup,5,4,Dry,250 mL RBF,t: 1 h,"Dry under vacuum, 1 h"
+20,Workup,5,3,Filter,Fritted funnel (por.4),CHCl3 deacidification: 250 mL RBF,"CHCl3 deacidification: 250 mL RBF; Basic Al2O3 --> 50 mL; CHCl3 50 mL (mix in flask ---> then filter); Fritted funnel (por.4), suction adapter, 250 mL RBF; Filtered"
+21,Workup,5,2,Add,250 mL RBF,chloroform – 25 mL,"Reprecipitation: Purified CHCl3 25 mL, sonicate (dark red solution)"
+22,Workup,5,1,Sonicate,250 mL RBF,"Purified CHCl3 25 mL, sonicate (dark red solution)","Purified CHCl3 25 mL, sonicate (dark red solution)"
+23,Workup,5,0,Add,250 mL RBF,n-hexane – 140 mL,"n-hexane 140 mL, manually stir, sonicate"
+24,Workup,6,0,Wait,250 mL RBF,t: 30 min,"Fridge, 30 min"
+25,Workup,6,1,Filter,Glass Funnel,"rinse: chloroform + n-hexane, n-hexane","Glass Funnel, Filter paper (big, 15A), suction adapter, 250 mL RBF; Filter w/ suction; Transfer & rinse w/ 2 x (purified CHCl3 3 mL + 10 mL hex); Rinse w/ hex x2 (2x 15 mL)"
+26,Workup,6,2,Dry,Filter,t: 0.5 d,"Dry under vacuum o/n; 20 mL vial, PTFE sealing (tare w/ lid: 8.94046g) → 479 mg product"

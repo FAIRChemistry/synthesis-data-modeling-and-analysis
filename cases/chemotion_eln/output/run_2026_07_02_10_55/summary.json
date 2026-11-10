@@ -1,0 +1,123 @@
+{
+  "run_id": "run_2026_07_02_10_55",
+  "case": "chemotion_eln",
+  "output_dir": "cases/chemotion_eln/output/run_2026_07_02_10_55",
+  "results_dir": "cases/chemotion_eln/output/run_2026_07_02_10_55/results",
+  "previous_run": "cases/chemotion_eln/output/run_2026_07_02_10_26",
+  "total": 11,
+  "successes": [
+    {
+      "record_id": "AD-R10",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_02_10_55/results/AD-R10.json",
+      "usage": {
+        "prompt_tokens": 13108,
+        "completion_tokens": 12642,
+        "total_tokens": 25750
+      }
+    },
+    {
+      "record_id": "AD-R11",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_02_10_55/results/AD-R11.json",
+      "usage": {
+        "prompt_tokens": 13522,
+        "completion_tokens": 9611,
+        "total_tokens": 23133
+      }
+    },
+    {
+      "record_id": "AD-R13",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_02_10_55/results/AD-R13.json",
+      "usage": {
+        "prompt_tokens": 13225,
+        "completion_tokens": 13872,
+        "total_tokens": 27097
+      }
+    },
+    {
+      "record_id": "AD-R17",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_02_10_55/results/AD-R17.json",
+      "usage": {
+        "prompt_tokens": 13301,
+        "completion_tokens": 9439,
+        "total_tokens": 22740
+      }
+    },
+    {
+      "record_id": "AD-R27",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_02_10_55/results/AD-R27.json",
+      "usage": {
+        "prompt_tokens": 13359,
+        "completion_tokens": 9674,
+        "total_tokens": 23033
+      }
+    },
+    {
+      "record_id": "AD-R6",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_02_10_55/results/AD-R6.json",
+      "usage": {
+        "prompt_tokens": 13435,
+        "completion_tokens": 8683,
+        "total_tokens": 22118
+      }
+    },
+    {
+      "record_id": "AD-R8",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_02_10_55/results/AD-R8.json",
+      "usage": {
+        "prompt_tokens": 13273,
+        "completion_tokens": 10990,
+        "total_tokens": 24263
+      }
+    },
+    {
+      "record_id": "AD-R9",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_02_10_55/results/AD-R9.json",
+      "usage": {
+        "prompt_tokens": 13711,
+        "completion_tokens": 9800,
+        "total_tokens": 23511
+      }
+    },
+    {
+      "record_id": "ZAR-438",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_02_10_55/results/ZAR-438.json",
+      "usage": {
+        "prompt_tokens": 13028,
+        "completion_tokens": 9608,
+        "total_tokens": 22636
+      }
+    },
+    {
+      "record_id": "ZAR-439",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_02_10_55/results/ZAR-439.json",
+      "usage": {
+        "prompt_tokens": 12969,
+        "completion_tokens": 6081,
+        "total_tokens": 19050
+      }
+    }
+  ],
+  "validation_warnings": [
+    {
+      "record_id": "AD-R18",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_02_10_55/results/AD-R18.json",
+      "usage": {
+        "prompt_tokens": 13760,
+        "completion_tokens": 9139,
+        "total_tokens": 22899
+      },
+      "errors": [
+        "$.procedure.Workup.Step.3: {'$xml_type': 'Wait', '_comment': 'elute with suction and THF until eluate becomes pale red'} is not valid under any of the given schemas"
+      ]
+    }
+  ],
+  "failures": [],
+  "tokens": {
+    "prompt_tokens": 146691,
+    "completion_tokens": 109539,
+    "total_tokens": 256230,
+    "prompt_chars": 0,
+    "completion_chars": 0
+  },
+  "assembled_dir": "cases/chemotion_eln/output/run_2026_07_02_10_55/assembled"
+}

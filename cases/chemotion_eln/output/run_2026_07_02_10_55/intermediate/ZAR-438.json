@@ -1,0 +1,110 @@
+{
+  "short_label": "ZAR-438",
+  "name": "Synthesis of Co(ttpp)",
+  "created_at": "2026-06-09T13:28:06.816Z",
+  "status": "Successful",
+  "temperature": {
+    "data": [],
+    "userText": "1. RT 2. Reflux",
+    "valueUnit": "°C"
+  },
+  "duration": "",
+  "vessel_size": null,
+  "plain_text_description": "References and modifications\nAD-R18 (77% yield)\nAnalysis results\nNMR M1: matched AD-R18-M1\nNMR M2: bad shim → because of Co precipitate\nNMR P: Co(ttpp). Some Co(III) → because of CDCl3 or impurity\nObtained products or insights\nBetter yield\n\nProcedure\nRT 21.9 °C, RH 38%\nReaction\n100 mL two-neck RBF with a stir bar, septum (natural rubber), reflux condenser, T-shaped connector, bubbler (with paraffin oil), Schlenk line (N₂, 1.25 atm), heat gun, magnetic stirrer, oil bath\nHeat the flask in an oven at 120 °C for >1.5 h\nQuickly assemble and evacuate the system while it is still hot (5.7 × 10⁻³ mbar)\nHeat the flask and the bottom part of the reflux condenser with a heat gun (250 °C)\nClose the N₂ connection. Add TAPP and TrBr (plastic spatula) quickly\nCycle with N₂ slowly ×3\nAdd NEt₃\nAdd THF → dark green liquid\nStart stirring (350 rpm) [9:30]\nCover the flask with aluminum foil\nLet it stir for 1 h\n→ 0.1 mL + 400 µL of CDCl₃ → ¹H NMR M1 (U1.834; N PROTON20ppm; O1P: 6, SW: 22)\nStop stirring. Close the N₂ connection. Add CoCl₂ quickly. Purge with N₂ for 10 s. Close. Resume stirring. \nBubble with N₂ for 30 min [11:00]\nHeat to reflux (85 °C, oil bath) for 2 h [13:30] \nCool down to RT\n→ 0.1 mL + 400 µL of CDCl₃ → ¹H NMR M2 (U1.834; N PROTON20ppm; O1P 6, SW 22) [syringe filter should be used]\n",
+  "plain_text_observation": "Short-pad chromatography\nFritted funnel (50mL, por. 4), suction adapter, 100 mL RBF, T-connector, diaphragm pump\nAdd 15 g of neutral alumina\nAdd THF to fully wet the alumina\nAdd the reaction mixture\nElute with suction and THF until the eluate becomes pale red → 70 mL, alumina pad (Green at the top, off white at the bottom)\nRotovap\nDry under vacuum Schlenk line, 1 h \nDark brown solid\n\nRT 21.9 °C, RH 32 %\nCHCl₃ deacidification\n250 mL RBF\nAdd basic alumina 20 g\nAdd CHCl₃ 150 mL and swirl\nFritted funnel (50 mL, por. 4), suction adapter, 250 mL RBF, diaphragm pump\nFilter the mixture under suction\n\nReprecipitation\nAdd 30 mL of purified CHCl₃ to the flask and sonicate → dark red solution\nAdd 180 mL of n-hexane, swirl, sonicate\nStore in fridge (0 °C) for 1 h\nFritted funnel (50 mL, por. 4), suction adapter, 500 mL RBF, diaphragm pump \nFilter the mixture under suction → faint brown filtrate\nRinse w/ 2 x (10 mL of purified CHCl₃ + 60 mL of hexane)\nRinse with 2 × 30 mL of petroleum ether [hexane should be used]\nDry under vacuum (desiccator, diaphragm pump, overnight) → reddish brown solid\n\nAnalysis\nRT 20.4 °C, RH 45%\n20 mL vial with PTFE sealing (tare: 15.52848 g)\nWeigh : 575.90 g\n→ 1H NMR P (CDCl₃; U1.834; N PROTON 20 ppm; O1P 6, SW 22) (dark red solution)  [should be measured in DMSO as well]\nStore in the fridge\n",
+  "starting_materials": [
+    {
+      "short_label": "INV-72-1",
+      "name": "TAPP",
+      "molecular_weight": 674.7943600000002,
+      "real_amount_value": 0.25011,
+      "real_amount_unit": "g",
+      "target_amount_value": 0.25,
+      "target_amount_unit": "g",
+      "density": null,
+      "inchikey": "REPFNYFEIOZRLM-LWQDQPMZSA-N",
+      "equivalent": 1.0,
+      "reference": true,
+      "position": 0
+    },
+    {
+      "short_label": "INV-20-7",
+      "name": "TrBr",
+      "molecular_weight": 323.2264,
+      "real_amount_value": 0.6007100000000001,
+      "real_amount_unit": "g",
+      "target_amount_value": 0.6,
+      "target_amount_unit": "g",
+      "density": null,
+      "inchikey": "NZHXEWZGTQSYJM-UHFFFAOYSA-N",
+      "equivalent": 5.014162728306287,
+      "reference": false,
+      "position": 1
+    },
+    {
+      "short_label": "INV-21-11",
+      "name": "CoCl2",
+      "molecular_weight": 129.8392,
+      "real_amount_value": 0.28963,
+      "real_amount_unit": "g",
+      "target_amount_value": 0.2886194840158414,
+      "target_amount_unit": "g",
+      "density": null,
+      "inchikey": "GVPFVAHMJGGAJG-UHFFFAOYSA-L",
+      "equivalent": 6.018359152048455,
+      "reference": false,
+      "position": 2
+    },
+    {
+      "short_label": "INV-22-9",
+      "name": "Et3N",
+      "molecular_weight": 101.19,
+      "real_amount_value": 0.3749,
+      "real_amount_unit": "g",
+      "target_amount_value": 0.37489198931656736,
+      "target_amount_unit": "g",
+      "density": 0.726,
+      "inchikey": "ZMANZCXQSJIPKH-UHFFFAOYSA-N",
+      "equivalent": 9.995815520941518,
+      "reference": false,
+      "position": 3
+    },
+    {
+      "short_label": "INV-77-1",
+      "name": "THF",
+      "molecular_weight": 72.10572,
+      "real_amount_value": 0.02,
+      "real_amount_unit": "l",
+      "target_amount_value": 0.02,
+      "target_amount_unit": "l",
+      "density": 0.889,
+      "inchikey": "WYURNTSHIVDZCO-UHFFFAOYSA-N",
+      "equivalent": 665.2768735309111,
+      "reference": false,
+      "position": 4
+    }
+  ],
+  "solvents": [],
+  "purification_solvents": [],
+  "products": [
+    {
+      "short_label": "ZAR-1096",
+      "name": "Co(ttpp)",
+      "molecular_weight": 1700.9695200000008,
+      "real_amount_value": 0.5759,
+      "real_amount_unit": "g",
+      "target_amount_value": null,
+      "target_amount_unit": "g",
+      "density": null,
+      "inchikey": "SZVLKHGYPSMSBU-FIVSXPDESA-N",
+      "equivalent": 0.9134629453794058,
+      "reference": false,
+      "position": 0
+    }
+  ],
+  "case_metadata": {
+    "researcher": "Zarfishan Dilruba",
+    "research_group": "AK Endo",
+    "project_type": "Promotion"
+  }
+}

@@ -1,0 +1,693 @@
+{
+  "$defs": {
+    "Amount": {
+      "description": "Quantity of a chemical used in an Add step.",
+      "properties": {
+        "Unit": {
+          "enum": [
+            "microgram",
+            "milligram",
+            "gram",
+            "kilogram",
+            "ton",
+            "microlitre",
+            "millilitre",
+            "centilitre",
+            "decilitre",
+            "litre",
+            "micromole",
+            "millimole",
+            "mole"
+          ],
+          "title": "AmountUnit",
+          "type": "string"
+        },
+        "Value": {
+          "minimum": 0,
+          "type": "number"
+        }
+      },
+      "required": [
+        "Value",
+        "Unit"
+      ],
+      "title": "Amount",
+      "type": "object"
+    },
+    "Pressure": {
+      "properties": {
+        "Unit": {
+          "enum": [
+            "pascal",
+            "bar",
+            "mbar"
+          ],
+          "title": "PressureUnit",
+          "type": "string"
+        },
+        "Value": {
+          "minimum": 0,
+          "type": "number"
+        }
+      },
+      "required": [
+        "Unit",
+        "Value"
+      ],
+      "title": "Pressure",
+      "type": "object"
+    },
+    "ProcedureSteps": {
+      "properties": {
+        "Step": {
+          "items": {
+            "oneOf": [
+              {
+                "description": "Add a reagent, solvent, or solution to the vessel",
+                "properties": {
+                  "$xml_type": {
+                    "const": "Add"
+                  },
+                  "_amount": {
+                    "$ref": "#/$defs/Amount"
+                  },
+                  "_dropwise": {
+                    "description": "True if the reagent is added dropwise",
+                    "type": "boolean"
+                  },
+                  "_reagent": {
+                    "description": "Name of the chemical being added, matching the name in starting_materials.",
+                    "type": "string"
+                  },
+                  "_repeat": {
+                    "description": "Number of times this equal addition is repeated, e.g. 2 for 'NaBH4 (x2)'.",
+                    "minimum": 2,
+                    "type": "integer"
+                  },
+                  "_repeat_interval": {
+                    "$ref": "#/$defs/Time",
+                    "description": "Waiting time between repeated additions, e.g. '2 min'"
+                  }
+                },
+                "required": [
+                  "_reagent"
+                ],
+                "title": "Add"
+              },
+              {
+                "description": "Bring the mixture to a stated target temperature or reflux and optionally hold for a given time",
+                "properties": {
+                  "$xml_type": {
+                    "const": "HeatChill"
+                  },
+                  "_temp": {
+                    "description": "Target temperature of the bath or the reaction mixture. When _reflux is true, this parameter refers to the bath temperature",
+                    "$ref": "#/$defs/Temperature"
+                  },
+                  "_reflux": {
+                    "description": "True when the mixture is refluxed",
+                    "type": "boolean"
+                  },
+                  "_time": {
+                    "$ref": "#/$defs/Time"
+                  }
+                },
+                "anyOf": [
+                  {
+                    "required": [
+                      "_temp"
+                    ]
+                  },
+                  {
+                    "properties": {
+                      "_reflux": {
+                        "const": true
+                      }
+                    },
+                    "required": [
+                      "_reflux"
+                    ]
+                  }
+                ],
+                "title": "HeatChill"
+              },
+              {
+                "description": "Evacuate the vessel and optionally refill with an inert gas. Also used for degassing by bubbling and purging.",
+                "properties": {
+                  "$xml_type": {
+                    "const": "EvacuateAndRefill"
+                  },
+                  "_gas": {
+                    "description": "The gas used for refilling or bubbling, e.g. 'N2', 'Ar'",
+                    "type": "string"
+                  },
+                  "_time": {
+                    "$ref": "#/$defs/Time",
+                    "description": "Duration of the degassing or purging cycle, e.g. 10 min"
+                  }
+                },
+                "title": "EvacuateAndRefill"
+              },
+              {
+                "description": "Wash a liquid phase (typically the organic phase) with an aqueous or organic solution to remove impurities. Replaces the former WashSolid type.",
+                "properties": {
+                  "$xml_type": {
+                    "const": "WashPhase"
+                  },
+                  "_phase": {
+                    "description": "Which liquid phase is being washed. Usually 'organic'.",
+                    "enum": [
+                      "organic",
+                      "aqueous"
+                    ],
+                    "type": "string"
+                  },
+                  "_repeat": {
+                    "description": "Number of wash cycles, e.g. 2 for '2×' or '(2x)'.",
+                    "minimum": 1,
+                    "type": "integer"
+                  },
+                  "_solution": {
+                    "description": "The wash solution, e.g. 'water', 'brine', 'NaCl aq. sat.', 'HCl 1M', 'NaHCO3 sat. aq.', 'NH4Cl sat. aq.'.",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "_solution"
+                ],
+                "title": "WashPhase"
+              },
+              {
+                "description": "Wait or stir for a given duration without changing temperature.",
+                "properties": {
+                  "$xml_type": {
+                    "const": "Wait"
+                  },
+                  "_time": {
+                    "$ref": "#/$defs/Time"
+                  }
+                },
+                "required": [
+                  "_time"
+                ],
+                "title": "Wait"
+              },
+              {
+                "description": "Apply ultrasonic agitation for a given duration.",
+                "properties": {
+                  "$xml_type": {
+                    "const": "Sonicate"
+                  },
+                  "_time": {
+                    "$ref": "#/$defs/Time"
+                  }
+                },
+                "title": "Sonicate"
+              },
+              {
+                "description": "Dry wet solids under vacuum or air flow",
+                "properties": {
+                  "$xml_type": {
+                    "const": "Dry"
+                  },
+                  "_desiccant": {
+                    "description": "Desiccant used to absorb residual water, e.g. 'MgSO4', 'Na2SO4'. Rarely used in Chemotion records; typed here so the step stays a refinement of the root schema.",
+                    "type": "string"
+                  },
+                  "_pressure": {
+                    "$ref": "#/$defs/Pressure"
+                  },
+                  "_temp": {
+                    "$ref": "#/$defs/Temperature"
+                  },
+                  "_time": {
+                    "$ref": "#/$defs/Time"
+                  }
+                },
+                "required": [],
+                "title": "Dry"
+              },
+              {
+                "description": "Liquid-liquid extraction: add an immiscible solvent, mix, separate phases, and collect the target phase. Use for 'mit DEE versetzen + Phasen trennen' or 'mit DCM/MeOH extrahieren'.",
+                "properties": {
+                  "$xml_type": {
+                    "const": "Extract"
+                  },
+                  "_phase_kept": {
+                    "description": "Which phase is collected after phase separation. Defaults to 'organic' in most workups.",
+                    "enum": [
+                      "organic",
+                      "aqueous"
+                    ],
+                    "type": "string"
+                  },
+                  "_repeat": {
+                    "description": "Number of extraction cycles.",
+                    "minimum": 1,
+                    "type": "integer"
+                  },
+                  "_solvent": {
+                    "description": "Extraction solvent or solvent mixture, e.g. 'DEE', 'DCM', 'DCM/MeOH 9:1', 'EtOAc'.",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "_solvent"
+                ],
+                "title": "Extract"
+              },
+              {
+                "description": "Remove bulk solvent under a reduced pressure using rotary evaporator. Distinct from Dry, which removes residual solvents without using rotary evaporator.",
+                "properties": {
+                  "$xml_type": {
+                    "const": "Evaporate"
+                  },
+                  "_pressure": {
+                    "$ref": "#/$defs/Pressure"
+                  },
+                  "_temp": {
+                    "$ref": "#/$defs/Temperature"
+                  }
+                },
+                "title": "Evaporate"
+              },
+              {
+                "description": "Purify the crude product by chromatography.",
+                "properties": {
+                  "$xml_type": {
+                    "const": "Purify"
+                  },
+                  "_eluent": {
+                    "description": "Eluent system, including gradients if used, e.g. 'Pe/EtOAc 3:1 → 2:1', 'PE/EE 4:1', 'DCM/MeOH 9:1'.",
+                    "type": "string"
+                  },
+                  "_stationary_phase": {
+                    "description": "Stationary phase material",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "_eluent"
+                ],
+                "title": "Purify"
+              },
+              {
+                "title": "Filter",
+                "description": "Filter the mixture",
+                "properties": {
+                  "$xml_type": {
+                    "const": "Filter"
+                  },
+                  "_rinse": {
+                    "description": "Rinsing solvents",
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "description": "Rinsing solvent",
+                      "properties": {
+                        "name": {
+                          "type": "string"
+                        },
+                        "amount": {
+                          "$ref": "#/$defs/Amount"
+                        }
+                      },
+                      "title": "Solvent",
+                      "required": [
+                        "name"
+                      ]
+                    }
+                  }
+                }
+              }
+            ],
+            "properties": {
+              "_comment": {
+                "description": "More detailed explanation of the step in free text",
+                "type": "string"
+              },
+              "_vessel": {
+                "description": "Reaction vessel this step occurs in",
+                "type": "string"
+              }
+            },
+                "required": [
+                  "$xml_type",
+                  "_vessel",
+                  "_comment"
+                ],
+            "title": "StepEntry",
+            "type": "object"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "Step"
+      ],
+      "title": "ProcedureSection",
+      "type": "object"
+    },
+    "Temperature": {
+      "properties": {
+        "Unit": {
+          "enum": [
+            "celsius"
+          ],
+          "title": "TemperatureUnit",
+          "type": "string"
+        },
+        "Value": {
+          "minimum": -273.15,
+          "type": "number"
+        }
+      },
+      "required": [
+        "Value",
+        "Unit"
+      ],
+      "title": "Temperature",
+      "type": "object"
+    },
+    "Time": {
+      "properties": {
+        "Unit": {
+          "enum": [
+            "millisecond",
+            "second",
+            "minute",
+            "hour",
+            "day",
+            "week"
+          ],
+          "title": "TimeUnit",
+          "type": "string"
+        },
+        "Value": {
+          "minimum": 0,
+          "type": "number"
+        }
+      },
+      "required": [
+        "Value",
+        "Unit"
+      ],
+      "title": "Time",
+      "type": "object"
+    },
+    "_stationary_phase": {
+      "description": "Collected phase",
+      "type": "string",
+      "enum": [
+        "filtrate",
+        "residue"
+      ]
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": false,
+  "description": "A single synthesis entry",
+  "properties": {
+    "batch_volume_mL": {
+      "description": "Total reaction mixture volume in mL. This is the reference volume used to calculate concentrations.",
+      "examples": [
+        30,
+        50,
+        10.458
+      ],
+      "exclusiveMinimum": 0,
+      "title": "Batch Volume (mL)",
+      "type": "number"
+    },
+    "date": {
+      "description": "Date the reaction was set up",
+      "examples": [
+        "2023-12-07"
+      ],
+      "format": "date",
+      "title": "Date",
+      "type": "string"
+    },
+    "journal_number": {
+      "description": "Unique experiment identifier",
+      "examples": [
+        "ZAR-439",
+        "AD-R13"
+      ],
+      "pattern": "^[A-Z]{2,3}-[A-Z]?\\d+$",
+      "title": "Journal Number",
+      "type": "string"
+    },
+    "procedure": {
+      "description": "Step-by-step description of procedure. Structured as three sections: Prep (preparation), Reaction, and Workup (post-reaction separation).",
+      "properties": {
+        "Prep": {
+          "$ref": "#/$defs/ProcedureSteps"
+        },
+        "Reaction": {
+          "$ref": "#/$defs/ProcedureSteps"
+        },
+        "Workup": {
+          "$ref": "#/$defs/ProcedureSteps"
+        }
+      },
+      "required": [
+        "Prep",
+        "Reaction",
+        "Workup"
+      ],
+      "title": "Procedure",
+      "type": "object"
+    },
+    "products": {
+      "description": "Isolated products from the reaction. Usually one main product; occasionally a second product of interest.",
+      "items": {
+        "additionalProperties": false,
+        "description": "An isolated product from the reaction",
+        "properties": {
+          "amount_mmol": {
+            "description": "Isolated amount in millimoles, calculated from yield_g and molar_mass_g_mol.",
+            "exclusiveMinimum": 0,
+            "title": "Amount (mmol)",
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "appearance": {
+            "title": "Appearance",
+            "examples": [
+              "dark red solids",
+              "yellow oil"
+            ],
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "density": {
+            "description": "Density in g/mL, copied directly from the resolved Chemotion product entry. Null if not recorded.",
+            "exclusiveMinimum": 0,
+            "title": "Density (g/mL)",
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "inchi": {
+            "description": "InChI supplied directly by the Chemotion Molecule record. Omit when unavailable.",
+            "minLength": 1,
+            "type": "string"
+          },
+          "inchikey": {
+            "description": "InChIKey supplied directly by the Chemotion Molecule record. Omit when unavailable.",
+            "minLength": 1,
+            "type": "string"
+          },
+          "is_main_product": {
+            "description": "True if this is the primary target product of the reaction. False for side products or byproducts isolated as secondary compounds of interest.",
+            "title": "Is Main Product",
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "molar_mass_g_mol": {
+            "exclusiveMinimum": 0,
+            "title": "Molar Mass (g/mol)",
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "name": {
+            "description": "Common name of the chemical. If it is a starting material, this should match the name written in the starting_materials. If not, it can be 'reaction mixture' or any name of a chemical in the non-abbreviated form (e.g., dichloromethane instead of DCM).",
+            "title": "Name",
+            "type": "string",
+            "examples": [
+              "reaction mixture",
+              "dichloromethane"
+            ]
+          },
+          "smiles": {
+            "description": "Canonical SMILES supplied directly by the Chemotion Molecule record",
+            "minLength": 1,
+            "type": "string"
+          },
+          "yield_g": {
+            "description": "Isolated yield",
+            "exclusiveMinimum": 0,
+            "title": "Yield (g)",
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "yield_percent": {
+            "description": "Isolated yield",
+            "minimum": 0,
+            "title": "Yield (%)",
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "note": {
+            "description": "The short label in Chemotion ELN",
+            "title": "Note",
+            "type": "string"
+          }
+        },
+        "required": [
+          "name", "note"
+        ],
+        "title": "Product",
+        "type": "object"
+      },
+      "minItems": 1,
+      "title": "Products",
+      "type": "array"
+    },
+    "reaction_name": {
+      "description": "Descriptive name of the synthesis.",
+      "title": "Reaction Name",
+      "type": "string"
+    },
+    "starting_materials": {
+      "description": "All reactants, reagents, catalysts, and solvents used in the reaction",
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "amount_mmol": {
+            "description": "Molar amount in millimoles. Calculated from mass and molar mass.",
+            "exclusiveMinimum": 0,
+            "title": "Amount (mmol)",
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "density_g_mL": {
+            "description": "Density in g/mL. Used for liquid reagents when volume is measured instead of mass. Null if not applicable.",
+            "exclusiveMinimum": 0,
+            "title": "Density (g/mL)",
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "inchi": {
+            "description": "InChI supplied directly by the Chemotion Molecule record. Omit when unavailable.",
+            "minLength": 1,
+            "type": "string"
+          },
+          "inchikey": {
+            "description": "InChIKey supplied directly by the Chemotion Molecule record. Omit when unavailable.",
+            "minLength": 1,
+            "type": "string"
+          },
+          "equivalents": {
+            "description": "Molar equivalents relative to the limiting reagent. For the limiting reagent, 1",
+            "exclusiveMinimum": 0,
+            "title": "Equivalents",
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "mass_g": {
+            "description": "The actually used quantity for solid reagents. Null for liquids measured by volume.",
+            "exclusiveMinimum": 0,
+            "title": "Mass Used (g)",
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "molar_mass_g_mol": {
+            "description": "Molar mass in g/mol",
+            "exclusiveMinimum": 0,
+            "title": "Molar Mass (g/mol)",
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "name": {
+            "description": "Common name",
+            "title": "Name",
+            "type": "string"
+          },
+          "note": {
+            "description": "Short label on Chemotion ELN",
+            "title": "Note",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "smiles": {
+            "description": "Canonical SMILES supplied directly by the Chemotion Molecule record. Omit when unavailable.",
+            "minLength": 1,
+            "type": "string"
+          },
+          "volume_mL": {
+            "exclusiveMinimum": 0,
+            "title": "Volume Used (mL)",
+            "type": [
+              "number",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "name"
+        ],
+        "title": "Starting Material",
+        "type": "object"
+      },
+      "minItems": 1,
+      "title": "Starting Materials",
+      "type": "array"
+    },
+    "tlc_conditions": {
+      "description": "Thin-layer chromatography monitoring conditions. May specify eluent, staining reagent, or Rf values observed during the reaction.",
+      "title": "TLC Conditions",
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "journal_number",
+    "date",
+    "reaction_name",
+    "starting_materials",
+    "batch_volume_mL",
+    "products",
+    "procedure"
+  ],
+  "title": "Chemistry Lab Journal Entry",
+  "type": "object"
+}

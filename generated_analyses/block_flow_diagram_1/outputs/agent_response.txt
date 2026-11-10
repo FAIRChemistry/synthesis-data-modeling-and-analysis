@@ -1,0 +1,24 @@
+⏺ Done.
+
+  Files
+
+  - Script: generated_analyses/block_flow_diagram_1/block_flow_diagram.py (--selftest runs the asserts; --data/--record point it at any assembled record)
+  - generated_analyses/block_flow_diagram_1/outputs/block_flow_diagram_AD-R10.pdf / .png — 6.56 × 7.19 in, fits a page
+  - generated_analyses/block_flow_diagram_1/outputs/block_flow_diagram_AD-R10.csv — the box table plus the full free-text note per step
+  - Excel portability check, same script: block_flow_diagram_WAT-Ch-045.pdf/.png/.csv (from cases/excel_workbooks/output/run_2026_09_08_18_23/assembled, 14 steps, no _vessel, extra _method key — all rendered)
+
+  Diagram: 26 boxes in recorded order, 5 per row, boustrophedon so each row turn is a short vertical arrow; PREP / REACTION / WORKUP each start a fresh row on their own shaded band with an elbow arrow across
+  the boundary. Each box shows step number and type, the recorded parameters (reagent – amount, T, t, gas, eluent, rinse, …) and the vessel in italics. Unknown step types and unknown _keys render generically,
+  which is what makes it work unchanged on the Excel records.
+
+  Ambiguities / missing data
+
+  - AD-R10 is a validation-warning record, not a clean one: summary.json flags procedure.Reaction.Step.1 (the 2 h hold, box 13) as not matching any schema variant — the run itself is complete with 0 failures.
+  - Amounts are not on the steps. Only starting_materials has them, so a step's amount is the total charged for that material. I attach it to the first addition only; a later re-use (workup THF, box 15) shows
+    the name alone unless the step records its own amount. Without that rule box 15 read "THF – 20 mL, 246.57 mmol", which is the Prep charge, not the wetting volume.
+  - Solvent equivalents suppressed above 50 eq (THF is 664 eq) — bookkeeping, not information.
+  - Five steps record no parameters at all (boxes 2, 3, 18, 20, 22); their content exists only as free text, so those boxes fall back to the note's first clause, truncated at 60 chars. Boxes 2 and 20 lose real
+    detail this way (0.089 mbar, 250 °C heat gun; 50 mL basic Al₂O₃ / 50 mL CHCl₃) — full text is in the CSV.
+  - Analytics are invisible. The in-line NMR sampling (M1, M2-CDCl₃, M2-DMSO) and the clock times live inside comments, not as steps, so they are not boxes.
+  - Boxes 12/13 both render as "Heat / chill": the record splits reflux-to-temperature and the 2 h hold into two steps, and box 13 carries no temperature.
+  - outputs/agent_response.txt is still empty — per analysis-run-instructions.md that is the coordinator's to fill verbatim, so I left it.

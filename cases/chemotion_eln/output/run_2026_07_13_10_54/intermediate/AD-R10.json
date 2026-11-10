@@ -1,0 +1,108 @@
+{
+  "short_label": "AD-R10",
+  "name": "Synthesis of Co(ttpp) (CHCl3/hexane reprecipitation)",
+  "created_at": "2026-01-12T06:57:18.025Z",
+  "status": "Successful",
+  "temperature": {
+    "data": [],
+    "userText": "1. RT 2. Reflux",
+    "valueUnit": "°C"
+  },
+  "duration": "",
+  "vessel_size": {
+    "amount": 50,
+    "unit": "ml"
+  },
+  "plain_text_description": "NMR\nCDCl3: decomposed\nDMSO-1: Co(ttpp); No TrBr, BHT, Et3N·HX\nDMSO-2: Co(ttpp), Co(III)(ttpp), hexane; No TrBr. impurity or decomposition from the NMR tube? Inhomogeneity of the sample solids?\n\nHeat a 50 mL two-neck RBF in an oven (120°C) for >1.5 h.\n[12.01., RT 21.4 °C, RH 27 %]\nAssemble and fix a reflux condenser, a T-shaped connector, and a bubbler (filled with paraffin oil) at a Schlenk line.\nRemove the RBF and quickly assemble it with a stir bar, rubber septum, and reflux condenser while it is still hot.\nEvacuate (0.089 mbar) and heat the bottom part of the reflux condenser and flask with a heat gun (250°C). \nBackfill with N₂.\nAdd TAPP and TrBr (plastic spatula) quickly\nCycle with N₂ slowly x3\nAdd Et3N\nAdd the THF syringe. [10:57] ( Dark Green )\nStart stirring (350 rpm)\nCover the flask with Al foil.\n→ 0.1 mL + CDCl₃ 500 µL, sonicate → ¹H NMR M1 [11:08]\nStop stirring. Close the N₂ connection. Add CoCl₂ quickly.  Purge with N₂ for 10 s. Close. Resume stirring. [13:58 ]\nBubble with N₂, 30 min. [14: 30]\n[14:37 ] Heat to reflux (85 °C, 1.25 atm) for ca. 15 min (Dark green brown colour) \nHeat for 2 h (16:37)\nCool down to RT.\n→ 0.1 mL + CDCl₃ 500 µL → syringe filter → sonicate → ¹H NMR M2-CDCl3 [16:30]\n→ 0.1 mL + DMSO-d6 500 µL → syringe filter → sonicate → ¹H NMR M2-DMSO [18:39]\n\n \n\n\n\n\n\n\n\n\n",
+  "plain_text_observation": "[ 12.01, RT 22.1 °C and RH 30 %]\nAdd 12.5 mL of neutral alumina in a 15 mL membrane filter holder (frit) with a membrane filter.\nAttach the funnel to a vacuum and a 250 mL RBF.\nWet the alumina with THF\nLoad the reaction mixture\nElute with THF and full power suction with occasional digging of the top layer. (It took a long time to elute. The alumina pad became blue-green at the top with some streaks but not fully down to the bottom. Other parts became dark red brown. Eluate became red at the end)\nEluent was kept in the fridge o/n.\n[13.01]\n→ 0.1 mL + DMSO-d6 500 µL → ¹H NMR M4 [16:59]\n[14.01]\nRotovap\nDry under vacuum, 1 h\n\nCHCl3 deacidification\n250 mL RBF\nBasic Al2O3 --> 50 mL\nCHCl3 50 mL (mix in flask ---> then filter)\nFritted funnel (por.4), suction adapter, 250 mL RBF\nFiltered\n\nReprecipitation\nPurified CHCl3 25 mL, sonicate (dark red solution)\n→ 0.1 mL + DMSO-d6 500 µL → ¹H NMR M5 [09:17]\nn-hexane 140 mL, manually stir, sonicate\nFridge, 30 min\nGlass Funnel, Filter paper (big, 15A), suction adapter, 250 mL RBF\nFilter w/ suction\nTransfer & rinse w/ 2 x (purified CHCl3 3 mL + 10 mL hex)\nRinse w/ hex x2 (2x 15 mL)\nDry under vacuum o/n\n[15.01]\n20 mL vial, PTFE sealing (tare w/ lid: 8.94046g)\n→ 479 mg product\n-> NMR  (CDCl3, DMSO)\n\n",
+  "starting_materials": [
+    {
+      "short_label": "INV-14-6",
+      "name": "TAPP",
+      "molecular_weight": 674.7943600000002,
+      "real_amount_value": 0.25042,
+      "real_amount_unit": "g",
+      "target_amount_value": 0.25,
+      "target_amount_unit": "g",
+      "density": 1.35,
+      "inchikey": "REPFNYFEIOZRLM-LWQDQPMZSA-N",
+      "equivalent": 1.0,
+      "reference": true,
+      "position": 0
+    },
+    {
+      "short_label": "INV-20-5",
+      "name": "TrBr",
+      "molecular_weight": 323.2264,
+      "real_amount_value": 0.5987,
+      "real_amount_unit": "g",
+      "target_amount_value": 0.5987498176481497,
+      "target_amount_unit": "g",
+      "density": null,
+      "inchikey": "NZHXEWZGTQSYJM-UHFFFAOYSA-N",
+      "equivalent": 4.991198772172797,
+      "reference": false,
+      "position": 1
+    },
+    {
+      "short_label": "INV-21-8",
+      "name": "CoCl2",
+      "molecular_weight": 129.8392,
+      "real_amount_value": 0.2886,
+      "real_amount_unit": "g",
+      "target_amount_value": 0.2886194840158414,
+      "target_amount_unit": "g",
+      "density": null,
+      "inchikey": "GVPFVAHMJGGAJG-UHFFFAOYSA-L",
+      "equivalent": 5.989532539584605,
+      "reference": false,
+      "position": 2
+    },
+    {
+      "short_label": "INV-22-6",
+      "name": "Et3N",
+      "molecular_weight": 101.19,
+      "real_amount_value": 0.3749,
+      "real_amount_unit": "g",
+      "target_amount_value": 0.37489198931656736,
+      "target_amount_unit": "g",
+      "density": 0.726,
+      "inchikey": "ZMANZCXQSJIPKH-UHFFFAOYSA-N",
+      "equivalent": 9.983441498054,
+      "reference": false,
+      "position": 3
+    },
+    {
+      "short_label": "INV-23-6",
+      "name": "THF",
+      "molecular_weight": 72.10572,
+      "real_amount_value": 0.02,
+      "real_amount_unit": "l",
+      "target_amount_value": 17.81821177343568,
+      "target_amount_unit": "g",
+      "density": 0.889,
+      "inchikey": "WYURNTSHIVDZCO-UHFFFAOYSA-N",
+      "equivalent": 664.4533137881007,
+      "reference": false,
+      "position": 4
+    }
+  ],
+  "solvents": [],
+  "purification_solvents": [],
+  "products": [
+    {
+      "short_label": "AD-31",
+      "name": "Co(ttpp)",
+      "molecular_weight": 1700.9695200000008,
+      "real_amount_value": 0.47948,
+      "real_amount_unit": "g",
+      "target_amount_value": null,
+      "target_amount_unit": "g",
+      "density": null,
+      "inchikey": "SZVLKHGYPSMSBU-FIVSXPDESA-N",
+      "equivalent": 0.7595850317607412,
+      "reference": false,
+      "position": 0
+    }
+  ]
+}

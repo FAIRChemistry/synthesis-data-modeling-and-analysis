@@ -1,0 +1,278 @@
+{
+  "journal_number": "AD-R27",
+  "reaction_name": "Synthesis of [Co(ttpp)(py)2](OTf) (500 mg scale-up)",
+  "date": "2026-05-10",
+  "researcher": "Zarfishan Dilruba",
+  "research_group": "AK Endo",
+  "project_type": "Promotion",
+  "reagent_sources": [],
+  "batch_volume_mL": 27.5,
+  "starting_materials": [
+    {
+      "name": "Co(ttpp)",
+      "note": "AD-47-1",
+      "molar_mass_g_mol": 1700.9695200000008,
+      "mass_g": 0.5,
+      "amount_mmol": 0.2937,
+      "equivalents": 1.0,
+      "density_g_mL": null,
+      "volume_mL": null,
+      "batch_concentration_mol_L": null,
+      "concentration_mol_L": null,
+      "mass_fraction_percent": null
+    },
+    {
+      "name": "AgOTf",
+      "note": "INV-29-4",
+      "molar_mass_g_mol": 256.93730959999994,
+      "mass_g": 0.0654,
+      "amount_mmol": 0.2546,
+      "equivalents": 0.8659186692752705,
+      "density_g_mL": null,
+      "volume_mL": null,
+      "batch_concentration_mol_L": null,
+      "concentration_mol_L": null,
+      "mass_fraction_percent": null
+    },
+    {
+      "name": "pyridine",
+      "note": "INV-24-11",
+      "molar_mass_g_mol": 79.09989999999999,
+      "mass_g": 0.11625708025620582,
+      "volume_mL": 0.119,
+      "amount_mmol": 1.471,
+      "equivalents": 5.005372564987821,
+      "density_g_mL": 0.978,
+      "batch_concentration_mol_L": null,
+      "concentration_mol_L": null,
+      "mass_fraction_percent": null
+    },
+    {
+      "name": "toluene",
+      "note": "INV-111-3",
+      "molar_mass_g_mol": 92.13842000000001,
+      "mass_g": 23.7875,
+      "volume_mL": 27.5,
+      "amount_mmol": 258.1713,
+      "equivalents": 878.2831843003171,
+      "density_g_mL": 0.865,
+      "batch_concentration_mol_L": null,
+      "concentration_mol_L": null,
+      "mass_fraction_percent": null
+    },
+    {
+      "name": "3-mercaptopropyl silica",
+      "note": "INV-90-5",
+      "molar_mass_g_mol": null,
+      "mass_g": 1.21218,
+      "volume_mL": null,
+      "amount_mmol": null,
+      "equivalents": null,
+      "density_g_mL": 0.7,
+      "batch_concentration_mol_L": null,
+      "concentration_mol_L": null,
+      "mass_fraction_percent": null
+    }
+  ],
+  "products": [
+    {
+      "name": "[Co(ttpp)(py)2](OTf)",
+      "note": "AD-56",
+      "molar_mass_g_mol": 2008.238429600001,
+      "yield_g": 0.56392,
+      "amount_mmol": 0.2807,
+      "yield_percent": null,
+      "appearance": null,
+      "eluent_system": null,
+      "is_main_product": null,
+      "nmr_data": null,
+      "rf_value": null
+    }
+  ],
+  "procedure": {
+    "Prep": {
+      "Step": [
+        {
+          "$xml_type": "Add",
+          "_vessel": "50 mL flask",
+          "_reagent": "Co(ttpp)",
+          "_amount": {
+            "Value": 0.5,
+            "Unit": "gram"
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "50 mL flask",
+          "_reagent": "pyridine",
+          "_amount": {
+            "Value": 119,
+            "Unit": "microlitre"
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "50 mL flask",
+          "_reagent": "toluene",
+          "_amount": {
+            "Value": 27.5,
+            "Unit": "millilitre"
+          }
+        },
+        {
+          "$xml_type": "Sonicate",
+          "_vessel": "50 mL flask",
+          "_time": {
+            "Value": 3,
+            "Unit": "minute"
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "50 mL flask",
+          "_reagent": "AgOTf",
+          "_dropwise": true,
+          "_amount": {
+            "Value": 65.4,
+            "Unit": "milligram"
+          },
+          "_repeat": 2
+        }
+      ]
+    },
+    "Reaction": {
+      "Step": [
+        {
+          "$xml_type": "Wait",
+          "_time": {
+            "Value": 1,
+            "Unit": "hour"
+          }
+        }
+      ]
+    },
+    "Workup": {
+      "Step": [
+        {
+          "$xml_type": "Evaporate",
+          "_vessel": "50 mL flask",
+          "_method": "rotary_evaporator",
+          "_temp": {
+            "Value": 40,
+            "Unit": "celsius"
+          }
+        },
+        {
+          "$xml_type": "Dry",
+          "_time": {
+            "Value": 1,
+            "Unit": "hour"
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "50 mL flask",
+          "_reagent": "DCM",
+          "_amount": {
+            "Value": 25,
+            "Unit": "millilitre"
+          }
+        },
+        {
+          "$xml_type": "Sonicate"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "50 mL flask",
+          "_reagent": "ISOLUTE Si-Thiol",
+          "_amount": {
+            "Value": 1.21218,
+            "Unit": "gram"
+          }
+        },
+        {
+          "$xml_type": "Wait",
+          "_time": {
+            "Value": 2,
+            "Unit": "hour"
+          }
+        },
+        {
+          "$xml_type": "Filter",
+          "_product_portion": "filtrate",
+          "_rinse": [
+            {
+              "name": "DCM",
+              "amount": {
+                "Value": 50,
+                "Unit": "millilitre"
+              }
+            }
+          ]
+        },
+        {
+          "$xml_type": "Evaporate",
+          "_method": "rotary_evaporator"
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "DCM",
+          "_amount": {
+            "Value": 50,
+            "Unit": "millilitre"
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "n-hexane",
+          "_amount": {
+            "Value": 300,
+            "Unit": "millilitre"
+          }
+        },
+        {
+          "$xml_type": "Sonicate"
+        },
+        {
+          "$xml_type": "HeatChill",
+          "_temp": {
+            "Value": 0,
+            "Unit": "celsius"
+          },
+          "_time": {
+            "Value": 0.5,
+            "Unit": "day"
+          }
+        },
+        {
+          "$xml_type": "Filter",
+          "_product_portion": "filtrate",
+          "_rinse": [
+            {
+              "name": "DCM + n-hexane"
+            },
+            {
+              "name": "n-hexane"
+            }
+          ]
+        },
+        {
+          "$xml_type": "Dry",
+          "_time": {
+            "Value": 10,
+            "Unit": "minute"
+          }
+        },
+        {
+          "$xml_type": "Dry",
+          "_time": {
+            "Value": 0.5,
+            "Unit": "day"
+          }
+        }
+      ]
+    }
+  },
+  "observations": "Sonication gave a dark red solution; after addition of AgOTf and stirring the mixture turned dark green; filtration gave a pale green filtrate; after reprecipitation the filtrate appeared light yellow.",
+  "tlc_conditions": null
+}

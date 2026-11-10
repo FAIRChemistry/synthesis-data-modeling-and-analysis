@@ -1,0 +1,14 @@
+# Core conversion pipeline
+openpyxl>=3.1.0
+olefile>=0.47
+openai>=1.0.0
+jsonschema>=4.0.0
+
+# Paper analyses (charts and molecular structures)
+matplotlib>=3.7.0
+numpy>=1.24.0
+rdkit>=2024.3.1
+
+# Tests (tests/, run with: python -m pytest)
+pytest>=8.0
+jsonsubschema>=0.0.7   # formal case-schema ⊑ root-schema inclusion check

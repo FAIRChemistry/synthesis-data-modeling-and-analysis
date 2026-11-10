@@ -1,0 +1,53 @@
+<XDL>
+  <Synthesis>
+    <Hardware>
+      <Component id="50 mL two-neck RBF" type="50 mL two-neck RBF" />
+      <Component id="25 mL frit funnel" type="25 mL frit funnel" />
+      <Component id="250 mL RBF" type="250 mL RBF" />
+      <Component id="100 mL RBF" type="100 mL RBF" />
+      <Component id="Filter" type="Filter" />
+    </Hardware>
+    <Metadata description="AD-R8 - Synthesis of Co(ttpp) (more monitoring, proper Al2O3 pad)" product="C120H88CoN8" product_inchi="InChI=1S/C120H88N8.Co/c1-13-37-89(38-14-1)117(90-39-15-2-16-40-90,91-41-17-3-18-42-91)125-101-69-61-85(62-70-101)113-105-77-79-107(121-105)114(86-63-71-102(72-64-86)126-118(92-43-19-4-20-44-92,93-45-21-5-22-46-93)94-47-23-6-24-48-94)109-81-83-111(123-109)116(88-67-75-104(76-68-88)128-120(98-55-31-10-32-56-98,99-57-33-11-34-58-99)100-59-35-12-36-60-100)112-84-82-110(124-112)115(108-80-78-106(113)122-108)87-65-73-103(74-66-87)127-119(95-49-25-7-26-50-95,96-51-27-8-28-52-96)97-53-29-9-30-54-97;/h1-84,125-128H;/q-2;+2/b113-105-,113-106-,114-107-,114-109-,115-108-,115-110-,116-111-,116-112-;" product_yield_percent="83.0729" />
+    <Procedure>
+      <Prep>
+        <EvacuateAndRefill vessel="50 mL two-neck RBF" gas="N2" comment="Heat a 50 mL two-neck RBF in an oven (120 °C) for &gt;1.5 h.; Assemble and fix a reflux condenser, a T-shaped connector, and a bubbler (filled with paraffin oil) at a Schlenk line.; Remove the RBF and quickly assemble it with a stir bar, rubber septum, and reflux condenser while it is still hot.; Evacuate (0.24 mbar), heat the bottom part of the reflux condenser and flask with a heat gun (250 °C).; Backfill with N2" />
+        <Add vessel="50 mL two-neck RBF" reagent="TAPP" comment="Add TAPP and TrBr (plastic spatula) quickly" />
+        <Add vessel="50 mL two-neck RBF" reagent="TrBr" comment="Add TAPP and TrBr (plastic spatula) quickly" />
+        <EvacuateAndRefill vessel="50 mL two-neck RBF" gas="N2" comment="Cycle with N2 slowly x3" />
+        <Add vessel="50 mL two-neck RBF" reagent="Et3N" comment="Add Et3N" />
+        <Add vessel="50 mL two-neck RBF" reagent="THF" comment="Add THF w/ double-tipped needle. (black mixture)" />
+        <Sonicate vessel="50 mL two-neck RBF" comment="Start stirring (350 rpm). Cover the flask with Al foil.; → 0.1 mL + CDCl3 500 µL, sonicate → 1H NMR M1" />
+        <Sonicate vessel="50 mL two-neck RBF" comment="→ 0.1 mL + CDCl3 500 µL, sonicate → 1H NMR M2" />
+        <Add vessel="50 mL two-neck RBF" reagent="CoCl2" comment="Stop stirring. Close the N2 connection. Add CoCl2 quickly." />
+        <EvacuateAndRefill vessel="50 mL two-neck RBF" gas="N2" time="10 second" comment="Purge with N2 for 10 s. Close. Resume stirring." />
+        <EvacuateAndRefill vessel="50 mL two-neck RBF" gas="N2" time="30 minute" comment="Bubble with N2, 30 min." />
+      </Prep>
+      <Reaction>
+        <HeatChill vessel="50 mL two-neck RBF" temp="85 celsius" reflux="true" time="2 hour" comment="Heat to reflux (85 °C, 1.25 atm) for 2 h" />
+        <Sonicate vessel="50 mL two-neck RBF" comment="Cool down to RT.; → 0.1 mL + CDCl3 500 µL, sonicate → 1H NMR M3 unfiltered → syringe filter → 1H NMR M3" />
+        <HeatChill vessel="50 mL two-neck RBF" temp="85 celsius" reflux="true" time="17 hour" comment="Heat to reflux (85 °C, 1.25 atm) for 17 h" />
+        <Sonicate vessel="50 mL two-neck RBF" comment="Cool down to RT.; → 0.1 mL + CDCl3 500 µL, sonicate → 1H NMR failed because of autosampler problem" />
+        <Wait vessel="50 mL two-neck RBF" time="24 hour" comment="Stir at RT for 24 h" />
+        <Sonicate vessel="50 mL two-neck RBF" comment="→ 0.1 mL + CDCl3 500 µL, sonicate → syringe filter, rinsed with CDCl3 → 1H NMR M4" />
+      </Reaction>
+      <Workup>
+        <Add vessel="25 mL frit funnel" amount="12.5 millilitre" reagent="neutral alumina" comment="Add 12.5 mL of neutral alumina to a 25 mL frit funnel." />
+        <Add vessel="25 mL frit funnel" reagent="THF" comment="Attach the funnel to a vacuum filter adapter and a 250 mL RBF; Wet the alumina with THF" />
+        <Add vessel="25 mL frit funnel" reagent="reaction mixture" comment="Load the reaction mixture" />
+        <Purify vessel="25 mL frit funnel" eluent="THF (75 mL)" comment="Elute with THF (75 mL) and weak suction. (eluate: dark red to pale pink)  (The alumina pad became dark green at the top, pale green in the middle, and a little brown part at the bottom)" />
+        <Add vessel="250 mL RBF" amount="25 millilitre" reagent="EtOH" comment="Add EtOH 25 mL to the eluate" />
+        <Evaporate vessel="250 mL RBF" method="rotary_evaporator" comment="Concentrate with rotovap to 25 mL. (dark brown precipitation)" />
+        <Filter vessel="100 mL RBF" rinse="EtOH; petroleum ether" comment="Collect the solids by filtration with a filter paper (15A, ø 90 mm, tare: 0.51740 g), a glass funnel, a vacuum filter adapter, and a 100 mL RBF under suction. (filtrate: dark green solution); Rinse with EtOH x3 and petroleum ether x2." />
+        <Evaporate vessel="100 mL RBF" method="rotary_evaporator" comment="Dry filtrate with rotovap" />
+        <Dry vessel="Filter" time="1 hour" comment="Dry the residue under vacuum (diaphragm pump) for 1 h." />
+      </Workup>
+    </Procedure>
+    <Reagents>
+      <Reagent id="TAPP" name="TAPP" role="reagent" inchi="InChI=1S/C44H34N8/c45-29-9-1-25(2-10-29)41-33-17-19-35(49-33)42(26-3-11-30(46)12-4-26)37-21-23-39(51-37)44(28-7-15-32(48)16-8-28)40-24-22-38(52-40)43(36-20-18-34(41)50-36)27-5-13-31(47)14-6-27/h1-24,49,52H,45-48H2/b41-33-,41-34-,42-35-,42-37-,43-36-,43-38-,44-39-,44-40-" smiles="Nc1ccc(cc1)/C/1=C/2\C=CC(=N2)/C(=c\2/cc/c(=C(/C3=N/C(=C(\c4[nH]c1cc4)/c1ccc(cc1)N)/C=C3)\c1ccc(cc1)N)/[nH]2)/c1ccc(cc1)N" />
+      <Reagent id="TrBr" name="TrBr" role="reagent" inchi="InChI=1S/C19H15Br/c20-19(16-10-4-1-5-11-16,17-12-6-2-7-13-17)18-14-8-3-9-15-18/h1-15H" smiles="BrC(c1ccccc1)(c1ccccc1)c1ccccc1" />
+      <Reagent id="CoCl2" name="CoCl2" role="reagent" inchi="InChI=1S/2ClH.Co/h2*1H;/q;;+2/p-2" smiles="[Cl-].[Cl-].[Co+2]" />
+      <Reagent id="Et3N" name="Et3N" role="reagent" inchi="InChI=1S/C6H15N/c1-4-7(5-2)6-3/h4-6H2,1-3H3" smiles="CCN(CC)CC" />
+      <Reagent id="THF" name="THF" role="reagent" inchi="InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2" smiles="C1CCCO1" />
+    </Reagents>
+  </Synthesis>
+</XDL>

@@ -1,0 +1,46 @@
+<XDL>
+  <Synthesis>
+    <Hardware>
+      <Component id="5 mL vial" type="5 mL vial" />
+      <Component id="50 mL flask" type="50 mL flask" />
+      <Component id="? mL RBF" type="? mL RBF" />
+      <Component id="Filter" type="Filter" />
+    </Hardware>
+    <Metadata description="ZAR-439 - Synthesis of [Co(ttpp)(py)2](OTf)" product="[Co(ttpp)(py)2](OTf)" product_inchi="InChI=1S/C120H88N8.2C5H5N.CHF3O3S.Co/c1-13-37-89(38-14-1)117(90-39-15-2-16-40-90,91-41-17-3-18-42-91)125-101-69-61-85(62-70-101)113-105-77-79-107(121-105)114(86-63-71-102(72-64-86)126-118(92-43-19-4-20-44-92,93-45-21-5-22-46-93)94-47-23-6-24-48-94)109-81-83-111(123-109)116(88-67-75-104(76-68-88)128-120(98-55-31-10-32-56-98,99-57-33-11-34-58-99)100-59-35-12-36-60-100)112-84-82-110(124-112)115(108-80-78-106(113)122-108)87-65-73-103(74-66-87)127-119(95-49-25-7-26-50-95,96-51-27-8-28-52-96)97-53-29-9-30-54-97;2*1-2-4-6-5-3-1;2-1(3,4)8(5,6)7;/h1-84,125-128H;2*1-5H;(H,5,6,7);/q-2;;;;+3/p-1/b113-105-,113-106-,114-107-,114-109-,115-108-,115-110-,116-111-,116-112-;;;;" product_yield_percent="71.0647" />
+    <Procedure>
+      <Prep>
+        <Add vessel="5 mL vial" reagent="AgOTf" amount="128.2 milligram" dropwise="false" comment="Stock solution preparation: 5 mL vial. Put into the glovebox (H₂O &lt; 1 ppm). Weigh in AgOTf → 128.2 mg" />
+        <Add vessel="5 mL vial" reagent="toluene" amount="3000 microlitre" dropwise="false" comment="Take it out of the glovebox. Add toluene 3000 µL [should be adjusted according to the AgOTf amount] → colorless solution" />
+        <Add vessel="50 mL flask" reagent="Co(ttpp)" dropwise="false" comment="Reaction: Add Co(ttpp)" />
+        <Add vessel="50 mL flask" reagent="pyridine" dropwise="false" comment="Add pyridine" />
+        <Add vessel="50 mL flask" reagent="toluene" amount="26 millilitre" dropwise="false" comment="Add toluene 26 mL" />
+        <Sonicate vessel="50 mL flask" time="3 minute" comment="Sonicate for 3 min → Dark red solution" />
+        <Add vessel="50 mL flask" reagent="AgOTf" dropwise="true" comment="Cover with aluminum foil. Start stirring at 400 rpm. Add 1500 µL of AgOTf/toluene dropwise with a mechanical pipette [syringe should be used]" />
+        <Add vessel="50 mL flask" reagent="toluene" amount="1500 microlitre" dropwise="true" comment="Add 1500 µL of AgOTf/toluene dropwise with a mechanical pipette [syringe should be used]" />
+      </Prep>
+      <Reaction>
+        <Wait vessel="50 mL flask" time="2 hour" comment="Continue stirring for 2 h → Dark green mixture [1 h is enough]" />
+      </Reaction>
+      <Workup>
+        <Evaporate vessel="50 mL flask" method="rotary_evaporator" temp="40 celsius" comment="Ag scavenging: Remove volatiles with rotovap (40 °C)" />
+        <Add vessel="50 mL flask" reagent="DCM" amount="25 millilitre" dropwise="false" comment="Add 25 mL of DCM" />
+        <Sonicate vessel="50 mL flask" comment="Swirl and sonicate → Dark green mixture" />
+        <Add vessel="50 mL flask" reagent="3-mercaptopropyl silica" dropwise="false" comment="Add ISOLUTE Si-Thiol" />
+        <Wait vessel="50 mL flask" time="1 hour" comment="Stir at 500 rpm for 1 h" />
+        <Filter vessel="? mL RBF" rinse="DCM (50 millilitre)" comment="? mL RBF, suction adapter, glass funnel, filter paper (90 mm?, 15A?), diaphragm pump suction; Filter the mixture → Dark green filtrate; Rinse with DCM 50 mL → Pale green filtrate and xxx residue at the end" />
+        <Add vessel="? mL RBF" reagent="n-hexane" amount="300 millilitre" dropwise="false" comment="Reprecipitation: Add n-hexane (300 mL)" />
+        <HeatChill vessel="? mL RBF" temp="0 celsius" time="0.5 day" comment="Refrigerate at 0 °C o/n" />
+        <Filter vessel="Filter" comment="Filter the mixture → Light yellow filtrate; Rinse with DCM [mistake!]; Reprecipitation again: procedure?; Rinse with 2 x (DCM 15 mL + n-hexane 100 mL); Rinse w/ n-hexane 4 x 20 mL" rinse="DCM + n-hexane; n-hexane" product_portion="residue" />
+        <Dry vessel="Filter" time="10 minute" comment="Dry w/ suction for 10 min" />
+        <Dry vessel="Filter" time="5 hour" comment="Dry under vacuum (diaphragm pump) for 5 h" />
+      </Workup>
+    </Procedure>
+    <Reagents>
+      <Reagent id="Co(ttpp)" name="Co(ttpp)" role="reagent" inchi="InChI=1S/C120H88N8.Co/c1-13-37-89(38-14-1)117(90-39-15-2-16-40-90,91-41-17-3-18-42-91)125-101-69-61-85(62-70-101)113-105-77-79-107(121-105)114(86-63-71-102(72-64-86)126-118(92-43-19-4-20-44-92,93-45-21-5-22-46-93)94-47-23-6-24-48-94)109-81-83-111(123-109)116(88-67-75-104(76-68-88)128-120(98-55-31-10-32-56-98,99-57-33-11-34-58-99)100-59-35-12-36-60-100)112-84-82-110(124-112)115(108-80-78-106(113)122-108)87-65-73-103(74-66-87)127-119(95-49-25-7-26-50-95,96-51-27-8-28-52-96)97-53-29-9-30-54-97;/h1-84,125-128H;/q-2;+2/b113-105-,113-106-,114-107-,114-109-,115-108-,115-110-,116-111-,116-112-;" smiles="c1ccc(cc1)C(c1ccccc1)(c1ccccc1)Nc1ccc(cc1)/C/1=C/2\C=CC(=N2)/C(=c/2\n3[Co]n4c1ccc4/C(=C\1/C=CC(=N1)/C(=c\3/cc2)/c1ccc(cc1)NC(c1ccccc1)(c1ccccc1)c1ccccc1)/c1ccc(cc1)NC(c1ccccc1)(c1ccccc1)c1ccccc1)/c1ccc(cc1)NC(c1ccccc1)(c1ccccc1)c1ccccc1" />
+      <Reagent id="AgOTf" name="AgOTf" role="reagent" inchi="InChI=1S/CHF3O3S.Ag/c2-1(3,4)8(5,6)7;/h(H,5,6,7);/q;+1/p-1" smiles="[Ag]OS(=O)(=O)C(F)(F)F" />
+      <Reagent id="pyridine" name="pyridine" role="reagent" inchi="InChI=1S/C5H5N/c1-2-4-6-5-3-1/h1-5H" smiles="c1cccnc1" />
+      <Reagent id="toluene" name="toluene" role="reagent" inchi="InChI=1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3" smiles="Cc1ccccc1" />
+      <Reagent id="3-mercaptopropyl silica" name="3-mercaptopropyl silica" role="reagent" />
+    </Reagents>
+  </Synthesis>
+</XDL>

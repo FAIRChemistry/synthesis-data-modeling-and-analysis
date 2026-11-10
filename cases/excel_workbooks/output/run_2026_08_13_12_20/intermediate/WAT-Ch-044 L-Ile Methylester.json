@@ -1,0 +1,826 @@
+{
+  "source_file": "cases/excel_workbooks/input/workbooks/WAT-Ch-044 L-Ile Methylester.xlsx",
+  "source_filename": "WAT-Ch-044 L-Ile Methylester.xlsx",
+  "preprocessor": {
+    "library": "openpyxl",
+    "mode": "profile",
+    "options": {
+      "data_only": true,
+      "read_only": true,
+      "formatting_images_and_charts": "not extracted",
+      "profile_name": "chem_lab_journal",
+      "embedded_chemdraw": "extracted as CDX via Open Babel"
+    }
+  },
+  "sheets": [
+    {
+      "sheet_name": "WAT-Ch-001",
+      "max_row": 47,
+      "max_column": 11,
+      "merged_ranges": [],
+      "non_empty_rows": [
+        [
+          "Laborjournal",
+          "Nr.:",
+          "WAT-Ch-044"
+        ],
+        [
+          "Timo Watzenborn"
+        ],
+        [
+          "Promotion",
+          "Angesetzt am:",
+          "2023-10-17"
+        ],
+        [
+          "AK Laschat"
+        ],
+        [
+          "Edukte",
+          "eingesetzte\nMenge",
+          "Ansatz"
+        ],
+        [
+          "M",
+          "eq",
+          "Dichte",
+          "c",
+          "V",
+          "w",
+          "n",
+          174.88504902963345
+        ],
+        [
+          "g/mol",
+          "g/mL",
+          "mol/L",
+          "mL",
+          "%",
+          "mmol",
+          "g",
+          "mL",
+          "enthalten"
+        ],
+        [
+          "L-Isoleucin",
+          131.18,
+          1,
+          114.34669919194998,
+          15,
+          "0,654 mol/L"
+        ],
+        [
+          "Thionylchlorid",
+          118.97,
+          3,
+          1.64,
+          343.0400975758499,
+          40.81148040859886,
+          24.885049029633457,
+          "1,962 mol/L"
+        ],
+        [
+          "MeOH",
+          150,
+          150
+        ],
+        [
+          "Produkte"
+        ],
+        [
+          "M",
+          "Ausw.",
+          "n",
+          "Ausb."
+        ],
+        [
+          "g/mol",
+          "g",
+          "mmol",
+          "%",
+          "Habitus",
+          "Rf",
+          "Laufmittel",
+          "NMR"
+        ],
+        [
+          "Methylester x HCl",
+          181.66
+        ],
+        [
+          "quant",
+          181.66,
+          20.772221375209632,
+          114.34669919194998,
+          100
+        ],
+        [
+          "Vorschrift:",
+          "DC:",
+          "Beobachtungen:"
+        ],
+        [
+          "Aminosäure lösen in MeOH, kühlen auf 0 °C. Dann Zugabe von Thionylchlorid (tropfen), rühren für 48 h bei RT.                                                                 Aufarbeitung: LM entfernen (Wasserstrahlpumpe), Rohprodukt erneut lösen in MeOH und LM wieder entfernen, 3x Wiederholen. Mglw. noch im Exsiccator (P2O5) trocknen. ",
+          "Note: Rkt OHNE Schutzgas                                                  "
+        ],
+        [
+          "Herkunft der Edukte:"
+        ],
+        [
+          "L-Isoleucin",
+          "Raum 169 (Labor)"
+        ],
+        [
+          "Thionylchlorid",
+          "363 (Schrank hinten)"
+        ],
+        [
+          "MeOH",
+          "LM-Schrank"
+        ],
+        [
+          "Literatur:"
+        ]
+      ],
+      "non_empty_cells": [
+        {
+          "address": "B1",
+          "row": 1,
+          "col": 2,
+          "value": "Laborjournal",
+          "python_type": "str"
+        },
+        {
+          "address": "I1",
+          "row": 1,
+          "col": 9,
+          "value": "Nr.:",
+          "python_type": "str"
+        },
+        {
+          "address": "J1",
+          "row": 1,
+          "col": 10,
+          "value": "WAT-Ch-044",
+          "python_type": "str"
+        },
+        {
+          "address": "A2",
+          "row": 2,
+          "col": 1,
+          "value": "Timo Watzenborn",
+          "python_type": "str"
+        },
+        {
+          "address": "A3",
+          "row": 3,
+          "col": 1,
+          "value": "Promotion",
+          "python_type": "str"
+        },
+        {
+          "address": "H3",
+          "row": 3,
+          "col": 8,
+          "value": "Angesetzt am:",
+          "python_type": "str"
+        },
+        {
+          "address": "J3",
+          "row": 3,
+          "col": 10,
+          "value": "2023-10-17",
+          "python_type": "datetime"
+        },
+        {
+          "address": "A4",
+          "row": 4,
+          "col": 1,
+          "value": "AK Laschat",
+          "python_type": "str"
+        },
+        {
+          "address": "A7",
+          "row": 7,
+          "col": 1,
+          "value": "Edukte",
+          "python_type": "str"
+        },
+        {
+          "address": "I7",
+          "row": 7,
+          "col": 9,
+          "value": "eingesetzte\nMenge",
+          "python_type": "str"
+        },
+        {
+          "address": "K7",
+          "row": 7,
+          "col": 11,
+          "value": "Ansatz",
+          "python_type": "str"
+        },
+        {
+          "address": "B8",
+          "row": 8,
+          "col": 2,
+          "value": "M",
+          "python_type": "str"
+        },
+        {
+          "address": "C8",
+          "row": 8,
+          "col": 3,
+          "value": "eq",
+          "python_type": "str"
+        },
+        {
+          "address": "D8",
+          "row": 8,
+          "col": 4,
+          "value": "Dichte",
+          "python_type": "str"
+        },
+        {
+          "address": "E8",
+          "row": 8,
+          "col": 5,
+          "value": "c",
+          "python_type": "str"
+        },
+        {
+          "address": "F8",
+          "row": 8,
+          "col": 6,
+          "value": "V",
+          "python_type": "str"
+        },
+        {
+          "address": "G8",
+          "row": 8,
+          "col": 7,
+          "value": "w",
+          "python_type": "str"
+        },
+        {
+          "address": "H8",
+          "row": 8,
+          "col": 8,
+          "value": "n",
+          "python_type": "str"
+        },
+        {
+          "address": "K8",
+          "row": 8,
+          "col": 11,
+          "value": 174.88504902963345,
+          "python_type": "float"
+        },
+        {
+          "address": "B9",
+          "row": 9,
+          "col": 2,
+          "value": "g/mol",
+          "python_type": "str"
+        },
+        {
+          "address": "D9",
+          "row": 9,
+          "col": 4,
+          "value": "g/mL",
+          "python_type": "str"
+        },
+        {
+          "address": "E9",
+          "row": 9,
+          "col": 5,
+          "value": "mol/L",
+          "python_type": "str"
+        },
+        {
+          "address": "F9",
+          "row": 9,
+          "col": 6,
+          "value": "mL",
+          "python_type": "str"
+        },
+        {
+          "address": "G9",
+          "row": 9,
+          "col": 7,
+          "value": "%",
+          "python_type": "str"
+        },
+        {
+          "address": "H9",
+          "row": 9,
+          "col": 8,
+          "value": "mmol",
+          "python_type": "str"
+        },
+        {
+          "address": "I9",
+          "row": 9,
+          "col": 9,
+          "value": "g",
+          "python_type": "str"
+        },
+        {
+          "address": "J9",
+          "row": 9,
+          "col": 10,
+          "value": "mL",
+          "python_type": "str"
+        },
+        {
+          "address": "K9",
+          "row": 9,
+          "col": 11,
+          "value": "enthalten",
+          "python_type": "str"
+        },
+        {
+          "address": "A10",
+          "row": 10,
+          "col": 1,
+          "value": "L-Isoleucin",
+          "python_type": "str"
+        },
+        {
+          "address": "B10",
+          "row": 10,
+          "col": 2,
+          "value": 131.18,
+          "python_type": "float"
+        },
+        {
+          "address": "C10",
+          "row": 10,
+          "col": 3,
+          "value": 1,
+          "python_type": "int"
+        },
+        {
+          "address": "H10",
+          "row": 10,
+          "col": 8,
+          "value": 114.34669919194998,
+          "python_type": "float"
+        },
+        {
+          "address": "I10",
+          "row": 10,
+          "col": 9,
+          "value": 15,
+          "python_type": "int"
+        },
+        {
+          "address": "K10",
+          "row": 10,
+          "col": 11,
+          "value": "0,654 mol/L",
+          "python_type": "str"
+        },
+        {
+          "address": "A11",
+          "row": 11,
+          "col": 1,
+          "value": "Thionylchlorid",
+          "python_type": "str"
+        },
+        {
+          "address": "B11",
+          "row": 11,
+          "col": 2,
+          "value": 118.97,
+          "python_type": "float"
+        },
+        {
+          "address": "C11",
+          "row": 11,
+          "col": 3,
+          "value": 3,
+          "python_type": "int"
+        },
+        {
+          "address": "D11",
+          "row": 11,
+          "col": 4,
+          "value": 1.64,
+          "python_type": "float"
+        },
+        {
+          "address": "H11",
+          "row": 11,
+          "col": 8,
+          "value": 343.0400975758499,
+          "python_type": "float"
+        },
+        {
+          "address": "I11",
+          "row": 11,
+          "col": 9,
+          "value": 40.81148040859886,
+          "python_type": "float"
+        },
+        {
+          "address": "J11",
+          "row": 11,
+          "col": 10,
+          "value": 24.885049029633457,
+          "python_type": "float"
+        },
+        {
+          "address": "K11",
+          "row": 11,
+          "col": 11,
+          "value": "1,962 mol/L",
+          "python_type": "str"
+        },
+        {
+          "address": "A13",
+          "row": 13,
+          "col": 1,
+          "value": "MeOH",
+          "python_type": "str"
+        },
+        {
+          "address": "F13",
+          "row": 13,
+          "col": 6,
+          "value": 150,
+          "python_type": "int"
+        },
+        {
+          "address": "J13",
+          "row": 13,
+          "col": 10,
+          "value": 150,
+          "python_type": "int"
+        },
+        {
+          "address": "A19",
+          "row": 19,
+          "col": 1,
+          "value": "Produkte",
+          "python_type": "str"
+        },
+        {
+          "address": "B20",
+          "row": 20,
+          "col": 2,
+          "value": "M",
+          "python_type": "str"
+        },
+        {
+          "address": "C20",
+          "row": 20,
+          "col": 3,
+          "value": "Ausw.",
+          "python_type": "str"
+        },
+        {
+          "address": "D20",
+          "row": 20,
+          "col": 4,
+          "value": "n",
+          "python_type": "str"
+        },
+        {
+          "address": "E20",
+          "row": 20,
+          "col": 5,
+          "value": "Ausb.",
+          "python_type": "str"
+        },
+        {
+          "address": "B21",
+          "row": 21,
+          "col": 2,
+          "value": "g/mol",
+          "python_type": "str"
+        },
+        {
+          "address": "C21",
+          "row": 21,
+          "col": 3,
+          "value": "g",
+          "python_type": "str"
+        },
+        {
+          "address": "D21",
+          "row": 21,
+          "col": 4,
+          "value": "mmol",
+          "python_type": "str"
+        },
+        {
+          "address": "E21",
+          "row": 21,
+          "col": 5,
+          "value": "%",
+          "python_type": "str"
+        },
+        {
+          "address": "F21",
+          "row": 21,
+          "col": 6,
+          "value": "Habitus",
+          "python_type": "str"
+        },
+        {
+          "address": "G21",
+          "row": 21,
+          "col": 7,
+          "value": "Rf",
+          "python_type": "str"
+        },
+        {
+          "address": "H21",
+          "row": 21,
+          "col": 8,
+          "value": "Laufmittel",
+          "python_type": "str"
+        },
+        {
+          "address": "J21",
+          "row": 21,
+          "col": 10,
+          "value": "NMR",
+          "python_type": "str"
+        },
+        {
+          "address": "A22",
+          "row": 22,
+          "col": 1,
+          "value": "Methylester x HCl",
+          "python_type": "str"
+        },
+        {
+          "address": "B22",
+          "row": 22,
+          "col": 2,
+          "value": 181.66,
+          "python_type": "float"
+        },
+        {
+          "address": "A23",
+          "row": 23,
+          "col": 1,
+          "value": "quant",
+          "python_type": "str"
+        },
+        {
+          "address": "B23",
+          "row": 23,
+          "col": 2,
+          "value": 181.66,
+          "python_type": "float"
+        },
+        {
+          "address": "C23",
+          "row": 23,
+          "col": 3,
+          "value": 20.772221375209632,
+          "python_type": "float"
+        },
+        {
+          "address": "D23",
+          "row": 23,
+          "col": 4,
+          "value": 114.34669919194998,
+          "python_type": "float"
+        },
+        {
+          "address": "E23",
+          "row": 23,
+          "col": 5,
+          "value": 100,
+          "python_type": "int"
+        },
+        {
+          "address": "A27",
+          "row": 27,
+          "col": 1,
+          "value": "Vorschrift:",
+          "python_type": "str"
+        },
+        {
+          "address": "E27",
+          "row": 27,
+          "col": 5,
+          "value": "DC:",
+          "python_type": "str"
+        },
+        {
+          "address": "H27",
+          "row": 27,
+          "col": 8,
+          "value": "Beobachtungen:",
+          "python_type": "str"
+        },
+        {
+          "address": "A28",
+          "row": 28,
+          "col": 1,
+          "value": "Aminosäure lösen in MeOH, kühlen auf 0 °C. Dann Zugabe von Thionylchlorid (tropfen), rühren für 48 h bei RT.                                                                 Aufarbeitung: LM entfernen (Wasserstrahlpumpe), Rohprodukt erneut lösen in MeOH und LM wieder entfernen, 3x Wiederholen. Mglw. noch im Exsiccator (P2O5) trocknen. ",
+          "python_type": "str"
+        },
+        {
+          "address": "H28",
+          "row": 28,
+          "col": 8,
+          "value": "Note: Rkt OHNE Schutzgas                                                  ",
+          "python_type": "str"
+        },
+        {
+          "address": "H36",
+          "row": 36,
+          "col": 8,
+          "value": "Herkunft der Edukte:",
+          "python_type": "str"
+        },
+        {
+          "address": "H37",
+          "row": 37,
+          "col": 8,
+          "value": "L-Isoleucin",
+          "python_type": "str"
+        },
+        {
+          "address": "J37",
+          "row": 37,
+          "col": 10,
+          "value": "Raum 169 (Labor)",
+          "python_type": "str"
+        },
+        {
+          "address": "H38",
+          "row": 38,
+          "col": 8,
+          "value": "Thionylchlorid",
+          "python_type": "str"
+        },
+        {
+          "address": "J38",
+          "row": 38,
+          "col": 10,
+          "value": "363 (Schrank hinten)",
+          "python_type": "str"
+        },
+        {
+          "address": "H40",
+          "row": 40,
+          "col": 8,
+          "value": "MeOH",
+          "python_type": "str"
+        },
+        {
+          "address": "J40",
+          "row": 40,
+          "col": 10,
+          "value": "LM-Schrank",
+          "python_type": "str"
+        },
+        {
+          "address": "A44",
+          "row": 44,
+          "col": 1,
+          "value": "Literatur:",
+          "python_type": "str"
+        }
+      ],
+      "profile_summary": {
+        "profile_name": "chem_lab_journal",
+        "label_positions": {
+          "starting_materials": {
+            "address": "A7",
+            "row": 7,
+            "col": 1,
+            "label": "Edukte"
+          },
+          "products": {
+            "address": "A19",
+            "row": 19,
+            "col": 1,
+            "label": "Produkte"
+          },
+          "procedure": {
+            "address": "A27",
+            "row": 27,
+            "col": 1,
+            "label": "Vorschrift:"
+          },
+          "tlc_conditions": {
+            "address": "E27",
+            "row": 27,
+            "col": 5,
+            "label": "DC:"
+          },
+          "observations": {
+            "address": "H27",
+            "row": 27,
+            "col": 8,
+            "label": "Beobachtungen:"
+          },
+          "reagent_sources": {
+            "address": "H36",
+            "row": 36,
+            "col": 8,
+            "label": "Herkunft der Edukte:"
+          },
+          "literature": {
+            "address": "A44",
+            "row": 44,
+            "col": 1,
+            "label": "Literatur:"
+          }
+        },
+        "metadata": {
+          "journal_number": "WAT-Ch-044",
+          "researcher": "Timo Watzenborn",
+          "project_type": "Promotion",
+          "date": "2023-10-17",
+          "research_group": "AK Laschat",
+          "reaction_name_from_filename": "L-Ile Methylester"
+        },
+        "batch_volume_mL": 174.88504902963345,
+        "procedure": "Aminosäure lösen in MeOH, kühlen auf 0 °C. Dann Zugabe von Thionylchlorid (tropfen), rühren für 48 h bei RT.                                                                 Aufarbeitung: LM entfernen (Wasserstrahlpumpe), Rohprodukt erneut lösen in MeOH und LM wieder entfernen, 3x Wiederholen. Mglw. noch im Exsiccator (P2O5) trocknen. ",
+        "tlc_conditions": null,
+        "observations": "Note: Rkt OHNE Schutzgas                                                  ",
+        "starting_material_table_rows": [
+          {
+            "name": "L-Isoleucin",
+            "M g/mol": 131.18,
+            "eq": 1,
+            "n mmol": 114.34669919194998,
+            "g": 15,
+            "enthalten": "0,654 mol/L",
+            "smiles": "C(=O)([C@@H](N)[C@H](CC)C)O",
+            "inchi": "InChI=1S/C6H13NO2/c1-3-4(2)5(7)6(8)9/h4-5H,3,7H2,1-2H3,(H,8,9)/t4-,5-/m0/s1",
+            "inchikey": "AGPKZVBTJJNPAG-WHFBIAKZSA-N"
+          },
+          {
+            "name": "Thionylchlorid",
+            "M g/mol": 118.97,
+            "eq": 3,
+            "Dichte g/mL": 1.64,
+            "n mmol": 343.0400975758499,
+            "g": 40.81148040859886,
+            "mL": 24.885049029633457,
+            "enthalten": "1,962 mol/L"
+          },
+          {
+            "name": "MeOH",
+            "V mL": 150,
+            "mL": 150
+          }
+        ],
+        "product_table_rows": [
+          {
+            "name": "Methylester x HCl",
+            "M g/mol": 181.66
+          },
+          {
+            "name": "quant",
+            "M g/mol": 181.66,
+            "Ausw. g": 20.772221375209632,
+            "n mmol": 114.34669919194998,
+            "Ausb. %": 100
+          }
+        ],
+        "reagent_source_rows": [
+          [
+            "L-Isoleucin",
+            "Raum 169 (Labor)"
+          ],
+          [
+            "Thionylchlorid",
+            "363 (Schrank hinten)"
+          ],
+          [
+            "MeOH",
+            "LM-Schrank"
+          ]
+        ],
+        "literature_rows": [
+          [
+            "Literatur:"
+          ]
+        ]
+      }
+    }
+  ],
+  "embedded_reaction_smiles": [
+    "C(=O)([C@@H](N)[C@H](CC)C)O>>C(=O)([C@@H](*)[C@H](CC)C)OC",
+    "*"
+  ],
+  "embedded_reaction_structures": [
+    {
+      "role": "reactant",
+      "smiles": "C(=O)([C@@H](N)[C@H](CC)C)O",
+      "inchi": "InChI=1S/C6H13NO2/c1-3-4(2)5(7)6(8)9/h4-5H,3,7H2,1-2H3,(H,8,9)/t4-,5-/m0/s1",
+      "inchikey": "AGPKZVBTJJNPAG-WHFBIAKZSA-N"
+    }
+  ]
+}

@@ -1,0 +1,805 @@
+{
+  "source_file": "cases/excel_workbooks/input/workbooks/WAT-Ch-068 Cyclisierung Ile SmI2 Roh.xlsx",
+  "source_filename": "WAT-Ch-068 Cyclisierung Ile SmI2 Roh.xlsx",
+  "preprocessor": {
+    "library": "openpyxl",
+    "mode": "profile",
+    "options": {
+      "data_only": true,
+      "read_only": true,
+      "formatting_images_and_charts": "not extracted",
+      "profile_name": "chem_lab_journal",
+      "embedded_chemdraw": "extracted as CDX via Open Babel"
+    }
+  },
+  "sheets": [
+    {
+      "sheet_name": "WAT-Ch-XXX",
+      "max_row": 47,
+      "max_column": 13,
+      "merged_ranges": [],
+      "non_empty_rows": [
+        [
+          "Laborjournal",
+          "Nr.:",
+          "WAT-Ch-068"
+        ],
+        [
+          "Timo Watzenborn"
+        ],
+        [
+          "Promotion",
+          "Angesetzt am:",
+          "2024-02-05"
+        ],
+        [
+          "AK Laschat"
+        ],
+        [
+          "Edukte",
+          "eingesetzte\nMenge",
+          "Ansatz"
+        ],
+        [
+          "M",
+          "eq",
+          "Dichte",
+          "c",
+          "V",
+          "w",
+          "n",
+          4.760928676009203
+        ],
+        [
+          "g/mol",
+          "g/mL",
+          "mol/L",
+          "mL",
+          "%",
+          "mmol",
+          "g",
+          "mL",
+          "enthalten"
+        ],
+        [
+          "Aminoaldehyd 067 Roh",
+          382.48,
+          1,
+          0.12549675800041832,
+          0.048,
+          "0,026 mol/L"
+        ],
+        [
+          "SmI2 (0.1 M in THF)",
+          404.17,
+          2.2,
+          0.1,
+          0.27609286760092033,
+          2.760928676009203,
+          "0,058 mol/L"
+        ],
+        [
+          "THF ",
+          2,
+          2
+        ],
+        [
+          "Produkte"
+        ],
+        [
+          "M",
+          "Ausw.",
+          "n",
+          "Ausb."
+        ],
+        [
+          "g/mol",
+          "g",
+          "mmol",
+          "%",
+          "Habitus",
+          "Rf",
+          "Laufmittel",
+          "NMR"
+        ],
+        [
+          "Piperidinol",
+          382.48,
+          0.030999999999998806,
+          0.08104998954193371,
+          64.58333333333086
+        ],
+        [
+          "LM rausgerechnet",
+          382.48
+        ],
+        [
+          "Vorschrift:",
+          "DC:",
+          "Beobachtungen:"
+        ],
+        [
+          "Aminoaldehyd wird unter N2 in THF gelöst, auf 0 °C gekühlt, mit THF und anschließend langsam mit SmI2-Lsg (0.1 M in THF) versetzt. Die Reaktion wird ü.N. bei RT gerührt, das Lösungsmittel wird am Roti entfernt und das Produkt wird durch Säulen (Pe/EtOAc 3:1) gereinigt. ",
+          "Achtung: großen Kolben mit möglichst breiter Oberfläche nehmen, langsam Lösung zutropfen und auf T achten!"
+        ],
+        [
+          "Herkunft der Edukte:"
+        ],
+        [
+          "Aminoaldehyd 067 Roh"
+        ],
+        [
+          "SmI2 (0.1 M in THF)",
+          "169 K-A6"
+        ],
+        [
+          "THF "
+        ],
+        [
+          "Literatur:",
+          "T. K. Sarkar, S. K. Nandy, Tetraheddron Lett. 1996, 37, 29, 5195-5198. "
+        ]
+      ],
+      "non_empty_cells": [
+        {
+          "address": "B1",
+          "row": 1,
+          "col": 2,
+          "value": "Laborjournal",
+          "python_type": "str"
+        },
+        {
+          "address": "I1",
+          "row": 1,
+          "col": 9,
+          "value": "Nr.:",
+          "python_type": "str"
+        },
+        {
+          "address": "J1",
+          "row": 1,
+          "col": 10,
+          "value": "WAT-Ch-068",
+          "python_type": "str"
+        },
+        {
+          "address": "A2",
+          "row": 2,
+          "col": 1,
+          "value": "Timo Watzenborn",
+          "python_type": "str"
+        },
+        {
+          "address": "A3",
+          "row": 3,
+          "col": 1,
+          "value": "Promotion",
+          "python_type": "str"
+        },
+        {
+          "address": "H3",
+          "row": 3,
+          "col": 8,
+          "value": "Angesetzt am:",
+          "python_type": "str"
+        },
+        {
+          "address": "J3",
+          "row": 3,
+          "col": 10,
+          "value": "2024-02-05",
+          "python_type": "datetime"
+        },
+        {
+          "address": "A4",
+          "row": 4,
+          "col": 1,
+          "value": "AK Laschat",
+          "python_type": "str"
+        },
+        {
+          "address": "A7",
+          "row": 7,
+          "col": 1,
+          "value": "Edukte",
+          "python_type": "str"
+        },
+        {
+          "address": "I7",
+          "row": 7,
+          "col": 9,
+          "value": "eingesetzte\nMenge",
+          "python_type": "str"
+        },
+        {
+          "address": "K7",
+          "row": 7,
+          "col": 11,
+          "value": "Ansatz",
+          "python_type": "str"
+        },
+        {
+          "address": "B8",
+          "row": 8,
+          "col": 2,
+          "value": "M",
+          "python_type": "str"
+        },
+        {
+          "address": "C8",
+          "row": 8,
+          "col": 3,
+          "value": "eq",
+          "python_type": "str"
+        },
+        {
+          "address": "D8",
+          "row": 8,
+          "col": 4,
+          "value": "Dichte",
+          "python_type": "str"
+        },
+        {
+          "address": "E8",
+          "row": 8,
+          "col": 5,
+          "value": "c",
+          "python_type": "str"
+        },
+        {
+          "address": "F8",
+          "row": 8,
+          "col": 6,
+          "value": "V",
+          "python_type": "str"
+        },
+        {
+          "address": "G8",
+          "row": 8,
+          "col": 7,
+          "value": "w",
+          "python_type": "str"
+        },
+        {
+          "address": "H8",
+          "row": 8,
+          "col": 8,
+          "value": "n",
+          "python_type": "str"
+        },
+        {
+          "address": "K8",
+          "row": 8,
+          "col": 11,
+          "value": 4.760928676009203,
+          "python_type": "float"
+        },
+        {
+          "address": "B9",
+          "row": 9,
+          "col": 2,
+          "value": "g/mol",
+          "python_type": "str"
+        },
+        {
+          "address": "D9",
+          "row": 9,
+          "col": 4,
+          "value": "g/mL",
+          "python_type": "str"
+        },
+        {
+          "address": "E9",
+          "row": 9,
+          "col": 5,
+          "value": "mol/L",
+          "python_type": "str"
+        },
+        {
+          "address": "F9",
+          "row": 9,
+          "col": 6,
+          "value": "mL",
+          "python_type": "str"
+        },
+        {
+          "address": "G9",
+          "row": 9,
+          "col": 7,
+          "value": "%",
+          "python_type": "str"
+        },
+        {
+          "address": "H9",
+          "row": 9,
+          "col": 8,
+          "value": "mmol",
+          "python_type": "str"
+        },
+        {
+          "address": "I9",
+          "row": 9,
+          "col": 9,
+          "value": "g",
+          "python_type": "str"
+        },
+        {
+          "address": "J9",
+          "row": 9,
+          "col": 10,
+          "value": "mL",
+          "python_type": "str"
+        },
+        {
+          "address": "K9",
+          "row": 9,
+          "col": 11,
+          "value": "enthalten",
+          "python_type": "str"
+        },
+        {
+          "address": "A10",
+          "row": 10,
+          "col": 1,
+          "value": "Aminoaldehyd 067 Roh",
+          "python_type": "str"
+        },
+        {
+          "address": "B10",
+          "row": 10,
+          "col": 2,
+          "value": 382.48,
+          "python_type": "float"
+        },
+        {
+          "address": "C10",
+          "row": 10,
+          "col": 3,
+          "value": 1,
+          "python_type": "int"
+        },
+        {
+          "address": "H10",
+          "row": 10,
+          "col": 8,
+          "value": 0.12549675800041832,
+          "python_type": "float"
+        },
+        {
+          "address": "I10",
+          "row": 10,
+          "col": 9,
+          "value": 0.048,
+          "python_type": "float"
+        },
+        {
+          "address": "K10",
+          "row": 10,
+          "col": 11,
+          "value": "0,026 mol/L",
+          "python_type": "str"
+        },
+        {
+          "address": "A11",
+          "row": 11,
+          "col": 1,
+          "value": "SmI2 (0.1 M in THF)",
+          "python_type": "str"
+        },
+        {
+          "address": "B11",
+          "row": 11,
+          "col": 2,
+          "value": 404.17,
+          "python_type": "float"
+        },
+        {
+          "address": "C11",
+          "row": 11,
+          "col": 3,
+          "value": 2.2,
+          "python_type": "float"
+        },
+        {
+          "address": "E11",
+          "row": 11,
+          "col": 5,
+          "value": 0.1,
+          "python_type": "float"
+        },
+        {
+          "address": "H11",
+          "row": 11,
+          "col": 8,
+          "value": 0.27609286760092033,
+          "python_type": "float"
+        },
+        {
+          "address": "J11",
+          "row": 11,
+          "col": 10,
+          "value": 2.760928676009203,
+          "python_type": "float"
+        },
+        {
+          "address": "K11",
+          "row": 11,
+          "col": 11,
+          "value": "0,058 mol/L",
+          "python_type": "str"
+        },
+        {
+          "address": "A14",
+          "row": 14,
+          "col": 1,
+          "value": "THF ",
+          "python_type": "str"
+        },
+        {
+          "address": "F14",
+          "row": 14,
+          "col": 6,
+          "value": 2,
+          "python_type": "int"
+        },
+        {
+          "address": "J14",
+          "row": 14,
+          "col": 10,
+          "value": 2,
+          "python_type": "int"
+        },
+        {
+          "address": "A19",
+          "row": 19,
+          "col": 1,
+          "value": "Produkte",
+          "python_type": "str"
+        },
+        {
+          "address": "B20",
+          "row": 20,
+          "col": 2,
+          "value": "M",
+          "python_type": "str"
+        },
+        {
+          "address": "C20",
+          "row": 20,
+          "col": 3,
+          "value": "Ausw.",
+          "python_type": "str"
+        },
+        {
+          "address": "D20",
+          "row": 20,
+          "col": 4,
+          "value": "n",
+          "python_type": "str"
+        },
+        {
+          "address": "E20",
+          "row": 20,
+          "col": 5,
+          "value": "Ausb.",
+          "python_type": "str"
+        },
+        {
+          "address": "B21",
+          "row": 21,
+          "col": 2,
+          "value": "g/mol",
+          "python_type": "str"
+        },
+        {
+          "address": "C21",
+          "row": 21,
+          "col": 3,
+          "value": "g",
+          "python_type": "str"
+        },
+        {
+          "address": "D21",
+          "row": 21,
+          "col": 4,
+          "value": "mmol",
+          "python_type": "str"
+        },
+        {
+          "address": "E21",
+          "row": 21,
+          "col": 5,
+          "value": "%",
+          "python_type": "str"
+        },
+        {
+          "address": "F21",
+          "row": 21,
+          "col": 6,
+          "value": "Habitus",
+          "python_type": "str"
+        },
+        {
+          "address": "G21",
+          "row": 21,
+          "col": 7,
+          "value": "Rf",
+          "python_type": "str"
+        },
+        {
+          "address": "H21",
+          "row": 21,
+          "col": 8,
+          "value": "Laufmittel",
+          "python_type": "str"
+        },
+        {
+          "address": "J21",
+          "row": 21,
+          "col": 10,
+          "value": "NMR",
+          "python_type": "str"
+        },
+        {
+          "address": "A22",
+          "row": 22,
+          "col": 1,
+          "value": "Piperidinol",
+          "python_type": "str"
+        },
+        {
+          "address": "B22",
+          "row": 22,
+          "col": 2,
+          "value": 382.48,
+          "python_type": "float"
+        },
+        {
+          "address": "C22",
+          "row": 22,
+          "col": 3,
+          "value": 0.030999999999998806,
+          "python_type": "float"
+        },
+        {
+          "address": "D22",
+          "row": 22,
+          "col": 4,
+          "value": 0.08104998954193371,
+          "python_type": "float"
+        },
+        {
+          "address": "E22",
+          "row": 22,
+          "col": 5,
+          "value": 64.58333333333086,
+          "python_type": "float"
+        },
+        {
+          "address": "A23",
+          "row": 23,
+          "col": 1,
+          "value": "LM rausgerechnet",
+          "python_type": "str"
+        },
+        {
+          "address": "B23",
+          "row": 23,
+          "col": 2,
+          "value": 382.48,
+          "python_type": "float"
+        },
+        {
+          "address": "A27",
+          "row": 27,
+          "col": 1,
+          "value": "Vorschrift:",
+          "python_type": "str"
+        },
+        {
+          "address": "E27",
+          "row": 27,
+          "col": 5,
+          "value": "DC:",
+          "python_type": "str"
+        },
+        {
+          "address": "H27",
+          "row": 27,
+          "col": 8,
+          "value": "Beobachtungen:",
+          "python_type": "str"
+        },
+        {
+          "address": "A28",
+          "row": 28,
+          "col": 1,
+          "value": "Aminoaldehyd wird unter N2 in THF gelöst, auf 0 °C gekühlt, mit THF und anschließend langsam mit SmI2-Lsg (0.1 M in THF) versetzt. Die Reaktion wird ü.N. bei RT gerührt, das Lösungsmittel wird am Roti entfernt und das Produkt wird durch Säulen (Pe/EtOAc 3:1) gereinigt. ",
+          "python_type": "str"
+        },
+        {
+          "address": "H28",
+          "row": 28,
+          "col": 8,
+          "value": "Achtung: großen Kolben mit möglichst breiter Oberfläche nehmen, langsam Lösung zutropfen und auf T achten!",
+          "python_type": "str"
+        },
+        {
+          "address": "H36",
+          "row": 36,
+          "col": 8,
+          "value": "Herkunft der Edukte:",
+          "python_type": "str"
+        },
+        {
+          "address": "H37",
+          "row": 37,
+          "col": 8,
+          "value": "Aminoaldehyd 067 Roh",
+          "python_type": "str"
+        },
+        {
+          "address": "H38",
+          "row": 38,
+          "col": 8,
+          "value": "SmI2 (0.1 M in THF)",
+          "python_type": "str"
+        },
+        {
+          "address": "J38",
+          "row": 38,
+          "col": 10,
+          "value": "169 K-A6",
+          "python_type": "str"
+        },
+        {
+          "address": "H41",
+          "row": 41,
+          "col": 8,
+          "value": "THF ",
+          "python_type": "str"
+        },
+        {
+          "address": "A44",
+          "row": 44,
+          "col": 1,
+          "value": "Literatur:",
+          "python_type": "str"
+        },
+        {
+          "address": "B44",
+          "row": 44,
+          "col": 2,
+          "value": "T. K. Sarkar, S. K. Nandy, Tetraheddron Lett. 1996, 37, 29, 5195-5198. ",
+          "python_type": "str"
+        }
+      ],
+      "profile_summary": {
+        "profile_name": "chem_lab_journal",
+        "label_positions": {
+          "starting_materials": {
+            "address": "A7",
+            "row": 7,
+            "col": 1,
+            "label": "Edukte"
+          },
+          "products": {
+            "address": "A19",
+            "row": 19,
+            "col": 1,
+            "label": "Produkte"
+          },
+          "procedure": {
+            "address": "A27",
+            "row": 27,
+            "col": 1,
+            "label": "Vorschrift:"
+          },
+          "tlc_conditions": {
+            "address": "E27",
+            "row": 27,
+            "col": 5,
+            "label": "DC:"
+          },
+          "observations": {
+            "address": "H27",
+            "row": 27,
+            "col": 8,
+            "label": "Beobachtungen:"
+          },
+          "reagent_sources": {
+            "address": "H36",
+            "row": 36,
+            "col": 8,
+            "label": "Herkunft der Edukte:"
+          },
+          "literature": {
+            "address": "A44",
+            "row": 44,
+            "col": 1,
+            "label": "Literatur:"
+          }
+        },
+        "metadata": {
+          "journal_number": "WAT-Ch-068",
+          "researcher": "Timo Watzenborn",
+          "project_type": "Promotion",
+          "date": "2024-02-05",
+          "research_group": "AK Laschat",
+          "reaction_name_from_filename": "Cyclisierung Ile SmI2 Roh"
+        },
+        "batch_volume_mL": 4.760928676009203,
+        "procedure": "Aminoaldehyd wird unter N2 in THF gelöst, auf 0 °C gekühlt, mit THF und anschließend langsam mit SmI2-Lsg (0.1 M in THF) versetzt. Die Reaktion wird ü.N. bei RT gerührt, das Lösungsmittel wird am Roti entfernt und das Produkt wird durch Säulen (Pe/EtOAc 3:1) gereinigt. ",
+        "tlc_conditions": null,
+        "observations": "Achtung: großen Kolben mit möglichst breiter Oberfläche nehmen, langsam Lösung zutropfen und auf T achten!",
+        "starting_material_table_rows": [
+          {
+            "name": "Aminoaldehyd 067 Roh",
+            "M g/mol": 382.48,
+            "eq": 1,
+            "n mmol": 0.12549675800041832,
+            "g": 0.048,
+            "enthalten": "0,026 mol/L"
+          },
+          {
+            "name": "SmI2 (0.1 M in THF)",
+            "M g/mol": 404.17,
+            "eq": 2.2,
+            "c mol/L": 0.1,
+            "n mmol": 0.27609286760092033,
+            "mL": 2.760928676009203,
+            "enthalten": "0,058 mol/L"
+          },
+          {
+            "name": "THF ",
+            "V mL": 2,
+            "mL": 2
+          }
+        ],
+        "product_table_rows": [
+          {
+            "name": "Piperidinol",
+            "M g/mol": 382.48,
+            "Ausw. g": 0.030999999999998806,
+            "n mmol": 0.08104998954193371,
+            "Ausb. %": 64.58333333333086
+          },
+          {
+            "name": "LM rausgerechnet",
+            "M g/mol": 382.48
+          }
+        ],
+        "reagent_source_rows": [
+          [
+            "Aminoaldehyd 067 Roh"
+          ],
+          [
+            "SmI2 (0.1 M in THF)",
+            "169 K-A6"
+          ],
+          [
+            "THF "
+          ]
+        ],
+        "literature_rows": [
+          [
+            "Literatur:",
+            "T. K. Sarkar, S. K. Nandy, Tetraheddron Lett. 1996, 37, 29, 5195-5198. "
+          ]
+        ]
+      }
+    }
+  ],
+  "embedded_reaction_smiles": [
+    "[C@@H]([C@@H](C=O)N(S(=O)(=O)c1c(*)cccc1)CCC=C(C)C)(CC)C>>[C@H]1(N(CC[C@H]([C@H]1O)C(=C)C)S(=O)(=O)c1ccccc1[N+](=O)[O-])[C@H](CC)C",
+    "*"
+  ],
+  "embedded_reaction_structures": [
+    {
+      "role": "product",
+      "smiles": "[C@H]1(N(CC[C@H]([C@H]1O)C(=C)C)S(=O)(=O)c1ccccc1[N+](=O)[O-])[C@H](CC)C",
+      "inchi": "InChI=1S/C18H26N2O5S/c1-5-13(4)17-18(21)14(12(2)3)10-11-19(17)26(24,25)16-9-7-6-8-15(16)20(22)23/h6-9,13-14,17-18,21H,2,5,10-11H2,1,3-4H3/t13-,14-,17-,18+/m0/s1",
+      "inchikey": "KIZNYNPAVFKOJK-DFEHZGFQSA-N"
+    }
+  ]
+}

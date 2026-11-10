@@ -1,0 +1,55 @@
+<XDL>
+  <Synthesis>
+    <Hardware>
+      <Component id="100 mL two-neck RBF" type="100 mL two-neck RBF" />
+      <Component id="Fritted funnel (50mL, por. 4)" type="Fritted funnel (50mL, por. 4)" />
+      <Component id="100 mL RBF" type="100 mL RBF" />
+      <Component id="250 mL RBF" type="250 mL RBF" />
+      <Component id="Fritted funnel (50 mL, por. 4)" type="Fritted funnel (50 mL, por. 4)" />
+      <Component id="? mL RBF" type="? mL RBF" />
+    </Hardware>
+    <Metadata description="ZAR-438 - Synthesis of Co(ttpp)" product="Co(ttpp)" product_yield_percent="91.3463" />
+    <Procedure>
+      <Prep>
+        <HeatChill vessel="100 mL two-neck RBF" temp="120 celsius" comment="100 mL two-neck RBF with a stir bar, septum (natural rubber), reflux condenser, T-shaped connector, bubbler (with paraffin oil), Schlenk line (N₂, 1.25 atm), heat gun, magnetic stirrer, oil bath; Heat the flask in an oven at 120 °C for &gt;1.5 h" />
+        <EvacuateAndRefill vessel="100 mL two-neck RBF" comment="Quickly assemble and evacuate the system while it is still hot (5.7 × 10⁻³ mbar)" />
+        <HeatChill vessel="100 mL two-neck RBF" temp="250 celsius" comment="Heat the flask and the bottom part of the reflux condenser with a heat gun (250 °C)" />
+        <Add vessel="100 mL two-neck RBF" reagent="TAPP" comment="Close the N₂ connection. Add TAPP and TrBr (plastic spatula) quickly" />
+        <Add vessel="100 mL two-neck RBF" reagent="TrBr" comment="Add TAPP and TrBr (plastic spatula) quickly" />
+        <EvacuateAndRefill vessel="100 mL two-neck RBF" gas="N2" comment="Cycle with N₂ slowly ×3" />
+        <Add vessel="100 mL two-neck RBF" reagent="Et3N" comment="Add NEt₃" />
+        <Add vessel="100 mL two-neck RBF" reagent="THF" comment="Add THF → dark green liquid" />
+      </Prep>
+      <Reaction>
+        <Wait vessel="100 mL two-neck RBF" time="1 hour" comment="Start stirring (350 rpm) [9:30]; Cover the flask with aluminum foil. Let it stir for 1 h" />
+        <Add vessel="100 mL two-neck RBF" reagent="CoCl2" comment="Stop stirring. Close the N₂ connection. Add CoCl₂ quickly. Purge with N₂ for 10 s. Close. Resume stirring." />
+        <EvacuateAndRefill vessel="100 mL two-neck RBF" gas="N2" time="30 minute" comment="Bubble with N₂ for 30 min [11:00]" />
+        <HeatChill vessel="100 mL two-neck RBF" temp="85 celsius" reflux="true" time="2 hour" comment="Heat to reflux (85 °C, oil bath) for 2 h [13:30]; Cool down to RT" />
+      </Reaction>
+      <Workup>
+        <Add vessel="Fritted funnel (50mL, por. 4)" amount="15 gram" reagent="neutral alumina" comment="Short-pad chromatography: Fritted funnel (50mL, por. 4), suction adapter, 100 mL RBF, T-connector, diaphragm pump; Add 15 g of neutral alumina" />
+        <Add vessel="Fritted funnel (50mL, por. 4)" reagent="THF" comment="Add THF to fully wet the alumina" />
+        <Add vessel="Fritted funnel (50mL, por. 4)" reagent="reaction mixture" comment="Add the reaction mixture" />
+        <Purify vessel="Fritted funnel (50mL, por. 4)" eluent="THF" comment="Elute with suction and THF until the eluate becomes pale red → 70 mL, alumina pad (Green at the top, off white at the bottom)" />
+        <Evaporate vessel="100 mL RBF" method="rotary_evaporator" comment="Rotovap" />
+        <Dry vessel="100 mL RBF" time="1 hour" comment="Dry under vacuum Schlenk line, 1 h; Dark brown solid" />
+        <Add vessel="250 mL RBF" amount="20 gram" reagent="basic alumina" comment="CHCl₃ deacidification: 250 mL RBF; Add basic alumina 20 g" />
+        <Add vessel="250 mL RBF" amount="150 millilitre" reagent="CHCl3" comment="Add CHCl₃ 150 mL and swirl" />
+        <Filter vessel="Fritted funnel (50 mL, por. 4)" comment="Fritted funnel (50 mL, por. 4), suction adapter, 250 mL RBF, diaphragm pump; Filter the mixture under suction" />
+        <Add vessel="? mL RBF" amount="30 millilitre" reagent="CHCl3" comment="Reprecipitation: Add 30 mL of purified CHCl₃ to the flask and sonicate → dark red solution" />
+        <Sonicate vessel="? mL RBF" comment="Sonicate → dark red solution" />
+        <Add vessel="? mL RBF" amount="180 millilitre" reagent="n-hexane" comment="Add 180 mL of n-hexane, swirl, sonicate" />
+        <HeatChill vessel="? mL RBF" temp="0 celsius" time="1 hour" comment="Store in fridge (0 °C) for 1 h" />
+        <Filter vessel="Fritted funnel (50 mL, por. 4)" rinse="purified CHCl₃ + hexane; petroleum ether" comment="Fritted funnel (50 mL, por. 4), suction adapter, 500 mL RBF, diaphragm pump; Filter the mixture under suction → faint brown filtrate; Rinse w/ 2 x (10 mL of purified CHCl₃ + 60 mL of hexane); Rinse with 2 × 30 mL of petroleum ether [hexane should be used]" />
+        <Dry vessel="Fritted funnel (50 mL, por. 4)" time="0.5 day" comment="Dry under vacuum (desiccator, diaphragm pump, overnight) → reddish brown solid" />
+      </Workup>
+    </Procedure>
+    <Reagents>
+      <Reagent id="TAPP" name="TAPP" role="reagent" />
+      <Reagent id="TrBr" name="TrBr" role="reagent" />
+      <Reagent id="CoCl2" name="CoCl2" role="reagent" />
+      <Reagent id="Et3N" name="Et3N" role="reagent" />
+      <Reagent id="THF" name="THF" role="reagent" />
+    </Reagents>
+  </Synthesis>
+</XDL>

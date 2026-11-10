@@ -1,0 +1,123 @@
+{
+  "run_id": "run_2026_07_15_16_49",
+  "case": "chemotion_eln",
+  "output_dir": "cases/chemotion_eln/output/run_2026_07_15_16_49",
+  "results_dir": "cases/chemotion_eln/output/run_2026_07_15_16_49/results",
+  "previous_run": "cases/chemotion_eln/output/run_2026_07_13_14_32",
+  "total": 11,
+  "successes": [
+    {
+      "record_id": "AD-R10",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_15_16_49/results/AD-R10.json",
+      "usage": {
+        "prompt_tokens": 13194,
+        "completion_tokens": 13838,
+        "total_tokens": 27032
+      }
+    },
+    {
+      "record_id": "AD-R11",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_15_16_49/results/AD-R11.json",
+      "usage": {
+        "prompt_tokens": 13907,
+        "completion_tokens": 14908,
+        "total_tokens": 28815
+      }
+    },
+    {
+      "record_id": "AD-R17",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_15_16_49/results/AD-R17.json",
+      "usage": {
+        "prompt_tokens": 13661,
+        "completion_tokens": 14734,
+        "total_tokens": 28395
+      }
+    },
+    {
+      "record_id": "AD-R18",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_15_16_49/results/AD-R18.json",
+      "usage": {
+        "prompt_tokens": 14039,
+        "completion_tokens": 13328,
+        "total_tokens": 27367
+      }
+    },
+    {
+      "record_id": "AD-R27",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_15_16_49/results/AD-R27.json",
+      "usage": {
+        "prompt_tokens": 13805,
+        "completion_tokens": 12151,
+        "total_tokens": 25956
+      }
+    },
+    {
+      "record_id": "AD-R6",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_15_16_49/results/AD-R6.json",
+      "usage": {
+        "prompt_tokens": 13611,
+        "completion_tokens": 15628,
+        "total_tokens": 29239
+      }
+    },
+    {
+      "record_id": "AD-R8",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_15_16_49/results/AD-R8.json",
+      "usage": {
+        "prompt_tokens": 13449,
+        "completion_tokens": 13094,
+        "total_tokens": 26543
+      }
+    },
+    {
+      "record_id": "AD-R9",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_15_16_49/results/AD-R9.json",
+      "usage": {
+        "prompt_tokens": 13844,
+        "completion_tokens": 15837,
+        "total_tokens": 29681
+      }
+    },
+    {
+      "record_id": "ZAR-438",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_15_16_49/results/ZAR-438.json",
+      "usage": {
+        "prompt_tokens": 13114,
+        "completion_tokens": 13623,
+        "total_tokens": 26737
+      }
+    },
+    {
+      "record_id": "ZAR-439",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_15_16_49/results/ZAR-439.json",
+      "usage": {
+        "prompt_tokens": 13329,
+        "completion_tokens": 9584,
+        "total_tokens": 22913
+      }
+    }
+  ],
+  "validation_warnings": [
+    {
+      "record_id": "AD-R13",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_15_16_49/results/AD-R13.json",
+      "usage": {
+        "prompt_tokens": 13600,
+        "completion_tokens": 12873,
+        "total_tokens": 26473
+      },
+      "errors": [
+        "$.products.0: Additional properties are not allowed ('density' was unexpected)"
+      ]
+    }
+  ],
+  "failures": [],
+  "tokens": {
+    "prompt_tokens": 149553,
+    "completion_tokens": 149598,
+    "total_tokens": 299151,
+    "prompt_chars": 0,
+    "completion_chars": 0
+  },
+  "assembled_dir": "cases/chemotion_eln/output/run_2026_07_15_16_49/assembled"
+}

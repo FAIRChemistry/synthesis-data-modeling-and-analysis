@@ -1,0 +1,274 @@
+{
+  "journal_number": "AD-R9",
+  "date": "2026-01-07",
+  "researcher": "Zarfishan Dilruba",
+  "research_group": "AK Endo",
+  "project_type": "Promotion",
+  "batch_volume_mL": 50,
+  "observations": "NMR\nM1: TTPP, Et3N(·HX), TrBr?, THF\nM2: TTPP, Et3N(·HX), TrBr?, THF\nM3: TrBr?, THF\nM4: Co(III)(ttpp)(thf)2 [ring current + chemical exchange], TrBr?, THF\nM5: broader\nM6: similar to M4\nEt3N evaporated off because of the leak\nCo(ttpp) was oxidized by HBr and DCl in CDCl3",
+  "procedure": {
+    "Prep": {
+      "Step": [
+        {
+          "$xml_type": "HeatChill",
+          "_vessel": "50 mL two-neck RBF",
+          "_temp": {
+            "Value": 120,
+            "Unit": "celsius"
+          }
+        },
+        {
+          "$xml_type": "EvacuateAndRefill",
+          "_vessel": "50 mL two-neck RBF",
+          "_gas": "N2",
+          "_comment": "Evacuate (0.23 mbar), heat condenser and flask; backfill with N2; cycle with N2 slowly x3"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "50 mL two-neck RBF",
+          "_reagent": "TAPP",
+          "_amount": {
+            "Value": 126.8,
+            "Unit": "milligram"
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "50 mL two-neck RBF",
+          "_reagent": "TrBr",
+          "_amount": {
+            "Value": 311.1,
+            "Unit": "milligram"
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "50 mL two-neck RBF",
+          "_reagent": "Et3N",
+          "_amount": {
+            "Value": 260,
+            "Unit": "microlitre"
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "50 mL two-neck RBF",
+          "_reagent": "THF",
+          "_amount": {
+            "Value": 10,
+            "Unit": "millilitre"
+          }
+        }
+      ]
+    },
+    "Reaction": {
+      "Step": [
+        {
+          "$xml_type": "Add",
+          "_vessel": "50 mL two-neck RBF",
+          "_reagent": "CoCl2",
+          "_amount": {
+            "Value": 149.7,
+            "Unit": "milligram"
+          }
+        },
+        {
+          "$xml_type": "EvacuateAndRefill",
+          "_vessel": "50 mL two-neck RBF",
+          "_gas": "N2",
+          "_time": {
+            "Value": 10,
+            "Unit": "second"
+          },
+          "_comment": "Purge with N2 for 10 s"
+        },
+        {
+          "$xml_type": "EvacuateAndRefill",
+          "_vessel": "50 mL two-neck RBF",
+          "_gas": "N2",
+          "_time": {
+            "Value": 30,
+            "Unit": "minute"
+          },
+          "_comment": "Bubble with N2, 30 min"
+        },
+        {
+          "$xml_type": "HeatChill",
+          "_temp": {
+            "Value": 85,
+            "Unit": "celsius"
+          },
+          "_time": {
+            "Value": 15,
+            "Unit": "minute"
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "50 mL two-neck RBF",
+          "_reagent": "THF",
+          "_amount": {
+            "Value": 10,
+            "Unit": "millilitre"
+          },
+          "_comment": "THF bubbled with N2 for 20 min"
+        },
+        {
+          "$xml_type": "Wait",
+          "_time": {
+            "Value": 2,
+            "Unit": "hour"
+          }
+        },
+        {
+          "$xml_type": "HeatChill",
+          "_temp": {
+            "Value": 85,
+            "Unit": "celsius"
+          },
+          "_time": {
+            "Value": 1,
+            "Unit": "hour"
+          },
+          "_comment": "Heat to reflux (85 °C, 1.25 atm) for 1 h (final heating before discontinuation)"
+        }
+      ]
+    },
+    "Workup": {
+      "Step": [
+        {
+          "$xml_type": "Add",
+          "_vessel": "25 mL frit funnel",
+          "_reagent": "neutral alumina",
+          "_amount": {
+            "Value": 12.5,
+            "Unit": "millilitre"
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "25 mL frit funnel",
+          "_reagent": "THF",
+          "_amount": {
+            "Value": 75,
+            "Unit": "millilitre"
+          },
+          "_comment": "Elute with THF (75 mL)"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "250 mL RBF",
+          "_reagent": "EtOH",
+          "_amount": {
+            "Value": 25,
+            "Unit": "millilitre"
+          }
+        },
+        {
+          "$xml_type": "Evaporate",
+          "_vessel": "250 mL RBF",
+          "_method": "rotary_evaporator",
+          "_comment": "Concentrate with rotovap to 25 mL"
+        },
+        {
+          "$xml_type": "Filter",
+          "_vessel": "250 mL RBF",
+          "_product_portion": "residue",
+          "_rinse": [
+            {
+              "name": "EtOH"
+            },
+            {
+              "name": "petroleum ether"
+            }
+          ],
+          "_comment": "Collect solids by filtration (filter paper ø90 mm), rinse EtOH x3 and petroleum ether x2"
+        },
+        {
+          "$xml_type": "Dry",
+          "_vessel": "filter cake",
+          "_time": {
+            "Value": 1,
+            "Unit": "hour"
+          },
+          "_comment": "Dry under vacuum (diaphragm pump) for 1 h"
+        }
+      ]
+    }
+  },
+  "starting_materials": [
+    {
+      "name": "TAPP",
+      "note": "INV-14-5",
+      "molar_mass_g_mol": 674.79436,
+      "mass_g": 0.1268,
+      "amount_mmol": 0.1879,
+      "equivalents": 1,
+      "density_g_mL": 1.35
+    },
+    {
+      "name": "TrBr",
+      "note": "INV-20-4",
+      "molar_mass_g_mol": 323.2264,
+      "mass_g": 0.3111,
+      "amount_mmol": 0.9627,
+      "equivalents": 5.122068431650661,
+      "density_g_mL": null
+    },
+    {
+      "name": "CoCl2",
+      "note": "INV-21-7",
+      "molar_mass_g_mol": 129.8392,
+      "mass_g": 0.1497,
+      "amount_mmol": 1.1529,
+      "equivalents": 6.135757118637772,
+      "density_g_mL": null
+    },
+    {
+      "name": "Et3N",
+      "note": "INV-22-5",
+      "molar_mass_g_mol": 101.19,
+      "volume_mL": 0.26,
+      "density_g_mL": 0.726,
+      "mass_g": 0.18876,
+      "amount_mmol": 1.8659,
+      "equivalents": 9.927149522698816
+    },
+    {
+      "name": "THF",
+      "note": "INV-23-4",
+      "molar_mass_g_mol": 72.10572,
+      "volume_mL": 10,
+      "density_g_mL": 0.889,
+      "mass_g": 8.89,
+      "amount_mmol": 123.293,
+      "equivalents": 656.1214465253004
+    },
+    {
+      "name": "THF",
+      "note": "INV-23-5",
+      "molar_mass_g_mol": 72.10572,
+      "volume_mL": 10,
+      "density_g_mL": 0.889,
+      "mass_g": 8.89,
+      "amount_mmol": 123.293,
+      "equivalents": 656.1214465253004
+    }
+  ],
+  "products": [
+    {
+      "name": "C120H88CoN8",
+      "molar_mass_g_mol": 1700.96952,
+      "yield_g": null,
+      "yield_percent": null,
+      "amount_mmol": null,
+      "appearance": null,
+      "is_main_product": true,
+      "eluent_system": null,
+      "nmr_data": null,
+      "rf_value": null
+    }
+  ],
+  "tlc_conditions": null,
+  "reagent_sources": null
+}

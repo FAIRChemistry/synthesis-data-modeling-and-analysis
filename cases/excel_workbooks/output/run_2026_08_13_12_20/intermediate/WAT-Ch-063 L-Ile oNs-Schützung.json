@@ -1,0 +1,1048 @@
+{
+  "source_file": "cases/excel_workbooks/input/workbooks/WAT-Ch-063 L-Ile oNs-Schützung.xlsx",
+  "source_filename": "WAT-Ch-063 L-Ile oNs-Schützung.xlsx",
+  "preprocessor": {
+    "library": "openpyxl",
+    "mode": "profile",
+    "options": {
+      "data_only": true,
+      "read_only": true,
+      "formatting_images_and_charts": "not extracted",
+      "profile_name": "chem_lab_journal",
+      "embedded_chemdraw": "extracted as CDX via Open Babel"
+    }
+  },
+  "sheets": [
+    {
+      "sheet_name": "WAT-Ch-001",
+      "max_row": 47,
+      "max_column": 11,
+      "merged_ranges": [],
+      "non_empty_rows": [
+        [
+          "Laborjournal",
+          "Nr.:",
+          "WAT-Ch-063"
+        ],
+        [
+          "Timo Watzenborn"
+        ],
+        [
+          "Promotion",
+          "Angesetzt am:",
+          "2023-11-22"
+        ],
+        [
+          "AK Laschat"
+        ],
+        [
+          "Edukte",
+          "eingesetzte\nMenge",
+          "Ansatz"
+        ],
+        [
+          "M",
+          "eq",
+          "Dichte",
+          "c",
+          "V",
+          "w",
+          "n",
+          66.66795969930084
+        ],
+        [
+          "g/mol",
+          "g/mL",
+          "mol/L",
+          "mL",
+          "%",
+          "mmol",
+          "g",
+          "mL",
+          "enthalten"
+        ],
+        [
+          "L-Phe-Me HCl 061",
+          215.68,
+          1,
+          19.24146884272997,
+          4.15,
+          "0,289 mol/L"
+        ],
+        [
+          "2-NsCl",
+          221.62,
+          1.3,
+          25.013909495548962,
+          5.5435826224035605,
+          "0,375 mol/L"
+        ],
+        [
+          "Triethylamin",
+          101.19,
+          2.5,
+          0.73,
+          48.103672106824924,
+          4.867610580489614,
+          6.667959699300842,
+          "0,722 mol/L"
+        ],
+        [
+          "DCM (NsCl)",
+          10,
+          10
+        ],
+        [
+          "DCM  ",
+          50,
+          50
+        ],
+        [
+          "Produkte"
+        ],
+        [
+          "M",
+          "Ausw.",
+          "n",
+          "Ausb."
+        ],
+        [
+          "g/mol",
+          "g",
+          "mmol",
+          "%",
+          "Habitus",
+          "Rf",
+          "Laufmittel",
+          "NMR"
+        ],
+        [
+          "Fr 15-27 (Misch)",
+          330.36,
+          0.5839999999999996,
+          1.7677684949751775,
+          9.187284554126416,
+          "063a"
+        ],
+        [
+          "Fr 28-NL (sauber)",
+          330.36,
+          2.259999999999998,
+          6.84102191548613,
+          35.55353269233852,
+          "063b"
+        ],
+        [
+          "Säule 2",
+          330.36,
+          1.8709999999999987,
+          5.6635185857852,
+          29.43392020679884,
+          "063'"
+        ],
+        [
+          "Vorschrift:",
+          "DC:",
+          "Beobachtungen:"
+        ],
+        [
+          "Aminosäureester unter Schutzgas in DCM lösen, auf 0 °C kühlen. Dann mit o-Nitrobenzolsulfonyl-chlorid in DCM und TEA versetzen (tropfen) und für 18 h bei RT rühren.                                                                  Aufarbeitung: Mit 1M HCl versetzen für Phasentrennung, Phasen trennen, wässrige Phase extrahieren mit 1x DCM, dann org Phase waschen mit 3x Wasser. Trocknen, LM entfernen, Säule (Pe/EtOAc 5:1 -> 3:1). ",
+          "Note: Rkt unter Pseudo-Schutzgas                                                 "
+        ],
+        [
+          "Herkunft der Edukte:"
+        ],
+        [
+          "L-Phe-Me HCl 061",
+          "Abzug"
+        ],
+        [
+          "2-NsCl",
+          "169 K-A3"
+        ],
+        [
+          "Triethylamin",
+          "Destille Manni"
+        ],
+        [
+          "DCM (NsCl)"
+        ],
+        [
+          "DCM  "
+        ],
+        [
+          "Literatur:"
+        ]
+      ],
+      "non_empty_cells": [
+        {
+          "address": "B1",
+          "row": 1,
+          "col": 2,
+          "value": "Laborjournal",
+          "python_type": "str"
+        },
+        {
+          "address": "I1",
+          "row": 1,
+          "col": 9,
+          "value": "Nr.:",
+          "python_type": "str"
+        },
+        {
+          "address": "J1",
+          "row": 1,
+          "col": 10,
+          "value": "WAT-Ch-063",
+          "python_type": "str"
+        },
+        {
+          "address": "A2",
+          "row": 2,
+          "col": 1,
+          "value": "Timo Watzenborn",
+          "python_type": "str"
+        },
+        {
+          "address": "A3",
+          "row": 3,
+          "col": 1,
+          "value": "Promotion",
+          "python_type": "str"
+        },
+        {
+          "address": "H3",
+          "row": 3,
+          "col": 8,
+          "value": "Angesetzt am:",
+          "python_type": "str"
+        },
+        {
+          "address": "J3",
+          "row": 3,
+          "col": 10,
+          "value": "2023-11-22",
+          "python_type": "datetime"
+        },
+        {
+          "address": "A4",
+          "row": 4,
+          "col": 1,
+          "value": "AK Laschat",
+          "python_type": "str"
+        },
+        {
+          "address": "A7",
+          "row": 7,
+          "col": 1,
+          "value": "Edukte",
+          "python_type": "str"
+        },
+        {
+          "address": "I7",
+          "row": 7,
+          "col": 9,
+          "value": "eingesetzte\nMenge",
+          "python_type": "str"
+        },
+        {
+          "address": "K7",
+          "row": 7,
+          "col": 11,
+          "value": "Ansatz",
+          "python_type": "str"
+        },
+        {
+          "address": "B8",
+          "row": 8,
+          "col": 2,
+          "value": "M",
+          "python_type": "str"
+        },
+        {
+          "address": "C8",
+          "row": 8,
+          "col": 3,
+          "value": "eq",
+          "python_type": "str"
+        },
+        {
+          "address": "D8",
+          "row": 8,
+          "col": 4,
+          "value": "Dichte",
+          "python_type": "str"
+        },
+        {
+          "address": "E8",
+          "row": 8,
+          "col": 5,
+          "value": "c",
+          "python_type": "str"
+        },
+        {
+          "address": "F8",
+          "row": 8,
+          "col": 6,
+          "value": "V",
+          "python_type": "str"
+        },
+        {
+          "address": "G8",
+          "row": 8,
+          "col": 7,
+          "value": "w",
+          "python_type": "str"
+        },
+        {
+          "address": "H8",
+          "row": 8,
+          "col": 8,
+          "value": "n",
+          "python_type": "str"
+        },
+        {
+          "address": "K8",
+          "row": 8,
+          "col": 11,
+          "value": 66.66795969930084,
+          "python_type": "float"
+        },
+        {
+          "address": "B9",
+          "row": 9,
+          "col": 2,
+          "value": "g/mol",
+          "python_type": "str"
+        },
+        {
+          "address": "D9",
+          "row": 9,
+          "col": 4,
+          "value": "g/mL",
+          "python_type": "str"
+        },
+        {
+          "address": "E9",
+          "row": 9,
+          "col": 5,
+          "value": "mol/L",
+          "python_type": "str"
+        },
+        {
+          "address": "F9",
+          "row": 9,
+          "col": 6,
+          "value": "mL",
+          "python_type": "str"
+        },
+        {
+          "address": "G9",
+          "row": 9,
+          "col": 7,
+          "value": "%",
+          "python_type": "str"
+        },
+        {
+          "address": "H9",
+          "row": 9,
+          "col": 8,
+          "value": "mmol",
+          "python_type": "str"
+        },
+        {
+          "address": "I9",
+          "row": 9,
+          "col": 9,
+          "value": "g",
+          "python_type": "str"
+        },
+        {
+          "address": "J9",
+          "row": 9,
+          "col": 10,
+          "value": "mL",
+          "python_type": "str"
+        },
+        {
+          "address": "K9",
+          "row": 9,
+          "col": 11,
+          "value": "enthalten",
+          "python_type": "str"
+        },
+        {
+          "address": "A10",
+          "row": 10,
+          "col": 1,
+          "value": "L-Phe-Me HCl 061",
+          "python_type": "str"
+        },
+        {
+          "address": "B10",
+          "row": 10,
+          "col": 2,
+          "value": 215.68,
+          "python_type": "float"
+        },
+        {
+          "address": "C10",
+          "row": 10,
+          "col": 3,
+          "value": 1,
+          "python_type": "int"
+        },
+        {
+          "address": "H10",
+          "row": 10,
+          "col": 8,
+          "value": 19.24146884272997,
+          "python_type": "float"
+        },
+        {
+          "address": "I10",
+          "row": 10,
+          "col": 9,
+          "value": 4.15,
+          "python_type": "float"
+        },
+        {
+          "address": "K10",
+          "row": 10,
+          "col": 11,
+          "value": "0,289 mol/L",
+          "python_type": "str"
+        },
+        {
+          "address": "A11",
+          "row": 11,
+          "col": 1,
+          "value": "2-NsCl",
+          "python_type": "str"
+        },
+        {
+          "address": "B11",
+          "row": 11,
+          "col": 2,
+          "value": 221.62,
+          "python_type": "float"
+        },
+        {
+          "address": "C11",
+          "row": 11,
+          "col": 3,
+          "value": 1.3,
+          "python_type": "float"
+        },
+        {
+          "address": "H11",
+          "row": 11,
+          "col": 8,
+          "value": 25.013909495548962,
+          "python_type": "float"
+        },
+        {
+          "address": "I11",
+          "row": 11,
+          "col": 9,
+          "value": 5.5435826224035605,
+          "python_type": "float"
+        },
+        {
+          "address": "K11",
+          "row": 11,
+          "col": 11,
+          "value": "0,375 mol/L",
+          "python_type": "str"
+        },
+        {
+          "address": "A12",
+          "row": 12,
+          "col": 1,
+          "value": "Triethylamin",
+          "python_type": "str"
+        },
+        {
+          "address": "B12",
+          "row": 12,
+          "col": 2,
+          "value": 101.19,
+          "python_type": "float"
+        },
+        {
+          "address": "C12",
+          "row": 12,
+          "col": 3,
+          "value": 2.5,
+          "python_type": "float"
+        },
+        {
+          "address": "D12",
+          "row": 12,
+          "col": 4,
+          "value": 0.73,
+          "python_type": "float"
+        },
+        {
+          "address": "H12",
+          "row": 12,
+          "col": 8,
+          "value": 48.103672106824924,
+          "python_type": "float"
+        },
+        {
+          "address": "I12",
+          "row": 12,
+          "col": 9,
+          "value": 4.867610580489614,
+          "python_type": "float"
+        },
+        {
+          "address": "J12",
+          "row": 12,
+          "col": 10,
+          "value": 6.667959699300842,
+          "python_type": "float"
+        },
+        {
+          "address": "K12",
+          "row": 12,
+          "col": 11,
+          "value": "0,722 mol/L",
+          "python_type": "str"
+        },
+        {
+          "address": "A14",
+          "row": 14,
+          "col": 1,
+          "value": "DCM (NsCl)",
+          "python_type": "str"
+        },
+        {
+          "address": "F14",
+          "row": 14,
+          "col": 6,
+          "value": 10,
+          "python_type": "int"
+        },
+        {
+          "address": "J14",
+          "row": 14,
+          "col": 10,
+          "value": 10,
+          "python_type": "int"
+        },
+        {
+          "address": "A15",
+          "row": 15,
+          "col": 1,
+          "value": "DCM  ",
+          "python_type": "str"
+        },
+        {
+          "address": "F15",
+          "row": 15,
+          "col": 6,
+          "value": 50,
+          "python_type": "int"
+        },
+        {
+          "address": "J15",
+          "row": 15,
+          "col": 10,
+          "value": 50,
+          "python_type": "int"
+        },
+        {
+          "address": "A19",
+          "row": 19,
+          "col": 1,
+          "value": "Produkte",
+          "python_type": "str"
+        },
+        {
+          "address": "B20",
+          "row": 20,
+          "col": 2,
+          "value": "M",
+          "python_type": "str"
+        },
+        {
+          "address": "C20",
+          "row": 20,
+          "col": 3,
+          "value": "Ausw.",
+          "python_type": "str"
+        },
+        {
+          "address": "D20",
+          "row": 20,
+          "col": 4,
+          "value": "n",
+          "python_type": "str"
+        },
+        {
+          "address": "E20",
+          "row": 20,
+          "col": 5,
+          "value": "Ausb.",
+          "python_type": "str"
+        },
+        {
+          "address": "B21",
+          "row": 21,
+          "col": 2,
+          "value": "g/mol",
+          "python_type": "str"
+        },
+        {
+          "address": "C21",
+          "row": 21,
+          "col": 3,
+          "value": "g",
+          "python_type": "str"
+        },
+        {
+          "address": "D21",
+          "row": 21,
+          "col": 4,
+          "value": "mmol",
+          "python_type": "str"
+        },
+        {
+          "address": "E21",
+          "row": 21,
+          "col": 5,
+          "value": "%",
+          "python_type": "str"
+        },
+        {
+          "address": "F21",
+          "row": 21,
+          "col": 6,
+          "value": "Habitus",
+          "python_type": "str"
+        },
+        {
+          "address": "G21",
+          "row": 21,
+          "col": 7,
+          "value": "Rf",
+          "python_type": "str"
+        },
+        {
+          "address": "H21",
+          "row": 21,
+          "col": 8,
+          "value": "Laufmittel",
+          "python_type": "str"
+        },
+        {
+          "address": "J21",
+          "row": 21,
+          "col": 10,
+          "value": "NMR",
+          "python_type": "str"
+        },
+        {
+          "address": "A22",
+          "row": 22,
+          "col": 1,
+          "value": "Fr 15-27 (Misch)",
+          "python_type": "str"
+        },
+        {
+          "address": "B22",
+          "row": 22,
+          "col": 2,
+          "value": 330.36,
+          "python_type": "float"
+        },
+        {
+          "address": "C22",
+          "row": 22,
+          "col": 3,
+          "value": 0.5839999999999996,
+          "python_type": "float"
+        },
+        {
+          "address": "D22",
+          "row": 22,
+          "col": 4,
+          "value": 1.7677684949751775,
+          "python_type": "float"
+        },
+        {
+          "address": "E22",
+          "row": 22,
+          "col": 5,
+          "value": 9.187284554126416,
+          "python_type": "float"
+        },
+        {
+          "address": "J22",
+          "row": 22,
+          "col": 10,
+          "value": "063a",
+          "python_type": "str"
+        },
+        {
+          "address": "A23",
+          "row": 23,
+          "col": 1,
+          "value": "Fr 28-NL (sauber)",
+          "python_type": "str"
+        },
+        {
+          "address": "B23",
+          "row": 23,
+          "col": 2,
+          "value": 330.36,
+          "python_type": "float"
+        },
+        {
+          "address": "C23",
+          "row": 23,
+          "col": 3,
+          "value": 2.259999999999998,
+          "python_type": "float"
+        },
+        {
+          "address": "D23",
+          "row": 23,
+          "col": 4,
+          "value": 6.84102191548613,
+          "python_type": "float"
+        },
+        {
+          "address": "E23",
+          "row": 23,
+          "col": 5,
+          "value": 35.55353269233852,
+          "python_type": "float"
+        },
+        {
+          "address": "J23",
+          "row": 23,
+          "col": 10,
+          "value": "063b",
+          "python_type": "str"
+        },
+        {
+          "address": "A24",
+          "row": 24,
+          "col": 1,
+          "value": "Säule 2",
+          "python_type": "str"
+        },
+        {
+          "address": "B24",
+          "row": 24,
+          "col": 2,
+          "value": 330.36,
+          "python_type": "float"
+        },
+        {
+          "address": "C24",
+          "row": 24,
+          "col": 3,
+          "value": 1.8709999999999987,
+          "python_type": "float"
+        },
+        {
+          "address": "D24",
+          "row": 24,
+          "col": 4,
+          "value": 5.6635185857852,
+          "python_type": "float"
+        },
+        {
+          "address": "E24",
+          "row": 24,
+          "col": 5,
+          "value": 29.43392020679884,
+          "python_type": "float"
+        },
+        {
+          "address": "J24",
+          "row": 24,
+          "col": 10,
+          "value": "063'",
+          "python_type": "str"
+        },
+        {
+          "address": "A27",
+          "row": 27,
+          "col": 1,
+          "value": "Vorschrift:",
+          "python_type": "str"
+        },
+        {
+          "address": "E27",
+          "row": 27,
+          "col": 5,
+          "value": "DC:",
+          "python_type": "str"
+        },
+        {
+          "address": "H27",
+          "row": 27,
+          "col": 8,
+          "value": "Beobachtungen:",
+          "python_type": "str"
+        },
+        {
+          "address": "A28",
+          "row": 28,
+          "col": 1,
+          "value": "Aminosäureester unter Schutzgas in DCM lösen, auf 0 °C kühlen. Dann mit o-Nitrobenzolsulfonyl-chlorid in DCM und TEA versetzen (tropfen) und für 18 h bei RT rühren.                                                                  Aufarbeitung: Mit 1M HCl versetzen für Phasentrennung, Phasen trennen, wässrige Phase extrahieren mit 1x DCM, dann org Phase waschen mit 3x Wasser. Trocknen, LM entfernen, Säule (Pe/EtOAc 5:1 -> 3:1). ",
+          "python_type": "str"
+        },
+        {
+          "address": "H28",
+          "row": 28,
+          "col": 8,
+          "value": "Note: Rkt unter Pseudo-Schutzgas                                                 ",
+          "python_type": "str"
+        },
+        {
+          "address": "H36",
+          "row": 36,
+          "col": 8,
+          "value": "Herkunft der Edukte:",
+          "python_type": "str"
+        },
+        {
+          "address": "H37",
+          "row": 37,
+          "col": 8,
+          "value": "L-Phe-Me HCl 061",
+          "python_type": "str"
+        },
+        {
+          "address": "J37",
+          "row": 37,
+          "col": 10,
+          "value": "Abzug",
+          "python_type": "str"
+        },
+        {
+          "address": "H38",
+          "row": 38,
+          "col": 8,
+          "value": "2-NsCl",
+          "python_type": "str"
+        },
+        {
+          "address": "J38",
+          "row": 38,
+          "col": 10,
+          "value": "169 K-A3",
+          "python_type": "str"
+        },
+        {
+          "address": "H39",
+          "row": 39,
+          "col": 8,
+          "value": "Triethylamin",
+          "python_type": "str"
+        },
+        {
+          "address": "J39",
+          "row": 39,
+          "col": 10,
+          "value": "Destille Manni",
+          "python_type": "str"
+        },
+        {
+          "address": "H41",
+          "row": 41,
+          "col": 8,
+          "value": "DCM (NsCl)",
+          "python_type": "str"
+        },
+        {
+          "address": "H42",
+          "row": 42,
+          "col": 8,
+          "value": "DCM  ",
+          "python_type": "str"
+        },
+        {
+          "address": "A44",
+          "row": 44,
+          "col": 1,
+          "value": "Literatur:",
+          "python_type": "str"
+        }
+      ],
+      "profile_summary": {
+        "profile_name": "chem_lab_journal",
+        "label_positions": {
+          "starting_materials": {
+            "address": "A7",
+            "row": 7,
+            "col": 1,
+            "label": "Edukte"
+          },
+          "products": {
+            "address": "A19",
+            "row": 19,
+            "col": 1,
+            "label": "Produkte"
+          },
+          "procedure": {
+            "address": "A27",
+            "row": 27,
+            "col": 1,
+            "label": "Vorschrift:"
+          },
+          "tlc_conditions": {
+            "address": "E27",
+            "row": 27,
+            "col": 5,
+            "label": "DC:"
+          },
+          "observations": {
+            "address": "H27",
+            "row": 27,
+            "col": 8,
+            "label": "Beobachtungen:"
+          },
+          "reagent_sources": {
+            "address": "H36",
+            "row": 36,
+            "col": 8,
+            "label": "Herkunft der Edukte:"
+          },
+          "literature": {
+            "address": "A44",
+            "row": 44,
+            "col": 1,
+            "label": "Literatur:"
+          }
+        },
+        "metadata": {
+          "journal_number": "WAT-Ch-063",
+          "researcher": "Timo Watzenborn",
+          "project_type": "Promotion",
+          "date": "2023-11-22",
+          "research_group": "AK Laschat",
+          "reaction_name_from_filename": "L-Ile oNs-Schützung"
+        },
+        "batch_volume_mL": 66.66795969930084,
+        "procedure": "Aminosäureester unter Schutzgas in DCM lösen, auf 0 °C kühlen. Dann mit o-Nitrobenzolsulfonyl-chlorid in DCM und TEA versetzen (tropfen) und für 18 h bei RT rühren.                                                                  Aufarbeitung: Mit 1M HCl versetzen für Phasentrennung, Phasen trennen, wässrige Phase extrahieren mit 1x DCM, dann org Phase waschen mit 3x Wasser. Trocknen, LM entfernen, Säule (Pe/EtOAc 5:1 -> 3:1). ",
+        "tlc_conditions": null,
+        "observations": "Note: Rkt unter Pseudo-Schutzgas                                                 ",
+        "starting_material_table_rows": [
+          {
+            "name": "L-Phe-Me HCl 061",
+            "M g/mol": 215.68,
+            "eq": 1,
+            "n mmol": 19.24146884272997,
+            "g": 4.15,
+            "enthalten": "0,289 mol/L"
+          },
+          {
+            "name": "2-NsCl",
+            "M g/mol": 221.62,
+            "eq": 1.3,
+            "n mmol": 25.013909495548962,
+            "g": 5.5435826224035605,
+            "enthalten": "0,375 mol/L"
+          },
+          {
+            "name": "Triethylamin",
+            "M g/mol": 101.19,
+            "eq": 2.5,
+            "Dichte g/mL": 0.73,
+            "n mmol": 48.103672106824924,
+            "g": 4.867610580489614,
+            "mL": 6.667959699300842,
+            "enthalten": "0,722 mol/L"
+          },
+          {
+            "name": "DCM (NsCl)",
+            "V mL": 10,
+            "mL": 10
+          },
+          {
+            "name": "DCM  ",
+            "V mL": 50,
+            "mL": 50
+          }
+        ],
+        "product_table_rows": [
+          {
+            "name": "Fr 15-27 (Misch)",
+            "M g/mol": 330.36,
+            "Ausw. g": 0.5839999999999996,
+            "n mmol": 1.7677684949751775,
+            "Ausb. %": 9.187284554126416,
+            "NMR": "063a"
+          },
+          {
+            "name": "Fr 28-NL (sauber)",
+            "M g/mol": 330.36,
+            "Ausw. g": 2.259999999999998,
+            "n mmol": 6.84102191548613,
+            "Ausb. %": 35.55353269233852,
+            "NMR": "063b"
+          },
+          {
+            "name": "Säule 2",
+            "M g/mol": 330.36,
+            "Ausw. g": 1.8709999999999987,
+            "n mmol": 5.6635185857852,
+            "Ausb. %": 29.43392020679884,
+            "NMR": "063'"
+          }
+        ],
+        "reagent_source_rows": [
+          [
+            "L-Phe-Me HCl 061",
+            "Abzug"
+          ],
+          [
+            "2-NsCl",
+            "169 K-A3"
+          ],
+          [
+            "Triethylamin",
+            "Destille Manni"
+          ],
+          [
+            "DCM (NsCl)"
+          ],
+          [
+            "DCM  "
+          ]
+        ],
+        "literature_rows": [
+          [
+            "Literatur:"
+          ]
+        ]
+      }
+    }
+  ],
+  "embedded_reaction_smiles": [
+    "C([C@@H]([C@@H](C(=O)OC)*)C)C>>C([C@@H]([C@@H](C(=O)OC)NS(=O)(=O)c1ccccc1[N+](=O)[O-])C)C",
+    "c1ccc(c(c1)S(=O)(=O)Cl)[N+](=O)[O-]",
+    "*"
+  ],
+  "embedded_reaction_structures": [
+    {
+      "role": "product",
+      "smiles": "C([C@@H]([C@@H](C(=O)OC)NS(=O)(=O)c1ccccc1[N+](=O)[O-])C)C",
+      "inchi": "InChI=1S/C13H18N2O6S/c1-4-9(2)12(13(16)21-3)14-22(19,20)11-8-6-5-7-10(11)15(17)18/h5-9,12,14H,4H2,1-3H3/t9-,12-/m0/s1",
+      "inchikey": "KYILFFWWKQIEEZ-CABZTGNLSA-N"
+    },
+    {
+      "role": "unknown",
+      "smiles": "c1ccc(c(c1)S(=O)(=O)Cl)[N+](=O)[O-]",
+      "inchi": "InChI=1S/C6H4ClNO4S/c7-13(11,12)6-4-2-1-3-5(6)8(9)10/h1-4H",
+      "inchikey": "WPHUUIODWRNJLO-UHFFFAOYSA-N"
+    }
+  ]
+}

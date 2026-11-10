@@ -1,0 +1,183 @@
+{
+  "journal_number": "WAT-Ch-044",
+  "date": "2023-10-17",
+  "researcher": "Timo Watzenborn",
+  "research_group": "AK Laschat",
+  "project_type": "Promotion",
+  "reaction_name": "L-Ile Methylester",
+  "starting_materials": [
+    {
+      "name": "L-Isoleucin",
+      "molar_mass_g_mol": 131.18,
+      "equivalents": 1,
+      "density_g_mL": null,
+      "concentration_mol_L": 0.654,
+      "volume_mL": null,
+      "mass_fraction_percent": null,
+      "amount_mmol": 114.34669919194998,
+      "mass_g": 15,
+      "batch_concentration_mol_L": 0.654,
+      "role": "limiting_reagent",
+      "note": null
+    },
+    {
+      "name": "Thionylchlorid",
+      "molar_mass_g_mol": 118.97,
+      "equivalents": 3,
+      "density_g_mL": 1.64,
+      "concentration_mol_L": 1.962,
+      "volume_mL": 24.885049029633457,
+      "mass_fraction_percent": null,
+      "amount_mmol": 343.0400975758499,
+      "mass_g": 40.81148040859886,
+      "batch_concentration_mol_L": 1.962,
+      "role": "reagent",
+      "note": null
+    },
+    {
+      "name": "MeOH",
+      "molar_mass_g_mol": null,
+      "equivalents": null,
+      "density_g_mL": null,
+      "concentration_mol_L": null,
+      "volume_mL": 150,
+      "mass_fraction_percent": null,
+      "amount_mmol": null,
+      "mass_g": null,
+      "batch_concentration_mol_L": null,
+      "role": "solvent",
+      "note": null
+    }
+  ],
+  "batch_volume_mL": 174.88504902963345,
+  "products": [
+    {
+      "name": "Methylester x HCl",
+      "molar_mass_g_mol": 181.66,
+      "yield_g": 20.772221375209632,
+      "amount_mmol": 114.34669919194998,
+      "yield_percent": 100,
+      "appearance": null,
+      "rf_value": null,
+      "eluent_system": null,
+      "nmr_data": null,
+      "is_main_product": true
+    }
+  ],
+  "procedure": {
+    "Prep": {
+      "Step": [
+        {
+          "$xml_type": "Add",
+          "_reagent": "MeOH",
+          "_amount": {
+            "Value": 150,
+            "Unit": "millilitre"
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "L-Isoleucin",
+          "_amount": {
+            "Value": 15,
+            "Unit": "gram"
+          },
+          "_comment": "Aminosäure in MeOH lösen"
+        },
+        {
+          "$xml_type": "HeatChill",
+          "_temp": {
+            "Value": 0,
+            "Unit": "celsius"
+          },
+          "_comment": "kühlen auf 0 °C; Dauer nicht angegeben"
+        }
+      ]
+    },
+    "Reaction": {
+      "Step": [
+        {
+          "$xml_type": "Add",
+          "_reagent": "Thionylchlorid",
+          "_amount": {
+            "Value": 24.885049029633457,
+            "Unit": "millilitre"
+          },
+          "_dropwise": true
+        },
+        {
+          "$xml_type": "HeatChill",
+          "_temp": {
+            "Value": 25,
+            "Unit": "celsius"
+          }
+        },
+        {
+          "$xml_type": "Wait",
+          "_time": {
+            "Value": 48,
+            "Unit": "hour"
+          },
+          "_comment": "rühren für 48 h bei RT"
+        }
+      ]
+    },
+    "Workup": {
+      "Step": [
+        {
+          "$xml_type": "Evaporate",
+          "_method": "vacuum",
+          "_comment": "LM entfernen (Wasserstrahlpumpe)"
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "MeOH",
+          "_comment": "Rohprodukt erneut lösen in MeOH; Menge nicht angegeben"
+        },
+        {
+          "$xml_type": "Evaporate",
+          "_comment": "LM wieder entfernen"
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "MeOH",
+          "_comment": "Rohprodukt erneut lösen in MeOH; Menge nicht angegeben"
+        },
+        {
+          "$xml_type": "Evaporate",
+          "_comment": "LM wieder entfernen"
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "MeOH",
+          "_comment": "Rohprodukt erneut lösen in MeOH; Menge nicht angegeben"
+        },
+        {
+          "$xml_type": "Evaporate",
+          "_comment": "LM wieder entfernen"
+        },
+        {
+          "$xml_type": "Dry",
+          "_desiccant": "P2O5",
+          "_comment": "Mglw. noch im Exsiccator (P2O5) trocknen"
+        }
+      ]
+    }
+  },
+  "tlc_conditions": null,
+  "observations": "Note: Rkt OHNE Schutzgas",
+  "reagent_sources": [
+    {
+      "reagent_name": "L-Isoleucin",
+      "source": "Raum 169 (Labor)"
+    },
+    {
+      "reagent_name": "Thionylchlorid",
+      "source": "363 (Schrank hinten)"
+    },
+    {
+      "reagent_name": "MeOH",
+      "source": "LM-Schrank"
+    }
+  ]
+}

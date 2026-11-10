@@ -1,0 +1,29 @@
+<XDL>
+  <Synthesis>
+    <Hardware>
+      <Component id="reactor" type="reactor" />
+    </Hardware>
+    <Metadata description="WAT-Ch-068 - Cyclisierung Ile SmI2 Roh" product="Piperidinol" product_yield_percent="64.5833" />
+    <Procedure>
+      <Prep>
+        <EvacuateAndRefill vessel="reactor" gas="N2" />
+        <Add vessel="reactor" reagent="THF " amount="2 millilitre" />
+        <Add vessel="reactor" reagent="Aminoaldehyd 067 Roh" amount="0.048 gram" comment="Aminoaldehyd in THF lösen" />
+        <HeatChill vessel="reactor" temp="0 celsius" />
+      </Prep>
+      <Reaction>
+        <Add vessel="reactor" reagent="SmI2 (0.1 M in THF)" amount="2.76093 millilitre" dropwise="true" />
+        <HeatChill vessel="reactor" temp="25 celsius" />
+      </Reaction>
+      <Workup>
+        <Evaporate vessel="reactor" method="rotary_evaporator" />
+        <Purify vessel="reactor" eluent="Pe/EtOAc 3:1" />
+      </Workup>
+    </Procedure>
+    <Reagents>
+      <Reagent id="Aminoaldehyd 067 Roh" name="Aminoaldehyd 067 Roh" role="substrate" />
+      <Reagent id="SmI2 (0.1 M in THF)" name="SmI2 (0.1 M in THF)" role="reagent" />
+      <Reagent id="THF " name="THF " role="solvent" />
+    </Reagents>
+  </Synthesis>
+</XDL>

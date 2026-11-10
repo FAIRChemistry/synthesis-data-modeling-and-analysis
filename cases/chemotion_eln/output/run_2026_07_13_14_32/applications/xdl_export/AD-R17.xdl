@@ -1,0 +1,56 @@
+<XDL>
+  <Synthesis>
+    <Hardware>
+      <Component id="5 mL vial" type="5 mL vial" />
+      <Component id="25 mL flask" type="25 mL flask" />
+      <Component id="250 mL RBF" type="250 mL RBF" />
+      <Component id="Filter" type="Filter" />
+    </Hardware>
+    <Metadata description="AD-R17 - Synthesis of [Co(ttpp)(py)2](OTf) (scale-up) " product="[Co(ttpp)(py)2](OTf)" product_yield_percent="79.7317" />
+    <Procedure>
+      <Prep>
+        <Add vessel="5 mL vial" reagent="AgOTf" amount="80.26 milligram" dropwise="false" comment="RT 21.8°C RH 30 %. Stock solution preparation: 5 mL vial. Put into the glovebox (H₂O &lt; 1 ppm). Weigh in AgOTf → 80.26 mg" />
+        <Add vessel="5 mL vial" reagent="toluene" amount="3000 microlitre" dropwise="false" comment="Take it out of the glovebox. Add 3000 µL of toluene → colorless solution." />
+      </Prep>
+      <Reaction>
+        <Add vessel="25 mL flask" reagent="Co(ttpp)" dropwise="false" comment="Reaction: 25 mL flask; Add Co(ttpp)" />
+        <Add vessel="25 mL flask" reagent="pyridine" dropwise="false" comment="Add pyridine" />
+        <Add vessel="25 mL flask" reagent="toluene" amount="15 millilitre" dropwise="false" comment="Add toluene 15 mL" />
+        <Sonicate vessel="25 mL flask" time="3 minute" comment="Sonicate for 3 min → Dark red solution" />
+        <Add vessel="25 mL flask" reagent="AgOTf" dropwise="true" comment="Cover with aluminum foil. Start stirring at 400 rpm. Add 1500 µL of AgOTf/toluene dropwise w/ mechanical pipette (750 x 2)" />
+        <Add vessel="25 mL flask" reagent="toluene" amount="750 microlitre" repeat="2" dropwise="true" comment="Add 1500 µL of AgOTf/toluene dropwise w/ mechanical pipette (750 x 2)" />
+        <Wait vessel="25 mL flask" time="1 hour" comment="Continue stirring for 1 h. -&gt; 50 μL + CDCl₃ 450 μL -&gt; 1H NMR M1 (U1.834; SW 19, NS 16) (use mechanical pipette)" />
+      </Reaction>
+      <Workup>
+        <Evaporate vessel="25 mL flask" method="rotary_evaporator" temp="40 celsius" time="1 hour" comment="Ag scavenging: Remove volatiles with a rotovap (40 °C) for 1 h." />
+        <Dry vessel="25 mL flask" time="1 hour" comment="Dry under vacuum 1h" />
+        <Add vessel="25 mL flask" reagent="DCM" amount="15 millilitre" dropwise="false" comment="Add DCM 15 mL" />
+        <Sonicate vessel="25 mL flask" comment="Swirl and sonicate → Dark green solution" />
+        <Add vessel="25 mL flask" reagent="3-mercaptopropyl silica" dropwise="false" comment="Add ISOLUTE Si-Thiol" />
+        <Wait vessel="25 mL flask" time="2 hour" comment="Stir at 500 rpm for 2 h" />
+        <Filter vessel="250 mL RBF" product_portion="filtrate" rinse="DCM (50 millilitre)" comment="20 mL plastic syringe, cotton plug, syringe filter (⌀ 25 mm, 0.45 µm, PTFE), syringe filter (0.2 µm, ⌀ 15 mm, PTFE), 250 mL RBF [difficult to press]. Better to use frit or a filter paper.; Filter the mixture → Dark green filtrate collected; Transfer and rinse with DCM 50 mL → pale green filtrate at the end." />
+        <Evaporate vessel="250 mL RBF" comment="Evaporate the whole solvent." />
+        <Add vessel="250 mL RBF" reagent="DCM" amount="10 millilitre" dropwise="false" comment="Reprecipitation: Add 10 mL of DCM." />
+        <Add vessel="250 mL RBF" reagent="n-hexane" amount="60 millilitre" dropwise="false" comment="Add n-hexane (60 mL)." />
+        <Sonicate vessel="250 mL RBF" comment="Swirl and sonicate" />
+        <HeatChill vessel="250 mL RBF" temp="0 celsius" time="0.5 day" comment="Refrigerate at 0 °C for o/n" />
+        <Filter vessel="250 mL RBF" comment="26.03.2026 RT 21.5°C RH 30 %. Membrane filter (0.22 µm, hydrophobic, PVDF), membrane filter holder, 250 mL RBF.; Filter the mixture [it was too slow and incomplete]" />
+        <Add vessel="250 mL RBF" reagent="DCM" amount="30 millilitre" dropwise="false" comment="Dissolve in 30 mL of DCM" />
+        <Evaporate vessel="250 mL RBF" comment="Evaporate the whole solvent." />
+        <Add vessel="250 mL RBF" reagent="DCM" amount="10 millilitre" dropwise="false" comment="Add 10 mL of DCM." />
+        <Add vessel="250 mL RBF" reagent="n-hexane" amount="60 millilitre" dropwise="false" comment="Add n-hexane (60 mL)." />
+        <HeatChill vessel="250 mL RBF" temp="0 celsius" time="2 hour" comment="Refrigerate at 0 °C for 2 h" />
+        <Filter vessel="Filter" product_portion="residue" rinse="DCM + n-hexane; n-hexane" comment="Frit (por. 4); Filter the mixture →  light yellow filtrate; Transfer and rinse with 2 x (DCM 3 mL + n-hexane 20 mL); Rinse w/ hexane 4 x 4 mL" />
+        <Dry vessel="Filter" time="5 minute" comment="Dry w/ suction for 5 min" />
+        <Dry vessel="Filter" time="0.5 day" comment="Dry under vacuum o/n" />
+      </Workup>
+    </Procedure>
+    <Reagents>
+      <Reagent id="Co(ttpp)" name="Co(ttpp)" role="reagent" />
+      <Reagent id="AgOTf" name="AgOTf" role="reagent" />
+      <Reagent id="pyridine" name="pyridine" role="reagent" />
+      <Reagent id="toluene" name="toluene" role="reagent" />
+      <Reagent id="3-mercaptopropyl silica" name="3-mercaptopropyl silica" role="reagent" />
+    </Reagents>
+  </Synthesis>
+</XDL>

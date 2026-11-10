@@ -1,0 +1,184 @@
+{
+  "short_label": "AD-R18",
+  "name": "Synthesis of Co(ttpp) (scale-up)",
+  "created_at": "2026-04-07T08:10:32.358Z",
+  "status": "Analyses Pending",
+  "temperature": {
+    "data": [],
+    "userText": "1. RT 2. Reflux",
+    "valueUnit": "°C"
+  },
+  "duration": "2 Hour(s)",
+  "vessel_size": {
+    "amount": 100,
+    "unit": "ml"
+  },
+  "plain_text_description": "Purposes\nTo obtain more Co(ttpp) for Co(ttpp)(py)2(OTf) synthesis\nReferences and modifications\nAD-R10 (76% yield): x2 scale, n-hexane → n-heptane + petroleum ether\nAnalysis results\n1H NMR in CDCl₃: Co(ttpp), 0.068% (mol) of Co(III)?, 0.2 eq. of heptane/petroleum ether 86% purity\n1H NMR in DMSO: Co(ttpp), Co(III)?, heptane/petroleum ether\nICP-OES:\nObtained products or insights\nCo(ttpp) 77%\nProblems and possible countermeasures\nFiltration was difficult: heptane  + petroleum ether → hexane\n\nProcedure\nRT 21.9 °C, RH 30%\nReaction\n100 mL two-neck RBF with a stir bar, septum (natural rubber), reflux condenser, T-shaped connector, bubbler (with paraffin oil), Schlenk line (N₂, 1.25 atm), heat gun, magnetic stirrer, oil bath\nHeat the flask in an oven at 120 °C for >1.5 h\nQuickly assemble and evacuate the system while it is still hot (1.2 × 10⁻³ mbar)\nHeat the flask and the bottom part of the reflux condenser with a heat gun (250 °C)\nBackfill with N₂\nClose the N₂ connection. Add TAPP and TrBr (plastic spatula) quickly\nCycle with N₂ slowly ×3\nAdd Et₃N\nAdd THF → dark green liquid\nStart stirring (350 rpm) [10:45]\nCover the flask with aluminum foil\nWait for 1 hr\n → 0.1 mL + 400 µL of CDCl₃ → ¹H NMR M1 (U1.834; N PROTON20ppm; O1P 6, SW 22)\nStop stirring. Close the N₂ connection. Add CoCl₂ quickly. Purge with N₂ for 10 s. Close. Resume stirring. [12:30]\nBubble with N₂ for 30 min [12:32]\nHeat to reflux (85 °C, oil bath) for 2 h [15:03] \nCool down to RT\n→ 0.1 mL + 400 µL of CDCl₃ → syringe filter (PVDF) → ¹H NMR M2 (U1.834; N PROTON20ppm; O1P 6, SW 22)\n",
+  "plain_text_observation": "Short-pad chromatography\nFritted funnel (x mL, por. 4), suction adapter, 250 mL RBF, T-connector, diaphragm pump\nAdd 30 g of neutral alumina\nAdd THF to fully wet the alumina\nAdd the reaction mixture\nElute with suction and THF until the eluate becomes pale red → 220 mL, alumina pad blue-green at the top, pale red at the bottom\nStore in the fridge o/n\nRotovap\nDry under vacuum Schlenk line, 1 h\n\nRT 21.9 °C, RH 32 %\nCHCl₃ deacidification\n250 mL RBF\nAdd basic alumina 40 g\nAdd CHCl₃ 150 mL and swirl\nFritted funnel (x mL, por. 4), suction adapter, 250 mL RBF, diaphragm pump\nFilter the mixture under suction\n\nReprecipitation\nAdd 50 mL of purified CHCl₃ to the flask and sonicate → dark red solution\nAdd 280 mL of n-heptane, swirl, sonicate\nStore in fridge (0 °C) for 1 h 20 min\nFritted funnel (x mL, por. 4), suction adapter, 250 mL RBF, diaphragm pump [fritted funnel could be smaller]\nFilter the mixture under suction → dark brown filtrate\nFilter the filtrate again → faint brown filtrate\nTransfer & rinse w/ 2 x (12 mL of purified CHCl₃ + 40 mL of heptane)\nRinse with 2 × 30 mL of petroleum ether\nDry under vacuum (desiccator, diaphragm pump, 4 days) → reddish brown solid\n\nAnalysis\nRT 21.8 °C, RH 39%\n20 mL vial with PTFE sealing (tare: 15.29431 g)\nWeigh\n→ 1H NMR P (CDCl₃, DMSO; U1.834; N PROTON 20 ppm; O1P 6, SW 22) (dark red solution)\nStore in the fridge\n",
+  "starting_materials": [
+    {
+      "short_label": "INV-14-7",
+      "name": "TAPP",
+      "molecular_weight": 674.7943600000002,
+      "real_amount_value": 0.50313,
+      "real_amount_unit": "g",
+      "target_amount_value": 0.5,
+      "target_amount_unit": "g",
+      "density": 1.35,
+      "inchikey": "REPFNYFEIOZRLM-LWQDQPMZSA-N",
+      "equivalent": 1.0,
+      "reference": true,
+      "position": 0
+    },
+    {
+      "short_label": "INV-20-6",
+      "name": "TrBr",
+      "molecular_weight": 323.2264,
+      "real_amount_value": 1.2049999999999998,
+      "real_amount_unit": "g",
+      "target_amount_value": 1.1974996352962994,
+      "target_amount_unit": "g",
+      "density": null,
+      "inchikey": "NZHXEWZGTQSYJM-UHFFFAOYSA-N",
+      "equivalent": 5.00001666805036,
+      "reference": false,
+      "position": 1
+    },
+    {
+      "short_label": "INV-21-9",
+      "name": "CoCl2",
+      "molecular_weight": 129.8392,
+      "real_amount_value": 0.58636,
+      "real_amount_unit": "g",
+      "target_amount_value": 0.5772389680316828,
+      "target_amount_unit": "g",
+      "density": null,
+      "inchikey": "GVPFVAHMJGGAJG-UHFFFAOYSA-L",
+      "equivalent": 6.056890685815249,
+      "reference": false,
+      "position": 2
+    },
+    {
+      "short_label": "INV-22-7",
+      "name": "Et3N",
+      "molecular_weight": 101.19,
+      "real_amount_value": 0.00103,
+      "real_amount_unit": "l",
+      "target_amount_value": 0.7497839786331347,
+      "target_amount_unit": "g",
+      "density": 0.726,
+      "inchikey": "ZMANZCXQSJIPKH-UHFFFAOYSA-N",
+      "equivalent": 9.911228297492745,
+      "reference": false,
+      "position": 3
+    },
+    {
+      "short_label": "INV-23-7",
+      "name": "THF",
+      "molecular_weight": 72.10572,
+      "real_amount_value": null,
+      "real_amount_unit": "l",
+      "target_amount_value": 0.04,
+      "target_amount_unit": "l",
+      "density": 0.889,
+      "inchikey": "WYURNTSHIVDZCO-UHFFFAOYSA-N",
+      "equivalent": 661.4290495053613,
+      "reference": false,
+      "position": 4
+    }
+  ],
+  "solvents": [],
+  "purification_solvents": [
+    {
+      "short_label": "KE-44",
+      "name": "dialuminum;tris(oxygen(2-))",
+      "molecular_weight": 101.961276,
+      "real_amount_value": null,
+      "real_amount_unit": "l",
+      "target_amount_value": null,
+      "target_amount_unit": "g",
+      "density": null,
+      "inchikey": "PNEYBMLMFCGWSK-UHFFFAOYSA-N",
+      "equivalent": null,
+      "reference": false,
+      "position": 0
+    },
+    {
+      "short_label": "KE-40",
+      "name": "oxolane",
+      "molecular_weight": 72.10572,
+      "real_amount_value": null,
+      "real_amount_unit": "l",
+      "target_amount_value": null,
+      "target_amount_unit": "g",
+      "density": 0.889,
+      "inchikey": "WYURNTSHIVDZCO-UHFFFAOYSA-N",
+      "equivalent": null,
+      "reference": false,
+      "position": 1
+    },
+    {
+      "short_label": "KE-42",
+      "name": "KE-42",
+      "molecular_weight": null,
+      "real_amount_value": null,
+      "real_amount_unit": "l",
+      "target_amount_value": null,
+      "target_amount_unit": "g",
+      "density": 0.672,
+      "inchikey": "DUMMY",
+      "equivalent": null,
+      "reference": false,
+      "position": 2
+    },
+    {
+      "short_label": "KE-43",
+      "name": "dialuminum;tris(oxygen(2-))",
+      "molecular_weight": 101.961276,
+      "real_amount_value": null,
+      "real_amount_unit": "l",
+      "target_amount_value": null,
+      "target_amount_unit": "g",
+      "density": null,
+      "inchikey": "PNEYBMLMFCGWSK-UHFFFAOYSA-N",
+      "equivalent": null,
+      "reference": false,
+      "position": 3
+    },
+    {
+      "short_label": "KE-41",
+      "name": "chloroform",
+      "molecular_weight": 119.37764000000001,
+      "real_amount_value": null,
+      "real_amount_unit": "l",
+      "target_amount_value": null,
+      "target_amount_unit": "g",
+      "density": 1.48,
+      "inchikey": "HEDRZPFGACZZDS-UHFFFAOYSA-N",
+      "equivalent": null,
+      "reference": false,
+      "position": 4
+    }
+  ],
+  "products": [
+    {
+      "short_label": "AD-47",
+      "name": "Co(ttpp)",
+      "molecular_weight": 1700.9695200000008,
+      "real_amount_value": 0.97666,
+      "real_amount_unit": "g",
+      "target_amount_value": null,
+      "target_amount_unit": "g",
+      "density": null,
+      "inchikey": "SZVLKHGYPSMSBU-FIVSXPDESA-N",
+      "equivalent": 0.7700839998348952,
+      "reference": false,
+      "position": 0
+    }
+  ],
+  "case_metadata": {
+    "researcher": "Zarfishan Dilruba",
+    "research_group": "AK Endo",
+    "project_type": "Promotion"
+  }
+}

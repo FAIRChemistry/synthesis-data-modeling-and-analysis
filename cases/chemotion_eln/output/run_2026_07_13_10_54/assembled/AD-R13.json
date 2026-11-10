@@ -1,0 +1,301 @@
+{
+  "journal_number": "AD-R13",
+  "date": "2026-02-10",
+  "reaction_name": "Synthesis of [Co(ttpp)(py)2](OTf)",
+  "batch_volume_mL": 0.574,
+  "starting_materials": [
+    {
+      "name": "Co(ttpp)",
+      "note": "AD-31-2",
+      "molar_mass_g_mol": 1702.9854,
+      "mass_g": 0.1007,
+      "amount_mmol": 0.05917,
+      "equivalents": 1.0,
+      "density_g_mL": null,
+      "volume_mL": null
+    },
+    {
+      "name": "AgOTf",
+      "note": "INV-29-2",
+      "molar_mass_g_mol": 256.9373096,
+      "mass_g": 0.01318,
+      "amount_mmol": 0.05131,
+      "equivalents": 0.8675004167549472,
+      "density_g_mL": null,
+      "volume_mL": null
+    },
+    {
+      "name": "pyridine",
+      "note": "INV-24-1",
+      "molar_mass_g_mol": 79.0999,
+      "mass_g": 0.023472,
+      "amount_mmol": 0.29685,
+      "equivalents": 5.018288396265858,
+      "density_g_mL": 0.978,
+      "volume_mL": 0.024
+    },
+    {
+      "name": "toluene",
+      "note": "INV-111-1",
+      "molar_mass_g_mol": 92.13842,
+      "mass_g": 0.47575,
+      "amount_mmol": 5.164,
+      "equivalents": 87.32115880935619,
+      "density_g_mL": 0.865,
+      "volume_mL": 0.55
+    },
+    {
+      "name": "3-mercaptopropyl silica",
+      "note": "INV-90-3",
+      "molar_mass_g_mol": null,
+      "mass_g": 0.202,
+      "amount_mmol": null,
+      "equivalents": null,
+      "density_g_mL": 0.7,
+      "volume_mL": null
+    }
+  ],
+  "products": [
+    {
+      "name": "[Co(ttpp)(py)2](OTf)",
+      "note": "AD-36",
+      "molar_mass_g_mol": 2008.2384296,
+      "yield_g": 0.07708,
+      "amount_mmol": 0.03838,
+      "yield_percent": 64.90944363805372,
+      "is_main_product": true,
+      "appearance": null,
+      "eluent_system": null,
+      "nmr_data": null,
+      "rf_value": null
+    }
+  ],
+  "procedure": {
+    "Prep": {
+      "Step": [
+        {
+          "$xml_type": "Add",
+          "_vessel": "5 mL vial",
+          "_amount": {
+            "Unit": "gram",
+            "Value": 0.01318
+          },
+          "_dropwise": false,
+          "_reagent": "AgOTf",
+          "_comment": "Weigh in AgOTf → 14.52 mg"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "5 mL vial",
+          "_amount": {
+            "Unit": "millilitre",
+            "Value": 0.55
+          },
+          "_dropwise": false,
+          "_reagent": "toluene",
+          "_comment": "Add toluene 550 µL → colorless solution"
+        }
+      ]
+    },
+    "Reaction": {
+      "Step": [
+        {
+          "$xml_type": "Add",
+          "_vessel": "10 mL flask",
+          "_amount": {
+            "Unit": "gram",
+            "Value": 0.1007
+          },
+          "_dropwise": false,
+          "_reagent": "Co(ttpp)",
+          "_comment": "Add Co(ttpp)"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "10 mL flask",
+          "_amount": {
+            "Unit": "millilitre",
+            "Value": 0.024
+          },
+          "_dropwise": false,
+          "_reagent": "pyridine",
+          "_comment": "Add pyridine"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "10 mL flask",
+          "_amount": {
+            "Unit": "millilitre",
+            "Value": 0.55
+          },
+          "_dropwise": false,
+          "_reagent": "toluene",
+          "_comment": "Add toluene 5 mL"
+        },
+        {
+          "$xml_type": "Sonicate",
+          "_vessel": "10 mL flask",
+          "_time": {
+            "Unit": "minute",
+            "Value": 3
+          },
+          "_comment": "Sonicate for 3 min → Dark green solution "
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "10 mL flask",
+          "_dropwise": true,
+          "_reagent": "AgOTf",
+          "_comment": "Add 500 µL of AgOTf/toluene dropwise with a mechanical pipette [syringe should be used]"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "10 mL flask",
+          "_amount": {
+            "Unit": "microlitre",
+            "Value": 500
+          },
+          "_dropwise": false,
+          "_reagent": "toluene",
+          "_comment": "Add 500 µL of AgOTf/toluene dropwise with a mechanical pipette [syringe should be used]"
+        },
+        {
+          "$xml_type": "Wait",
+          "_time": {
+            "Unit": "hour",
+            "Value": 1
+          },
+          "_comment": "Continue stirring for 1 h"
+        }
+      ]
+    },
+    "Workup": {
+      "Step": [
+        {
+          "$xml_type": "Evaporate",
+          "_vessel": "10 mL flask",
+          "_method": "rotary_evaporator",
+          "_temp": {
+            "Unit": "celsius",
+            "Value": 40
+          },
+          "_comment": "Remove volatiles with rotovap (40 °C) → took 1.5 h"
+        },
+        {
+          "$xml_type": "Dry",
+          "_vessel": "10 mL flask",
+          "_time": {
+            "Unit": "day",
+            "Value": 0.5
+          },
+          "_comment": "Dry under vacuum o/n"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "10 mL flask",
+          "_amount": {
+            "Unit": "millilitre",
+            "Value": 5
+          },
+          "_dropwise": false,
+          "_reagent": "DCM",
+          "_comment": "Add DCM 5 mL"
+        },
+        {
+          "$xml_type": "Sonicate",
+          "_vessel": "10 mL flask",
+          "_time": {
+            "Unit": "minute",
+            "Value": 5
+          },
+          "_comment": "Swirl and sonicate for 5 min → Dark green solution [5 min unnecessary]"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "10 mL flask",
+          "_reagent": "ISOLUTE Si-Thiol",
+          "_dropwise": false,
+          "_comment": "Add ISOLUTE Si-Thiol"
+        },
+        {
+          "$xml_type": "Wait",
+          "_time": {
+            "Unit": "hour",
+            "Value": 2
+          },
+          "_comment": "Stir at 500 rpm for 2 h"
+        },
+        {
+          "$xml_type": "Filter",
+          "_product_portion": "filtrate",
+          "_rinse": [
+            {
+              "name": "DCM",
+              "amount": {
+                "Unit": "millilitre",
+                "Value": 10
+              }
+            }
+          ],
+          "_comment": "Filter the mixture → Dark green filtrate collected; Transfer and rinse with DCM 10 mL → Pale green filtrate in the end"
+        },
+        {
+          "$xml_type": "Add",
+          "_amount": {
+            "Unit": "millilitre",
+            "Value": 60
+          },
+          "_dropwise": false,
+          "_reagent": "n-hexane",
+          "_comment": "Add n-hexane (60 mL)."
+        },
+        {
+          "$xml_type": "Sonicate",
+          "_comment": "Swirl and sonicate"
+        },
+        {
+          "$xml_type": "HeatChill",
+          "_temp": {
+            "Unit": "celsius",
+            "Value": 4
+          },
+          "_time": {
+            "Unit": "hour",
+            "Value": 3
+          },
+          "_comment": "Refrigerate at 4 °C for 3 h"
+        },
+        {
+          "$xml_type": "Filter",
+          "_product_portion": "filtrate",
+          "_rinse": [
+            {
+              "name": "DCM + n-hexane"
+            },
+            {
+              "name": "n-hexane"
+            }
+          ],
+          "_comment": "Filter the mixture → Dark orange filtrate; Transfer and rinse with 2 x (DCM 3 mL + n-hexane 20 mL); Rinse w/ hexane 4 x 4 mL"
+        },
+        {
+          "$xml_type": "Dry",
+          "_time": {
+            "Unit": "minute",
+            "Value": 5
+          },
+          "_comment": "Dry w/ suction for 5 min"
+        },
+        {
+          "$xml_type": "Dry",
+          "_time": {
+            "Unit": "day",
+            "Value": 0.5
+          },
+          "_comment": "Dry under vacuum o/n"
+        }
+      ]
+    }
+  },
+  "tlc_conditions": null
+}

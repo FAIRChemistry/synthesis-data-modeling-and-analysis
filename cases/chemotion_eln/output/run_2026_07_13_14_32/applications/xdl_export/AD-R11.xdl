@@ -1,0 +1,48 @@
+<XDL>
+  <Synthesis>
+    <Hardware>
+      <Component id="5 mL vial" type="5 mL vial" />
+      <Component id="10 mL flask" type="10 mL flask" />
+      <Component id="100 mL RBF" type="100 mL RBF" />
+    </Hardware>
+    <Metadata description="AD-R11 - Synthesis of [Co(ttpp)(pba)2](OTf)" product="[Co(ttpp)(pba)2](OTf)" product_yield_percent="66.3201" />
+    <Procedure>
+      <Prep>
+        <Add vessel="5 mL vial" reagent="AgOTf" amount="0.0133 gram" dropwise="false" comment="AgOTf/toluene solution preparation: 5 mL vial into GB --&gt; AgOTf (0.0133 g) --&gt; Out of GB" />
+        <Add vessel="5 mL vial" reagent="toluene" amount="500 microlitre" dropwise="false" comment="5 mL vial --&gt; AgOTf from the vial: 0.0133 g --&gt; Toluene 500 μL [should have been prepared as a stock solution with a certain concentration and in &gt;10% excess volume]" />
+      </Prep>
+      <Reaction>
+        <Add vessel="10 mL flask" reagent="Co(ttpp)" dropwise="false" comment="Reaction: 10 mL flask; Co(ttpp)" />
+        <Add vessel="10 mL flask" reagent="p-bromoaniline" dropwise="false" comment="PBA" />
+        <Add vessel="10 mL flask" reagent="toluene" amount="5 millilitre" dropwise="false" comment="5 mL toluene, sonicate 3 min. (dissolved) --&gt; add stir bar (14:07) [stir bar should have been added in step 1]" />
+        <Sonicate vessel="10 mL flask" time="3 minute" comment="sonicate 3 min. (dissolved)" />
+        <Add vessel="10 mL flask" reagent="AgOTf" dropwise="true" comment="Dark, 400 rpm. AgOTf/toluene (whole) dropwise w/ micropipette while stirring [volume of used stock solution should be calculated according to the required amount]" />
+        <Add vessel="10 mL flask" reagent="toluene" amount="500 microlitre" dropwise="true" comment="AgOTf/toluene (whole) dropwise w/ micropipette while stirring [volume of used stock solution should be calculated according to the required amount]" />
+        <Sonicate vessel="10 mL flask" comment="Sonicated and manually stirred [not necessary]" />
+        <Wait vessel="10 mL flask" time="1 hour" comment="1 hour of stirring" />
+        <Wait vessel="10 mL flask" time="0.5 day" comment="o/n" />
+      </Reaction>
+      <Workup>
+        <Evaporate vessel="10 mL flask" method="rotary_evaporator" temp="40 celsius" comment="Workup: Rotovap (40 °C) (1:30 h)" />
+        <Dry vessel="10 mL flask" time="30 minute" comment="vacuum for 30 min" />
+        <Add vessel="10 mL flask" reagent="DCM" amount="5 millilitre" dropwise="false" comment="Add 5 mL DCM" />
+        <Sonicate vessel="10 mL flask" time="5 minute" comment="manually stirred and sonicated for 5 min (dissolved)" />
+        <Add vessel="10 mL flask" reagent="3-Mercaptopropyl Silica Gel" dropwise="false" comment="Si-SH (0.196 g)" />
+        <Wait vessel="10 mL flask" time="2 hour" comment="stir (1000 rpm, 2 h) 12:45 --&gt; 14:45 [stirring does not need to be this fast]" />
+        <Filter vessel="100 mL RBF" rinse="DCM (15 millilitre)" comment="12 mL plastic syringe, cotton plug (compressed), syringe filter (⌀ 25 mm, 0.45 μm, PTFE), 100 mL RBF; filtered, transferred, and rinsed w/ 15 mL DCM (until pale green)" />
+        <Add vessel="100 mL RBF" reagent="hexane" amount="90 millilitre" dropwise="false" comment="Hexane 90 mL; manually stirred and sonicated" />
+        <HeatChill vessel="100 mL RBF" temp="4 celsius" time="4 day" comment="Fridge: 4 days (15:30)" />
+        <Filter vessel="100 mL RBF" rinse="DCM + hexane; hexane" comment="Filtered and transferred w/ 2 x (3 mL DCM + 20 mL hexane) (orange filtrate, green residue); Rinsed w/ hexane 4 x 4 mL" />
+        <Dry vessel="100 mL RBF" time="1 minute" comment="Dried w/ suction for 1 min" />
+        <Dry vessel="100 mL RBF" time="0.5 day" comment="Vacuum o/n" />
+      </Workup>
+    </Procedure>
+    <Reagents>
+      <Reagent id="Co(ttpp)" name="Co(ttpp)" role="reagent" />
+      <Reagent id="AgOTf" name="AgOTf" role="reagent" />
+      <Reagent id="p-bromoaniline" name="p-bromoaniline" role="reagent" />
+      <Reagent id="3-Mercaptopropyl Silica Gel" name="3-Mercaptopropyl Silica Gel" role="reagent" />
+      <Reagent id="toluene" name="toluene" role="reagent" />
+    </Reagents>
+  </Synthesis>
+</XDL>

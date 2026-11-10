@@ -1,0 +1,137 @@
+{
+  "short_label": "AD-R27",
+  "name": "Synthesis of [Co(ttpp)(py)2](OTf) (500 mg scale-up)",
+  "created_at": "2026-05-10T15:29:16.018Z",
+  "status": "Analyses Pending",
+  "temperature": {
+    "data": [],
+    "userText": "RT",
+    "valueUnit": "°C"
+  },
+  "duration": "3 Hour(s)",
+  "vessel_size": {
+    "amount": 50,
+    "unit": "ml"
+  },
+  "plain_text_description": "Reference: AD-R13; 5x scale\nAnalysis\n1H NMR: [Co(ttpp)(py)₂](OTf) (86% purity), hexane (0.47 eq, ca. 1.9% w/w)\nICP-OES: \n4% H2O (AD-R17)\n8% Co(II)\n\nProcedure\nRT 21.1  °C RH   52%\nStock solution preparation\n5 mL vial\nPut into the glovebox (H₂O < 1 ppm)\nWeigh in AgOTf → 128.72 mg\nTake it out of the glovebox. \nAdd 3000 µL of toluene → colorless solution.\n\nReaction\n50 mL flask\nAdd Co(ttpp)\nAdd pyridine\nAdd toluene 26 mL\nSonicate for 3 min → Dark red solution \nCover with aluminum foil\nStart stirring at 400 rpm\nAdd  1500 µL of AgOTf/toluene dropwise w/ mechanical pipette (750 x 2)\nContinue stirring for 1 h → Dark green mixture\n-> 50 μL + CDCl₃ 450 μL -> 1H NMR M1 (U1.834; SW 19, NS 16) (use mechanical pipette)\n",
+  "plain_text_observation": "Ag scavenging\nRemove volatiles with a rotovap (40 °C) for 1 h.\nDry under vacuum 1h\nAdd DCM 25 mL\nSwirl and sonicate → Dark green mixture\nAdd ISOLUTE Si-Thiol\nStir at 500 rpm for 2 h\n20 mL plastic syringe, cotton plug, syringe filter (⌀ 25 mm, 0.45 µm, PTFE), syringe filter (0.2 µm, ⌀ 15 mm, PTFE), 250 mL RBF [difficult to press]. Better to use a frit. or a filter paper.\nFilter the mixture → Dark green filtrate collected\nTransfer and rinse with DCM 50 mL → pale green filtrate at the end.\nEvaporate the whole solvent. \n\nReprecipitation\nAdd 50 mL of DCM.\nAdd n-hexane (300 mL).\nSwirl and sonicate\nRefrigerate at 0 °C for o/n\n  12.05.2026 RT 22.9°C RH  31%\nFrit (por. 4)\nFilter the mixture →  light yellow filtrate\nTransfer and rinse with 2 x (DCM 15 mL + n-hexane 100 mL)\nRinse w/ hexane 4 x 20 mL\nDry w/ suction for 10 min\nDry under vacuum o/n\n\nAnalysis\n2026-05-13 RT 21.6°C RH 31%\nVial (tare: 15.12320g)\nTransfer\n→ Weigh: 0.56392 g\n→ 2.01 mg into a 2 mL centrifuge tube\nAdd 1.24 mg durene \nAdd 550 µL of CDCl₃\nSonicate until dissolved\nTransfer to an NMR tube\n→ 1H NMR P (U1.834, N PROTON 15 ppm, SW 19, NS 16)\n\n2026- \n→     mg into a PTFE microwave tube\nAdd 4 g of HNO₃ aq. (65%, chemically pure, Buchmeiser Group)\nAdd 1 g of H₂O₂ aq. (33% p.a., Buchmeiser Group)\nWait for 20 min\nSeal\nMicrowave heating (CEM Mars 6, program: xxx, 200 °C for ca 3.5 h; cool down to RT, 2 h) (time not sure because of machine trouble); observe colorless solution\nTransfer to a 10 mL volumetric flask with DI water and fill up to 10.00 mL\no/n\nTransfer to the test tube\n→ ICP-OES (0.517, Agilent 5800; Co, Ag)\n→ 2.00 mL\ntest tube\nAdd 8.00 mL of DI water\n→ ICP-OES\n2026-04-13\n\n2026-04-15\n→ 20.46 mg to CHN analysis (IOC)\n",
+  "starting_materials": [
+    {
+      "short_label": "AD-47-1",
+      "name": "Co(ttpp)",
+      "molecular_weight": 1700.9695200000008,
+      "real_amount_value": 0.5,
+      "real_amount_unit": "g",
+      "target_amount_value": null,
+      "target_amount_unit": "g",
+      "density": null,
+      "inchikey": "SZVLKHGYPSMSBU-FIVSXPDESA-N",
+      "equivalent": 1.0,
+      "reference": true,
+      "position": 0
+    },
+    {
+      "short_label": "INV-29-4",
+      "name": "AgOTf",
+      "molecular_weight": 256.93730959999994,
+      "real_amount_value": 0.06540000000000001,
+      "real_amount_unit": "g",
+      "target_amount_value": 0.06544187521454965,
+      "target_amount_unit": "g",
+      "density": null,
+      "inchikey": "QRUBYZBWAOOHSV-UHFFFAOYSA-M",
+      "equivalent": 0.8659186692752705,
+      "reference": false,
+      "position": 1
+    },
+    {
+      "short_label": "INV-24-11",
+      "name": "pyridine",
+      "molecular_weight": 79.09989999999999,
+      "real_amount_value": 0.00011899999999999999,
+      "real_amount_unit": "l",
+      "target_amount_value": 0.11625708025620582,
+      "target_amount_unit": "g",
+      "density": 0.978,
+      "inchikey": "JUJWROOIHBZHMG-UHFFFAOYSA-N",
+      "equivalent": 5.005372564987821,
+      "reference": false,
+      "position": 2
+    },
+    {
+      "short_label": "INV-111-3",
+      "name": "toluene",
+      "molecular_weight": 92.13842000000001,
+      "real_amount_value": 0.0275,
+      "real_amount_unit": "l",
+      "target_amount_value": 23.7875,
+      "target_amount_unit": "g",
+      "density": 0.865,
+      "inchikey": "YXFVVABEGXRONW-UHFFFAOYSA-N",
+      "equivalent": 878.2831843003171,
+      "reference": false,
+      "position": 3
+    },
+    {
+      "short_label": "INV-90-5",
+      "name": "3-mercaptopropyl silica",
+      "molecular_weight": null,
+      "real_amount_value": 1.21218,
+      "real_amount_unit": "g",
+      "target_amount_value": null,
+      "target_amount_unit": "g",
+      "density": 0.7,
+      "inchikey": "DUMMY",
+      "equivalent": null,
+      "reference": false,
+      "position": 4
+    }
+  ],
+  "solvents": [],
+  "purification_solvents": [
+    {
+      "short_label": "AD-33",
+      "name": "dichloromethane",
+      "molecular_weight": 84.93258,
+      "real_amount_value": 0.015,
+      "real_amount_unit": "l",
+      "target_amount_value": 0.005,
+      "target_amount_unit": "l",
+      "density": 1.33,
+      "inchikey": "YMWUJEATGCHHMB-UHFFFAOYSA-N",
+      "equivalent": 1315.0696508219542,
+      "reference": false,
+      "position": 0
+    },
+    {
+      "short_label": "AD-37",
+      "name": "hexane",
+      "molecular_weight": 86.17536,
+      "real_amount_value": 0.06,
+      "real_amount_unit": "l",
+      "target_amount_value": null,
+      "target_amount_unit": "g",
+      "density": 0.66,
+      "inchikey": "VLKZOEOYAKHREP-UHFFFAOYSA-N",
+      "equivalent": 2572.718394400388,
+      "reference": false,
+      "position": 1
+    }
+  ],
+  "products": [
+    {
+      "short_label": "AD-56",
+      "name": "[Co(ttpp)(py)2](OTf)",
+      "molecular_weight": 2008.238429600001,
+      "real_amount_value": 0.56392,
+      "real_amount_unit": "g",
+      "target_amount_value": null,
+      "target_amount_unit": "g",
+      "density": null,
+      "inchikey": "SLJLTKRWPCLTQF-BXFYCLSASA-M",
+      "equivalent": 0.9552757457285139,
+      "reference": false,
+      "position": 0
+    }
+  ]
+}

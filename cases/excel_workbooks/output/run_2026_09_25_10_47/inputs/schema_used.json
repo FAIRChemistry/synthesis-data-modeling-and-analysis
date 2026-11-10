@@ -1,0 +1,812 @@
+{
+  "$defs": {
+    "Amount": {
+      "description": "Quantity of a chemical used in an Add step.",
+      "properties": {
+        "Unit": {
+          "enum": [
+            "microgram",
+            "milligram",
+            "gram",
+            "kilogram",
+            "ton",
+            "microlitre",
+            "millilitre",
+            "centilitre",
+            "decilitre",
+            "litre",
+            "micromole",
+            "millimole",
+            "mole"
+          ],
+          "title": "AmountUnit",
+          "type": "string"
+        },
+        "Value": {
+          "minimum": 0,
+          "type": "number"
+        }
+      },
+      "required": [
+        "Value",
+        "Unit"
+      ],
+      "title": "Amount",
+      "type": "object"
+    },
+    "Pressure": {
+      "properties": {
+        "Unit": {
+          "enum": [
+            "pascal",
+            "bar",
+            "mbar"
+          ],
+          "title": "PressureUnit",
+          "type": "string"
+        },
+        "Value": {
+          "minimum": 0,
+          "type": "number"
+        }
+      },
+      "required": [
+        "Unit",
+        "Value"
+      ],
+      "title": "Pressure",
+      "type": "object"
+    },
+    "ProcedureSteps": {
+      "properties": {
+        "Step": {
+          "items": {
+            "oneOf": [
+              {
+                "description": "Add a reagent, solvent, or solution to the vessel. _amount is optional — omit it when no quantity is stated in the source text; never estimate or invent a quantity.",
+                "properties": {
+                  "$xml_type": {
+                    "const": "Add"
+                  },
+                  "_amount": {
+                    "$ref": "#/$defs/Amount"
+                  },
+                  "_degassed": {
+                    "description": "True if the added reagent or solvent was degassed before use (German: 'entgast', 'zuvor entgast'). A property of the added substance — the vessel's own degassing is an EvacuateAndRefill step.",
+                    "type": "boolean"
+                  },
+                  "_dropwise": {
+                    "description": "True if the reagent is added dropwise (German: tropfenweise). Relevant for exothermic or air/moisture-sensitive additions.",
+                    "type": "boolean"
+                  },
+                  "_reagent": {
+                    "description": "Name of the chemical being added, matching the name in starting_materials.",
+                    "type": "string"
+                  },
+                  "_repeat": {
+                    "description": "Number of times this equal addition is repeated, e.g. 2 for 'NaBH4 (x2)'.",
+                    "minimum": 2,
+                    "type": "integer"
+                  },
+                  "_repeat_interval": {
+                    "$ref": "#/$defs/Time",
+                    "description": "Waiting time between repeated additions, e.g. '2 min' for 'nach 2 min erneut versetzen'."
+                  }
+                },
+                "required": [
+                  "_reagent"
+                ],
+                "title": "Add"
+              },
+              {
+                "description": "Bring the mixture to a target temperature and optionally hold for a given time. _time must only be set if a duration is explicitly stated in the source text — never estimate.",
+                "additionalProperties": false,
+                "properties": {
+                  "$xml_type": {
+                    "const": "HeatChill"
+                  },
+                  "_comment": {
+                    "type": "string"
+                  },
+                  "_temp": {
+                    "$ref": "#/$defs/Temperature"
+                  },
+                  "_time": {
+                    "$ref": "#/$defs/Time"
+                  },
+                  "_vessel": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "_temp"
+                ],
+                "title": "HeatChill"
+              },
+              {
+                "description": "Evacuate the vessel and refill with an inert gas (Schutzgas). Also used for degassing by sparging. Use as the first Prep step to establish an inert atmosphere.",
+                "properties": {
+                  "$xml_type": {
+                    "const": "EvacuateAndRefill"
+                  },
+                  "_gas": {
+                    "description": "The gas used for refilling or sparging, e.g. 'N2', 'Ar'.",
+                    "type": "string"
+                  },
+                  "_time": {
+                    "$ref": "#/$defs/Time",
+                    "description": "Duration of the degassing or purging cycle, e.g. 10 min for 'Entgasen (10 min)'."
+                  }
+                },
+                "required": [
+                  "_gas"
+                ],
+                "title": "EvacuateAndRefill"
+              },
+              {
+                "description": "Wash a liquid phase (typically the organic phase) with an aqueous or organic solution to remove impurities. Replaces the former WashSolid type.",
+                "properties": {
+                  "$xml_type": {
+                    "const": "WashPhase"
+                  },
+                  "_phase": {
+                    "description": "Which liquid phase is being washed. Usually 'organic'.",
+                    "enum": [
+                      "organic",
+                      "aqueous"
+                    ],
+                    "type": "string"
+                  },
+                  "_repeat": {
+                    "description": "Number of wash cycles, e.g. 2 for '2×' or '(2x)'.",
+                    "minimum": 1,
+                    "type": "integer"
+                  },
+                  "_solution": {
+                    "description": "The wash solution, e.g. 'Wasser', 'brine', 'NaCl aq. sat.', 'HCl 1M', 'NaHCO3 sat. aq.', 'NH4Cl sat. aq.'.",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "_solution"
+                ],
+                "title": "WashPhase"
+              },
+              {
+                "description": "Wait or stir for a given duration without changing temperature.",
+                "properties": {
+                  "$xml_type": {
+                    "const": "Wait"
+                  },
+                  "_time": {
+                    "$ref": "#/$defs/Time"
+                  }
+                },
+                "required": [
+                  "_time"
+                ],
+                "title": "Wait"
+              },
+              {
+                "description": "Apply ultrasonic agitation for a given duration.",
+                "properties": {
+                  "$xml_type": {
+                    "const": "Sonicate"
+                  },
+                  "_time": {
+                    "$ref": "#/$defs/Time"
+                  }
+                },
+                "title": "Sonicate"
+              },
+              {
+                "description": "Dry a solution or solid using a chemical desiccant (e.g. MgSO4). After adding the desiccant, the mixture is stirred briefly and the solid filtered off. Distinct from Evaporate (which removes bulk solvent).",
+                "properties": {
+                  "$xml_type": {
+                    "const": "Dry"
+                  },
+                  "_desiccant": {
+                    "description": "Desiccant used to absorb residual water, e.g. 'MgSO4', 'Na2SO4', 'CaCl2'.",
+                    "type": "string"
+                  },
+                  "_pressure": {
+                    "$ref": "#/$defs/Pressure"
+                  },
+                  "_temp": {
+                    "$ref": "#/$defs/Temperature"
+                  },
+                  "_time": {
+                    "$ref": "#/$defs/Time"
+                  }
+                },
+                "required": [],
+                "title": "Dry"
+              },
+              {
+                "description": "Liquid-liquid extraction: add an immiscible solvent, mix, separate phases, and collect the target phase. Use for 'mit DEE versetzen + Phasen trennen' or 'mit DCM/MeOH extrahieren'.",
+                "properties": {
+                  "$xml_type": {
+                    "const": "Extract"
+                  },
+                  "_phase_kept": {
+                    "description": "Which phase is collected after phase separation. Defaults to 'organic' in most workups.",
+                    "enum": [
+                      "organic",
+                      "aqueous"
+                    ],
+                    "type": "string"
+                  },
+                  "_repeat": {
+                    "description": "Number of extraction cycles.",
+                    "minimum": 1,
+                    "type": "integer"
+                  },
+                  "_solvent": {
+                    "description": "Extraction solvent or solvent mixture, e.g. 'DEE', 'DCM', 'DCM/MeOH 9:1', 'EtOAc'.",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "_solvent"
+                ],
+                "title": "Extract"
+              },
+              {
+                "description": "Remove bulk solvent under reduced pressure or with a gas stream. Use for 'LM am Roti entfernen', 'LM entfernen', 'einengen'. Distinct from Dry (which uses a desiccant).",
+                "properties": {
+                  "$xml_type": {
+                    "const": "Evaporate"
+                  },
+                  "_method": {
+                    "description": "Method used to remove the solvent. Use 'rotary_evaporator' for 'am Roti entfernen'.",
+                    "enum": [
+                      "rotary_evaporator",
+                      "nitrogen_stream",
+                      "vacuum"
+                    ],
+                    "type": "string"
+                  },
+                  "_pressure": {
+                    "$ref": "#/$defs/Pressure"
+                  },
+                  "_temp": {
+                    "$ref": "#/$defs/Temperature"
+                  }
+                },
+                "required": [],
+                "title": "Evaporate"
+              },
+              {
+                "description": "Purify the crude product by column chromatography (Säulenchromatographie). The eluent system should also be recorded in the product's eluent_system field.",
+                "properties": {
+                  "$xml_type": {
+                    "const": "Purify"
+                  },
+                  "_eluent": {
+                    "description": "Eluent system, including gradients if used, e.g. 'Pe/EtOAc 3:1 → 2:1', 'PE/EE 4:1', 'DCM/MeOH 9:1'.",
+                    "type": "string"
+                  },
+                  "_stationary_phase": {
+                    "description": "Stationary phase material. Default is silica gel (SiO2). Specify only if different.",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "_eluent"
+                ],
+                "title": "Purify"
+              }
+            ],
+            "properties": {
+              "_comment": {
+                "description": "Free-text annotation: use for information the step type alone cannot express (repetition counts, special handling, estimated values, etc.).",
+                "type": "string"
+              },
+              "_vessel": {
+                "description": "Reaction vessel this step occurs in, if relevant.",
+                "type": "string"
+              }
+            },
+            "required": [
+              "$xml_type"
+            ],
+            "title": "StepEntry",
+            "type": "object"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "Step"
+      ],
+      "title": "ProcedureSection",
+      "type": "object"
+    },
+    "Temperature": {
+      "properties": {
+        "Unit": {
+          "enum": [
+            "celsius"
+          ],
+          "title": "TemperatureUnit",
+          "type": "string"
+        },
+        "Value": {
+          "minimum": -273.15,
+          "type": "number"
+        }
+      },
+      "required": [
+        "Value",
+        "Unit"
+      ],
+      "title": "Temperature",
+      "type": "object"
+    },
+    "Time": {
+      "properties": {
+        "Unit": {
+          "enum": [
+            "millisecond",
+            "second",
+            "minute",
+            "hour",
+            "day",
+            "week"
+          ],
+          "title": "TimeUnit",
+          "type": "string"
+        },
+        "Value": {
+          "minimum": 0,
+          "type": "number"
+        }
+      },
+      "required": [
+        "Value",
+        "Unit"
+      ],
+      "title": "Time",
+      "type": "object"
+    },
+    "_stationary_phase": {
+      "description": "Collected phase",
+      "type": "string",
+      "enum": [
+        "filtrate",
+        "residue"
+      ]
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": false,
+  "description": "A single experiment entry from an organic chemistry lab journal (Laborjournal). Each entry documents one reaction, including all starting materials (Edukte), products (Produkte), the procedure (Vorschrift), and metadata.",
+  "properties": {
+    "batch_volume_mL": {
+      "description": "Total reaction volume in mL (German: 'Ansatz'). This is the reference volume used to calculate batch concentrations.",
+      "examples": [
+        30,
+        50,
+        10.458
+      ],
+      "exclusiveMinimum": 0,
+      "title": "Batch Volume (mL)",
+      "type": "number"
+    },
+    "date": {
+      "description": "Date the reaction was set up (German: 'Angesetzt am'). ISO 8601 format.",
+      "examples": [
+        "2023-12-07"
+      ],
+      "format": "date",
+      "title": "Date",
+      "type": "string"
+    },
+    "journal_number": {
+      "description": "Unique experiment identifier. Format: WAT-Ch-NNN where NNN is a zero-padded three-digit number. Found in the 'Nr.:' field of the Excel header.",
+      "examples": [
+        "WAT-Ch-065",
+        "WAT-Ch-117"
+      ],
+      "pattern": "^WAT-Ch-\\d{3,}$",
+      "title": "Journal Number",
+      "type": "string"
+    },
+    "observations": {
+      "description": "Experimental observations and notes recorded during the reaction (German: 'Beobachtungen'). May include color changes, precipitate formation, atmosphere notes (e.g. 'Pseudo-Schutzgas' = pseudo-inert atmosphere), or deviations from procedure.",
+      "title": "Observations",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "procedure": {
+      "description": "Step-by-step reaction and workup procedure (German: 'Vorschrift'). Structured as three sections: Prep (preparation before the reaction), Reaction (core reaction steps), and Workup (post-reaction isolation and purification).",
+      "properties": {
+        "Prep": {
+          "$ref": "#/$defs/ProcedureSteps"
+        },
+        "Reaction": {
+          "$ref": "#/$defs/ProcedureSteps"
+        },
+        "Workup": {
+          "$ref": "#/$defs/ProcedureSteps"
+        }
+      },
+      "required": [
+        "Prep",
+        "Reaction",
+        "Workup"
+      ],
+      "title": "Procedure",
+      "type": "object"
+    },
+    "products": {
+      "description": "Isolated products from the reaction (German: 'Produkte'). Usually one main product; occasionally a second product of interest.",
+      "items": {
+        "additionalProperties": false,
+        "description": "An isolated product from the reaction with yield and characterization data.",
+        "properties": {
+          "amount_mmol": {
+            "description": "Isolated amount in millimoles, calculated from yield_g and molar_mass_g_mol.",
+            "exclusiveMinimum": 0,
+            "title": "Amount (mmol)",
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "appearance": {
+            "description": "Physical appearance and state (German: 'Habitus'), e.g. 'farbloser Feststoff' (colorless solid), 'gelbes Öl' (yellow oil).",
+            "title": "Appearance",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "eluent_system": {
+            "description": "Solvent system used for TLC or column chromatography (German: 'Laufmittel'). Common abbreviations: Pe = petroleum ether, EtOAc/EE = ethyl acetate, DCM = dichloromethane. Ratios indicate v/v proportions.",
+            "examples": [
+              "Pe/EtOAc 3:1",
+              "DCM/MeOH 9:1"
+            ],
+            "title": "Eluent System",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "inchi": {
+            "description": "Directly extracted InChI for this product. Omit when no unambiguous source match exists.",
+            "minLength": 1,
+            "type": "string"
+          },
+          "inchikey": {
+            "description": "Directly extracted InChIKey for this product. Omit when no unambiguous source match exists.",
+            "minLength": 1,
+            "type": "string"
+          },
+          "is_main_product": {
+            "description": "True if this is the primary target product of the reaction. False for side products or byproducts isolated as secondary compounds of interest.",
+            "title": "Is Main Product",
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "molar_mass_g_mol": {
+            "description": "Molar mass of the product in g/mol.",
+            "exclusiveMinimum": 0,
+            "title": "Molar Mass (g/mol)",
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "name": {
+            "description": "Chemical name or descriptor of the product. May be a systematic name, compound class (e.g. 'tert. Amin'), or purity label (e.g. 'sauber' = pure). Compound numbers refer to journal entries.",
+            "examples": [
+              "tert. Amin",
+              "Fluorid",
+              "sauber"
+            ],
+            "title": "Name",
+            "type": "string"
+          },
+          "nmr_data": {
+            "description": "Nuclear magnetic resonance spectroscopy data or reference number. May be a reference to a separate NMR log entry.",
+            "title": "NMR Data",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "smiles": {
+            "description": "Directly extracted canonical SMILES for this product. Omit when no unambiguous source match exists.",
+            "minLength": 1,
+            "type": "string"
+          },
+          "rf_value": {
+            "description": "Retention factor from thin-layer chromatography (TLC), dimensionless value between 0 and 1.",
+            "maximum": 1,
+            "minimum": 0,
+            "title": "Rf Value",
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "yield_g": {
+            "description": "Isolated yield in grams (column header 'Ausw.' = Auswaage, German for weighed amount).",
+            "exclusiveMinimum": 0,
+            "title": "Yield (g)",
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "yield_percent": {
+            "description": "Isolated yield as a percentage relative to the limiting reagent (column header 'Ausb.' = Ausbeute). Values above 100% indicate impure product.",
+            "minimum": 0,
+            "title": "Yield (%)",
+            "type": [
+              "number",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "name"
+        ],
+        "title": "Product",
+        "type": "object"
+      },
+      "minItems": 1,
+      "title": "Products",
+      "type": "array"
+    },
+    "project_type": {
+      "description": "Type of academic project. Typically 'Promotion' (PhD thesis) or 'Masterarbeit' (Master's thesis).",
+      "examples": [
+        "Promotion"
+      ],
+      "title": "Project Type",
+      "type": "string"
+    },
+    "reaction_name": {
+      "description": "Descriptive name of the reaction, taken from the filename (without the journal number prefix). Describes the reaction type and substrates.",
+      "examples": [
+        "Aminierung geschütztes Ile mit Bromolefin",
+        "Fluorierung Olefin geschützt FeOx_Selectfluor standard"
+      ],
+      "title": "Reaction Name",
+      "type": "string"
+    },
+    "reagent_sources": {
+      "description": "Storage locations or origins of each starting material (German: 'Herkunft der Edukte'). Maps reagent names to their physical location in the laboratory, e.g. 'Abzug' (fume hood), 'Bench', 'Destille' (distillation unit), or a shelf code like '167 Regal Julius'.",
+      "items": {
+        "additionalProperties": false,
+        "description": "Storage location or provenance of a starting material.",
+        "properties": {
+          "reagent_name": {
+            "description": "Name of the reagent, should match a name in starting_materials.",
+            "title": "Reagent Name",
+            "type": "string"
+          },
+          "source": {
+            "description": "Physical storage location or origin. Common values: 'Abzug' (fume hood, synthesized in-house), 'Bench' (lab bench stock), 'Destille' (distillation unit, freshly distilled solvent), 'KS 361-A' (cabinet/shelf code). Null if not recorded.",
+            "examples": [
+              "Abzug",
+              "Bench",
+              "Destille",
+              "167 Regal Julius",
+              "KS 361-A"
+            ],
+            "title": "Source / Location",
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "reagent_name"
+        ],
+        "title": "Reagent Source",
+        "type": "object"
+      },
+      "title": "Reagent Sources",
+      "type": "array"
+    },
+    "research_group": {
+      "description": "Research group (German: 'Arbeitskreis', abbreviated AK), e.g. 'AK Laschat'.",
+      "examples": [
+        "AK Laschat"
+      ],
+      "title": "Research Group",
+      "type": "string"
+    },
+    "researcher": {
+      "description": "Full name of the researcher conducting the experiment.",
+      "examples": [
+        "Timo Watzenborn"
+      ],
+      "title": "Researcher",
+      "type": "string"
+    },
+    "starting_materials": {
+      "description": "All educts, reagents, catalysts, bases, and solvents used in the reaction (German: 'Edukte'). Ordered as they appear in the Excel table.",
+      "items": {
+        "additionalProperties": false,
+        "description": "A single educt, reagent, catalyst, base, or solvent entry in the Edukte table.",
+        "properties": {
+          "amount_mmol": {
+            "description": "Molar amount in millimoles (column header 'n'). Calculated from mass/volume and molar mass. Null for pure solvents.",
+            "exclusiveMinimum": 0,
+            "title": "Amount (mmol)",
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "batch_concentration_mol_L": {
+            "description": "Concentration of this reagent in the total reaction volume (Ansatz), in mol/L. Calculated as amount_mmol / batch_volume_mL * 1000. Null for solvents.",
+            "exclusiveMinimum": 0,
+            "title": "Batch Concentration (mol/L)",
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "concentration_mol_L": {
+            "description": "Concentration in mol/L (column header 'c') if the reagent is used as a stock solution (e.g. 1M HCl). Null if the pure substance or a different measure is used.",
+            "exclusiveMinimum": 0,
+            "title": "Stock Solution Concentration (mol/L)",
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "density_g_mL": {
+            "description": "Density in g/mL (column header 'Dichte'). Used for liquid reagents when volume is measured instead of mass. Null if not applicable.",
+            "exclusiveMinimum": 0,
+            "title": "Density (g/mL)",
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "inchi": {
+            "description": "Directly extracted InChI for this material. Omit when no unambiguous source match exists.",
+            "minLength": 1,
+            "type": "string"
+          },
+          "inchikey": {
+            "description": "Directly extracted InChIKey for this material. Omit when no unambiguous source match exists.",
+            "minLength": 1,
+            "type": "string"
+          },
+          "equivalents": {
+            "description": "Molar equivalents relative to the limiting reagent (column header 'eq'). The limiting reagent has eq=1. Null for solvents.",
+            "exclusiveMinimum": 0,
+            "title": "Equivalents",
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "mass_fraction_percent": {
+            "description": "Purity or mass fraction as a percentage (column header 'w'). Used when the reagent is not 100% pure, e.g. a technical-grade material. Null if not provided.",
+            "maximum": 100,
+            "minimum": 0,
+            "title": "Mass Fraction / Purity (%)",
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "mass_g": {
+            "description": "Mass used in grams. The actually measured quantity for solid reagents. Null for solvents and liquid reagents measured by volume.",
+            "exclusiveMinimum": 0,
+            "title": "Mass Used (g)",
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "molar_mass_g_mol": {
+            "description": "Molar mass in g/mol (column header 'M'). Null for solvents where stoichiometry is not tracked.",
+            "exclusiveMinimum": 0,
+            "title": "Molar Mass (g/mol)",
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "name": {
+            "description": "Chemical name or in-house identifier. Compound numbers (e.g. '063') refer to previous journal entries. Parenthetical suffixes encode special meaning: '(x2)' means the step/addition is performed twice; a reagent list in parentheses like '(Selectfluor/Olefin)' identifies which solutes are dissolved in this solvent.",
+            "examples": [
+              "Ns-Ile-OMe 063",
+              "Cs2CO3",
+              "NaBH4 (x2)",
+              "AcN (Selectfluor/Olefin)"
+            ],
+            "title": "Name",
+            "type": "string"
+          },
+          "note": {
+            "description": "Supplementary note extracted from parenthetical suffixes or context. Examples: 'added twice (x2)', 'solvent for Selectfluor and Olefin'.",
+            "title": "Note",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "role": {
+            "description": "Role of this compound in the reaction, inferred from chemical context and equivalents.",
+            "enum": [
+              "limiting_reagent",
+              "reagent",
+              "catalyst",
+              "solvent",
+              "base",
+              "oxidant",
+              "reductant",
+              "quench",
+              null
+            ],
+            "title": "Chemical Role",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "smiles": {
+            "description": "Directly extracted canonical SMILES for this material. Omit when no unambiguous source match exists.",
+            "minLength": 1,
+            "type": "string"
+          },
+          "volume_mL": {
+            "description": "Volume used in mL. For solvents this is the total volume added. For liquid reagents measured volumetrically. Null for solid reagents weighed by mass.",
+            "exclusiveMinimum": 0,
+            "title": "Volume Used (mL)",
+            "type": [
+              "number",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "name"
+        ],
+        "title": "Starting Material",
+        "type": "object"
+      },
+      "minItems": 1,
+      "title": "Starting Materials",
+      "type": "array"
+    },
+    "tlc_conditions": {
+      "description": "Thin-layer chromatography monitoring conditions (German: 'DC' = Dünnschichtchromatographie). May specify eluent, staining reagent, or Rf values observed during the reaction.",
+      "title": "TLC Conditions",
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "journal_number",
+    "date",
+    "researcher",
+    "research_group",
+    "reaction_name",
+    "starting_materials",
+    "batch_volume_mL",
+    "products",
+    "procedure",
+    "project_type"
+  ],
+  "title": "Chemistry Lab Journal Entry",
+  "type": "object"
+}

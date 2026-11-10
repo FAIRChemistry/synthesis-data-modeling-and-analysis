@@ -1,0 +1,53 @@
+{
+  "_about": "Mapping of reviewer-reported issues (2026-05-21) to file/path patterns that are expected to change between output_full and output_full_2026_05_21. Used by regression_check.py to separate desired fixes from regressions.",
+  "expected_changes": [
+    {"file_pattern": "Ch-044", "json_path_pattern": "procedure.Prep",   "note": "Add Aminosäure (=L-Isoleucin) in MeOH"},
+    {"file_pattern": "Ch-044", "json_path_pattern": "procedure.Reaction","note": "HeatChill auf RT vor Wait 48 h"},
+    {"file_pattern": "Ch-044", "json_path_pattern": "procedure.Workup", "note": "MeOH-Volumen für zweite Zugabe nicht erfinden"},
+
+    {"file_pattern": "Ch-045", "json_path_pattern": "procedure",        "note": "Add Edukt + DCM für 2-NsCl"},
+    {"file_pattern": "Ch-061", "json_path_pattern": "procedure.Workup", "note": "MeOH-Volumen Workup nicht erfinden"},
+    {"file_pattern": "Ch-063", "json_path_pattern": "procedure.Reaction","note": "Lösungsmittel für Reagenz ergänzen"},
+
+    {"file_pattern": "Ch-066", "json_path_pattern": "procedure.Reaction","note": "Add THF (LAH) vor Add LAH"},
+    {"file_pattern": "Ch-081", "json_path_pattern": "procedure.Reaction","note": "Add THF (LAH) vor Add LAH"},
+
+    {"file_pattern": "Ch-067", "json_path_pattern": "procedure",        "note": "Edukt-Add ergänzen; _phase_kept organic"},
+    {"file_pattern": "Ch-082", "json_path_pattern": "procedure",        "note": "Edukt-Add ergänzen"},
+    {"file_pattern": "Ch-090", "json_path_pattern": "procedure.Workup", "note": "_phase_kept organic"},
+
+    {"file_pattern": "Ch-083", "json_path_pattern": "procedure.Reaction","note": "Add DEE (FeCl3) vor Add FeCl3"},
+    {"file_pattern": "Ch-091", "json_path_pattern": "procedure",        "note": "Edukt-Add + DEE (FeCl3) ergänzen"},
+
+    {"file_pattern": "Ch-085", "json_path_pattern": "procedure",        "note": "Edukt-Add + MeOH-Volumen Workup nicht erfinden"},
+    {"file_pattern": "Ch-087", "json_path_pattern": "products",         "note": "Produktzeile 'Misch Diast (?)' ohne Ausbeute weglassen"},
+    {"file_pattern": "Ch-087", "json_path_pattern": "procedure",        "note": "Add Edukt + DCM (NsCl); _phase_kept organic"},
+
+    {"file_pattern": "Ch-089", "json_path_pattern": "procedure",        "note": "Add THF (LAH); Wasser-Volumen aus Tabelle übernehmen"},
+
+    {"file_pattern": "Ch-113", "json_path_pattern": "procedure.Prep.Step",                  "note": "EvacuateAndRefill _comment Entgasen"},
+    {"file_pattern": "Ch-114", "json_path_pattern": "procedure.Prep.Step",                  "note": "EvacuateAndRefill _comment Entgasen"},
+    {"file_pattern": "Ch-115", "json_path_pattern": "procedure.Reaction",                   "note": "zweites Add AcN"},
+    {"file_pattern": "Ch-116", "json_path_pattern": "procedure",                            "note": "Entgasen-Note + zweites Add AcN"},
+    {"file_pattern": "Ch-117", "json_path_pattern": "procedure",                            "note": "Entgasen-Note + zweites Add AcN"},
+    {"file_pattern": "Ch-118", "json_path_pattern": "procedure",                            "note": "Entgasen-Note + zweites Add AcN"},
+    {"file_pattern": "Ch-119", "json_path_pattern": "procedure.Prep.Step",                  "note": "Entgasen-Note"},
+    {"file_pattern": "Ch-120", "json_path_pattern": "procedure.Prep.Step",                  "note": "Entgasen-Note"},
+    {"file_pattern": "Ch-121", "json_path_pattern": "procedure.Reaction",                   "note": "zweites Add AcN"},
+    {"file_pattern": "Ch-122", "json_path_pattern": "procedure",                            "note": "Entgasen-Note + zweites Add AcN + NaBH4 (x3) statt x2"},
+    {"file_pattern": "Ch-123", "json_path_pattern": "procedure",                            "note": "Entgasen-Note + zweites Add AcN"},
+    {"file_pattern": "Ch-125", "json_path_pattern": "procedure.Reaction",                   "note": "zweites Add AcN"},
+    {"file_pattern": "Ch-127", "json_path_pattern": "procedure.Prep.Step",                  "note": "Entgasen-Note"},
+    {"file_pattern": "Ch-129", "json_path_pattern": "procedure.Reaction",                   "note": "zweites Add AcN"},
+    {"file_pattern": "Ch-130", "json_path_pattern": "procedure",                            "note": "Entgasen-Note + zweites Add AcN"},
+    {"file_pattern": "Ch-131", "json_path_pattern": "procedure.Prep.Step",                  "note": "Entgasen-Note"},
+    {"file_pattern": "Ch-132", "json_path_pattern": "procedure.Prep.Step",                  "note": "Entgasen-Note"},
+    {"file_pattern": "Ch-133", "json_path_pattern": "procedure",                            "note": "Entgasen-Note + zweites Add AcN"},
+    {"file_pattern": "Ch-234", "json_path_pattern": "procedure",                            "note": "Entgasen-Note + zweites Add AcN"},
+    {"file_pattern": "Ch-239", "json_path_pattern": "procedure.Reaction",                   "note": "zweites Add AcN"},
+    {"file_pattern": "Ch-240", "json_path_pattern": "procedure.Reaction",                   "note": "zweites Add AcN"},
+    {"file_pattern": "Ch-241", "json_path_pattern": "procedure.Reaction",                   "note": "zweites Add AcN"},
+    {"file_pattern": "Ch-242", "json_path_pattern": "procedure",                            "note": "Entgasen-Note + zweites Add AcN"}
+  ],
+  "expected_unchanged_files": []
+}

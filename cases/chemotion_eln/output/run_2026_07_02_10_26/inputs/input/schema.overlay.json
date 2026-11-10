@@ -1,0 +1,12 @@
+{
+  "_comment": "Overlay patched onto schema/lab_journal_schema.json for the Chemotion ELN case. Not a standalone JSON Schema: 'required_add' appends to the base 'required'; 'procedure_step_types' restricts the allowed procedure step types. Everything under 'properties' is deep-merged onto the base. The Chemotion case keeps the base's relaxed journal_number and optional project_type, and allows the full step set (including Filter).",
+  "properties": {
+    "journal_number": {
+      "description": "Unique experiment identifier. For Chemotion ELN exports this is the reaction short label (Chemotion field 'short_label'), e.g. ZAR-439.",
+      "examples": [
+        "ZAR-439",
+        "AD-R13"
+      ]
+    }
+  }
+}

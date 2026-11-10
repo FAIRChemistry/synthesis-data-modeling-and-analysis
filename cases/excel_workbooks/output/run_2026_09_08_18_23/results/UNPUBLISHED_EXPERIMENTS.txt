@@ -1,0 +1,7 @@
+Some experiments and results have not yet been published. The corresponding files and content will be added to this dataset once published.
+
+- WAT-Ch-115 Fluorierung Olefin geschützt FeOx_Selectfluor mehr NH4OH quenchen.json
+- WAT-Ch-118 Fluorierung Olefin geschützt FeOx_Selectfluor 1 eq. SelF.json
+- WAT-Ch-121 Fluorierung Olefin geschützt FeOx_Selectfluor 1 potion NaBH4.json
+- WAT-Ch-122 Fluorierung Olefin geschützt FeOx_Selectfluor 3 potion NaBH4.json
+- WAT-Ch-123 Fluorierung Olefin geschützt FeOx_Selectfluor 4 eq. FeOx.json

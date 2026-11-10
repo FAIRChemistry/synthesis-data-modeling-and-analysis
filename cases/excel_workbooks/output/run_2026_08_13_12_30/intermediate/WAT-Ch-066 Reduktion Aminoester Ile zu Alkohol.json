@@ -1,0 +1,811 @@
+{
+  "source_file": "cases/excel_workbooks/input/workbooks/WAT-Ch-066 Reduktion Aminoester Ile zu Alkohol.xlsx",
+  "source_filename": "WAT-Ch-066 Reduktion Aminoester Ile zu Alkohol.xlsx",
+  "preprocessor": {
+    "library": "openpyxl",
+    "mode": "profile",
+    "options": {
+      "data_only": true,
+      "read_only": true,
+      "formatting_images_and_charts": "not extracted",
+      "profile_name": "chem_lab_journal",
+      "embedded_chemdraw": "extracted as CDX via Open Babel"
+    }
+  },
+  "sheets": [
+    {
+      "sheet_name": "WAT-Ch-XXX",
+      "max_row": 47,
+      "max_column": 11,
+      "merged_ranges": [],
+      "non_empty_rows": [
+        [
+          "Laborjournal",
+          "Nr.:",
+          "WAT-Ch-066"
+        ],
+        [
+          "Timo Watzenborn"
+        ],
+        [
+          "Promotion",
+          "Angesetzt am:",
+          "2024-01-09"
+        ],
+        [
+          "AK Laschat"
+        ],
+        [
+          "Edukte",
+          "eingesetzte\nMenge",
+          "Ansatz"
+        ],
+        [
+          "M",
+          "eq",
+          "Dichte",
+          "c",
+          "V",
+          "w",
+          "n",
+          60
+        ],
+        [
+          "g/mol",
+          "g/mL",
+          "mol/L",
+          "mL",
+          "%",
+          "mmol",
+          "g",
+          "mL",
+          "enthalten"
+        ],
+        [
+          "Aminoester 065",
+          446.52,
+          1,
+          2.4299023559974917,
+          1.085,
+          "0,040 mol/L"
+        ],
+        [
+          "LAH ",
+          37.95,
+          1.1,
+          2.672892591597241,
+          0.1014362738511153,
+          "0,045 mol/L"
+        ],
+        [
+          "THF (Aminoester)",
+          50,
+          50
+        ],
+        [
+          "THF (LAH)",
+          10,
+          10
+        ],
+        [
+          "Produkte"
+        ],
+        [
+          "M",
+          "Ausw.",
+          "n",
+          "Ausb."
+        ],
+        [
+          "g/mol",
+          "g",
+          "mmol",
+          "%",
+          "Habitus",
+          "Rf",
+          "Laufmittel",
+          "NMR"
+        ],
+        [
+          "sauber",
+          384.49,
+          0.48300000000000054,
+          1.256209524304925,
+          51.69794256153318
+        ],
+        [
+          "Vorschrift:",
+          "DC:",
+          "Beobachtungen:"
+        ],
+        [
+          "Aminoester unter N2 in THF lösen, auf 0 °C kühlen und dann tropfenweise mit LAH in THF versetzen. Rühren für 30 min @0 °C, dann quenchen mit Wasser. Zugabe von DCM, trennen der Phasen und Waschen der org. Phase mit HCl (1M, 1x, gleiche Menge wie THF) und brine (2x). Trocknen über MgSO4, LM am Roti entfernen und anschließende Säule (Pe/EtOAc 4:1 -> 3:1 -> 1:1).  "
+        ],
+        [
+          "Herkunft der Edukte:"
+        ],
+        [
+          "Aminoester 065",
+          "Abzug"
+        ],
+        [
+          "LAH ",
+          "Peggy Regal"
+        ],
+        [
+          "THF (Aminoester)",
+          "Destille"
+        ],
+        [
+          "THF (LAH)"
+        ],
+        [
+          "Literatur:"
+        ]
+      ],
+      "non_empty_cells": [
+        {
+          "address": "B1",
+          "row": 1,
+          "col": 2,
+          "value": "Laborjournal",
+          "python_type": "str"
+        },
+        {
+          "address": "I1",
+          "row": 1,
+          "col": 9,
+          "value": "Nr.:",
+          "python_type": "str"
+        },
+        {
+          "address": "J1",
+          "row": 1,
+          "col": 10,
+          "value": "WAT-Ch-066",
+          "python_type": "str"
+        },
+        {
+          "address": "A2",
+          "row": 2,
+          "col": 1,
+          "value": "Timo Watzenborn",
+          "python_type": "str"
+        },
+        {
+          "address": "A3",
+          "row": 3,
+          "col": 1,
+          "value": "Promotion",
+          "python_type": "str"
+        },
+        {
+          "address": "H3",
+          "row": 3,
+          "col": 8,
+          "value": "Angesetzt am:",
+          "python_type": "str"
+        },
+        {
+          "address": "J3",
+          "row": 3,
+          "col": 10,
+          "value": "2024-01-09",
+          "python_type": "datetime"
+        },
+        {
+          "address": "A4",
+          "row": 4,
+          "col": 1,
+          "value": "AK Laschat",
+          "python_type": "str"
+        },
+        {
+          "address": "A7",
+          "row": 7,
+          "col": 1,
+          "value": "Edukte",
+          "python_type": "str"
+        },
+        {
+          "address": "I7",
+          "row": 7,
+          "col": 9,
+          "value": "eingesetzte\nMenge",
+          "python_type": "str"
+        },
+        {
+          "address": "K7",
+          "row": 7,
+          "col": 11,
+          "value": "Ansatz",
+          "python_type": "str"
+        },
+        {
+          "address": "B8",
+          "row": 8,
+          "col": 2,
+          "value": "M",
+          "python_type": "str"
+        },
+        {
+          "address": "C8",
+          "row": 8,
+          "col": 3,
+          "value": "eq",
+          "python_type": "str"
+        },
+        {
+          "address": "D8",
+          "row": 8,
+          "col": 4,
+          "value": "Dichte",
+          "python_type": "str"
+        },
+        {
+          "address": "E8",
+          "row": 8,
+          "col": 5,
+          "value": "c",
+          "python_type": "str"
+        },
+        {
+          "address": "F8",
+          "row": 8,
+          "col": 6,
+          "value": "V",
+          "python_type": "str"
+        },
+        {
+          "address": "G8",
+          "row": 8,
+          "col": 7,
+          "value": "w",
+          "python_type": "str"
+        },
+        {
+          "address": "H8",
+          "row": 8,
+          "col": 8,
+          "value": "n",
+          "python_type": "str"
+        },
+        {
+          "address": "K8",
+          "row": 8,
+          "col": 11,
+          "value": 60,
+          "python_type": "int"
+        },
+        {
+          "address": "B9",
+          "row": 9,
+          "col": 2,
+          "value": "g/mol",
+          "python_type": "str"
+        },
+        {
+          "address": "D9",
+          "row": 9,
+          "col": 4,
+          "value": "g/mL",
+          "python_type": "str"
+        },
+        {
+          "address": "E9",
+          "row": 9,
+          "col": 5,
+          "value": "mol/L",
+          "python_type": "str"
+        },
+        {
+          "address": "F9",
+          "row": 9,
+          "col": 6,
+          "value": "mL",
+          "python_type": "str"
+        },
+        {
+          "address": "G9",
+          "row": 9,
+          "col": 7,
+          "value": "%",
+          "python_type": "str"
+        },
+        {
+          "address": "H9",
+          "row": 9,
+          "col": 8,
+          "value": "mmol",
+          "python_type": "str"
+        },
+        {
+          "address": "I9",
+          "row": 9,
+          "col": 9,
+          "value": "g",
+          "python_type": "str"
+        },
+        {
+          "address": "J9",
+          "row": 9,
+          "col": 10,
+          "value": "mL",
+          "python_type": "str"
+        },
+        {
+          "address": "K9",
+          "row": 9,
+          "col": 11,
+          "value": "enthalten",
+          "python_type": "str"
+        },
+        {
+          "address": "A10",
+          "row": 10,
+          "col": 1,
+          "value": "Aminoester 065",
+          "python_type": "str"
+        },
+        {
+          "address": "B10",
+          "row": 10,
+          "col": 2,
+          "value": 446.52,
+          "python_type": "float"
+        },
+        {
+          "address": "C10",
+          "row": 10,
+          "col": 3,
+          "value": 1,
+          "python_type": "int"
+        },
+        {
+          "address": "H10",
+          "row": 10,
+          "col": 8,
+          "value": 2.4299023559974917,
+          "python_type": "float"
+        },
+        {
+          "address": "I10",
+          "row": 10,
+          "col": 9,
+          "value": 1.085,
+          "python_type": "float"
+        },
+        {
+          "address": "K10",
+          "row": 10,
+          "col": 11,
+          "value": "0,040 mol/L",
+          "python_type": "str"
+        },
+        {
+          "address": "A11",
+          "row": 11,
+          "col": 1,
+          "value": "LAH ",
+          "python_type": "str"
+        },
+        {
+          "address": "B11",
+          "row": 11,
+          "col": 2,
+          "value": 37.95,
+          "python_type": "float"
+        },
+        {
+          "address": "C11",
+          "row": 11,
+          "col": 3,
+          "value": 1.1,
+          "python_type": "float"
+        },
+        {
+          "address": "H11",
+          "row": 11,
+          "col": 8,
+          "value": 2.672892591597241,
+          "python_type": "float"
+        },
+        {
+          "address": "I11",
+          "row": 11,
+          "col": 9,
+          "value": 0.1014362738511153,
+          "python_type": "float"
+        },
+        {
+          "address": "K11",
+          "row": 11,
+          "col": 11,
+          "value": "0,045 mol/L",
+          "python_type": "str"
+        },
+        {
+          "address": "A13",
+          "row": 13,
+          "col": 1,
+          "value": "THF (Aminoester)",
+          "python_type": "str"
+        },
+        {
+          "address": "F13",
+          "row": 13,
+          "col": 6,
+          "value": 50,
+          "python_type": "int"
+        },
+        {
+          "address": "J13",
+          "row": 13,
+          "col": 10,
+          "value": 50,
+          "python_type": "int"
+        },
+        {
+          "address": "A14",
+          "row": 14,
+          "col": 1,
+          "value": "THF (LAH)",
+          "python_type": "str"
+        },
+        {
+          "address": "F14",
+          "row": 14,
+          "col": 6,
+          "value": 10,
+          "python_type": "int"
+        },
+        {
+          "address": "J14",
+          "row": 14,
+          "col": 10,
+          "value": 10,
+          "python_type": "int"
+        },
+        {
+          "address": "A19",
+          "row": 19,
+          "col": 1,
+          "value": "Produkte",
+          "python_type": "str"
+        },
+        {
+          "address": "B20",
+          "row": 20,
+          "col": 2,
+          "value": "M",
+          "python_type": "str"
+        },
+        {
+          "address": "C20",
+          "row": 20,
+          "col": 3,
+          "value": "Ausw.",
+          "python_type": "str"
+        },
+        {
+          "address": "D20",
+          "row": 20,
+          "col": 4,
+          "value": "n",
+          "python_type": "str"
+        },
+        {
+          "address": "E20",
+          "row": 20,
+          "col": 5,
+          "value": "Ausb.",
+          "python_type": "str"
+        },
+        {
+          "address": "B21",
+          "row": 21,
+          "col": 2,
+          "value": "g/mol",
+          "python_type": "str"
+        },
+        {
+          "address": "C21",
+          "row": 21,
+          "col": 3,
+          "value": "g",
+          "python_type": "str"
+        },
+        {
+          "address": "D21",
+          "row": 21,
+          "col": 4,
+          "value": "mmol",
+          "python_type": "str"
+        },
+        {
+          "address": "E21",
+          "row": 21,
+          "col": 5,
+          "value": "%",
+          "python_type": "str"
+        },
+        {
+          "address": "F21",
+          "row": 21,
+          "col": 6,
+          "value": "Habitus",
+          "python_type": "str"
+        },
+        {
+          "address": "G21",
+          "row": 21,
+          "col": 7,
+          "value": "Rf",
+          "python_type": "str"
+        },
+        {
+          "address": "H21",
+          "row": 21,
+          "col": 8,
+          "value": "Laufmittel",
+          "python_type": "str"
+        },
+        {
+          "address": "J21",
+          "row": 21,
+          "col": 10,
+          "value": "NMR",
+          "python_type": "str"
+        },
+        {
+          "address": "A22",
+          "row": 22,
+          "col": 1,
+          "value": "sauber",
+          "python_type": "str"
+        },
+        {
+          "address": "B22",
+          "row": 22,
+          "col": 2,
+          "value": 384.49,
+          "python_type": "float"
+        },
+        {
+          "address": "C22",
+          "row": 22,
+          "col": 3,
+          "value": 0.48300000000000054,
+          "python_type": "float"
+        },
+        {
+          "address": "D22",
+          "row": 22,
+          "col": 4,
+          "value": 1.256209524304925,
+          "python_type": "float"
+        },
+        {
+          "address": "E22",
+          "row": 22,
+          "col": 5,
+          "value": 51.69794256153318,
+          "python_type": "float"
+        },
+        {
+          "address": "A27",
+          "row": 27,
+          "col": 1,
+          "value": "Vorschrift:",
+          "python_type": "str"
+        },
+        {
+          "address": "E27",
+          "row": 27,
+          "col": 5,
+          "value": "DC:",
+          "python_type": "str"
+        },
+        {
+          "address": "H27",
+          "row": 27,
+          "col": 8,
+          "value": "Beobachtungen:",
+          "python_type": "str"
+        },
+        {
+          "address": "A28",
+          "row": 28,
+          "col": 1,
+          "value": "Aminoester unter N2 in THF lösen, auf 0 °C kühlen und dann tropfenweise mit LAH in THF versetzen. Rühren für 30 min @0 °C, dann quenchen mit Wasser. Zugabe von DCM, trennen der Phasen und Waschen der org. Phase mit HCl (1M, 1x, gleiche Menge wie THF) und brine (2x). Trocknen über MgSO4, LM am Roti entfernen und anschließende Säule (Pe/EtOAc 4:1 -> 3:1 -> 1:1).  ",
+          "python_type": "str"
+        },
+        {
+          "address": "H36",
+          "row": 36,
+          "col": 8,
+          "value": "Herkunft der Edukte:",
+          "python_type": "str"
+        },
+        {
+          "address": "H37",
+          "row": 37,
+          "col": 8,
+          "value": "Aminoester 065",
+          "python_type": "str"
+        },
+        {
+          "address": "J37",
+          "row": 37,
+          "col": 10,
+          "value": "Abzug",
+          "python_type": "str"
+        },
+        {
+          "address": "H38",
+          "row": 38,
+          "col": 8,
+          "value": "LAH ",
+          "python_type": "str"
+        },
+        {
+          "address": "J38",
+          "row": 38,
+          "col": 10,
+          "value": "Peggy Regal",
+          "python_type": "str"
+        },
+        {
+          "address": "H40",
+          "row": 40,
+          "col": 8,
+          "value": "THF (Aminoester)",
+          "python_type": "str"
+        },
+        {
+          "address": "J40",
+          "row": 40,
+          "col": 10,
+          "value": "Destille",
+          "python_type": "str"
+        },
+        {
+          "address": "H41",
+          "row": 41,
+          "col": 8,
+          "value": "THF (LAH)",
+          "python_type": "str"
+        },
+        {
+          "address": "A44",
+          "row": 44,
+          "col": 1,
+          "value": "Literatur:",
+          "python_type": "str"
+        }
+      ],
+      "profile_summary": {
+        "profile_name": "chem_lab_journal",
+        "label_positions": {
+          "starting_materials": {
+            "address": "A7",
+            "row": 7,
+            "col": 1,
+            "label": "Edukte"
+          },
+          "products": {
+            "address": "A19",
+            "row": 19,
+            "col": 1,
+            "label": "Produkte"
+          },
+          "procedure": {
+            "address": "A27",
+            "row": 27,
+            "col": 1,
+            "label": "Vorschrift:"
+          },
+          "tlc_conditions": {
+            "address": "E27",
+            "row": 27,
+            "col": 5,
+            "label": "DC:"
+          },
+          "observations": {
+            "address": "H27",
+            "row": 27,
+            "col": 8,
+            "label": "Beobachtungen:"
+          },
+          "reagent_sources": {
+            "address": "H36",
+            "row": 36,
+            "col": 8,
+            "label": "Herkunft der Edukte:"
+          },
+          "literature": {
+            "address": "A44",
+            "row": 44,
+            "col": 1,
+            "label": "Literatur:"
+          }
+        },
+        "metadata": {
+          "journal_number": "WAT-Ch-066",
+          "researcher": "Timo Watzenborn",
+          "project_type": "Promotion",
+          "date": "2024-01-09",
+          "research_group": "AK Laschat",
+          "reaction_name_from_filename": "Reduktion Aminoester Ile zu Alkohol"
+        },
+        "batch_volume_mL": 60,
+        "procedure": "Aminoester unter N2 in THF lösen, auf 0 °C kühlen und dann tropfenweise mit LAH in THF versetzen. Rühren für 30 min @0 °C, dann quenchen mit Wasser. Zugabe von DCM, trennen der Phasen und Waschen der org. Phase mit HCl (1M, 1x, gleiche Menge wie THF) und brine (2x). Trocknen über MgSO4, LM am Roti entfernen und anschließende Säule (Pe/EtOAc 4:1 -> 3:1 -> 1:1).  ",
+        "tlc_conditions": null,
+        "observations": null,
+        "starting_material_table_rows": [
+          {
+            "name": "Aminoester 065",
+            "M g/mol": 446.52,
+            "eq": 1,
+            "n mmol": 2.4299023559974917,
+            "g": 1.085,
+            "enthalten": "0,040 mol/L"
+          },
+          {
+            "name": "LAH ",
+            "M g/mol": 37.95,
+            "eq": 1.1,
+            "n mmol": 2.672892591597241,
+            "g": 0.1014362738511153,
+            "enthalten": "0,045 mol/L"
+          },
+          {
+            "name": "THF (Aminoester)",
+            "V mL": 50,
+            "mL": 50
+          },
+          {
+            "name": "THF (LAH)",
+            "V mL": 10,
+            "mL": 10
+          }
+        ],
+        "product_table_rows": [
+          {
+            "name": "sauber",
+            "M g/mol": 384.49,
+            "Ausw. g": 0.48300000000000054,
+            "n mmol": 1.256209524304925,
+            "Ausb. %": 51.69794256153318
+          }
+        ],
+        "reagent_source_rows": [
+          [
+            "Aminoester 065",
+            "Abzug"
+          ],
+          [
+            "LAH ",
+            "Peggy Regal"
+          ],
+          [
+            "THF (Aminoester)",
+            "Destille"
+          ],
+          [
+            "THF (LAH)"
+          ]
+        ],
+        "literature_rows": [
+          [
+            "Literatur:"
+          ]
+        ]
+      }
+    }
+  ],
+  "embedded_reaction_smiles": [
+    "[C@@H]([C@@H](C(=O)OC)N(S(=O)(=O)c1c(*)cccc1)CCC=C(C)C)(CC)C>>[C@@H]([C@@H](CO)N(S(=O)(=O)c1c(*)cccc1)CCC=C(C)C)(CC)C"
+  ],
+  "embedded_reaction_structures": []
+}

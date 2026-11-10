@@ -1,0 +1,6 @@
+{
+  "_comment": "Fields that are NOT present in the Chemotion export (it has no user/person table, only a created_by UUID). These are merged verbatim into every cleaned record so the LLM can emit them. Edit per export.",
+  "researcher": "Zarfishan Dilruba",
+  "research_group": "AK Endo",
+  "project_type": "Promotion"
+}

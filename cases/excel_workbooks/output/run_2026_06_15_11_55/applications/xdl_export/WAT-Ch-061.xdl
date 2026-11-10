@@ -1,0 +1,35 @@
+<XDL>
+  <Synthesis>
+    <Hardware>
+      <Component id="reactor" type="reactor" />
+    </Hardware>
+    <Metadata description="WAT-Ch-061 - L-Ile Methylester" product="Methylester x HCl" product_yield_percent="100" />
+    <Procedure>
+      <Prep>
+        <Add vessel="reactor" reagent="MeOH" amount="100 millilitre" />
+        <Add vessel="reactor" reagent="L-Isoleucin" amount="3 gram" comment="Aminosäure in MeOH lösen" />
+        <HeatChill vessel="reactor" temp="0 celsius" comment="kühlen auf 0 °C; Dauer nicht angegeben" />
+      </Prep>
+      <Reaction>
+        <Add vessel="reactor" reagent="Thionylchlorid" amount="4.97701 millilitre" dropwise="true" />
+        <HeatChill vessel="reactor" temp="25 celsius" />
+        <Wait vessel="reactor" time="48 hour" comment="rühren für 48 h bei RT" />
+      </Reaction>
+      <Workup>
+        <Evaporate vessel="reactor" method="vacuum" comment="LM entfernen (Wasserstrahlpumpe)" />
+        <Add vessel="reactor" reagent="MeOH" comment="Rohprodukt erneut lösen in MeOH; Menge nicht angegeben" />
+        <Evaporate vessel="reactor" comment="LM wieder entfernen" />
+        <Add vessel="reactor" reagent="MeOH" comment="Rohprodukt erneut lösen in MeOH; Menge nicht angegeben" />
+        <Evaporate vessel="reactor" comment="LM wieder entfernen" />
+        <Add vessel="reactor" reagent="MeOH" comment="Rohprodukt erneut lösen in MeOH; Menge nicht angegeben" />
+        <Evaporate vessel="reactor" comment="LM wieder entfernen" />
+        <Dry vessel="reactor" desiccant="P2O5" comment="Mglw. noch im Exsiccator (P2O5) trocknen" />
+      </Workup>
+    </Procedure>
+    <Reagents>
+      <Reagent id="L-Isoleucin" name="L-Isoleucin" role="substrate" />
+      <Reagent id="Thionylchlorid" name="Thionylchlorid" role="reagent" />
+      <Reagent id="MeOH" name="MeOH" role="solvent" />
+    </Reagents>
+  </Synthesis>
+</XDL>

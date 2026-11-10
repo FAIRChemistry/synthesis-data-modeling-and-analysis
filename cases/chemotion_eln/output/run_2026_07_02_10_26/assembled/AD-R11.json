@@ -1,0 +1,263 @@
+{
+  "journal_number": "AD-R11",
+  "date": "2026-01-19",
+  "researcher": "Zarfishan Dilruba",
+  "research_group": "AK Endo",
+  "project_type": "Promotion",
+  "reaction_name": "Synthesis of [Co(ttpp)(pba)2](OTf)",
+  "observations": "21.01.2026\nWorkup\nRotovap (40 °C) (1:30 h)\nvacuum  for 30 min\nAdd 5 mL DCM\nmanually stirred and sonicated for 5 min (dissolved)\nSi-SH (0.196 g) \nstir (1000 rpm, 2 h) 12:45 --> 14:45 [stirring does not need to be this fast]\n12 mL plastic syringe, cotton plug (compressed), syringe filter (⌀ 25 mm, 0.45 μm, PTFE), 100 mL RBF [next time better to add another 0.2 µm filter]\nfiltered, transferred, and rinsed w/ 15 mL DCM (until pale green)\nHexane 90 mL\nmanually stirred and sonicated\nFridge: 4 days (15:30)\n\n26.01.2026\nFilter paper (90 mm, 15A), glass funnel, suction adapter —> 100 mL RBF [next time, tare the filter paper too.]\nFiltered and transferred w/ 2 x (3 mL DCM + 20 mL hexane) (orange filtrate, green residue)\nRinsed w/ hexane 4 x 4 mL\nDried w/ suction for 1 min\nVacuum \n20 mL screw vial (tare wt of vial (7.85387 g))\n→ CDCl₃ 600 μL -> ¹H NMR P (Bruker AV 400@U1.834; 25 °C, 20 Hz, zg30, NS 16, DS 2, D1 1 s)\nVacuum  o/n\n --> 0.08665 g\nICP → 11.4 mg\nFor sample preparation, an accurately weighed amount of compound, 11.4 mg, was transferred into microwave digestion vials. A minimal volume of concentrated nitric acid (HNO₃) was added, followed by hydrogen peroxide (H₂O₂) to a total digestion volume of approximately 5 mL. The resulting mixtures were subjected to microwave-assisted digestion at 200 °C for 2 hours to ensure complete decomposition of the organic matrix.\nAfter cooling to room temperature, the digestion mixture was transferred to a 10-mL volumetric flask and diluted to the mark with deionized water. The solution was kept overnight. The solution was transferred into the test tubes.\nInitial ICP-OES measurements resulted in signals exceeding the calibration range for cobalt, indicating that the analyte concentration was too high. Therefore, an additional dilution step was performed by transferring 2 mL of the solution into a new test tube and diluting to a final volume of 10 mL with deionized water (dilution factor = 5). These diluted samples were subsequently remeasured.",
+  "batch_volume_mL": 5.5,
+  "tlc_conditions": null,
+  "reagent_sources": null,
+  "starting_materials": [
+    {
+      "name": "Co(ttpp)",
+      "note": "AD-31-1",
+      "mass_g": 0.10129,
+      "molar_mass_g_mol": 1700.9695200000008,
+      "amount_mmol": 0.0596,
+      "equivalents": 1
+    },
+    {
+      "name": "AgOTf",
+      "note": "INV-29-1",
+      "mass_g": 0.0133,
+      "molar_mass_g_mol": 256.93730959999994,
+      "amount_mmol": 0.0518,
+      "equivalents": 0.8692694743437407
+    },
+    {
+      "name": "p-bromoaniline",
+      "note": "INV-28-1",
+      "mass_g": 0.05183,
+      "molar_mass_g_mol": 172.02254,
+      "amount_mmol": 0.3013,
+      "equivalents": 5.059712184397385
+    },
+    {
+      "name": "3-Mercaptopropyl Silica Gel",
+      "note": "INV-90-1",
+      "mass_g": 0.2,
+      "molar_mass_g_mol": null,
+      "amount_mmol": null,
+      "equivalents": 0
+    },
+    {
+      "name": "toluene",
+      "note": "solvent",
+      "volume_mL": 5.5,
+      "density_g_mL": 0.87,
+      "mass_g": 4.785,
+      "molar_mass_g_mol": 92.13842000000001,
+      "amount_mmol": 51.927,
+      "equivalents": 872.109749938254
+    }
+  ],
+  "products": [
+    {
+      "name": "[Co(ttpp)(pba)2](OTf)",
+      "molar_mass_g_mol": 2194.0837096,
+      "yield_g": 0.08665,
+      "amount_mmol": 0.0395,
+      "yield_percent": null,
+      "appearance": null,
+      "eluent_system": null,
+      "is_main_product": true,
+      "nmr_data": null,
+      "rf_value": null
+    }
+  ],
+  "procedure": {
+    "Prep": {
+      "Step": [
+        {
+          "$xml_type": "Add",
+          "_vessel": "10 mL flask",
+          "_reagent": "Co(ttpp)",
+          "_amount": {
+            "Unit": "gram",
+            "Value": 0.10129
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "10 mL flask",
+          "_reagent": "p-bromoaniline",
+          "_amount": {
+            "Unit": "gram",
+            "Value": 0.05183
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "10 mL flask",
+          "_reagent": "toluene",
+          "_amount": {
+            "Unit": "millilitre",
+            "Value": 5.5
+          }
+        },
+        {
+          "$xml_type": "Sonicate",
+          "_vessel": "10 mL flask",
+          "_time": {
+            "Unit": "minute",
+            "Value": 3
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "10 mL flask",
+          "_reagent": "AgOTf",
+          "_dropwise": true,
+          "_amount": {
+            "Unit": "gram",
+            "Value": 0.0133
+          }
+        }
+      ]
+    },
+    "Reaction": {
+      "Step": [
+        {
+          "$xml_type": "Wait",
+          "_time": {
+            "Unit": "hour",
+            "Value": 1
+          }
+        }
+      ]
+    },
+    "Workup": {
+      "Step": [
+        {
+          "$xml_type": "Evaporate",
+          "_method": "rotary_evaporator",
+          "_temp": {
+            "Unit": "celsius",
+            "Value": 40
+          }
+        },
+        {
+          "$xml_type": "Dry",
+          "_time": {
+            "Unit": "minute",
+            "Value": 30
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "DCM",
+          "_amount": {
+            "Unit": "millilitre",
+            "Value": 5
+          }
+        },
+        {
+          "$xml_type": "Sonicate",
+          "_time": {
+            "Unit": "minute",
+            "Value": 5
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "3-Mercaptopropyl Silica Gel",
+          "_amount": {
+            "Unit": "gram",
+            "Value": 0.2
+          }
+        },
+        {
+          "$xml_type": "Wait",
+          "_time": {
+            "Unit": "hour",
+            "Value": 2
+          }
+        },
+        {
+          "$xml_type": "Filter",
+          "_product_portion": "filtrate",
+          "_rinse": [
+            {
+              "name": "DCM",
+              "amount": {
+                "Unit": "millilitre",
+                "Value": 15
+              }
+            }
+          ]
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "n-hexane",
+          "_amount": {
+            "Unit": "millilitre",
+            "Value": 90
+          }
+        },
+        {
+          "$xml_type": "Sonicate"
+        },
+        {
+          "$xml_type": "HeatChill",
+          "_temp": {
+            "Unit": "celsius",
+            "Value": 4
+          },
+          "_time": {
+            "Unit": "day",
+            "Value": 4
+          }
+        },
+        {
+          "$xml_type": "Filter",
+          "_product_portion": "filtrate",
+          "_rinse": [
+            {
+              "name": "DCM",
+              "amount": {
+                "Unit": "millilitre",
+                "Value": 6
+              }
+            },
+            {
+              "name": "n-hexane",
+              "amount": {
+                "Unit": "millilitre",
+                "Value": 40
+              }
+            }
+          ]
+        },
+        {
+          "$xml_type": "Filter",
+          "_product_portion": "filtrate",
+          "_rinse": [
+            {
+              "name": "n-hexane",
+              "amount": {
+                "Unit": "millilitre",
+                "Value": 16
+              }
+            }
+          ]
+        },
+        {
+          "$xml_type": "Dry",
+          "_time": {
+            "Unit": "minute",
+            "Value": 1
+          }
+        },
+        {
+          "$xml_type": "Dry",
+          "_time": {
+            "Unit": "day",
+            "Value": 0.5
+          }
+        }
+      ]
+    }
+  }
+}

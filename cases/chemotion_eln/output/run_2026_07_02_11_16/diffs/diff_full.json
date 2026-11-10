@@ -1,0 +1,675 @@
+{
+  "AD-R18.json": [
+    {
+      "path": "$.procedure.Prep.Step.__len__",
+      "status": "changed",
+      "a": 8,
+      "b": 9,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[1].$xml_type",
+      "status": "changed",
+      "a": "HeatChill",
+      "b": "EvacuateAndRefill",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[1]._comment",
+      "status": "changed",
+      "a": null,
+      "b": "Evacuate system while hot (pressure reported 1.2 × 10⁻³ mbar)",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[1]._gas",
+      "status": "changed",
+      "a": null,
+      "b": "N2",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[1]._temp",
+      "status": "changed",
+      "a": {
+        "Unit": "celsius",
+        "Value": 250
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Prep.Step[1]._time",
+      "status": "changed",
+      "a": null,
+      "b": null,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[2].$xml_type",
+      "status": "changed",
+      "a": "EvacuateAndRefill",
+      "b": "HeatChill",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[2]._comment",
+      "status": "changed",
+      "a": null,
+      "b": "Heat flask and bottom part of reflux condenser with heat gun",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[2]._gas",
+      "status": "changed",
+      "a": "N2",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Prep.Step[2]._temp",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "Value": 250,
+        "Unit": "celsius"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[3]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "EvacuateAndRefill",
+        "_vessel": "100 mL two-neck RBF",
+        "_gas": "N2",
+        "_comment": "Backfill with N2"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Prep.Step[5]._comment",
+      "status": "changed",
+      "a": "cycle slowly ×3",
+      "b": "Cycle with N2 slowly ×3",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[0]._vessel",
+      "status": "changed",
+      "a": "100 mL two-neck RBF",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Reaction.Step[2]._comment",
+      "status": "changed",
+      "a": null,
+      "b": "Purge with N2 for 10 s",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[2]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "100 mL two-neck RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[3]._comment",
+      "status": "changed",
+      "a": null,
+      "b": "Bubble with N2",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[3]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "100 mL two-neck RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Reaction.Step[4]._vessel",
+      "status": "changed",
+      "a": "100 mL two-neck RBF",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step.__len__",
+      "status": "changed",
+      "a": 17,
+      "b": 19,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[1]._comment",
+      "status": "changed",
+      "a": "amount not stated",
+      "b": "to fully wet the alumina",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[2]._comment",
+      "status": "changed",
+      "a": null,
+      "b": "add the reaction mixture to the alumina pad",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[3].$xml_type",
+      "status": "changed",
+      "a": "Wait",
+      "b": "Filter",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[3]._comment",
+      "status": "changed",
+      "a": "elute with suction and THF until eluate becomes pale red",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[3]._product_portion",
+      "status": "changed",
+      "a": null,
+      "b": "filtrate",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[3]._rinse",
+      "status": "changed",
+      "a": null,
+      "b": [
+        {
+          "name": "THF",
+          "amount": {
+            "Value": 220,
+            "Unit": "millilitre"
+          }
+        }
+      ],
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[3]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "250 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[4]._comment",
+      "status": "changed",
+      "a": "store in fridge",
+      "b": "Store in the fridge o/n",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[6]._comment",
+      "status": "changed",
+      "a": "dry under vacuum (Schlenk line)",
+      "b": "Dry under vacuum (Schlenk line)",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[7]._amount.Unit",
+      "status": "changed",
+      "a": "millilitre",
+      "b": "gram",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[7]._amount.Value",
+      "status": "changed",
+      "a": 50,
+      "b": 40,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[7]._reagent",
+      "status": "changed",
+      "a": "CHCl3",
+      "b": "basic alumina",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[7]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "250 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[8].$xml_type",
+      "status": "changed",
+      "a": "Sonicate",
+      "b": "Add",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[8]._amount",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "Value": 150,
+        "Unit": "millilitre"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[8]._reagent",
+      "status": "changed",
+      "a": null,
+      "b": "CHCl3",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[8]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "250 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[9].$xml_type",
+      "status": "changed",
+      "a": "Add",
+      "b": "Filter",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[9]._amount",
+      "status": "changed",
+      "a": {
+        "Unit": "millilitre",
+        "Value": 280
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[9]._product_portion",
+      "status": "changed",
+      "a": null,
+      "b": "filtrate",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[9]._reagent",
+      "status": "changed",
+      "a": "n-heptane",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[9]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "250 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[10].$xml_type",
+      "status": "changed",
+      "a": "Sonicate",
+      "b": "Add",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[10]._amount",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "Value": 50,
+        "Unit": "millilitre"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[10]._reagent",
+      "status": "changed",
+      "a": null,
+      "b": "CHCl3",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[10]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "250 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[11].$xml_type",
+      "status": "changed",
+      "a": "HeatChill",
+      "b": "Sonicate",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[11]._temp",
+      "status": "changed",
+      "a": {
+        "Unit": "celsius",
+        "Value": 0
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[11]._time",
+      "status": "changed",
+      "a": {
+        "Unit": "minute",
+        "Value": 80
+      },
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[11]._vessel",
+      "status": "changed",
+      "a": null,
+      "b": "250 mL RBF",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[12]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "Add",
+        "_vessel": "250 mL RBF",
+        "_reagent": "n-heptane",
+        "_amount": {
+          "Value": 280,
+          "Unit": "millilitre"
+        }
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[13]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "$xml_type": "HeatChill",
+        "_temp": {
+          "Value": 0,
+          "Unit": "celsius"
+        },
+        "_time": {
+          "Value": 80,
+          "Unit": "minute"
+        },
+        "_comment": "Store in fridge"
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[13]._comment",
+      "status": "changed",
+      "a": null,
+      "b": "Filter the filtrate again",
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[14]._comment",
+      "status": "changed",
+      "a": "2×",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[14]._rinse.__len__",
+      "status": "changed",
+      "a": 2,
+      "b": 4,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[14]._rinse[0].name",
+      "status": "changed",
+      "a": "purified CHCl3",
+      "b": "CHCl3",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[14]._rinse[1].amount.Value",
+      "status": "changed",
+      "a": 40,
+      "b": 12,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[14]._rinse[1].name",
+      "status": "changed",
+      "a": "heptane",
+      "b": "CHCl3",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[14]._rinse[2]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "name": "n-heptane",
+        "amount": {
+          "Value": 40,
+          "Unit": "millilitre"
+        }
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[14]._rinse[3]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "name": "n-heptane",
+        "amount": {
+          "Value": 40,
+          "Unit": "millilitre"
+        }
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[15]._comment",
+      "status": "changed",
+      "a": "2×",
+      "b": null,
+      "a_missing": false,
+      "b_missing": true
+    },
+    {
+      "path": "$.procedure.Workup.Step[15]._rinse.__len__",
+      "status": "changed",
+      "a": 1,
+      "b": 2,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[15]._rinse[1]",
+      "status": "changed",
+      "a": null,
+      "b": {
+        "name": "petroleum ether",
+        "amount": {
+          "Value": 30,
+          "Unit": "millilitre"
+        }
+      },
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.procedure.Workup.Step[16]._comment",
+      "status": "changed",
+      "a": "desiccator, diaphragm pump",
+      "b": "Dry under vacuum (desiccator, diaphragm pump)",
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.products[0].amount_mmol",
+      "status": "changed",
+      "a": 0.5742,
+      "b": 0.57451,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[0].amount_mmol",
+      "status": "changed",
+      "a": 0.7457,
+      "b": 0.74563,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[0].batch_concentration_mol_L",
+      "status": "changed",
+      "a": null,
+      "b": 18.640675,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[1].amount_mmol",
+      "status": "changed",
+      "a": 3.7277,
+      "b": 3.72705,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[1].batch_concentration_mol_L",
+      "status": "changed",
+      "a": null,
+      "b": 93.17625,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[2].amount_mmol",
+      "status": "changed",
+      "a": 4.5159,
+      "b": 4.51656,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[2].batch_concentration_mol_L",
+      "status": "changed",
+      "a": null,
+      "b": 112.914,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[3].amount_mmol",
+      "status": "changed",
+      "a": 7.3889,
+      "b": 7.38922,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[3].batch_concentration_mol_L",
+      "status": "changed",
+      "a": null,
+      "b": 184.7305,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[4].amount_mmol",
+      "status": "changed",
+      "a": 493.065,
+      "b": 493.167,
+      "a_missing": false,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[4].batch_concentration_mol_L",
+      "status": "changed",
+      "a": null,
+      "b": null,
+      "a_missing": true,
+      "b_missing": false
+    },
+    {
+      "path": "$.starting_materials[4].role",
+      "status": "changed",
+      "a": null,
+      "b": "solvent",
+      "a_missing": true,
+      "b_missing": false
+    }
+  ]
+}

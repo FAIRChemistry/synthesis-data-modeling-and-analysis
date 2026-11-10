@@ -1,0 +1,152 @@
+{
+  "short_label": "AD-R6",
+  "name": "Synthesis of Co(ttpp)",
+  "created_at": "2025-11-17T15:43:42.341Z",
+  "status": "Successful",
+  "temperature": {
+    "data": [],
+    "userText": "1. RT 2. reflux",
+    "valueUnit": "°C"
+  },
+  "duration": " Hour(s)",
+  "vessel_size": {
+    "amount": 50,
+    "unit": "ml"
+  },
+  "plain_text_description": "Heat a 50 mL two-neck RBF in an oven (120 °C) for >1.5 h.\n[03.12., RT 23.9°C, RH 26 %]\nAssemble and fix a reflux condenser, a T-shape connector, and a bubbler (paraffin oil) at a Schlenk line.\nTake out the RBF and quickly assemble it with a stir bar, rubber septum, and the reflux condenser while hot.\nEvacuate (0.33 mbar), heat the bottom part of the reflux condenser with a heat gun (250 °C). [Also the flask, because it cooled down while figuring out the assembly]\nBackfill with N2\nAdd TAPP and TrBr (plastic spatula) quickly\nCycle with N2 slowly x3\nAdd Et3N\nAdd THF w/ double-tipped needle. [15:00] (black mixture)\nStart stirring (350 rpm)\nCover the flask with Al foil.\n→ 0.1 mL + CDCl3 500 µL, sonicate → 1H NMR M1\n[4.12. 7:40] → 0.1 mL + CDCl3 500 µL, sonicate → 1H NMR M2\n[8.12. 8:30] → 0.1 mL + CDCl3 500 µL, sonicate → 1H NMR M3\nStop stirring. Close the N2 connection. Add CoCl2 quickly. Purge with N2 for 10 s. Close. Resume stirring.\nBubble with N2, 30 min.\nHeat to reflux (85 °C, 1.25 atm) for 2 h\nCool down to RT.\n→ 0.1 mL + CDCl3 500 µL, sonicate → 1H NMR M4\n\n",
+  "plain_text_observation": "Frit funnel 25 mL and add a folded filter paper add alumina (neutral) until the half of the filter paper\nwet it with THF.\nCharged the half of reaction mixture [it did not elute]. (A)\nAdd a new filter paper (15 A, cut) and neutral alumina 12.5 mL to a new 25 mL frit funnel. [the paper left some gap at the rim of the frit. Maybe better not to use paper next time]\nAttach the funnel to a vacuum filter adapter and a 250 mL RBF.\nWet the alumina with THF\nLoad the rest of the reaction mixture\nCharge the loaded alumina (A)\nElute with THF 70 mL and weak suction. (eluate: dark red to pale pink)  (The alumina pad became green with some blue parts at the top, green at the middle, and green with some brown parts at the bottom)\nAdd EtOH 25 mL to the eluate\nConcentrate with rotovap to 25 mL. (purple precipitation)\nCollect the solids by filtration with a filter paper (15A, ø 90 mm, tare: 0.53750 g), a glass funnel, a vacuum filter adapter, and a 50 mL RBF under suction. (filtrate: dark brown)\nRinse with EtOH and petroleum ether.\nDry the filtrate with rotovap\nAdd EtOH 25 mL. o/n\n[10.12. 21.0 °C, RH 36%]\nSonicate (dark green-brown)\nCollect the solids by filtration with a filter paper (15A, ø 90 mm, tare: x g), a glass funnel, a vacuum filter adapter, and a 50 mL RBF (tare: ?) under suction. (filtrate: dark green brown)\nRinse with EtOH and petroleum ether.\n[11.12.]\nDry the filtrate with rotovap\nDry with a diaphragm pump for 1 h [dark green-brown sticky paste]\n[12.12.]\n1H NMR-filtrate (CDCl3) [dark green solution]\nDry the residue under vacuum (diaphragm pump) for 1 h [dark brown solid]\n[12.12.]\n1H NMR-residue2 (CDCl3) [brown solution]\nDry the residue under vacuum (diaphragm pump) for 1 h. [purple solid]\n[12.12.]\n1H NMR-residue1 (CDCl3) [dark brown solution]\n",
+  "starting_materials": [
+    {
+      "short_label": "INV-14-2",
+      "name": "TAPP",
+      "molecular_weight": 674.7943600000002,
+      "real_amount_value": 0.251,
+      "real_amount_unit": "g",
+      "target_amount_value": 0.25,
+      "target_amount_unit": "g",
+      "density": 1.35,
+      "inchikey": "REPFNYFEIOZRLM-LWQDQPMZSA-N",
+      "equivalent": 1.0,
+      "reference": true,
+      "position": 0
+    },
+    {
+      "short_label": "INV-20-2",
+      "name": "TrBr",
+      "molecular_weight": 323.2264,
+      "real_amount_value": 0.627,
+      "real_amount_unit": "g",
+      "target_amount_value": 0.5987,
+      "target_amount_unit": "g",
+      "density": null,
+      "inchikey": "NZHXEWZGTQSYJM-UHFFFAOYSA-N",
+      "equivalent": 5.215049538427214,
+      "reference": false,
+      "position": 1
+    },
+    {
+      "short_label": "INV-21-5",
+      "name": "CoCl2",
+      "molecular_weight": 129.8392,
+      "real_amount_value": 0.29,
+      "real_amount_unit": "g",
+      "target_amount_value": 0.28800000000000003,
+      "target_amount_unit": "g",
+      "density": null,
+      "inchikey": "GVPFVAHMJGGAJG-UHFFFAOYSA-L",
+      "equivalent": 6.0046802972890845,
+      "reference": false,
+      "position": 2
+    },
+    {
+      "short_label": "INV-22-3",
+      "name": "Et3N",
+      "molecular_weight": 101.19,
+      "real_amount_value": 0.000516,
+      "real_amount_unit": "l",
+      "target_amount_value": 0.3749,
+      "target_amount_unit": "g",
+      "density": 0.726,
+      "inchikey": "ZMANZCXQSJIPKH-UHFFFAOYSA-N",
+      "equivalent": 9.952826857044991,
+      "reference": false,
+      "position": 3
+    }
+  ],
+  "solvents": [
+    {
+      "short_label": "solvent",
+      "name": "THF",
+      "molecular_weight": 72.10572,
+      "real_amount_value": 0.017,
+      "real_amount_unit": "l",
+      "target_amount_value": 0.017,
+      "target_amount_unit": "l",
+      "density": 0.889,
+      "inchikey": "WYURNTSHIVDZCO-UHFFFAOYSA-N",
+      "equivalent": null,
+      "reference": false,
+      "position": 0
+    }
+  ],
+  "purification_solvents": [
+    {
+      "short_label": "AD-27",
+      "name": "oxolane",
+      "molecular_weight": 72.10572,
+      "real_amount_value": null,
+      "real_amount_unit": "g",
+      "target_amount_value": 0.05,
+      "target_amount_unit": "l",
+      "density": 0.889,
+      "inchikey": "WYURNTSHIVDZCO-UHFFFAOYSA-N",
+      "equivalent": 1657.2948091515555,
+      "reference": false,
+      "position": 0
+    },
+    {
+      "short_label": "INV-39",
+      "name": "INV-39",
+      "molecular_weight": null,
+      "real_amount_value": null,
+      "real_amount_unit": "g",
+      "target_amount_value": null,
+      "target_amount_unit": "g",
+      "density": 0.672,
+      "inchikey": "DUMMY",
+      "equivalent": null,
+      "reference": false,
+      "position": 1
+    },
+    {
+      "short_label": "KEN-8",
+      "name": "ethanol",
+      "molecular_weight": 46.068439999999995,
+      "real_amount_value": null,
+      "real_amount_unit": "g",
+      "target_amount_value": 0.025,
+      "target_amount_unit": "l",
+      "density": 0.789,
+      "inchikey": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N",
+      "equivalent": 1151.0951612539507,
+      "reference": false,
+      "position": 2
+    }
+  ],
+  "products": [
+    {
+      "short_label": "AD-26",
+      "name": "C120H88CoN8",
+      "molecular_weight": 1700.9695200000008,
+      "real_amount_value": null,
+      "real_amount_unit": "g",
+      "target_amount_value": null,
+      "target_amount_unit": "g",
+      "density": null,
+      "inchikey": "SZVLKHGYPSMSBU-FIVSXPDESA-N",
+      "equivalent": null,
+      "reference": false,
+      "position": 0
+    }
+  ]
+}

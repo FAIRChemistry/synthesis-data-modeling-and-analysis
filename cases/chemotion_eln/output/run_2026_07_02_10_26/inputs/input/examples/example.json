@@ -1,0 +1,223 @@
+{
+  "procedure": {
+    "Prep": {
+      "Step": [
+        {
+          "$xml_type": "Add",
+          "_vessel": "50 mL flask",
+          "_dropwise": false,
+          "_reagent": "Co(ttpp)",
+          "_amount": {
+            "Unit": "milligram",
+            "Value": 499.63
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "50 mL flask",
+          "_dropwise": false,
+          "_reagent": "pyridine",
+          "_amount": {
+            "Unit": "microlitre",
+            "Value": 119
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "50 mL flask",
+          "_amount": {
+            "Unit": "millilitre",
+            "Value": 27.5
+          },
+          "_dropwise": false,
+          "_reagent": "toluene"
+        },
+        {
+          "$xml_type": "Sonicate",
+          "_vessel": "50 mL flask",
+          "_time": {
+            "Unit": "minute",
+            "Value": 3
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "50 mL flask",
+          "_dropwise": true,
+          "_amount": {
+            "Unit": "milligram",
+            "Value": 65.44
+          },
+          "_reagent": "AgOTf"
+        }
+      ]
+    },
+    "Reaction": {
+      "Step": [
+        {
+          "$xml_type": "Wait",
+          "_time": {
+            "Unit": "hour",
+            "Value": 2
+          }
+        }
+      ]
+    },
+    "Workup": {
+      "Step": [
+        {
+          "$xml_type": "Evaporate",
+          "_vessel": "50 mL flask",
+          "_method": "rotary_evaporator",
+          "_temp": {
+            "Unit": "celsius",
+            "Value": 40
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "50 mL flask",
+          "_amount": {
+            "Unit": "millilitre",
+            "Value": 25
+          },
+          "_dropwise": false,
+          "_reagent": "DCM"
+        },
+        {
+          "$xml_type": "Sonicate"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "50 mL flask",
+          "_amount": {
+            "Unit": "gram",
+            "Value": 121
+          },
+          "_reagent": "ISOLUTE Si-Thiol"
+        },
+        {
+          "$xml_type": "Wait",
+          "_time": {
+            "Unit": "hour",
+            "Value": 1
+          }
+        },
+        {
+          "$xml_type": "Filter",
+          "_product_portion": "filtrate",
+          "_rinse": [
+            {
+              "name": "DCM",
+              "amount": {
+                "Unit": "millilitre",
+                "Value": 50
+              }
+            }
+          ]
+        },
+        {
+          "$xml_type": "Add",
+          "_dropwise": false,
+          "_amount": {
+            "Unit": "millilitre",
+            "Value": 300
+          },
+          "_reagent": "n-hexane"
+        },
+        {
+          "$xml_type": "HeatChill",
+          "_temp": {
+            "Unit": "celsius",
+            "Value": 0
+          },
+          "_time": {
+            "Unit": "day",
+            "Value": 0.5
+          }
+        },
+        {
+          "$xml_type": "Filter",
+          "_product_portion": "residue",
+          "_rinse": [
+            {
+              "name": "DCM + n-hexane"
+            },
+            {
+              "name": "n-hexane"
+            }
+          ]
+        },
+        {
+          "$xml_type": "Dry",
+          "_time": {
+            "Unit": "minute",
+            "Value": 10
+          }
+        },
+        {
+          "$xml_type": "Dry",
+          "_time": {
+            "Unit": "hour",
+            "Value": 5
+          }
+        }
+      ]
+    }
+  },
+  "products": [
+    {
+      "amount_mmol": 0.2087,
+      "appearance": "green solids",
+      "is_main_product": true,
+      "molar_mass_g_mol": 2008,
+      "name": "[Co(ttpp)(py)2](OTf)",
+      "yield_g": 0.4192,
+      "yield_percent": 71
+    }
+  ],
+  "starting_materials": [
+    {
+      "amount_mmol": 0.2937,
+      "equivalents": 1,
+      "mass_g": 0.49963,
+      "molar_mass_g_mol": 1700.9695,
+      "name": "Co(ttpp)",
+      "note": "ZAR-1096-1"
+    },
+    {
+      "name": "AgOTf",
+      "amount_mmol": 0.2547,
+      "equivalents": 0.8671,
+      "mass_g": 0.06544,
+      "molar_mass_g_mol": 256.9373,
+      "note": "INV-29-5"
+    },
+    {
+      "name": "pyridine",
+      "amount_mmol": 1.4713,
+      "equivalents": 5.0091,
+      "mass_g": 0.116382,
+      "molar_mass_g_mol": 79.0999,
+      "note": "INV-24-13",
+      "volume_mL": 0.119,
+      "density_g_mL": 0.978
+    },
+    {
+      "name": "toluene",
+      "amount_mmol": 258.1713,
+      "equivalents": 878.9335951607361,
+      "density_g_mL": 0.865,
+      "mass_g": 23.7875,
+      "molar_mass_g_mol": 92.1384,
+      "note": "INV-128-1",
+      "volume_mL": 27.5
+    }
+  ],
+  "batch_volume_mL": 27.5,
+  "date": "2026-06-10",
+  "journal_number": "ZAR-439",
+  "reaction_name": "Synthesis of [Co(ttpp)(py)2](OTf)",
+  "research_group": "AK Endo",
+  "researcher": "Zarfishan Dilruba"
+}

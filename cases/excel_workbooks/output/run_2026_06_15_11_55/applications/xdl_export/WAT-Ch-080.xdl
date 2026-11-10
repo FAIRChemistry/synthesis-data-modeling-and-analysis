@@ -1,0 +1,35 @@
+<XDL>
+  <Synthesis>
+    <Hardware>
+      <Component id="reactor" type="reactor" />
+    </Hardware>
+    <Metadata description="WAT-Ch-080 - Aminierung geschütztes Ile mit Bromolefin" product="tert. Amin" product_yield_percent="50.7794" />
+    <Procedure>
+      <Prep>
+        <EvacuateAndRefill vessel="reactor" gas="N2" />
+        <Add vessel="reactor" reagent="DMF" amount="80 millilitre" />
+        <Add vessel="reactor" reagent="Ns-Ile-OMe 045c" amount="7.43 gram" comment="Aminoester in DMF lösen" />
+      </Prep>
+      <Reaction>
+        <Add vessel="reactor" reagent="Cs2CO3" amount="14.6558 gram" />
+        <Add vessel="reactor" reagent="Bromolefin 064" amount="6.37308 gram" />
+        <HeatChill vessel="reactor" temp="60 celsius" comment="rühren ü.N." />
+      </Reaction>
+      <Workup>
+        <HeatChill vessel="reactor" temp="25 celsius" comment="Auf RT abkühlen" />
+        <Add vessel="reactor" reagent="DEE" comment="mit DEE versetzen" />
+        <WashPhase vessel="reactor" solution="Wasser" phase="organic" repeat="2" />
+        <WashPhase vessel="reactor" solution="brine" phase="organic" repeat="2" />
+        <Dry vessel="reactor" desiccant="MgSO4" comment="trocknen über MgSO4" />
+        <Evaporate vessel="reactor" method="rotary_evaporator" comment="LM am Roti entfernen" />
+        <Purify vessel="reactor" eluent="Pe/EtOAc 3:1 -&gt; 2:1" />
+      </Workup>
+    </Procedure>
+    <Reagents>
+      <Reagent id="Ns-Ile-OMe 045c" name="Ns-Ile-OMe 045c" role="substrate" />
+      <Reagent id="Bromolefin 064" name="Bromolefin 064" role="reagent" />
+      <Reagent id="Cs2CO3" name="Cs2CO3" role="reagent" />
+      <Reagent id="DMF" name="DMF" role="solvent" />
+    </Reagents>
+  </Synthesis>
+</XDL>

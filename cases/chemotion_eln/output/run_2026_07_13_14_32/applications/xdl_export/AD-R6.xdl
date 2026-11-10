@@ -1,0 +1,57 @@
+<XDL>
+  <Synthesis>
+    <Hardware>
+      <Component id="50 mL two-neck RBF" type="50 mL two-neck RBF" />
+      <Component id="25 mL frit funnel" type="25 mL frit funnel" />
+      <Component id="250 mL RBF" type="250 mL RBF" />
+      <Component id="50 mL RBF" type="50 mL RBF" />
+      <Component id="Filter" type="Filter" />
+    </Hardware>
+    <Metadata description="AD-R6 - Synthesis of Co(ttpp)" product="C120H88CoN8" />
+    <Procedure>
+      <Prep>
+        <HeatChill vessel="50 mL two-neck RBF" temp="120 celsius" comment="Heat a 50 mL two-neck RBF in an oven (120 °C) for &gt;1.5 h." />
+        <EvacuateAndRefill vessel="50 mL two-neck RBF" comment="Assemble and fix a reflux condenser, a T-shape connector, and a bubbler (paraffin oil) at a Schlenk line; Take out the RBF and quickly assemble it with a stir bar, rubber septum, and the reflux condenser while hot; Evacuate (0.33 mbar), heat the bottom part of the reflux condenser with a heat gun (250 °C)." />
+        <EvacuateAndRefill vessel="50 mL two-neck RBF" gas="N2" comment="Backfill with N2" />
+        <Add vessel="50 mL two-neck RBF" reagent="TAPP" comment="Add TAPP and TrBr (plastic spatula) quickly" />
+        <Add vessel="50 mL two-neck RBF" reagent="TrBr" comment="Add TAPP and TrBr (plastic spatula) quickly" />
+        <EvacuateAndRefill vessel="50 mL two-neck RBF" comment="Cycle with N2 slowly x3" />
+        <Add vessel="50 mL two-neck RBF" reagent="Et3N" comment="Add Et3N" />
+        <Add vessel="50 mL two-neck RBF" reagent="THF" comment="Add THF w/ double-tipped needle. (black mixture)" />
+        <Sonicate vessel="50 mL two-neck RBF" comment="Start stirring (350 rpm). Cover the flask with Al foil. → 0.1 mL + CDCl3 500 µL, sonicate → 1H NMR M1" />
+        <Sonicate vessel="50 mL two-neck RBF" comment="→ 0.1 mL + CDCl3 500 µL, sonicate → 1H NMR M2" />
+        <Sonicate vessel="50 mL two-neck RBF" comment="→ 0.1 mL + CDCl3 500 µL, sonicate → 1H NMR M3" />
+      </Prep>
+      <Reaction>
+        <Add vessel="50 mL two-neck RBF" reagent="CoCl2" comment="Stop stirring. Close the N2 connection. Add CoCl2 quickly. Close. Resume stirring." />
+        <EvacuateAndRefill vessel="50 mL two-neck RBF" gas="N2" time="10 second" comment="Purge with N2 for 10 s" />
+        <EvacuateAndRefill vessel="50 mL two-neck RBF" gas="N2" time="30 minute" comment="Bubble with N2, 30 min." />
+        <HeatChill vessel="50 mL two-neck RBF" reflux="true" temp="85 celsius" time="2 hour" comment="Heat to reflux (85 °C, 1.25 atm) for 2 h" />
+        <Sonicate vessel="50 mL two-neck RBF" comment="Cool down to RT. → 0.1 mL + CDCl3 500 µL, sonicate → 1H NMR M4" />
+      </Reaction>
+      <Workup>
+        <Add vessel="25 mL frit funnel" reagent="neutral alumina" comment="Frit funnel 25 mL and add a folded filter paper add alumina (neutral) until the half of the filter paper; wet it with THF." />
+        <Add vessel="25 mL frit funnel" comment="Attach the funnel to a vacuum filter adapter and a 250 mL RBF; Wet the alumina with THF; Load the rest of the reaction mixture; Charge the loaded alumina (A)" />
+        <Purify vessel="25 mL frit funnel" eluent="THF 70 mL" comment="Elute with THF 70 mL and weak suction. (eluate: dark red to pale pink)" />
+        <Add vessel="250 mL RBF" reagent="EtOH" amount="25 millilitre" comment="Add EtOH 25 mL to the eluate" />
+        <Evaporate vessel="250 mL RBF" method="rotary_evaporator" comment="Concentrate with rotovap to 25 mL. (purple precipitation)" />
+        <Filter vessel="50 mL RBF" product_portion="residue" rinse="EtOH; petroleum ether" comment="Collect the solids by filtration with a filter paper (15A, ø 90 mm, tare: 0.53750 g), a glass funnel, a vacuum filter adapter, and a 50 mL RBF under suction. (filtrate: dark brown); Rinse with EtOH and petroleum ether." />
+        <Evaporate vessel="50 mL RBF" method="rotary_evaporator" comment="Dry the filtrate with rotovap" />
+        <Add vessel="50 mL RBF" reagent="EtOH" amount="25 millilitre" comment="Add EtOH 25 mL. o/n" />
+        <Wait vessel="50 mL RBF" time="0.5 day" comment="o/n" />
+        <Sonicate vessel="50 mL RBF" comment="Sonicate (dark green-brown)" />
+        <Filter vessel="50 mL RBF" product_portion="residue" rinse="EtOH; petroleum ether" comment="Collect the solids by filtration with a filter paper (15A, ø 90 mm, tare: x g), a glass funnel, a vacuum filter adapter, and a 50 mL RBF (tare: ?) under suction. (filtrate: dark green brown); Rinse with EtOH and petroleum ether." />
+        <Evaporate vessel="50 mL RBF" method="rotary_evaporator" comment="Dry the filtrate with rotovap" />
+        <Dry vessel="Filter" time="1 hour" comment="Dry with a diaphragm pump for 1 h" />
+        <Dry vessel="Filter" time="1 hour" comment="Dry the residue under vacuum (diaphragm pump) for 1 h" />
+      </Workup>
+    </Procedure>
+    <Reagents>
+      <Reagent id="TAPP" name="TAPP" role="reagent" />
+      <Reagent id="TrBr" name="TrBr" role="reagent" />
+      <Reagent id="CoCl2" name="CoCl2" role="reagent" />
+      <Reagent id="Et3N" name="Et3N" role="reagent" />
+      <Reagent id="THF" name="THF" role="reagent" />
+    </Reagents>
+  </Synthesis>
+</XDL>

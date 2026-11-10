@@ -1,0 +1,8 @@
+journal,label,date,substrate,substrate_M_g_mol,substrate_mass_mg,substrate_mmol,product_M_g_mol,product_mass_mg,product_mmol,yield_percent,yield_percent_recomputed
+WAT-Ch-233,C233,2025-10-20,Olefin HOL-180,368.48,50.0,0.1357,388.45,22.0,0.0566,41.738,41.738
+WAT-Ch-234,C234,2025-10-20,Olefin HOL-309,368.48,25.0,0.0678,388.45,15.0,0.0386,56.9154,56.9154
+WAT-Ch-238,C238,2025-10-23,Olefin HAU-12,181.28,10.0,0.0552,201.29,,,,
+WAT-Ch-239,C239,2025-10-23,Olefin HAU-25A,195.31,10.0,0.0512,201.29,,,,
+WAT-Ch-240,C240,2025-11-03,Olefin JEN-15.2 OD1,402.47,24.0,0.0596,422.47,10.0,0.0237,39.6941,39.6941
+WAT-Ch-241,C241,2025-11-03,Olefin JEN-48.1,430.52,105.0,0.2439,450.53,,,,
+WAT-Ch-242,C242,2025-11-04,Olefin HOL-412,382.48,50.0,0.1307,402.48,30.0,0.0745,57.0185,57.0185

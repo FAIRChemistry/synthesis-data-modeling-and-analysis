@@ -1,0 +1,15 @@
+order,phase,row,col,step_type,vessel,parameters,comment
+1,Prep,0,0,EvacuateAndRefill,,gas: N2,
+2,Prep,0,1,Add,,DCM – 160 mL,
+3,Prep,0,2,Add,,L-Ile-Me HCl 044 – 20 g,Aminosäureester unter Schutzgas in DCM lösen
+4,Prep,0,3,HeatChill,,T: 0 °C,auf 0 °C kühlen
+5,Reaction,1,0,Add,,DCM (NsCl) – 50 mL,
+6,Reaction,1,1,Add,,2-NsCl – 26.72 g; dropwise,
+7,Reaction,1,2,Add,,Triethylamin – 32.13 mL; dropwise,
+8,Reaction,1,3,HeatChill,,T: 25 °C,
+9,Reaction,1,4,Wait,,t: 18 h,für 18 h bei RT rühren
+10,Workup,2,0,Extract,,solvent: DCM; repeats: 1; keep: organic,wässrige Phase extrahieren mit 1x DCM
+11,Workup,2,1,WashPhase,,solution: Wasser; phase: organic; repeats: 3,
+12,Workup,2,2,Dry,,desiccant: MgSO4,
+13,Workup,2,3,Evaporate,,LM entfernen,LM entfernen
+14,Workup,2,4,Purify,,eluent: Pe/EtOAc 5:1 -> 3:1,

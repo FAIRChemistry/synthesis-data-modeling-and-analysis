@@ -1,0 +1,142 @@
+{
+  "short_label": "AD-R8",
+  "name": "Synthesis of Co(ttpp) (more monitoring, proper Al2O3 pad)",
+  "created_at": "2025-12-15T08:31:16.936Z",
+  "status": "Successful",
+  "temperature": {
+    "data": [],
+    "userText": "1. RT 2. Reflux",
+    "valueUnit": "°C"
+  },
+  "duration": "",
+  "vessel_size": {
+    "amount": 50,
+    "unit": "ml"
+  },
+  "plain_text_description": "Heat a 50 mL two-neck RBF in an oven (120 °C) for >1.5 h.\n[15.12., RT 24.7°C, RH 30 %]\nAssemble and fix a reflux condenser, a T-shaped connector, and a bubbler (filled with paraffin oil) at a Schlenk line.\nRemove the RBF and quickly assemble it with a stir bar, rubber septum, and reflux condenser while it is still hot.\nEvacuate (0.24 mbar), heat the bottom part of the reflux condenser and flask with a heat gun (250 °C). [Heating flask might not be necessary]\nBackfill with N2\nAdd TAPP and TrBr (plastic spatula) quickly\nCycle with N2 slowly x3\nAdd Et3N\nAdd THF w/ double-tipped needle. [15:10] (black mixture)\nStart stirring (350 rpm)\nCover the flask with Al foil.\n→ 0.1 mL + CDCl3 500 µL, sonicate → 1H NMR M1\n[16.12]\n[08:15] → 0.1 mL + CDCl3 500 µL, sonicate → 1H NMR M2\nStop stirring. Close the N2 connection. Add CoCl2 quickly. Purge with N2 for 10 s. Close. Resume stirring.\nBubble with N2, 30 min.\nHeat to reflux (85 °C, 1.25 atm) for 2 h\nCool down to RT.\n→ 0.1 mL + CDCl3 500 µL, sonicate → 1H NMR M3 unfiltered → syringe filter → 1H NMR M3\nHeat to reflux (85 °C, 1.25 atm) for 17 h\n[17.12.]\nCool down to RT.\n→ 0.1 mL + CDCl3 500 µL, sonicate → 1H NMR failed because of autosampler problem\nStir at RT for 24 h\n→ 0.1 mL + CDCl3 500 µL, sonicate → syringe filter, rinsed with CDCl3 → 1H NMR M4\n",
+  "plain_text_observation": "[18.12. RT 24.2°C and RH 31%]\nAdd 12.5 mL of neutral alumina to a 25 mL frit funnel.\nAttach the funnel to a vacuum filter adapter and a 250 mL RBF.\nWet the alumina with THF\nLoad the reaction mixture\nElute with THF (75 mL) and weak suction. (eluate: dark red to pale pink)  (The alumina pad became dark green at the top, pale green in the middle, and a little brown part at the bottom)\nAdd EtOH 25 mL to the eluate\nConcentrate with rotovap to 25 mL. (dark brown precipitation)\nCollect the solids by filtration with a filter paper (15A, ø 90 mm, tare: 0.51740 g), a glass funnel, a vacuum filter adapter, and a 100 mL RBF under suction. (filtrate: dark green solution)\nRinse with EtOH x3 and petroleum ether x2.\nDry filtrate with rotovap\n[15.1.]\n1H NMR-filtrate (DMSO)\nDry the residue under vacuum (diaphragm pump) for 1 h. [dark brown solid]\n 0.26716 g  wt. on Filter paper.\nTransfer to vial with label and tape (tare: 8.10142 g) --> 0.26232 g\nThe residue on filter paper → 1H NMR paper (CDCl3) [green solution]\n1H NMR P_unfiltered (CDCl3) [dark red-brown suspension] → Syringe filter → 1H NMR_P [dark red-brown solution]\n[15.1.]\n1H NMR P (DMSO)\n",
+  "starting_materials": [
+    {
+      "short_label": "INV-14-4",
+      "name": "TAPP",
+      "molecular_weight": 674.7943600000002,
+      "real_amount_value": 0.12527,
+      "real_amount_unit": "g",
+      "target_amount_value": 0.12527,
+      "target_amount_unit": "g",
+      "density": 1.35,
+      "inchikey": "REPFNYFEIOZRLM-LWQDQPMZSA-N",
+      "equivalent": 1.0,
+      "reference": true,
+      "position": 0
+    },
+    {
+      "short_label": "INV-20-3",
+      "name": "TrBr",
+      "molecular_weight": 323.2264,
+      "real_amount_value": 0.30907,
+      "real_amount_unit": "g",
+      "target_amount_value": 0.29937490882407486,
+      "target_amount_unit": "g",
+      "density": null,
+      "inchikey": "NZHXEWZGTQSYJM-UHFFFAOYSA-N",
+      "equivalent": 5.150796519661284,
+      "reference": false,
+      "position": 1
+    },
+    {
+      "short_label": "INV-21-6",
+      "name": "CoCl2",
+      "molecular_weight": 129.8392,
+      "real_amount_value": 0.1445,
+      "real_amount_unit": "g",
+      "target_amount_value": 0.1443097420079207,
+      "target_amount_unit": "g",
+      "density": null,
+      "inchikey": "GVPFVAHMJGGAJG-UHFFFAOYSA-L",
+      "equivalent": 5.994961284797981,
+      "reference": false,
+      "position": 2
+    },
+    {
+      "short_label": "INV-22-4",
+      "name": "Et3N",
+      "molecular_weight": 101.19,
+      "real_amount_value": 0.000258,
+      "real_amount_unit": "l",
+      "target_amount_value": 0.18744599465828368,
+      "target_amount_unit": "g",
+      "density": 0.726,
+      "inchikey": "ZMANZCXQSJIPKH-UHFFFAOYSA-N",
+      "equivalent": 9.97110058720481,
+      "reference": false,
+      "position": 3
+    },
+    {
+      "short_label": "INV-23-3",
+      "name": "THF",
+      "molecular_weight": 72.10572,
+      "real_amount_value": 0.0085,
+      "real_amount_unit": "l",
+      "target_amount_value": 0.0085,
+      "target_amount_unit": "l",
+      "density": 0.889,
+      "inchikey": "WYURNTSHIVDZCO-UHFFFAOYSA-N",
+      "equivalent": 564.5148040751726,
+      "reference": false,
+      "position": 4
+    }
+  ],
+  "solvents": [],
+  "purification_solvents": [
+    {
+      "short_label": "AD-29",
+      "name": "ethanol",
+      "molecular_weight": 46.068439999999995,
+      "real_amount_value": null,
+      "real_amount_unit": "g",
+      "target_amount_value": 0.05,
+      "target_amount_unit": "l",
+      "density": 0.789,
+      "inchikey": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N",
+      "equivalent": 4612.834445194248,
+      "reference": false,
+      "position": 0
+    },
+    {
+      "short_label": "KE-17",
+      "name": "oxolane",
+      "molecular_weight": 72.10572,
+      "real_amount_value": null,
+      "real_amount_unit": "g",
+      "target_amount_value": 0.075,
+      "target_amount_unit": "l",
+      "density": 0.889,
+      "inchikey": "WYURNTSHIVDZCO-UHFFFAOYSA-N",
+      "equivalent": null,
+      "reference": false,
+      "position": 1
+    }
+  ],
+  "products": [
+    {
+      "short_label": "AD-28",
+      "name": "C120H88CoN8",
+      "molecular_weight": 1700.9695200000008,
+      "real_amount_value": 0.26232,
+      "real_amount_unit": "g",
+      "target_amount_value": null,
+      "target_amount_unit": "g",
+      "density": null,
+      "inchikey": "SZVLKHGYPSMSBU-FIVSXPDESA-N",
+      "equivalent": 0.8307287460885211,
+      "reference": false,
+      "position": 0
+    }
+  ],
+  "case_metadata": {
+    "researcher": "Zarfishan Dilruba",
+    "research_group": "AK Endo",
+    "project_type": "Promotion"
+  }
+}

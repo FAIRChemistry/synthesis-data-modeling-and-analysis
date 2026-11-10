@@ -1,0 +1,269 @@
+{
+  "journal_number": "AD-R17",
+  "date": "2026-03-24",
+  "researcher": "Zarfishan Dilruba",
+  "research_group": "AK Endo",
+  "project_type": "Promotion",
+  "reaction_name": "Synthesis of [Co(ttpp)(py)2](OTf) (scale-up) ",
+  "batch_volume_mL": 16.5,
+  "starting_materials": [
+    {
+      "name": "Co(ttpp)",
+      "note": "AD-31-3",
+      "mass_g": 0.30382,
+      "molar_mass_g_mol": 1700.9695200000008,
+      "amount_mmol": 0.17866,
+      "equivalents": 1,
+      "density_g_mL": 0.0
+    },
+    {
+      "name": "AgOTf",
+      "note": "INV-29-3",
+      "mass_g": 0.04013,
+      "molar_mass_g_mol": 256.93730959999994,
+      "amount_mmol": 0.15622,
+      "equivalents": 0.8744241821825688,
+      "density_g_mL": 0.0
+    },
+    {
+      "name": "pyridine",
+      "note": "INV-24-5",
+      "volume_mL": 0.0715,
+      "mass_g": 0.069987,
+      "molar_mass_g_mol": 79.09989999999999,
+      "amount_mmol": 0.88529,
+      "equivalents": 4.949361026965731,
+      "density_g_mL": 0.978
+    },
+    {
+      "name": "toluene",
+      "note": "INV-111-2",
+      "volume_mL": 16.5,
+      "mass_g": 14.2725,
+      "molar_mass_g_mol": 92.13842000000001,
+      "amount_mmol": 154.8947,
+      "equivalents": 867.2403241725207,
+      "density_g_mL": 0.865
+    },
+    {
+      "name": "3-mercaptopropyl silica",
+      "note": "INV-90-4",
+      "mass_g": 0.608,
+      "molar_mass_g_mol": null,
+      "amount_mmol": null,
+      "equivalents": 0.0,
+      "density_g_mL": 0.7
+    }
+  ],
+  "products": [
+    {
+      "name": "[Co(ttpp)(py)2](OTf)",
+      "note": "AD-46",
+      "molar_mass_g_mol": 2008.238429600001,
+      "yield_g": 0.286,
+      "amount_mmol": 0.14235,
+      "is_main_product": true,
+      "yield_percent": null,
+      "appearance": null,
+      "eluent_system": null,
+      "nmr_data": null,
+      "rf_value": null
+    }
+  ],
+  "procedure": {
+    "Prep": {
+      "Step": [
+        {
+          "$xml_type": "Add",
+          "_vessel": "25 mL flask",
+          "_reagent": "Co(ttpp)",
+          "_amount": {
+            "Unit": "gram",
+            "Value": 0.30382
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "25 mL flask",
+          "_reagent": "pyridine",
+          "_amount": {
+            "Unit": "microlitre",
+            "Value": 71.5
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "25 mL flask",
+          "_reagent": "toluene",
+          "_amount": {
+            "Unit": "millilitre",
+            "Value": 16.5
+          }
+        },
+        {
+          "$xml_type": "Sonicate",
+          "_vessel": "25 mL flask",
+          "_time": {
+            "Unit": "minute",
+            "Value": 3
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "25 mL flask",
+          "_dropwise": true,
+          "_reagent": "AgOTf",
+          "_amount": {
+            "Unit": "milligram",
+            "Value": 40.13
+          }
+        }
+      ]
+    },
+    "Reaction": {
+      "Step": [
+        {
+          "$xml_type": "Wait",
+          "_time": {
+            "Unit": "hour",
+            "Value": 1
+          }
+        }
+      ]
+    },
+    "Workup": {
+      "Step": [
+        {
+          "$xml_type": "Evaporate",
+          "_vessel": "25 mL flask",
+          "_method": "rotary_evaporator",
+          "_temp": {
+            "Unit": "celsius",
+            "Value": 40
+          },
+          "_time": {
+            "Unit": "hour",
+            "Value": 1
+          }
+        },
+        {
+          "$xml_type": "Dry",
+          "_time": {
+            "Unit": "hour",
+            "Value": 1
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "25 mL flask",
+          "_reagent": "DCM",
+          "_amount": {
+            "Unit": "millilitre",
+            "Value": 15
+          }
+        },
+        {
+          "$xml_type": "Sonicate",
+          "_vessel": "25 mL flask"
+        },
+        {
+          "$xml_type": "Add",
+          "_vessel": "25 mL flask",
+          "_reagent": "3-mercaptopropyl silica",
+          "_amount": {
+            "Unit": "gram",
+            "Value": 0.608
+          }
+        },
+        {
+          "$xml_type": "Wait",
+          "_time": {
+            "Unit": "hour",
+            "Value": 2
+          }
+        },
+        {
+          "$xml_type": "Filter",
+          "_product_portion": "filtrate",
+          "_rinse": [
+            {
+              "name": "DCM",
+              "amount": {
+                "Unit": "millilitre",
+                "Value": 50
+              }
+            }
+          ]
+        },
+        {
+          "$xml_type": "Evaporate",
+          "_method": "rotary_evaporator"
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "DCM",
+          "_amount": {
+            "Unit": "millilitre",
+            "Value": 10
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "n-hexane",
+          "_amount": {
+            "Unit": "millilitre",
+            "Value": 60
+          }
+        },
+        {
+          "$xml_type": "Sonicate"
+        },
+        {
+          "$xml_type": "HeatChill",
+          "_temp": {
+            "Unit": "celsius",
+            "Value": 0
+          },
+          "_time": {
+            "Unit": "day",
+            "Value": 0.5
+          }
+        },
+        {
+          "$xml_type": "Filter",
+          "_product_portion": "filtrate",
+          "_rinse": [
+            {
+              "name": "DCM + n-hexane"
+            },
+            {
+              "name": "n-hexane",
+              "amount": {
+                "Unit": "millilitre",
+                "Value": 4
+              }
+            }
+          ],
+          "_comment": "Rinse 2× (DCM 3 mL + n-hexane 20 mL) and then hexane 4×4 mL"
+        },
+        {
+          "$xml_type": "Dry",
+          "_time": {
+            "Unit": "minute",
+            "Value": 5
+          }
+        },
+        {
+          "$xml_type": "Dry",
+          "_time": {
+            "Unit": "day",
+            "Value": 0.5
+          }
+        }
+      ]
+    }
+  },
+  "observations": null,
+  "reagent_sources": [],
+  "tlc_conditions": null
+}

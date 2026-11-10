@@ -1,0 +1,149 @@
+{
+  "journal_number": "WAT-Ch-068",
+  "date": "2024-02-05",
+  "researcher": "Timo Watzenborn",
+  "research_group": "AK Laschat",
+  "project_type": "Promotion",
+  "reaction_name": "Cyclisierung Ile SmI2 Roh",
+  "starting_materials": [
+    {
+      "name": "Aminoaldehyd 067 Roh",
+      "molar_mass_g_mol": 382.48,
+      "equivalents": 1,
+      "density_g_mL": null,
+      "concentration_mol_L": 0.026,
+      "volume_mL": null,
+      "mass_fraction_percent": null,
+      "amount_mmol": 0.12549675800041832,
+      "mass_g": 0.048,
+      "batch_concentration_mol_L": 0.02635948900008809,
+      "role": "limiting_reagent",
+      "note": null
+    },
+    {
+      "name": "SmI2 (0.1 M in THF)",
+      "molar_mass_g_mol": 404.17,
+      "equivalents": 2.2,
+      "density_g_mL": null,
+      "concentration_mol_L": 0.1,
+      "volume_mL": 2.760928676009203,
+      "mass_fraction_percent": null,
+      "amount_mmol": 0.27609286760092033,
+      "mass_g": null,
+      "batch_concentration_mol_L": 0.058,
+      "role": "reductant",
+      "note": null
+    },
+    {
+      "name": "THF ",
+      "molar_mass_g_mol": null,
+      "equivalents": null,
+      "density_g_mL": null,
+      "concentration_mol_L": null,
+      "volume_mL": 2,
+      "mass_fraction_percent": null,
+      "amount_mmol": null,
+      "mass_g": null,
+      "batch_concentration_mol_L": null,
+      "role": "solvent",
+      "note": null
+    }
+  ],
+  "batch_volume_mL": 4.760928676009203,
+  "products": [
+    {
+      "name": "Piperidinol",
+      "molar_mass_g_mol": 382.48,
+      "yield_g": 0.030999999999998806,
+      "amount_mmol": 0.08104998954193371,
+      "yield_percent": 64.58333333333086,
+      "appearance": null,
+      "rf_value": null,
+      "eluent_system": null,
+      "nmr_data": null,
+      "is_main_product": true
+    }
+  ],
+  "procedure": {
+    "Prep": {
+      "Step": [
+        {
+          "$xml_type": "EvacuateAndRefill",
+          "_gas": "N2"
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "THF ",
+          "_amount": {
+            "Value": 2,
+            "Unit": "millilitre"
+          }
+        },
+        {
+          "$xml_type": "Add",
+          "_reagent": "Aminoaldehyd 067 Roh",
+          "_amount": {
+            "Value": 0.048,
+            "Unit": "gram"
+          },
+          "_comment": "Aminoaldehyd in THF lösen"
+        },
+        {
+          "$xml_type": "HeatChill",
+          "_temp": {
+            "Value": 0,
+            "Unit": "celsius"
+          }
+        }
+      ]
+    },
+    "Reaction": {
+      "Step": [
+        {
+          "$xml_type": "Add",
+          "_reagent": "SmI2 (0.1 M in THF)",
+          "_amount": {
+            "Value": 2.760928676009203,
+            "Unit": "millilitre"
+          },
+          "_dropwise": true
+        },
+        {
+          "$xml_type": "HeatChill",
+          "_temp": {
+            "Value": 25,
+            "Unit": "celsius"
+          }
+        }
+      ]
+    },
+    "Workup": {
+      "Step": [
+        {
+          "$xml_type": "Evaporate",
+          "_method": "rotary_evaporator"
+        },
+        {
+          "$xml_type": "Purify",
+          "_eluent": "Pe/EtOAc 3:1"
+        }
+      ]
+    }
+  },
+  "tlc_conditions": null,
+  "observations": "Achtung: großen Kolben mit möglichst breiter Oberfläche nehmen, langsam Lösung zutropfen und auf T achten!",
+  "reagent_sources": [
+    {
+      "reagent_name": "Aminoaldehyd 067 Roh",
+      "source": null
+    },
+    {
+      "reagent_name": "SmI2 (0.1 M in THF)",
+      "source": "169 K-A6"
+    },
+    {
+      "reagent_name": "THF ",
+      "source": null
+    }
+  ]
+}

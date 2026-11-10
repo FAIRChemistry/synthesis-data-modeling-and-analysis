@@ -1,0 +1,113 @@
+{
+  "short_label": "AD-R13",
+  "name": "Synthesis of [Co(ttpp)(py)2](OTf)",
+  "created_at": "2026-02-10T16:43:24.253Z",
+  "status": "Successful",
+  "temperature": {
+    "data": [],
+    "userText": "R.T.",
+    "valueUnit": "°C"
+  },
+  "duration": "1.2 Hour(s)",
+  "vessel_size": {
+    "amount": 10,
+    "unit": "ml"
+  },
+  "plain_text_description": "Purpose: Obtain Co(III) precursor free of PBA, because PBA may reduce Co(III) in basic conditions\nReference: AD-R11; py instead of pba\nAnalysis\n1H NMR: [Co(ttpp)(py)₂]+, glue\nICP-OES: theoretical Cobalt content: 2.93%, experimental Cobalt content: 2.98%, Ag: 0.00213 eq.\nSEM-EDX (AD-R016): No Cl, Ag\nProduct\nIdentity: [Co(ttpp)(py) 2](OTf)\nPurity: Co and Ag not confirmed\nProblems\nNone\n\nProcedure\nRT 22.6°C RH 32 %\nStock solution preparation\n5 mL vial\nPut into the glovebox (H₂O < 1 ppm)\nWeigh in AgOTf → 14.52 mg\nTake it out of the glovebox. \nAdd toluene 550 µL → colorless solution\n\nReaction\n10 mL flask\nAdd Co(ttpp)\nAdd pyridine\nAdd toluene 5 mL\nSonicate for 3 min → Dark green solution \nCover with aluminum foil\nStart stirring at 400 rpm\nAdd 500 µL of AgOTf/toluene dropwise with a mechanical pipette [syringe should be used]\nSonicate [unnecessary]\n-> 50 μL + CDCl₃ (w/ Ag foil) 550 μL -> 1H NMR M1 [unnecessary]\nContinue stirring for 1 h\n-> 50 μL + CDCl₃ 550 μL -> ¹H NMR M2 (U1.834) [next time use pipette, SW 19, NS 16]\n",
+  "plain_text_observation": "Ag scavenging\nRemove volatiles with rotovap (40 °C) → took 1.5 h\nDry under vacuum o/n\n12.02.2026 RT 23 °C RH 34%\nAdd DCM 5 mL\nSwirl and sonicate for 5 min → Dark green solution [5 min unnecessary]\nAdd ISOLUTE Si-Thiol\nStir at 500 rpm for 2 h\n12 mL plastic syringe, cotton plug, syringe filter (⌀ 25 mm, 0.45 μm, PTFE), syringe filter (0.2 µm, ⌀ 15 mm, PET), 100 mL RBF [PTFE syringe filter next time should be used]\nFilter the mixture → Dark green filtrate collected\nTransfer and rinse with DCM 10 mL → Pale green filtrate in the end\n\nReprecipitation\nAdd n-hexane (60 mL).\nSwirl and sonicate\nRefrigerate at 4 °C for 3 h\nMembrane filter (0.22 µm, hydrophobic, PVDF, tare with weighing bottle: 16.78675 g), membrane filter holder, 250 mL RBF\nFilter the mixture → Dark orange filtrate\nTransfer and rinse with 2 x (DCM 3 mL + n-hexane 20 mL)\nRinse w/ hexane 4 x 4 mL\nDry w/ suction for 5 min\nWeighing bottle\n→ Weigh → 88.7 mg; some of the residue stuck on the glass funnel and could not be collected) [unnecessary]\n→ 1H NMR M3 (CDCl3) [unnecessary]\nDry under vacuum o/n\n\nAnalysis\n13.02.2026 RT x °C RH y%\nVial (tare 8.04848 g)\nTransfer from the membrane → residual solids on membrane → ¹H NMR membrane (CDCl₃) [unnecessary]\n→ Weigh\n→ 1H NMR P (CDCl₃; U1.834) [next time SW 19, NS 16. higher concentration]\n→ ICP-OES (Co, Ag) → 17.5 mg \nFor sample preparation, an accurately weighed amount of compound, 17.5 mg, was transferred into microwave digestion vials. A minimal volume of concentrated nitric acid (HNO₃) was added, followed by hydrogen peroxide (H₂O₂) to a total digestion volume of approximately 5 mL. The resulting mixtures were subjected to microwave-assisted digestion at 200 °C for 2 hours to ensure complete decomposition of the organic matrix.\nAfter cooling to room temperature, the digestion mixture was transferred to a 10-mL volumetric flask and diluted to the mark with deionized water. The solution was kept overnight. The solution was transferred into the test tubes.\nInitial ICP-OES measurements resulted in signals exceeding the calibration range for cobalt, indicating that the analyte concentration was too high. Therefore, an additional dilution step was performed by transferring 2 mL of solution into a new test tube and diluting to 10 mL with deionized water (dilution factor = 5). These diluted samples were subsequently remeasured.\n",
+  "starting_materials": [
+    {
+      "short_label": "AD-31-2",
+      "name": "Co(ttpp)",
+      "molecular_weight": 1702.9854000000007,
+      "real_amount_value": 0.10070000000000001,
+      "real_amount_unit": "g",
+      "target_amount_value": 0.10129,
+      "target_amount_unit": "g",
+      "density": null,
+      "inchikey": "MTWCEDPWWQAUHA-STHLKGSDSA-N",
+      "equivalent": 1.0,
+      "reference": true,
+      "position": 0
+    },
+    {
+      "short_label": "INV-29-2",
+      "name": "AgOTf",
+      "molecular_weight": 256.93730959999994,
+      "real_amount_value": 0.01318,
+      "real_amount_unit": "g",
+      "target_amount_value": 0.013280138219431994,
+      "target_amount_unit": "g",
+      "density": null,
+      "inchikey": "QRUBYZBWAOOHSV-UHFFFAOYSA-M",
+      "equivalent": 0.8675004167549472,
+      "reference": false,
+      "position": 1
+    },
+    {
+      "short_label": "INV-24-1",
+      "name": "pyridine",
+      "molecular_weight": 79.09989999999999,
+      "real_amount_value": 2.4e-05,
+      "real_amount_unit": "l",
+      "target_amount_value": 0.023523480797310405,
+      "target_amount_unit": "g",
+      "density": 0.978,
+      "inchikey": "JUJWROOIHBZHMG-UHFFFAOYSA-N",
+      "equivalent": 5.018288396265858,
+      "reference": false,
+      "position": 2
+    },
+    {
+      "short_label": "INV-111-1",
+      "name": "toluene",
+      "molecular_weight": 92.13842000000001,
+      "real_amount_value": 0.0005499999999999999,
+      "real_amount_unit": "l",
+      "target_amount_value": 0.0005499999999999999,
+      "target_amount_unit": "l",
+      "density": 0.865,
+      "inchikey": "YXFVVABEGXRONW-UHFFFAOYSA-N",
+      "equivalent": 87.32115880935619,
+      "reference": false,
+      "position": 3
+    },
+    {
+      "short_label": "INV-90-3",
+      "name": "3-mercaptopropyl silica",
+      "molecular_weight": null,
+      "real_amount_value": 0.202,
+      "real_amount_unit": "g",
+      "target_amount_value": 0.2,
+      "target_amount_unit": "g",
+      "density": 0.7,
+      "inchikey": "DUMMY",
+      "equivalent": null,
+      "reference": false,
+      "position": 4
+    }
+  ],
+  "solvents": [],
+  "purification_solvents": [],
+  "products": [
+    {
+      "short_label": "AD-36",
+      "name": "[Co(ttpp)(py)2](OTf)",
+      "molecular_weight": 2008.238429600001,
+      "real_amount_value": 0.07708,
+      "real_amount_unit": "g",
+      "target_amount_value": null,
+      "target_amount_unit": "g",
+      "density": null,
+      "inchikey": "SLJLTKRWPCLTQF-BXFYCLSASA-M",
+      "equivalent": 0.6490944363805372,
+      "reference": false,
+      "position": 0
+    }
+  ],
+  "case_metadata": {
+    "researcher": "Zarfishan Dilruba",
+    "research_group": "AK Endo",
+    "project_type": "Promotion"
+  }
+}

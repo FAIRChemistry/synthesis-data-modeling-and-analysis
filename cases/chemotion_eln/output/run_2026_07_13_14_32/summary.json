@@ -1,0 +1,129 @@
+{
+  "run_id": "run_2026_07_13_14_32",
+  "case": "chemotion_eln",
+  "output_dir": "cases/chemotion_eln/output/run_2026_07_13_14_32",
+  "results_dir": "cases/chemotion_eln/output/run_2026_07_13_14_32/results",
+  "previous_run": "cases/chemotion_eln/output/run_2026_07_13_10_54",
+  "total": 11,
+  "successes": [
+    {
+      "record_id": "AD-R10",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_13_14_32/results/AD-R10.json",
+      "usage": {
+        "prompt_tokens": 11957,
+        "completion_tokens": 13488,
+        "total_tokens": 25445
+      }
+    },
+    {
+      "record_id": "AD-R11",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_13_14_32/results/AD-R11.json",
+      "usage": {
+        "prompt_tokens": 12371,
+        "completion_tokens": 14137,
+        "total_tokens": 26508
+      }
+    },
+    {
+      "record_id": "AD-R13",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_13_14_32/results/AD-R13.json",
+      "usage": {
+        "prompt_tokens": 12074,
+        "completion_tokens": 11770,
+        "total_tokens": 23844
+      }
+    },
+    {
+      "record_id": "AD-R17",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_13_14_32/results/AD-R17.json",
+      "usage": {
+        "prompt_tokens": 12150,
+        "completion_tokens": 14265,
+        "total_tokens": 26415
+      }
+    },
+    {
+      "record_id": "AD-R18",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_13_14_32/results/AD-R18.json",
+      "usage": {
+        "prompt_tokens": 12609,
+        "completion_tokens": 13750,
+        "total_tokens": 26359
+      }
+    },
+    {
+      "record_id": "AD-R27",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_13_14_32/results/AD-R27.json",
+      "usage": {
+        "prompt_tokens": 12208,
+        "completion_tokens": 11803,
+        "total_tokens": 24011
+      }
+    },
+    {
+      "record_id": "AD-R9",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_13_14_32/results/AD-R9.json",
+      "usage": {
+        "prompt_tokens": 12560,
+        "completion_tokens": 13988,
+        "total_tokens": 26548
+      }
+    },
+    {
+      "record_id": "ZAR-438",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_13_14_32/results/ZAR-438.json",
+      "usage": {
+        "prompt_tokens": 11877,
+        "completion_tokens": 11316,
+        "total_tokens": 23193
+      }
+    }
+  ],
+  "validation_warnings": [
+    {
+      "record_id": "AD-R6",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_13_14_32/results/AD-R6.json",
+      "usage": {
+        "prompt_tokens": 12284,
+        "completion_tokens": 15011,
+        "total_tokens": 27295
+      },
+      "errors": [
+        "$.procedure.Workup.Step.1: {'$xml_type': 'Add', '_vessel': '25 mL frit funnel', '_comment': 'Attach the funnel to a vacuum filter adapter and a 250 mL RBF; Wet the alumina with THF; Load the rest of the reaction mixture; Charge the loaded alumina (A)'} is not valid under any of the given schemas"
+      ]
+    },
+    {
+      "record_id": "AD-R8",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_13_14_32/results/AD-R8.json",
+      "usage": {
+        "prompt_tokens": 12122,
+        "completion_tokens": 13390,
+        "total_tokens": 25512
+      },
+      "errors": [
+        "$.procedure.Workup.Step.6: {'$xml_type': 'Filter', '_vessel': '100 mL RBF', '_product_portion': None, '_rinse': [{'name': 'EtOH'}, {'name': 'petroleum ether'}], '_comment': 'Collect the solids by filtration with a filter paper (15A, ø 90 mm, tare: 0.51740 g), a glass funnel, a vacuum filter adapter, and a 100 mL RBF under suction. (filtrate: dark green solution); Rinse with EtOH x3 and petroleum ether x2.'} is not valid under any of the given schemas"
+      ]
+    },
+    {
+      "record_id": "ZAR-439",
+      "output_file": "cases/chemotion_eln/output/run_2026_07_13_14_32/results/ZAR-439.json",
+      "usage": {
+        "prompt_tokens": 11818,
+        "completion_tokens": 4142,
+        "total_tokens": 15960
+      },
+      "errors": [
+        "$.procedure.Workup.Step.5: {'$xml_type': 'Filter', '_vessel': '? mL RBF', '_product_portion': None, '_rinse': [{'name': 'DCM', 'amount': {'Unit': 'millilitre', 'Value': 50}}], '_comment': '? mL RBF, suction adapter, glass funnel, filter paper (90 mm?, 15A?), diaphragm pump suction; Filter the mixture → Dark green filtrate; Rinse with DCM 50 mL → Pale green filtrate and xxx residue at the end'} is not valid under any of the given schemas"
+      ]
+    }
+  ],
+  "failures": [],
+  "tokens": {
+    "prompt_tokens": 134030,
+    "completion_tokens": 137060,
+    "total_tokens": 271090,
+    "prompt_chars": 0,
+    "completion_chars": 0
+  },
+  "assembled_dir": "cases/chemotion_eln/output/run_2026_07_13_14_32/assembled"
+}
